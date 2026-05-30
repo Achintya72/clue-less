@@ -1,18 +1,10 @@
 [
   {
-    "file": "perfect-solver.json",
-    "model": "perfect-solver"
+    "file": "claude-sonnet-4-6.json",
+    "model": "claude-sonnet-4-6"
   },
   {
-    "file": "careful-solver.json",
-    "model": "careful-solver"
-  },
-  {
-    "file": "llama3.2-local.json",
-    "model": "llama3.2-local"
-  },
-  {
-    "file": "hint-spammer.json",
-    "model": "hint-spammer"
+    "file": "llama3.2.json",
+    "model": "llama3.2"
   }
 ]
