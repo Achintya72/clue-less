@@ -9,11 +9,34 @@
       {
         "step": 1,
         "observation": {
-          "clue": "Chaperone shredded corset (6)",
+          "clue": "Every circuit in grand prix race",
           "enumeration": "(6)",
-          "attempts_remaining": 6,
-          "hints_remaining": 3,
-          "instructions": "Solve this cryptic clue. A cryptic clue has a definition (at one end of the clue) plus wordplay that spells the same answer. The number in parentheses is the answer's length. Reply with ONLY your answer. To reveal a hint instead, reply exactly: HINT"
+          "answer_length": 6,
+          "word_lengths": [
+            6
+          ],
+          "rules": "Minute Cryptic \u2014 how to solve:\n- Every clue has TWO parts that both point to the same answer: a plain DEFINITION (always at the very start OR the very end of the clue) and WORDPLAY (the rest), which spells the answer by a hidden mechanism.\n- The number(s) in parentheses give the answer's length, e.g. (7) is a 7-letter word, (3,4) is a 3-letter word then a 4-letter word.\n- Common wordplay devices: anagram (letters jumbled, flagged by an indicator like 'mixed', 'broken', 'shredded', 'wild'); hidden word (answer sits inside consecutive letters of the clue); reversal ('back', 'returning', 'up' in a down clue); homophone ('we hear', 'sounds like'); charade (join shorter pieces in sequence); container ('in', 'around', 'holding'); deletion ('endless', 'heartless'); and abbreviations.\n- Answers are matched ignoring case, spaces and punctuation.\nACTIONS: reply with your answer to GUESS, or reply exactly 'HINT' to reveal the next hint. Hints first explain the clue, then reveal the answer's letters one at a time. Fewer hints is better \u2014 'par' is the expected number of hints for this clue, and you are scored against it.",
+          "common_substitutions": [
+            "love / nil / nothing / zero / duck -> O",
+            "the (in French) -> LE, LA, LES; (German) -> DER, DIE, DAS; (Spanish) -> EL",
+            "and -> N ('rock 'n' roll'); with -> W; without -> SANS",
+            "about -> C, CA, RE; around -> RE; concerning -> RE",
+            "Roman numerals: one -> I (or A/AN); five -> V; ten -> X; fifty -> L; hundred -> C; five hundred -> D; thousand -> M",
+            "left -> L; right -> R; first -> initial letter; finally -> last letter; heart/centre -> middle letter(s)",
+            "north/south/east/west -> N/S/E/W; point -> N, S, E or W",
+            "doctor -> DR, MO, MB; learner / novice -> L; graduate -> BA, MA",
+            "king -> K or R (rex); queen -> Q, ER or R; royal -> ER",
+            "quiet -> P or SH; loud -> F (forte); very loud -> FF",
+            "note (music) -> A B C D E F G, or DO RE MI FA SO LA TI",
+            "sailor -> AB, TAR, RN, OS; soldier(s) -> GI, RE, TA, ANT(s); navy -> RN",
+            "river -> R; lake -> L; road / street / way -> RD, ST, AVE, WAY",
+            "old -> O; new -> N; good -> G; gold -> AU or OR; iron -> FE",
+            "time -> T; hour -> HR; year -> Y; second -> S or MO; moment -> MO",
+            "company -> CO, LTD, INC; society -> S, SOC; party -> DO, LAB, CON"
+          ],
+          "hints_taken": 0,
+          "par": 3,
+          "instructions": "Reply with ONLY your answer to guess, or reply exactly 'HINT' to reveal the next hint."
         },
         "reasoning": "Not certain yet \u2014 I'll spend one hint to confirm the definition.",
         "action": "HINT",
@@ -21,12 +44,17 @@
         "terminated": false,
         "truncated": false,
         "info": {
-          "clue_id": "placeholder-escort",
+          "clue_id": "2023-09-07",
+          "puzzle_id": "d3cca44d-a147-4729-b715-184422eb8a8c",
           "solved": "0",
           "guesses_used": "0",
           "hints_used": "1",
-          "human_avg_guesses": "3",
-          "device": "anagram",
+          "hint_order": "[\"definition\"]",
+          "par": "3",
+          "community_avg_par": "3",
+          "hints_to_par": "-2",
+          "under_or_at_par": "1",
+          "par_result": "below",
           "outcome": "hint",
           "reward": "0.0000"
         }
@@ -34,25 +62,56 @@
       {
         "step": 2,
         "observation": {
-          "clue": "Chaperone shredded corset (6)",
+          "clue": "Every circuit in grand prix race",
           "enumeration": "(6)",
-          "attempts_remaining": 6,
-          "hints_remaining": 2,
-          "instructions": "Solve this cryptic clue. A cryptic clue has a definition (at one end of the clue) plus wordplay that spells the same answer. The number in parentheses is the answer's length. Reply with ONLY your answer. To reveal a hint instead, reply exactly: HINT",
-          "feedback": "Hint: The definition is at one end: 'Chaperone'."
+          "answer_length": 6,
+          "word_lengths": [
+            6
+          ],
+          "rules": "Minute Cryptic \u2014 how to solve:\n- Every clue has TWO parts that both point to the same answer: a plain DEFINITION (always at the very start OR the very end of the clue) and WORDPLAY (the rest), which spells the answer by a hidden mechanism.\n- The number(s) in parentheses give the answer's length, e.g. (7) is a 7-letter word, (3,4) is a 3-letter word then a 4-letter word.\n- Common wordplay devices: anagram (letters jumbled, flagged by an indicator like 'mixed', 'broken', 'shredded', 'wild'); hidden word (answer sits inside consecutive letters of the clue); reversal ('back', 'returning', 'up' in a down clue); homophone ('we hear', 'sounds like'); charade (join shorter pieces in sequence); container ('in', 'around', 'holding'); deletion ('endless', 'heartless'); and abbreviations.\n- Answers are matched ignoring case, spaces and punctuation.\nACTIONS: reply with your answer to GUESS, or reply exactly 'HINT' to reveal the next hint. Hints first explain the clue, then reveal the answer's letters one at a time. Fewer hints is better \u2014 'par' is the expected number of hints for this clue, and you are scored against it.",
+          "common_substitutions": [
+            "love / nil / nothing / zero / duck -> O",
+            "the (in French) -> LE, LA, LES; (German) -> DER, DIE, DAS; (Spanish) -> EL",
+            "and -> N ('rock 'n' roll'); with -> W; without -> SANS",
+            "about -> C, CA, RE; around -> RE; concerning -> RE",
+            "Roman numerals: one -> I (or A/AN); five -> V; ten -> X; fifty -> L; hundred -> C; five hundred -> D; thousand -> M",
+            "left -> L; right -> R; first -> initial letter; finally -> last letter; heart/centre -> middle letter(s)",
+            "north/south/east/west -> N/S/E/W; point -> N, S, E or W",
+            "doctor -> DR, MO, MB; learner / novice -> L; graduate -> BA, MA",
+            "king -> K or R (rex); queen -> Q, ER or R; royal -> ER",
+            "quiet -> P or SH; loud -> F (forte); very loud -> FF",
+            "note (music) -> A B C D E F G, or DO RE MI FA SO LA TI",
+            "sailor -> AB, TAR, RN, OS; soldier(s) -> GI, RE, TA, ANT(s); navy -> RN",
+            "river -> R; lake -> L; road / street / way -> RD, ST, AVE, WAY",
+            "old -> O; new -> N; good -> G; gold -> AU or OR; iron -> FE",
+            "time -> T; hour -> HR; year -> Y; second -> S or MO; moment -> MO",
+            "company -> CO, LTD, INC; society -> S, SOC; party -> DO, LAB, CON"
+          ],
+          "hints_taken": 1,
+          "par": 3,
+          "instructions": "Reply with ONLY your answer to guess, or reply exactly 'HINT' to reveal the next hint.",
+          "revealed_hints": [
+            "[definition] The definition part of the clue is 'race'"
+          ],
+          "feedback": "Hint (definition): The definition part of the clue is 'race'"
         },
         "reasoning": "The hint confirms the definition; this is the answer.",
-        "action": "ESCORT",
+        "action": "GALLOP",
         "reward": 0.8,
         "terminated": true,
         "truncated": false,
         "info": {
-          "clue_id": "placeholder-escort",
+          "clue_id": "2023-09-07",
+          "puzzle_id": "d3cca44d-a147-4729-b715-184422eb8a8c",
           "solved": "1",
           "guesses_used": "1",
           "hints_used": "1",
-          "human_avg_guesses": "3",
-          "device": "anagram",
+          "hint_order": "[\"definition\"]",
+          "par": "3",
+          "community_avg_par": "3",
+          "hints_to_par": "-2",
+          "under_or_at_par": "1",
+          "par_result": "below",
           "outcome": "solved",
           "reward": "0.8000"
         }
@@ -62,11 +121,34 @@
       {
         "step": 1,
         "observation": {
-          "clue": "Words out of order make a weapon (5)",
-          "enumeration": "(5)",
-          "attempts_remaining": 6,
-          "hints_remaining": 3,
-          "instructions": "Solve this cryptic clue. A cryptic clue has a definition (at one end of the clue) plus wordplay that spells the same answer. The number in parentheses is the answer's length. Reply with ONLY your answer. To reveal a hint instead, reply exactly: HINT"
+          "clue": "Help gambler to disregard odds",
+          "enumeration": "(4)",
+          "answer_length": 4,
+          "word_lengths": [
+            4
+          ],
+          "rules": "Minute Cryptic \u2014 how to solve:\n- Every clue has TWO parts that both point to the same answer: a plain DEFINITION (always at the very start OR the very end of the clue) and WORDPLAY (the rest), which spells the answer by a hidden mechanism.\n- The number(s) in parentheses give the answer's length, e.g. (7) is a 7-letter word, (3,4) is a 3-letter word then a 4-letter word.\n- Common wordplay devices: anagram (letters jumbled, flagged by an indicator like 'mixed', 'broken', 'shredded', 'wild'); hidden word (answer sits inside consecutive letters of the clue); reversal ('back', 'returning', 'up' in a down clue); homophone ('we hear', 'sounds like'); charade (join shorter pieces in sequence); container ('in', 'around', 'holding'); deletion ('endless', 'heartless'); and abbreviations.\n- Answers are matched ignoring case, spaces and punctuation.\nACTIONS: reply with your answer to GUESS, or reply exactly 'HINT' to reveal the next hint. Hints first explain the clue, then reveal the answer's letters one at a time. Fewer hints is better \u2014 'par' is the expected number of hints for this clue, and you are scored against it.",
+          "common_substitutions": [
+            "love / nil / nothing / zero / duck -> O",
+            "the (in French) -> LE, LA, LES; (German) -> DER, DIE, DAS; (Spanish) -> EL",
+            "and -> N ('rock 'n' roll'); with -> W; without -> SANS",
+            "about -> C, CA, RE; around -> RE; concerning -> RE",
+            "Roman numerals: one -> I (or A/AN); five -> V; ten -> X; fifty -> L; hundred -> C; five hundred -> D; thousand -> M",
+            "left -> L; right -> R; first -> initial letter; finally -> last letter; heart/centre -> middle letter(s)",
+            "north/south/east/west -> N/S/E/W; point -> N, S, E or W",
+            "doctor -> DR, MO, MB; learner / novice -> L; graduate -> BA, MA",
+            "king -> K or R (rex); queen -> Q, ER or R; royal -> ER",
+            "quiet -> P or SH; loud -> F (forte); very loud -> FF",
+            "note (music) -> A B C D E F G, or DO RE MI FA SO LA TI",
+            "sailor -> AB, TAR, RN, OS; soldier(s) -> GI, RE, TA, ANT(s); navy -> RN",
+            "river -> R; lake -> L; road / street / way -> RD, ST, AVE, WAY",
+            "old -> O; new -> N; good -> G; gold -> AU or OR; iron -> FE",
+            "time -> T; hour -> HR; year -> Y; second -> S or MO; moment -> MO",
+            "company -> CO, LTD, INC; society -> S, SOC; party -> DO, LAB, CON"
+          ],
+          "hints_taken": 0,
+          "par": 2,
+          "instructions": "Reply with ONLY your answer to guess, or reply exactly 'HINT' to reveal the next hint."
         },
         "reasoning": "Not certain yet \u2014 I'll spend one hint to confirm the definition.",
         "action": "HINT",
@@ -74,12 +156,17 @@
         "terminated": false,
         "truncated": false,
         "info": {
-          "clue_id": "placeholder-sword",
+          "clue_id": "2024-01-01",
+          "puzzle_id": "5a07f226-6338-4357-be96-c67cc138d8b2",
           "solved": "0",
           "guesses_used": "0",
           "hints_used": "1",
-          "human_avg_guesses": "3",
-          "device": "anagram",
+          "hint_order": "[\"definition\"]",
+          "par": "2",
+          "community_avg_par": "2",
+          "hints_to_par": "-1",
+          "under_or_at_par": "1",
+          "par_result": "below",
           "outcome": "hint",
           "reward": "0.0000"
         }
@@ -87,25 +174,56 @@
       {
         "step": 2,
         "observation": {
-          "clue": "Words out of order make a weapon (5)",
-          "enumeration": "(5)",
-          "attempts_remaining": 6,
-          "hints_remaining": 2,
-          "instructions": "Solve this cryptic clue. A cryptic clue has a definition (at one end of the clue) plus wordplay that spells the same answer. The number in parentheses is the answer's length. Reply with ONLY your answer. To reveal a hint instead, reply exactly: HINT",
-          "feedback": "Hint: The definition part of the clue is: 'weapon'."
+          "clue": "Help gambler to disregard odds",
+          "enumeration": "(4)",
+          "answer_length": 4,
+          "word_lengths": [
+            4
+          ],
+          "rules": "Minute Cryptic \u2014 how to solve:\n- Every clue has TWO parts that both point to the same answer: a plain DEFINITION (always at the very start OR the very end of the clue) and WORDPLAY (the rest), which spells the answer by a hidden mechanism.\n- The number(s) in parentheses give the answer's length, e.g. (7) is a 7-letter word, (3,4) is a 3-letter word then a 4-letter word.\n- Common wordplay devices: anagram (letters jumbled, flagged by an indicator like 'mixed', 'broken', 'shredded', 'wild'); hidden word (answer sits inside consecutive letters of the clue); reversal ('back', 'returning', 'up' in a down clue); homophone ('we hear', 'sounds like'); charade (join shorter pieces in sequence); container ('in', 'around', 'holding'); deletion ('endless', 'heartless'); and abbreviations.\n- Answers are matched ignoring case, spaces and punctuation.\nACTIONS: reply with your answer to GUESS, or reply exactly 'HINT' to reveal the next hint. Hints first explain the clue, then reveal the answer's letters one at a time. Fewer hints is better \u2014 'par' is the expected number of hints for this clue, and you are scored against it.",
+          "common_substitutions": [
+            "love / nil / nothing / zero / duck -> O",
+            "the (in French) -> LE, LA, LES; (German) -> DER, DIE, DAS; (Spanish) -> EL",
+            "and -> N ('rock 'n' roll'); with -> W; without -> SANS",
+            "about -> C, CA, RE; around -> RE; concerning -> RE",
+            "Roman numerals: one -> I (or A/AN); five -> V; ten -> X; fifty -> L; hundred -> C; five hundred -> D; thousand -> M",
+            "left -> L; right -> R; first -> initial letter; finally -> last letter; heart/centre -> middle letter(s)",
+            "north/south/east/west -> N/S/E/W; point -> N, S, E or W",
+            "doctor -> DR, MO, MB; learner / novice -> L; graduate -> BA, MA",
+            "king -> K or R (rex); queen -> Q, ER or R; royal -> ER",
+            "quiet -> P or SH; loud -> F (forte); very loud -> FF",
+            "note (music) -> A B C D E F G, or DO RE MI FA SO LA TI",
+            "sailor -> AB, TAR, RN, OS; soldier(s) -> GI, RE, TA, ANT(s); navy -> RN",
+            "river -> R; lake -> L; road / street / way -> RD, ST, AVE, WAY",
+            "old -> O; new -> N; good -> G; gold -> AU or OR; iron -> FE",
+            "time -> T; hour -> HR; year -> Y; second -> S or MO; moment -> MO",
+            "company -> CO, LTD, INC; society -> S, SOC; party -> DO, LAB, CON"
+          ],
+          "hints_taken": 1,
+          "par": 2,
+          "instructions": "Reply with ONLY your answer to guess, or reply exactly 'HINT' to reveal the next hint.",
+          "revealed_hints": [
+            "[definition] The definition part of the clue is 'help'"
+          ],
+          "feedback": "Hint (definition): The definition part of the clue is 'help'"
         },
         "reasoning": "The hint confirms the definition; this is the answer.",
-        "action": "SWORD",
+        "action": "ABET",
         "reward": 0.8,
         "terminated": true,
         "truncated": false,
         "info": {
-          "clue_id": "placeholder-sword",
+          "clue_id": "2024-01-01",
+          "puzzle_id": "5a07f226-6338-4357-be96-c67cc138d8b2",
           "solved": "1",
           "guesses_used": "1",
           "hints_used": "1",
-          "human_avg_guesses": "3",
-          "device": "anagram",
+          "hint_order": "[\"definition\"]",
+          "par": "2",
+          "community_avg_par": "2",
+          "hints_to_par": "-1",
+          "under_or_at_par": "1",
+          "par_result": "below",
           "outcome": "solved",
           "reward": "0.8000"
         }
@@ -115,11 +233,34 @@
       {
         "step": 1,
         "observation": {
-          "clue": "Information from the points of the compass (4)",
-          "enumeration": "(4)",
-          "attempts_remaining": 6,
-          "hints_remaining": 3,
-          "instructions": "Solve this cryptic clue. A cryptic clue has a definition (at one end of the clue) plus wordplay that spells the same answer. The number in parentheses is the answer's length. Reply with ONLY your answer. To reveal a hint instead, reply exactly: HINT"
+          "clue": "Incriminate copper in murder case",
+          "enumeration": "(6)",
+          "answer_length": 6,
+          "word_lengths": [
+            6
+          ],
+          "rules": "Minute Cryptic \u2014 how to solve:\n- Every clue has TWO parts that both point to the same answer: a plain DEFINITION (always at the very start OR the very end of the clue) and WORDPLAY (the rest), which spells the answer by a hidden mechanism.\n- The number(s) in parentheses give the answer's length, e.g. (7) is a 7-letter word, (3,4) is a 3-letter word then a 4-letter word.\n- Common wordplay devices: anagram (letters jumbled, flagged by an indicator like 'mixed', 'broken', 'shredded', 'wild'); hidden word (answer sits inside consecutive letters of the clue); reversal ('back', 'returning', 'up' in a down clue); homophone ('we hear', 'sounds like'); charade (join shorter pieces in sequence); container ('in', 'around', 'holding'); deletion ('endless', 'heartless'); and abbreviations.\n- Answers are matched ignoring case, spaces and punctuation.\nACTIONS: reply with your answer to GUESS, or reply exactly 'HINT' to reveal the next hint. Hints first explain the clue, then reveal the answer's letters one at a time. Fewer hints is better \u2014 'par' is the expected number of hints for this clue, and you are scored against it.",
+          "common_substitutions": [
+            "love / nil / nothing / zero / duck -> O",
+            "the (in French) -> LE, LA, LES; (German) -> DER, DIE, DAS; (Spanish) -> EL",
+            "and -> N ('rock 'n' roll'); with -> W; without -> SANS",
+            "about -> C, CA, RE; around -> RE; concerning -> RE",
+            "Roman numerals: one -> I (or A/AN); five -> V; ten -> X; fifty -> L; hundred -> C; five hundred -> D; thousand -> M",
+            "left -> L; right -> R; first -> initial letter; finally -> last letter; heart/centre -> middle letter(s)",
+            "north/south/east/west -> N/S/E/W; point -> N, S, E or W",
+            "doctor -> DR, MO, MB; learner / novice -> L; graduate -> BA, MA",
+            "king -> K or R (rex); queen -> Q, ER or R; royal -> ER",
+            "quiet -> P or SH; loud -> F (forte); very loud -> FF",
+            "note (music) -> A B C D E F G, or DO RE MI FA SO LA TI",
+            "sailor -> AB, TAR, RN, OS; soldier(s) -> GI, RE, TA, ANT(s); navy -> RN",
+            "river -> R; lake -> L; road / street / way -> RD, ST, AVE, WAY",
+            "old -> O; new -> N; good -> G; gold -> AU or OR; iron -> FE",
+            "time -> T; hour -> HR; year -> Y; second -> S or MO; moment -> MO",
+            "company -> CO, LTD, INC; society -> S, SOC; party -> DO, LAB, CON"
+          ],
+          "hints_taken": 0,
+          "par": 3,
+          "instructions": "Reply with ONLY your answer to guess, or reply exactly 'HINT' to reveal the next hint."
         },
         "reasoning": "Not certain yet \u2014 I'll spend one hint to confirm the definition.",
         "action": "HINT",
@@ -127,12 +268,17 @@
         "terminated": false,
         "truncated": false,
         "info": {
-          "clue_id": "placeholder-news",
+          "clue_id": "2024-01-02",
+          "puzzle_id": "53c4315a-7de2-4126-919f-704a0b0f61ed",
           "solved": "0",
           "guesses_used": "0",
           "hints_used": "1",
-          "human_avg_guesses": "4",
-          "device": "initialism",
+          "hint_order": "[\"definition\"]",
+          "par": "3",
+          "community_avg_par": "3",
+          "hints_to_par": "-2",
+          "under_or_at_par": "1",
+          "par_result": "below",
           "outcome": "hint",
           "reward": "0.0000"
         }
@@ -140,25 +286,56 @@
       {
         "step": 2,
         "observation": {
-          "clue": "Information from the points of the compass (4)",
-          "enumeration": "(4)",
-          "attempts_remaining": 6,
-          "hints_remaining": 2,
-          "instructions": "Solve this cryptic clue. A cryptic clue has a definition (at one end of the clue) plus wordplay that spells the same answer. The number in parentheses is the answer's length. Reply with ONLY your answer. To reveal a hint instead, reply exactly: HINT",
-          "feedback": "Hint: The definition part of the clue is: 'Information'."
+          "clue": "Incriminate copper in murder case",
+          "enumeration": "(6)",
+          "answer_length": 6,
+          "word_lengths": [
+            6
+          ],
+          "rules": "Minute Cryptic \u2014 how to solve:\n- Every clue has TWO parts that both point to the same answer: a plain DEFINITION (always at the very start OR the very end of the clue) and WORDPLAY (the rest), which spells the answer by a hidden mechanism.\n- The number(s) in parentheses give the answer's length, e.g. (7) is a 7-letter word, (3,4) is a 3-letter word then a 4-letter word.\n- Common wordplay devices: anagram (letters jumbled, flagged by an indicator like 'mixed', 'broken', 'shredded', 'wild'); hidden word (answer sits inside consecutive letters of the clue); reversal ('back', 'returning', 'up' in a down clue); homophone ('we hear', 'sounds like'); charade (join shorter pieces in sequence); container ('in', 'around', 'holding'); deletion ('endless', 'heartless'); and abbreviations.\n- Answers are matched ignoring case, spaces and punctuation.\nACTIONS: reply with your answer to GUESS, or reply exactly 'HINT' to reveal the next hint. Hints first explain the clue, then reveal the answer's letters one at a time. Fewer hints is better \u2014 'par' is the expected number of hints for this clue, and you are scored against it.",
+          "common_substitutions": [
+            "love / nil / nothing / zero / duck -> O",
+            "the (in French) -> LE, LA, LES; (German) -> DER, DIE, DAS; (Spanish) -> EL",
+            "and -> N ('rock 'n' roll'); with -> W; without -> SANS",
+            "about -> C, CA, RE; around -> RE; concerning -> RE",
+            "Roman numerals: one -> I (or A/AN); five -> V; ten -> X; fifty -> L; hundred -> C; five hundred -> D; thousand -> M",
+            "left -> L; right -> R; first -> initial letter; finally -> last letter; heart/centre -> middle letter(s)",
+            "north/south/east/west -> N/S/E/W; point -> N, S, E or W",
+            "doctor -> DR, MO, MB; learner / novice -> L; graduate -> BA, MA",
+            "king -> K or R (rex); queen -> Q, ER or R; royal -> ER",
+            "quiet -> P or SH; loud -> F (forte); very loud -> FF",
+            "note (music) -> A B C D E F G, or DO RE MI FA SO LA TI",
+            "sailor -> AB, TAR, RN, OS; soldier(s) -> GI, RE, TA, ANT(s); navy -> RN",
+            "river -> R; lake -> L; road / street / way -> RD, ST, AVE, WAY",
+            "old -> O; new -> N; good -> G; gold -> AU or OR; iron -> FE",
+            "time -> T; hour -> HR; year -> Y; second -> S or MO; moment -> MO",
+            "company -> CO, LTD, INC; society -> S, SOC; party -> DO, LAB, CON"
+          ],
+          "hints_taken": 1,
+          "par": 3,
+          "instructions": "Reply with ONLY your answer to guess, or reply exactly 'HINT' to reveal the next hint.",
+          "revealed_hints": [
+            "[definition] The definition part of the clue is 'Incriminate'"
+          ],
+          "feedback": "Hint (definition): The definition part of the clue is 'Incriminate'"
         },
         "reasoning": "The hint confirms the definition; this is the answer.",
-        "action": "NEWS",
+        "action": "ACCUSE",
         "reward": 0.8,
         "terminated": true,
         "truncated": false,
         "info": {
-          "clue_id": "placeholder-news",
+          "clue_id": "2024-01-02",
+          "puzzle_id": "53c4315a-7de2-4126-919f-704a0b0f61ed",
           "solved": "1",
           "guesses_used": "1",
           "hints_used": "1",
-          "human_avg_guesses": "4",
-          "device": "initialism",
+          "hint_order": "[\"definition\"]",
+          "par": "3",
+          "community_avg_par": "3",
+          "hints_to_par": "-2",
+          "under_or_at_par": "1",
+          "par_result": "below",
           "outcome": "solved",
           "reward": "0.8000"
         }
@@ -168,11 +345,34 @@
       {
         "step": 1,
         "observation": {
-          "clue": "Two girls, one on each knee (7)",
-          "enumeration": "(7)",
-          "attempts_remaining": 6,
-          "hints_remaining": 3,
-          "instructions": "Solve this cryptic clue. A cryptic clue has a definition (at one end of the clue) plus wordplay that spells the same answer. The number in parentheses is the answer's length. Reply with ONLY your answer. To reveal a hint instead, reply exactly: HINT"
+          "clue": "Champions reject slice of cheesecake",
+          "enumeration": "(4)",
+          "answer_length": 4,
+          "word_lengths": [
+            4
+          ],
+          "rules": "Minute Cryptic \u2014 how to solve:\n- Every clue has TWO parts that both point to the same answer: a plain DEFINITION (always at the very start OR the very end of the clue) and WORDPLAY (the rest), which spells the answer by a hidden mechanism.\n- The number(s) in parentheses give the answer's length, e.g. (7) is a 7-letter word, (3,4) is a 3-letter word then a 4-letter word.\n- Common wordplay devices: anagram (letters jumbled, flagged by an indicator like 'mixed', 'broken', 'shredded', 'wild'); hidden word (answer sits inside consecutive letters of the clue); reversal ('back', 'returning', 'up' in a down clue); homophone ('we hear', 'sounds like'); charade (join shorter pieces in sequence); container ('in', 'around', 'holding'); deletion ('endless', 'heartless'); and abbreviations.\n- Answers are matched ignoring case, spaces and punctuation.\nACTIONS: reply with your answer to GUESS, or reply exactly 'HINT' to reveal the next hint. Hints first explain the clue, then reveal the answer's letters one at a time. Fewer hints is better \u2014 'par' is the expected number of hints for this clue, and you are scored against it.",
+          "common_substitutions": [
+            "love / nil / nothing / zero / duck -> O",
+            "the (in French) -> LE, LA, LES; (German) -> DER, DIE, DAS; (Spanish) -> EL",
+            "and -> N ('rock 'n' roll'); with -> W; without -> SANS",
+            "about -> C, CA, RE; around -> RE; concerning -> RE",
+            "Roman numerals: one -> I (or A/AN); five -> V; ten -> X; fifty -> L; hundred -> C; five hundred -> D; thousand -> M",
+            "left -> L; right -> R; first -> initial letter; finally -> last letter; heart/centre -> middle letter(s)",
+            "north/south/east/west -> N/S/E/W; point -> N, S, E or W",
+            "doctor -> DR, MO, MB; learner / novice -> L; graduate -> BA, MA",
+            "king -> K or R (rex); queen -> Q, ER or R; royal -> ER",
+            "quiet -> P or SH; loud -> F (forte); very loud -> FF",
+            "note (music) -> A B C D E F G, or DO RE MI FA SO LA TI",
+            "sailor -> AB, TAR, RN, OS; soldier(s) -> GI, RE, TA, ANT(s); navy -> RN",
+            "river -> R; lake -> L; road / street / way -> RD, ST, AVE, WAY",
+            "old -> O; new -> N; good -> G; gold -> AU or OR; iron -> FE",
+            "time -> T; hour -> HR; year -> Y; second -> S or MO; moment -> MO",
+            "company -> CO, LTD, INC; society -> S, SOC; party -> DO, LAB, CON"
+          ],
+          "hints_taken": 0,
+          "par": 2,
+          "instructions": "Reply with ONLY your answer to guess, or reply exactly 'HINT' to reveal the next hint."
         },
         "reasoning": "Not certain yet \u2014 I'll spend one hint to confirm the definition.",
         "action": "HINT",
@@ -180,12 +380,17 @@
         "terminated": false,
         "truncated": false,
         "info": {
-          "clue_id": "placeholder-patella",
+          "clue_id": "2024-01-03",
+          "puzzle_id": "785242e3-e4a8-41a4-b267-1e0012ae4eff",
           "solved": "0",
           "guesses_used": "0",
           "hints_used": "1",
-          "human_avg_guesses": "5",
-          "device": "charade (Pat + Ella)",
+          "hint_order": "[\"definition\"]",
+          "par": "2",
+          "community_avg_par": "2",
+          "hints_to_par": "-1",
+          "under_or_at_par": "1",
+          "par_result": "below",
           "outcome": "hint",
           "reward": "0.0000"
         }
@@ -193,25 +398,56 @@
       {
         "step": 2,
         "observation": {
-          "clue": "Two girls, one on each knee (7)",
-          "enumeration": "(7)",
-          "attempts_remaining": 6,
-          "hints_remaining": 2,
-          "instructions": "Solve this cryptic clue. A cryptic clue has a definition (at one end of the clue) plus wordplay that spells the same answer. The number in parentheses is the answer's length. Reply with ONLY your answer. To reveal a hint instead, reply exactly: HINT",
-          "feedback": "Hint: The definition part of the clue is: 'knee'."
+          "clue": "Champions reject slice of cheesecake",
+          "enumeration": "(4)",
+          "answer_length": 4,
+          "word_lengths": [
+            4
+          ],
+          "rules": "Minute Cryptic \u2014 how to solve:\n- Every clue has TWO parts that both point to the same answer: a plain DEFINITION (always at the very start OR the very end of the clue) and WORDPLAY (the rest), which spells the answer by a hidden mechanism.\n- The number(s) in parentheses give the answer's length, e.g. (7) is a 7-letter word, (3,4) is a 3-letter word then a 4-letter word.\n- Common wordplay devices: anagram (letters jumbled, flagged by an indicator like 'mixed', 'broken', 'shredded', 'wild'); hidden word (answer sits inside consecutive letters of the clue); reversal ('back', 'returning', 'up' in a down clue); homophone ('we hear', 'sounds like'); charade (join shorter pieces in sequence); container ('in', 'around', 'holding'); deletion ('endless', 'heartless'); and abbreviations.\n- Answers are matched ignoring case, spaces and punctuation.\nACTIONS: reply with your answer to GUESS, or reply exactly 'HINT' to reveal the next hint. Hints first explain the clue, then reveal the answer's letters one at a time. Fewer hints is better \u2014 'par' is the expected number of hints for this clue, and you are scored against it.",
+          "common_substitutions": [
+            "love / nil / nothing / zero / duck -> O",
+            "the (in French) -> LE, LA, LES; (German) -> DER, DIE, DAS; (Spanish) -> EL",
+            "and -> N ('rock 'n' roll'); with -> W; without -> SANS",
+            "about -> C, CA, RE; around -> RE; concerning -> RE",
+            "Roman numerals: one -> I (or A/AN); five -> V; ten -> X; fifty -> L; hundred -> C; five hundred -> D; thousand -> M",
+            "left -> L; right -> R; first -> initial letter; finally -> last letter; heart/centre -> middle letter(s)",
+            "north/south/east/west -> N/S/E/W; point -> N, S, E or W",
+            "doctor -> DR, MO, MB; learner / novice -> L; graduate -> BA, MA",
+            "king -> K or R (rex); queen -> Q, ER or R; royal -> ER",
+            "quiet -> P or SH; loud -> F (forte); very loud -> FF",
+            "note (music) -> A B C D E F G, or DO RE MI FA SO LA TI",
+            "sailor -> AB, TAR, RN, OS; soldier(s) -> GI, RE, TA, ANT(s); navy -> RN",
+            "river -> R; lake -> L; road / street / way -> RD, ST, AVE, WAY",
+            "old -> O; new -> N; good -> G; gold -> AU or OR; iron -> FE",
+            "time -> T; hour -> HR; year -> Y; second -> S or MO; moment -> MO",
+            "company -> CO, LTD, INC; society -> S, SOC; party -> DO, LAB, CON"
+          ],
+          "hints_taken": 1,
+          "par": 2,
+          "instructions": "Reply with ONLY your answer to guess, or reply exactly 'HINT' to reveal the next hint.",
+          "revealed_hints": [
+            "[definition] The definition part of the clue is 'Champions'"
+          ],
+          "feedback": "Hint (definition): The definition part of the clue is 'Champions'"
         },
         "reasoning": "The hint confirms the definition; this is the answer.",
-        "action": "PATELLA",
+        "action": "ACES",
         "reward": 0.8,
         "terminated": true,
         "truncated": false,
         "info": {
-          "clue_id": "placeholder-patella",
+          "clue_id": "2024-01-03",
+          "puzzle_id": "785242e3-e4a8-41a4-b267-1e0012ae4eff",
           "solved": "1",
           "guesses_used": "1",
           "hints_used": "1",
-          "human_avg_guesses": "5",
-          "device": "charade (Pat + Ella)",
+          "hint_order": "[\"definition\"]",
+          "par": "2",
+          "community_avg_par": "2",
+          "hints_to_par": "-1",
+          "under_or_at_par": "1",
+          "par_result": "below",
           "outcome": "solved",
           "reward": "0.8000"
         }
@@ -221,11 +457,34 @@
       {
         "step": 1,
         "observation": {
-          "clue": "Die of cold (3,4)",
-          "enumeration": "(3,4)",
-          "attempts_remaining": 6,
-          "hints_remaining": 3,
-          "instructions": "Solve this cryptic clue. A cryptic clue has a definition (at one end of the clue) plus wordplay that spells the same answer. The number in parentheses is the answer's length. Reply with ONLY your answer. To reveal a hint instead, reply exactly: HINT"
+          "clue": "Beer emptied right on guard",
+          "enumeration": "(5)",
+          "answer_length": 5,
+          "word_lengths": [
+            5
+          ],
+          "rules": "Minute Cryptic \u2014 how to solve:\n- Every clue has TWO parts that both point to the same answer: a plain DEFINITION (always at the very start OR the very end of the clue) and WORDPLAY (the rest), which spells the answer by a hidden mechanism.\n- The number(s) in parentheses give the answer's length, e.g. (7) is a 7-letter word, (3,4) is a 3-letter word then a 4-letter word.\n- Common wordplay devices: anagram (letters jumbled, flagged by an indicator like 'mixed', 'broken', 'shredded', 'wild'); hidden word (answer sits inside consecutive letters of the clue); reversal ('back', 'returning', 'up' in a down clue); homophone ('we hear', 'sounds like'); charade (join shorter pieces in sequence); container ('in', 'around', 'holding'); deletion ('endless', 'heartless'); and abbreviations.\n- Answers are matched ignoring case, spaces and punctuation.\nACTIONS: reply with your answer to GUESS, or reply exactly 'HINT' to reveal the next hint. Hints first explain the clue, then reveal the answer's letters one at a time. Fewer hints is better \u2014 'par' is the expected number of hints for this clue, and you are scored against it.",
+          "common_substitutions": [
+            "love / nil / nothing / zero / duck -> O",
+            "the (in French) -> LE, LA, LES; (German) -> DER, DIE, DAS; (Spanish) -> EL",
+            "and -> N ('rock 'n' roll'); with -> W; without -> SANS",
+            "about -> C, CA, RE; around -> RE; concerning -> RE",
+            "Roman numerals: one -> I (or A/AN); five -> V; ten -> X; fifty -> L; hundred -> C; five hundred -> D; thousand -> M",
+            "left -> L; right -> R; first -> initial letter; finally -> last letter; heart/centre -> middle letter(s)",
+            "north/south/east/west -> N/S/E/W; point -> N, S, E or W",
+            "doctor -> DR, MO, MB; learner / novice -> L; graduate -> BA, MA",
+            "king -> K or R (rex); queen -> Q, ER or R; royal -> ER",
+            "quiet -> P or SH; loud -> F (forte); very loud -> FF",
+            "note (music) -> A B C D E F G, or DO RE MI FA SO LA TI",
+            "sailor -> AB, TAR, RN, OS; soldier(s) -> GI, RE, TA, ANT(s); navy -> RN",
+            "river -> R; lake -> L; road / street / way -> RD, ST, AVE, WAY",
+            "old -> O; new -> N; good -> G; gold -> AU or OR; iron -> FE",
+            "time -> T; hour -> HR; year -> Y; second -> S or MO; moment -> MO",
+            "company -> CO, LTD, INC; society -> S, SOC; party -> DO, LAB, CON"
+          ],
+          "hints_taken": 0,
+          "par": 2,
+          "instructions": "Reply with ONLY your answer to guess, or reply exactly 'HINT' to reveal the next hint."
         },
         "reasoning": "Not certain yet \u2014 I'll spend one hint to confirm the definition.",
         "action": "HINT",
@@ -233,12 +492,17 @@
         "terminated": false,
         "truncated": false,
         "info": {
-          "clue_id": "placeholder-icecube",
+          "clue_id": "2024-01-04",
+          "puzzle_id": "6bd07a05-0fca-480b-99c1-df0ec0ad2e08",
           "solved": "0",
           "guesses_used": "0",
           "hints_used": "1",
-          "human_avg_guesses": "6",
-          "device": "cryptic definition",
+          "hint_order": "[\"definition\"]",
+          "par": "2",
+          "community_avg_par": "2",
+          "hints_to_par": "-1",
+          "under_or_at_par": "1",
+          "par_result": "below",
           "outcome": "hint",
           "reward": "0.0000"
         }
@@ -246,25 +510,844 @@
       {
         "step": 2,
         "observation": {
-          "clue": "Die of cold (3,4)",
-          "enumeration": "(3,4)",
-          "attempts_remaining": 6,
-          "hints_remaining": 2,
-          "instructions": "Solve this cryptic clue. A cryptic clue has a definition (at one end of the clue) plus wordplay that spells the same answer. The number in parentheses is the answer's length. Reply with ONLY your answer. To reveal a hint instead, reply exactly: HINT",
-          "feedback": "Hint: The definition is 'Die' \u2014 think of a die as a cube, not death."
+          "clue": "Beer emptied right on guard",
+          "enumeration": "(5)",
+          "answer_length": 5,
+          "word_lengths": [
+            5
+          ],
+          "rules": "Minute Cryptic \u2014 how to solve:\n- Every clue has TWO parts that both point to the same answer: a plain DEFINITION (always at the very start OR the very end of the clue) and WORDPLAY (the rest), which spells the answer by a hidden mechanism.\n- The number(s) in parentheses give the answer's length, e.g. (7) is a 7-letter word, (3,4) is a 3-letter word then a 4-letter word.\n- Common wordplay devices: anagram (letters jumbled, flagged by an indicator like 'mixed', 'broken', 'shredded', 'wild'); hidden word (answer sits inside consecutive letters of the clue); reversal ('back', 'returning', 'up' in a down clue); homophone ('we hear', 'sounds like'); charade (join shorter pieces in sequence); container ('in', 'around', 'holding'); deletion ('endless', 'heartless'); and abbreviations.\n- Answers are matched ignoring case, spaces and punctuation.\nACTIONS: reply with your answer to GUESS, or reply exactly 'HINT' to reveal the next hint. Hints first explain the clue, then reveal the answer's letters one at a time. Fewer hints is better \u2014 'par' is the expected number of hints for this clue, and you are scored against it.",
+          "common_substitutions": [
+            "love / nil / nothing / zero / duck -> O",
+            "the (in French) -> LE, LA, LES; (German) -> DER, DIE, DAS; (Spanish) -> EL",
+            "and -> N ('rock 'n' roll'); with -> W; without -> SANS",
+            "about -> C, CA, RE; around -> RE; concerning -> RE",
+            "Roman numerals: one -> I (or A/AN); five -> V; ten -> X; fifty -> L; hundred -> C; five hundred -> D; thousand -> M",
+            "left -> L; right -> R; first -> initial letter; finally -> last letter; heart/centre -> middle letter(s)",
+            "north/south/east/west -> N/S/E/W; point -> N, S, E or W",
+            "doctor -> DR, MO, MB; learner / novice -> L; graduate -> BA, MA",
+            "king -> K or R (rex); queen -> Q, ER or R; royal -> ER",
+            "quiet -> P or SH; loud -> F (forte); very loud -> FF",
+            "note (music) -> A B C D E F G, or DO RE MI FA SO LA TI",
+            "sailor -> AB, TAR, RN, OS; soldier(s) -> GI, RE, TA, ANT(s); navy -> RN",
+            "river -> R; lake -> L; road / street / way -> RD, ST, AVE, WAY",
+            "old -> O; new -> N; good -> G; gold -> AU or OR; iron -> FE",
+            "time -> T; hour -> HR; year -> Y; second -> S or MO; moment -> MO",
+            "company -> CO, LTD, INC; society -> S, SOC; party -> DO, LAB, CON"
+          ],
+          "hints_taken": 1,
+          "par": 2,
+          "instructions": "Reply with ONLY your answer to guess, or reply exactly 'HINT' to reveal the next hint.",
+          "revealed_hints": [
+            "[definition] The definition part of the clue is 'on guard'"
+          ],
+          "feedback": "Hint (definition): The definition part of the clue is 'on guard'"
         },
         "reasoning": "The hint confirms the definition; this is the answer.",
-        "action": "ICE CUBE",
+        "action": "ALERT",
         "reward": 0.8,
         "terminated": true,
         "truncated": false,
         "info": {
-          "clue_id": "placeholder-icecube",
+          "clue_id": "2024-01-04",
+          "puzzle_id": "6bd07a05-0fca-480b-99c1-df0ec0ad2e08",
           "solved": "1",
           "guesses_used": "1",
           "hints_used": "1",
-          "human_avg_guesses": "6",
-          "device": "cryptic definition",
+          "hint_order": "[\"definition\"]",
+          "par": "2",
+          "community_avg_par": "2",
+          "hints_to_par": "-1",
+          "under_or_at_par": "1",
+          "par_result": "below",
+          "outcome": "solved",
+          "reward": "0.8000"
+        }
+      }
+    ],
+    "careful-solver-ep5": [
+      {
+        "step": 1,
+        "observation": {
+          "clue": "Request in court squash rallies ?",
+          "enumeration": "(3,4)",
+          "answer_length": 7,
+          "word_lengths": [
+            3,
+            4
+          ],
+          "rules": "Minute Cryptic \u2014 how to solve:\n- Every clue has TWO parts that both point to the same answer: a plain DEFINITION (always at the very start OR the very end of the clue) and WORDPLAY (the rest), which spells the answer by a hidden mechanism.\n- The number(s) in parentheses give the answer's length, e.g. (7) is a 7-letter word, (3,4) is a 3-letter word then a 4-letter word.\n- Common wordplay devices: anagram (letters jumbled, flagged by an indicator like 'mixed', 'broken', 'shredded', 'wild'); hidden word (answer sits inside consecutive letters of the clue); reversal ('back', 'returning', 'up' in a down clue); homophone ('we hear', 'sounds like'); charade (join shorter pieces in sequence); container ('in', 'around', 'holding'); deletion ('endless', 'heartless'); and abbreviations.\n- Answers are matched ignoring case, spaces and punctuation.\nACTIONS: reply with your answer to GUESS, or reply exactly 'HINT' to reveal the next hint. Hints first explain the clue, then reveal the answer's letters one at a time. Fewer hints is better \u2014 'par' is the expected number of hints for this clue, and you are scored against it.",
+          "common_substitutions": [
+            "love / nil / nothing / zero / duck -> O",
+            "the (in French) -> LE, LA, LES; (German) -> DER, DIE, DAS; (Spanish) -> EL",
+            "and -> N ('rock 'n' roll'); with -> W; without -> SANS",
+            "about -> C, CA, RE; around -> RE; concerning -> RE",
+            "Roman numerals: one -> I (or A/AN); five -> V; ten -> X; fifty -> L; hundred -> C; five hundred -> D; thousand -> M",
+            "left -> L; right -> R; first -> initial letter; finally -> last letter; heart/centre -> middle letter(s)",
+            "north/south/east/west -> N/S/E/W; point -> N, S, E or W",
+            "doctor -> DR, MO, MB; learner / novice -> L; graduate -> BA, MA",
+            "king -> K or R (rex); queen -> Q, ER or R; royal -> ER",
+            "quiet -> P or SH; loud -> F (forte); very loud -> FF",
+            "note (music) -> A B C D E F G, or DO RE MI FA SO LA TI",
+            "sailor -> AB, TAR, RN, OS; soldier(s) -> GI, RE, TA, ANT(s); navy -> RN",
+            "river -> R; lake -> L; road / street / way -> RD, ST, AVE, WAY",
+            "old -> O; new -> N; good -> G; gold -> AU or OR; iron -> FE",
+            "time -> T; hour -> HR; year -> Y; second -> S or MO; moment -> MO",
+            "company -> CO, LTD, INC; society -> S, SOC; party -> DO, LAB, CON"
+          ],
+          "hints_taken": 0,
+          "par": 3,
+          "instructions": "Reply with ONLY your answer to guess, or reply exactly 'HINT' to reveal the next hint."
+        },
+        "reasoning": "Not certain yet \u2014 I'll spend one hint to confirm the definition.",
+        "action": "HINT",
+        "reward": 0.0,
+        "terminated": false,
+        "truncated": false,
+        "info": {
+          "clue_id": "2024-01-05",
+          "puzzle_id": "9a81011f-b1f9-44d5-b1c4-da57a9c61372",
+          "solved": "0",
+          "guesses_used": "0",
+          "hints_used": "1",
+          "hint_order": "[\"definition\"]",
+          "par": "3",
+          "community_avg_par": "3",
+          "hints_to_par": "-2",
+          "under_or_at_par": "1",
+          "par_result": "below",
+          "outcome": "hint",
+          "reward": "0.0000"
+        }
+      },
+      {
+        "step": 2,
+        "observation": {
+          "clue": "Request in court squash rallies ?",
+          "enumeration": "(3,4)",
+          "answer_length": 7,
+          "word_lengths": [
+            3,
+            4
+          ],
+          "rules": "Minute Cryptic \u2014 how to solve:\n- Every clue has TWO parts that both point to the same answer: a plain DEFINITION (always at the very start OR the very end of the clue) and WORDPLAY (the rest), which spells the answer by a hidden mechanism.\n- The number(s) in parentheses give the answer's length, e.g. (7) is a 7-letter word, (3,4) is a 3-letter word then a 4-letter word.\n- Common wordplay devices: anagram (letters jumbled, flagged by an indicator like 'mixed', 'broken', 'shredded', 'wild'); hidden word (answer sits inside consecutive letters of the clue); reversal ('back', 'returning', 'up' in a down clue); homophone ('we hear', 'sounds like'); charade (join shorter pieces in sequence); container ('in', 'around', 'holding'); deletion ('endless', 'heartless'); and abbreviations.\n- Answers are matched ignoring case, spaces and punctuation.\nACTIONS: reply with your answer to GUESS, or reply exactly 'HINT' to reveal the next hint. Hints first explain the clue, then reveal the answer's letters one at a time. Fewer hints is better \u2014 'par' is the expected number of hints for this clue, and you are scored against it.",
+          "common_substitutions": [
+            "love / nil / nothing / zero / duck -> O",
+            "the (in French) -> LE, LA, LES; (German) -> DER, DIE, DAS; (Spanish) -> EL",
+            "and -> N ('rock 'n' roll'); with -> W; without -> SANS",
+            "about -> C, CA, RE; around -> RE; concerning -> RE",
+            "Roman numerals: one -> I (or A/AN); five -> V; ten -> X; fifty -> L; hundred -> C; five hundred -> D; thousand -> M",
+            "left -> L; right -> R; first -> initial letter; finally -> last letter; heart/centre -> middle letter(s)",
+            "north/south/east/west -> N/S/E/W; point -> N, S, E or W",
+            "doctor -> DR, MO, MB; learner / novice -> L; graduate -> BA, MA",
+            "king -> K or R (rex); queen -> Q, ER or R; royal -> ER",
+            "quiet -> P or SH; loud -> F (forte); very loud -> FF",
+            "note (music) -> A B C D E F G, or DO RE MI FA SO LA TI",
+            "sailor -> AB, TAR, RN, OS; soldier(s) -> GI, RE, TA, ANT(s); navy -> RN",
+            "river -> R; lake -> L; road / street / way -> RD, ST, AVE, WAY",
+            "old -> O; new -> N; good -> G; gold -> AU or OR; iron -> FE",
+            "time -> T; hour -> HR; year -> Y; second -> S or MO; moment -> MO",
+            "company -> CO, LTD, INC; society -> S, SOC; party -> DO, LAB, CON"
+          ],
+          "hints_taken": 1,
+          "par": 3,
+          "instructions": "Reply with ONLY your answer to guess, or reply exactly 'HINT' to reveal the next hint.",
+          "revealed_hints": [
+            "[definition] The definition part of the clue is 'Request in court'"
+          ],
+          "feedback": "Hint (definition): The definition part of the clue is 'Request in court'"
+        },
+        "reasoning": "The hint confirms the definition; this is the answer.",
+        "action": "ALL RISE",
+        "reward": 0.8,
+        "terminated": true,
+        "truncated": false,
+        "info": {
+          "clue_id": "2024-01-05",
+          "puzzle_id": "9a81011f-b1f9-44d5-b1c4-da57a9c61372",
+          "solved": "1",
+          "guesses_used": "1",
+          "hints_used": "1",
+          "hint_order": "[\"definition\"]",
+          "par": "3",
+          "community_avg_par": "3",
+          "hints_to_par": "-2",
+          "under_or_at_par": "1",
+          "par_result": "below",
+          "outcome": "solved",
+          "reward": "0.8000"
+        }
+      }
+    ],
+    "careful-solver-ep6": [
+      {
+        "step": 1,
+        "observation": {
+          "clue": "Loser steals orange slice",
+          "enumeration": "(4,3)",
+          "answer_length": 7,
+          "word_lengths": [
+            4,
+            3
+          ],
+          "rules": "Minute Cryptic \u2014 how to solve:\n- Every clue has TWO parts that both point to the same answer: a plain DEFINITION (always at the very start OR the very end of the clue) and WORDPLAY (the rest), which spells the answer by a hidden mechanism.\n- The number(s) in parentheses give the answer's length, e.g. (7) is a 7-letter word, (3,4) is a 3-letter word then a 4-letter word.\n- Common wordplay devices: anagram (letters jumbled, flagged by an indicator like 'mixed', 'broken', 'shredded', 'wild'); hidden word (answer sits inside consecutive letters of the clue); reversal ('back', 'returning', 'up' in a down clue); homophone ('we hear', 'sounds like'); charade (join shorter pieces in sequence); container ('in', 'around', 'holding'); deletion ('endless', 'heartless'); and abbreviations.\n- Answers are matched ignoring case, spaces and punctuation.\nACTIONS: reply with your answer to GUESS, or reply exactly 'HINT' to reveal the next hint. Hints first explain the clue, then reveal the answer's letters one at a time. Fewer hints is better \u2014 'par' is the expected number of hints for this clue, and you are scored against it.",
+          "common_substitutions": [
+            "love / nil / nothing / zero / duck -> O",
+            "the (in French) -> LE, LA, LES; (German) -> DER, DIE, DAS; (Spanish) -> EL",
+            "and -> N ('rock 'n' roll'); with -> W; without -> SANS",
+            "about -> C, CA, RE; around -> RE; concerning -> RE",
+            "Roman numerals: one -> I (or A/AN); five -> V; ten -> X; fifty -> L; hundred -> C; five hundred -> D; thousand -> M",
+            "left -> L; right -> R; first -> initial letter; finally -> last letter; heart/centre -> middle letter(s)",
+            "north/south/east/west -> N/S/E/W; point -> N, S, E or W",
+            "doctor -> DR, MO, MB; learner / novice -> L; graduate -> BA, MA",
+            "king -> K or R (rex); queen -> Q, ER or R; royal -> ER",
+            "quiet -> P or SH; loud -> F (forte); very loud -> FF",
+            "note (music) -> A B C D E F G, or DO RE MI FA SO LA TI",
+            "sailor -> AB, TAR, RN, OS; soldier(s) -> GI, RE, TA, ANT(s); navy -> RN",
+            "river -> R; lake -> L; road / street / way -> RD, ST, AVE, WAY",
+            "old -> O; new -> N; good -> G; gold -> AU or OR; iron -> FE",
+            "time -> T; hour -> HR; year -> Y; second -> S or MO; moment -> MO",
+            "company -> CO, LTD, INC; society -> S, SOC; party -> DO, LAB, CON"
+          ],
+          "hints_taken": 0,
+          "par": 3,
+          "instructions": "Reply with ONLY your answer to guess, or reply exactly 'HINT' to reveal the next hint."
+        },
+        "reasoning": "Not certain yet \u2014 I'll spend one hint to confirm the definition.",
+        "action": "HINT",
+        "reward": 0.0,
+        "terminated": false,
+        "truncated": false,
+        "info": {
+          "clue_id": "2024-01-06",
+          "puzzle_id": "3f14ee84-cbc2-4634-aaa6-2f18b2aa7b23",
+          "solved": "0",
+          "guesses_used": "0",
+          "hints_used": "1",
+          "hint_order": "[\"definition\"]",
+          "par": "3",
+          "community_avg_par": "3",
+          "hints_to_par": "-2",
+          "under_or_at_par": "1",
+          "par_result": "below",
+          "outcome": "hint",
+          "reward": "0.0000"
+        }
+      },
+      {
+        "step": 2,
+        "observation": {
+          "clue": "Loser steals orange slice",
+          "enumeration": "(4,3)",
+          "answer_length": 7,
+          "word_lengths": [
+            4,
+            3
+          ],
+          "rules": "Minute Cryptic \u2014 how to solve:\n- Every clue has TWO parts that both point to the same answer: a plain DEFINITION (always at the very start OR the very end of the clue) and WORDPLAY (the rest), which spells the answer by a hidden mechanism.\n- The number(s) in parentheses give the answer's length, e.g. (7) is a 7-letter word, (3,4) is a 3-letter word then a 4-letter word.\n- Common wordplay devices: anagram (letters jumbled, flagged by an indicator like 'mixed', 'broken', 'shredded', 'wild'); hidden word (answer sits inside consecutive letters of the clue); reversal ('back', 'returning', 'up' in a down clue); homophone ('we hear', 'sounds like'); charade (join shorter pieces in sequence); container ('in', 'around', 'holding'); deletion ('endless', 'heartless'); and abbreviations.\n- Answers are matched ignoring case, spaces and punctuation.\nACTIONS: reply with your answer to GUESS, or reply exactly 'HINT' to reveal the next hint. Hints first explain the clue, then reveal the answer's letters one at a time. Fewer hints is better \u2014 'par' is the expected number of hints for this clue, and you are scored against it.",
+          "common_substitutions": [
+            "love / nil / nothing / zero / duck -> O",
+            "the (in French) -> LE, LA, LES; (German) -> DER, DIE, DAS; (Spanish) -> EL",
+            "and -> N ('rock 'n' roll'); with -> W; without -> SANS",
+            "about -> C, CA, RE; around -> RE; concerning -> RE",
+            "Roman numerals: one -> I (or A/AN); five -> V; ten -> X; fifty -> L; hundred -> C; five hundred -> D; thousand -> M",
+            "left -> L; right -> R; first -> initial letter; finally -> last letter; heart/centre -> middle letter(s)",
+            "north/south/east/west -> N/S/E/W; point -> N, S, E or W",
+            "doctor -> DR, MO, MB; learner / novice -> L; graduate -> BA, MA",
+            "king -> K or R (rex); queen -> Q, ER or R; royal -> ER",
+            "quiet -> P or SH; loud -> F (forte); very loud -> FF",
+            "note (music) -> A B C D E F G, or DO RE MI FA SO LA TI",
+            "sailor -> AB, TAR, RN, OS; soldier(s) -> GI, RE, TA, ANT(s); navy -> RN",
+            "river -> R; lake -> L; road / street / way -> RD, ST, AVE, WAY",
+            "old -> O; new -> N; good -> G; gold -> AU or OR; iron -> FE",
+            "time -> T; hour -> HR; year -> Y; second -> S or MO; moment -> MO",
+            "company -> CO, LTD, INC; society -> S, SOC; party -> DO, LAB, CON"
+          ],
+          "hints_taken": 1,
+          "par": 3,
+          "instructions": "Reply with ONLY your answer to guess, or reply exactly 'HINT' to reveal the next hint.",
+          "revealed_hints": [
+            "[definition] The definition part of the clue is 'Loser'"
+          ],
+          "feedback": "Hint (definition): The definition part of the clue is 'Loser'"
+        },
+        "reasoning": "The hint confirms the definition; this is the answer.",
+        "action": "ALSO RAN",
+        "reward": 0.8,
+        "terminated": true,
+        "truncated": false,
+        "info": {
+          "clue_id": "2024-01-06",
+          "puzzle_id": "3f14ee84-cbc2-4634-aaa6-2f18b2aa7b23",
+          "solved": "1",
+          "guesses_used": "1",
+          "hints_used": "1",
+          "hint_order": "[\"definition\"]",
+          "par": "3",
+          "community_avg_par": "3",
+          "hints_to_par": "-2",
+          "under_or_at_par": "1",
+          "par_result": "below",
+          "outcome": "solved",
+          "reward": "0.8000"
+        }
+      }
+    ],
+    "careful-solver-ep7": [
+      {
+        "step": 1,
+        "observation": {
+          "clue": "Wow , a child's puzzle !",
+          "enumeration": "(5)",
+          "answer_length": 5,
+          "word_lengths": [
+            5
+          ],
+          "rules": "Minute Cryptic \u2014 how to solve:\n- Every clue has TWO parts that both point to the same answer: a plain DEFINITION (always at the very start OR the very end of the clue) and WORDPLAY (the rest), which spells the answer by a hidden mechanism.\n- The number(s) in parentheses give the answer's length, e.g. (7) is a 7-letter word, (3,4) is a 3-letter word then a 4-letter word.\n- Common wordplay devices: anagram (letters jumbled, flagged by an indicator like 'mixed', 'broken', 'shredded', 'wild'); hidden word (answer sits inside consecutive letters of the clue); reversal ('back', 'returning', 'up' in a down clue); homophone ('we hear', 'sounds like'); charade (join shorter pieces in sequence); container ('in', 'around', 'holding'); deletion ('endless', 'heartless'); and abbreviations.\n- Answers are matched ignoring case, spaces and punctuation.\nACTIONS: reply with your answer to GUESS, or reply exactly 'HINT' to reveal the next hint. Hints first explain the clue, then reveal the answer's letters one at a time. Fewer hints is better \u2014 'par' is the expected number of hints for this clue, and you are scored against it.",
+          "common_substitutions": [
+            "love / nil / nothing / zero / duck -> O",
+            "the (in French) -> LE, LA, LES; (German) -> DER, DIE, DAS; (Spanish) -> EL",
+            "and -> N ('rock 'n' roll'); with -> W; without -> SANS",
+            "about -> C, CA, RE; around -> RE; concerning -> RE",
+            "Roman numerals: one -> I (or A/AN); five -> V; ten -> X; fifty -> L; hundred -> C; five hundred -> D; thousand -> M",
+            "left -> L; right -> R; first -> initial letter; finally -> last letter; heart/centre -> middle letter(s)",
+            "north/south/east/west -> N/S/E/W; point -> N, S, E or W",
+            "doctor -> DR, MO, MB; learner / novice -> L; graduate -> BA, MA",
+            "king -> K or R (rex); queen -> Q, ER or R; royal -> ER",
+            "quiet -> P or SH; loud -> F (forte); very loud -> FF",
+            "note (music) -> A B C D E F G, or DO RE MI FA SO LA TI",
+            "sailor -> AB, TAR, RN, OS; soldier(s) -> GI, RE, TA, ANT(s); navy -> RN",
+            "river -> R; lake -> L; road / street / way -> RD, ST, AVE, WAY",
+            "old -> O; new -> N; good -> G; gold -> AU or OR; iron -> FE",
+            "time -> T; hour -> HR; year -> Y; second -> S or MO; moment -> MO",
+            "company -> CO, LTD, INC; society -> S, SOC; party -> DO, LAB, CON"
+          ],
+          "hints_taken": 0,
+          "par": 2,
+          "instructions": "Reply with ONLY your answer to guess, or reply exactly 'HINT' to reveal the next hint."
+        },
+        "reasoning": "Not certain yet \u2014 I'll spend one hint to confirm the definition.",
+        "action": "HINT",
+        "reward": 0.0,
+        "terminated": false,
+        "truncated": false,
+        "info": {
+          "clue_id": "2024-01-07",
+          "puzzle_id": "89bbaf2e-476f-41f0-bc30-5e5fe7607174",
+          "solved": "0",
+          "guesses_used": "0",
+          "hints_used": "1",
+          "hint_order": "[\"definition\"]",
+          "par": "2",
+          "community_avg_par": "2",
+          "hints_to_par": "-1",
+          "under_or_at_par": "1",
+          "par_result": "below",
+          "outcome": "hint",
+          "reward": "0.0000"
+        }
+      },
+      {
+        "step": 2,
+        "observation": {
+          "clue": "Wow , a child's puzzle !",
+          "enumeration": "(5)",
+          "answer_length": 5,
+          "word_lengths": [
+            5
+          ],
+          "rules": "Minute Cryptic \u2014 how to solve:\n- Every clue has TWO parts that both point to the same answer: a plain DEFINITION (always at the very start OR the very end of the clue) and WORDPLAY (the rest), which spells the answer by a hidden mechanism.\n- The number(s) in parentheses give the answer's length, e.g. (7) is a 7-letter word, (3,4) is a 3-letter word then a 4-letter word.\n- Common wordplay devices: anagram (letters jumbled, flagged by an indicator like 'mixed', 'broken', 'shredded', 'wild'); hidden word (answer sits inside consecutive letters of the clue); reversal ('back', 'returning', 'up' in a down clue); homophone ('we hear', 'sounds like'); charade (join shorter pieces in sequence); container ('in', 'around', 'holding'); deletion ('endless', 'heartless'); and abbreviations.\n- Answers are matched ignoring case, spaces and punctuation.\nACTIONS: reply with your answer to GUESS, or reply exactly 'HINT' to reveal the next hint. Hints first explain the clue, then reveal the answer's letters one at a time. Fewer hints is better \u2014 'par' is the expected number of hints for this clue, and you are scored against it.",
+          "common_substitutions": [
+            "love / nil / nothing / zero / duck -> O",
+            "the (in French) -> LE, LA, LES; (German) -> DER, DIE, DAS; (Spanish) -> EL",
+            "and -> N ('rock 'n' roll'); with -> W; without -> SANS",
+            "about -> C, CA, RE; around -> RE; concerning -> RE",
+            "Roman numerals: one -> I (or A/AN); five -> V; ten -> X; fifty -> L; hundred -> C; five hundred -> D; thousand -> M",
+            "left -> L; right -> R; first -> initial letter; finally -> last letter; heart/centre -> middle letter(s)",
+            "north/south/east/west -> N/S/E/W; point -> N, S, E or W",
+            "doctor -> DR, MO, MB; learner / novice -> L; graduate -> BA, MA",
+            "king -> K or R (rex); queen -> Q, ER or R; royal -> ER",
+            "quiet -> P or SH; loud -> F (forte); very loud -> FF",
+            "note (music) -> A B C D E F G, or DO RE MI FA SO LA TI",
+            "sailor -> AB, TAR, RN, OS; soldier(s) -> GI, RE, TA, ANT(s); navy -> RN",
+            "river -> R; lake -> L; road / street / way -> RD, ST, AVE, WAY",
+            "old -> O; new -> N; good -> G; gold -> AU or OR; iron -> FE",
+            "time -> T; hour -> HR; year -> Y; second -> S or MO; moment -> MO",
+            "company -> CO, LTD, INC; society -> S, SOC; party -> DO, LAB, CON"
+          ],
+          "hints_taken": 1,
+          "par": 2,
+          "instructions": "Reply with ONLY your answer to guess, or reply exactly 'HINT' to reveal the next hint.",
+          "revealed_hints": [
+            "[definition] The definition part of the clue is 'Wow'"
+          ],
+          "feedback": "Hint (definition): The definition part of the clue is 'Wow'"
+        },
+        "reasoning": "The hint confirms the definition; this is the answer.",
+        "action": "AMAZE",
+        "reward": 0.8,
+        "terminated": true,
+        "truncated": false,
+        "info": {
+          "clue_id": "2024-01-07",
+          "puzzle_id": "89bbaf2e-476f-41f0-bc30-5e5fe7607174",
+          "solved": "1",
+          "guesses_used": "1",
+          "hints_used": "1",
+          "hint_order": "[\"definition\"]",
+          "par": "2",
+          "community_avg_par": "2",
+          "hints_to_par": "-1",
+          "under_or_at_par": "1",
+          "par_result": "below",
+          "outcome": "solved",
+          "reward": "0.8000"
+        }
+      }
+    ],
+    "careful-solver-ep8": [
+      {
+        "step": 1,
+        "observation": {
+          "clue": "Plead with individual to take a hike",
+          "enumeration": "(6)",
+          "answer_length": 6,
+          "word_lengths": [
+            6
+          ],
+          "rules": "Minute Cryptic \u2014 how to solve:\n- Every clue has TWO parts that both point to the same answer: a plain DEFINITION (always at the very start OR the very end of the clue) and WORDPLAY (the rest), which spells the answer by a hidden mechanism.\n- The number(s) in parentheses give the answer's length, e.g. (7) is a 7-letter word, (3,4) is a 3-letter word then a 4-letter word.\n- Common wordplay devices: anagram (letters jumbled, flagged by an indicator like 'mixed', 'broken', 'shredded', 'wild'); hidden word (answer sits inside consecutive letters of the clue); reversal ('back', 'returning', 'up' in a down clue); homophone ('we hear', 'sounds like'); charade (join shorter pieces in sequence); container ('in', 'around', 'holding'); deletion ('endless', 'heartless'); and abbreviations.\n- Answers are matched ignoring case, spaces and punctuation.\nACTIONS: reply with your answer to GUESS, or reply exactly 'HINT' to reveal the next hint. Hints first explain the clue, then reveal the answer's letters one at a time. Fewer hints is better \u2014 'par' is the expected number of hints for this clue, and you are scored against it.",
+          "common_substitutions": [
+            "love / nil / nothing / zero / duck -> O",
+            "the (in French) -> LE, LA, LES; (German) -> DER, DIE, DAS; (Spanish) -> EL",
+            "and -> N ('rock 'n' roll'); with -> W; without -> SANS",
+            "about -> C, CA, RE; around -> RE; concerning -> RE",
+            "Roman numerals: one -> I (or A/AN); five -> V; ten -> X; fifty -> L; hundred -> C; five hundred -> D; thousand -> M",
+            "left -> L; right -> R; first -> initial letter; finally -> last letter; heart/centre -> middle letter(s)",
+            "north/south/east/west -> N/S/E/W; point -> N, S, E or W",
+            "doctor -> DR, MO, MB; learner / novice -> L; graduate -> BA, MA",
+            "king -> K or R (rex); queen -> Q, ER or R; royal -> ER",
+            "quiet -> P or SH; loud -> F (forte); very loud -> FF",
+            "note (music) -> A B C D E F G, or DO RE MI FA SO LA TI",
+            "sailor -> AB, TAR, RN, OS; soldier(s) -> GI, RE, TA, ANT(s); navy -> RN",
+            "river -> R; lake -> L; road / street / way -> RD, ST, AVE, WAY",
+            "old -> O; new -> N; good -> G; gold -> AU or OR; iron -> FE",
+            "time -> T; hour -> HR; year -> Y; second -> S or MO; moment -> MO",
+            "company -> CO, LTD, INC; society -> S, SOC; party -> DO, LAB, CON"
+          ],
+          "hints_taken": 0,
+          "par": 3,
+          "instructions": "Reply with ONLY your answer to guess, or reply exactly 'HINT' to reveal the next hint."
+        },
+        "reasoning": "Not certain yet \u2014 I'll spend one hint to confirm the definition.",
+        "action": "HINT",
+        "reward": 0.0,
+        "terminated": false,
+        "truncated": false,
+        "info": {
+          "clue_id": "2024-01-08",
+          "puzzle_id": "dfde407e-3eb9-4f04-a3c6-3857c0a97c15",
+          "solved": "0",
+          "guesses_used": "0",
+          "hints_used": "1",
+          "hint_order": "[\"definition\"]",
+          "par": "3",
+          "community_avg_par": "3",
+          "hints_to_par": "-2",
+          "under_or_at_par": "1",
+          "par_result": "below",
+          "outcome": "hint",
+          "reward": "0.0000"
+        }
+      },
+      {
+        "step": 2,
+        "observation": {
+          "clue": "Plead with individual to take a hike",
+          "enumeration": "(6)",
+          "answer_length": 6,
+          "word_lengths": [
+            6
+          ],
+          "rules": "Minute Cryptic \u2014 how to solve:\n- Every clue has TWO parts that both point to the same answer: a plain DEFINITION (always at the very start OR the very end of the clue) and WORDPLAY (the rest), which spells the answer by a hidden mechanism.\n- The number(s) in parentheses give the answer's length, e.g. (7) is a 7-letter word, (3,4) is a 3-letter word then a 4-letter word.\n- Common wordplay devices: anagram (letters jumbled, flagged by an indicator like 'mixed', 'broken', 'shredded', 'wild'); hidden word (answer sits inside consecutive letters of the clue); reversal ('back', 'returning', 'up' in a down clue); homophone ('we hear', 'sounds like'); charade (join shorter pieces in sequence); container ('in', 'around', 'holding'); deletion ('endless', 'heartless'); and abbreviations.\n- Answers are matched ignoring case, spaces and punctuation.\nACTIONS: reply with your answer to GUESS, or reply exactly 'HINT' to reveal the next hint. Hints first explain the clue, then reveal the answer's letters one at a time. Fewer hints is better \u2014 'par' is the expected number of hints for this clue, and you are scored against it.",
+          "common_substitutions": [
+            "love / nil / nothing / zero / duck -> O",
+            "the (in French) -> LE, LA, LES; (German) -> DER, DIE, DAS; (Spanish) -> EL",
+            "and -> N ('rock 'n' roll'); with -> W; without -> SANS",
+            "about -> C, CA, RE; around -> RE; concerning -> RE",
+            "Roman numerals: one -> I (or A/AN); five -> V; ten -> X; fifty -> L; hundred -> C; five hundred -> D; thousand -> M",
+            "left -> L; right -> R; first -> initial letter; finally -> last letter; heart/centre -> middle letter(s)",
+            "north/south/east/west -> N/S/E/W; point -> N, S, E or W",
+            "doctor -> DR, MO, MB; learner / novice -> L; graduate -> BA, MA",
+            "king -> K or R (rex); queen -> Q, ER or R; royal -> ER",
+            "quiet -> P or SH; loud -> F (forte); very loud -> FF",
+            "note (music) -> A B C D E F G, or DO RE MI FA SO LA TI",
+            "sailor -> AB, TAR, RN, OS; soldier(s) -> GI, RE, TA, ANT(s); navy -> RN",
+            "river -> R; lake -> L; road / street / way -> RD, ST, AVE, WAY",
+            "old -> O; new -> N; good -> G; gold -> AU or OR; iron -> FE",
+            "time -> T; hour -> HR; year -> Y; second -> S or MO; moment -> MO",
+            "company -> CO, LTD, INC; society -> S, SOC; party -> DO, LAB, CON"
+          ],
+          "hints_taken": 1,
+          "par": 3,
+          "instructions": "Reply with ONLY your answer to guess, or reply exactly 'HINT' to reveal the next hint.",
+          "revealed_hints": [
+            "[definition] The definition part of the clue is 'take a hike'"
+          ],
+          "feedback": "Hint (definition): The definition part of the clue is 'take a hike'"
+        },
+        "reasoning": "The hint confirms the definition; this is the answer.",
+        "action": "BEGONE",
+        "reward": 0.8,
+        "terminated": true,
+        "truncated": false,
+        "info": {
+          "clue_id": "2024-01-08",
+          "puzzle_id": "dfde407e-3eb9-4f04-a3c6-3857c0a97c15",
+          "solved": "1",
+          "guesses_used": "1",
+          "hints_used": "1",
+          "hint_order": "[\"definition\"]",
+          "par": "3",
+          "community_avg_par": "3",
+          "hints_to_par": "-2",
+          "under_or_at_par": "1",
+          "par_result": "below",
+          "outcome": "solved",
+          "reward": "0.8000"
+        }
+      }
+    ],
+    "careful-solver-ep9": [
+      {
+        "step": 1,
+        "observation": {
+          "clue": "Bedroom suffering lack of excitement",
+          "enumeration": "(7)",
+          "answer_length": 7,
+          "word_lengths": [
+            7
+          ],
+          "rules": "Minute Cryptic \u2014 how to solve:\n- Every clue has TWO parts that both point to the same answer: a plain DEFINITION (always at the very start OR the very end of the clue) and WORDPLAY (the rest), which spells the answer by a hidden mechanism.\n- The number(s) in parentheses give the answer's length, e.g. (7) is a 7-letter word, (3,4) is a 3-letter word then a 4-letter word.\n- Common wordplay devices: anagram (letters jumbled, flagged by an indicator like 'mixed', 'broken', 'shredded', 'wild'); hidden word (answer sits inside consecutive letters of the clue); reversal ('back', 'returning', 'up' in a down clue); homophone ('we hear', 'sounds like'); charade (join shorter pieces in sequence); container ('in', 'around', 'holding'); deletion ('endless', 'heartless'); and abbreviations.\n- Answers are matched ignoring case, spaces and punctuation.\nACTIONS: reply with your answer to GUESS, or reply exactly 'HINT' to reveal the next hint. Hints first explain the clue, then reveal the answer's letters one at a time. Fewer hints is better \u2014 'par' is the expected number of hints for this clue, and you are scored against it.",
+          "common_substitutions": [
+            "love / nil / nothing / zero / duck -> O",
+            "the (in French) -> LE, LA, LES; (German) -> DER, DIE, DAS; (Spanish) -> EL",
+            "and -> N ('rock 'n' roll'); with -> W; without -> SANS",
+            "about -> C, CA, RE; around -> RE; concerning -> RE",
+            "Roman numerals: one -> I (or A/AN); five -> V; ten -> X; fifty -> L; hundred -> C; five hundred -> D; thousand -> M",
+            "left -> L; right -> R; first -> initial letter; finally -> last letter; heart/centre -> middle letter(s)",
+            "north/south/east/west -> N/S/E/W; point -> N, S, E or W",
+            "doctor -> DR, MO, MB; learner / novice -> L; graduate -> BA, MA",
+            "king -> K or R (rex); queen -> Q, ER or R; royal -> ER",
+            "quiet -> P or SH; loud -> F (forte); very loud -> FF",
+            "note (music) -> A B C D E F G, or DO RE MI FA SO LA TI",
+            "sailor -> AB, TAR, RN, OS; soldier(s) -> GI, RE, TA, ANT(s); navy -> RN",
+            "river -> R; lake -> L; road / street / way -> RD, ST, AVE, WAY",
+            "old -> O; new -> N; good -> G; gold -> AU or OR; iron -> FE",
+            "time -> T; hour -> HR; year -> Y; second -> S or MO; moment -> MO",
+            "company -> CO, LTD, INC; society -> S, SOC; party -> DO, LAB, CON"
+          ],
+          "hints_taken": 0,
+          "par": 3,
+          "instructions": "Reply with ONLY your answer to guess, or reply exactly 'HINT' to reveal the next hint."
+        },
+        "reasoning": "Not certain yet \u2014 I'll spend one hint to confirm the definition.",
+        "action": "HINT",
+        "reward": 0.0,
+        "terminated": false,
+        "truncated": false,
+        "info": {
+          "clue_id": "2024-01-09",
+          "puzzle_id": "12751572-0f34-4cb5-958a-a61c39f40f44",
+          "solved": "0",
+          "guesses_used": "0",
+          "hints_used": "1",
+          "hint_order": "[\"definition\"]",
+          "par": "3",
+          "community_avg_par": "3",
+          "hints_to_par": "-2",
+          "under_or_at_par": "1",
+          "par_result": "below",
+          "outcome": "hint",
+          "reward": "0.0000"
+        }
+      },
+      {
+        "step": 2,
+        "observation": {
+          "clue": "Bedroom suffering lack of excitement",
+          "enumeration": "(7)",
+          "answer_length": 7,
+          "word_lengths": [
+            7
+          ],
+          "rules": "Minute Cryptic \u2014 how to solve:\n- Every clue has TWO parts that both point to the same answer: a plain DEFINITION (always at the very start OR the very end of the clue) and WORDPLAY (the rest), which spells the answer by a hidden mechanism.\n- The number(s) in parentheses give the answer's length, e.g. (7) is a 7-letter word, (3,4) is a 3-letter word then a 4-letter word.\n- Common wordplay devices: anagram (letters jumbled, flagged by an indicator like 'mixed', 'broken', 'shredded', 'wild'); hidden word (answer sits inside consecutive letters of the clue); reversal ('back', 'returning', 'up' in a down clue); homophone ('we hear', 'sounds like'); charade (join shorter pieces in sequence); container ('in', 'around', 'holding'); deletion ('endless', 'heartless'); and abbreviations.\n- Answers are matched ignoring case, spaces and punctuation.\nACTIONS: reply with your answer to GUESS, or reply exactly 'HINT' to reveal the next hint. Hints first explain the clue, then reveal the answer's letters one at a time. Fewer hints is better \u2014 'par' is the expected number of hints for this clue, and you are scored against it.",
+          "common_substitutions": [
+            "love / nil / nothing / zero / duck -> O",
+            "the (in French) -> LE, LA, LES; (German) -> DER, DIE, DAS; (Spanish) -> EL",
+            "and -> N ('rock 'n' roll'); with -> W; without -> SANS",
+            "about -> C, CA, RE; around -> RE; concerning -> RE",
+            "Roman numerals: one -> I (or A/AN); five -> V; ten -> X; fifty -> L; hundred -> C; five hundred -> D; thousand -> M",
+            "left -> L; right -> R; first -> initial letter; finally -> last letter; heart/centre -> middle letter(s)",
+            "north/south/east/west -> N/S/E/W; point -> N, S, E or W",
+            "doctor -> DR, MO, MB; learner / novice -> L; graduate -> BA, MA",
+            "king -> K or R (rex); queen -> Q, ER or R; royal -> ER",
+            "quiet -> P or SH; loud -> F (forte); very loud -> FF",
+            "note (music) -> A B C D E F G, or DO RE MI FA SO LA TI",
+            "sailor -> AB, TAR, RN, OS; soldier(s) -> GI, RE, TA, ANT(s); navy -> RN",
+            "river -> R; lake -> L; road / street / way -> RD, ST, AVE, WAY",
+            "old -> O; new -> N; good -> G; gold -> AU or OR; iron -> FE",
+            "time -> T; hour -> HR; year -> Y; second -> S or MO; moment -> MO",
+            "company -> CO, LTD, INC; society -> S, SOC; party -> DO, LAB, CON"
+          ],
+          "hints_taken": 1,
+          "par": 3,
+          "instructions": "Reply with ONLY your answer to guess, or reply exactly 'HINT' to reveal the next hint.",
+          "revealed_hints": [
+            "[definition] The definition part of the clue is 'lack of excitement'"
+          ],
+          "feedback": "Hint (definition): The definition part of the clue is 'lack of excitement'"
+        },
+        "reasoning": "The hint confirms the definition; this is the answer.",
+        "action": "BOREDOM",
+        "reward": 0.8,
+        "terminated": true,
+        "truncated": false,
+        "info": {
+          "clue_id": "2024-01-09",
+          "puzzle_id": "12751572-0f34-4cb5-958a-a61c39f40f44",
+          "solved": "1",
+          "guesses_used": "1",
+          "hints_used": "1",
+          "hint_order": "[\"definition\"]",
+          "par": "3",
+          "community_avg_par": "3",
+          "hints_to_par": "-2",
+          "under_or_at_par": "1",
+          "par_result": "below",
+          "outcome": "solved",
+          "reward": "0.8000"
+        }
+      }
+    ],
+    "careful-solver-ep10": [
+      {
+        "step": 1,
+        "observation": {
+          "clue": "Doubled testosterone to enter period of growth for glutes",
+          "enumeration": "(6)",
+          "answer_length": 6,
+          "word_lengths": [
+            6
+          ],
+          "rules": "Minute Cryptic \u2014 how to solve:\n- Every clue has TWO parts that both point to the same answer: a plain DEFINITION (always at the very start OR the very end of the clue) and WORDPLAY (the rest), which spells the answer by a hidden mechanism.\n- The number(s) in parentheses give the answer's length, e.g. (7) is a 7-letter word, (3,4) is a 3-letter word then a 4-letter word.\n- Common wordplay devices: anagram (letters jumbled, flagged by an indicator like 'mixed', 'broken', 'shredded', 'wild'); hidden word (answer sits inside consecutive letters of the clue); reversal ('back', 'returning', 'up' in a down clue); homophone ('we hear', 'sounds like'); charade (join shorter pieces in sequence); container ('in', 'around', 'holding'); deletion ('endless', 'heartless'); and abbreviations.\n- Answers are matched ignoring case, spaces and punctuation.\nACTIONS: reply with your answer to GUESS, or reply exactly 'HINT' to reveal the next hint. Hints first explain the clue, then reveal the answer's letters one at a time. Fewer hints is better \u2014 'par' is the expected number of hints for this clue, and you are scored against it.",
+          "common_substitutions": [
+            "love / nil / nothing / zero / duck -> O",
+            "the (in French) -> LE, LA, LES; (German) -> DER, DIE, DAS; (Spanish) -> EL",
+            "and -> N ('rock 'n' roll'); with -> W; without -> SANS",
+            "about -> C, CA, RE; around -> RE; concerning -> RE",
+            "Roman numerals: one -> I (or A/AN); five -> V; ten -> X; fifty -> L; hundred -> C; five hundred -> D; thousand -> M",
+            "left -> L; right -> R; first -> initial letter; finally -> last letter; heart/centre -> middle letter(s)",
+            "north/south/east/west -> N/S/E/W; point -> N, S, E or W",
+            "doctor -> DR, MO, MB; learner / novice -> L; graduate -> BA, MA",
+            "king -> K or R (rex); queen -> Q, ER or R; royal -> ER",
+            "quiet -> P or SH; loud -> F (forte); very loud -> FF",
+            "note (music) -> A B C D E F G, or DO RE MI FA SO LA TI",
+            "sailor -> AB, TAR, RN, OS; soldier(s) -> GI, RE, TA, ANT(s); navy -> RN",
+            "river -> R; lake -> L; road / street / way -> RD, ST, AVE, WAY",
+            "old -> O; new -> N; good -> G; gold -> AU or OR; iron -> FE",
+            "time -> T; hour -> HR; year -> Y; second -> S or MO; moment -> MO",
+            "company -> CO, LTD, INC; society -> S, SOC; party -> DO, LAB, CON"
+          ],
+          "hints_taken": 0,
+          "par": 3,
+          "instructions": "Reply with ONLY your answer to guess, or reply exactly 'HINT' to reveal the next hint."
+        },
+        "reasoning": "Not certain yet \u2014 I'll spend one hint to confirm the definition.",
+        "action": "HINT",
+        "reward": 0.0,
+        "terminated": false,
+        "truncated": false,
+        "info": {
+          "clue_id": "2024-01-10",
+          "puzzle_id": "02d314c8-12c4-4286-be1e-1dc73677612e",
+          "solved": "0",
+          "guesses_used": "0",
+          "hints_used": "1",
+          "hint_order": "[\"definition\"]",
+          "par": "3",
+          "community_avg_par": "3",
+          "hints_to_par": "-2",
+          "under_or_at_par": "1",
+          "par_result": "below",
+          "outcome": "hint",
+          "reward": "0.0000"
+        }
+      },
+      {
+        "step": 2,
+        "observation": {
+          "clue": "Doubled testosterone to enter period of growth for glutes",
+          "enumeration": "(6)",
+          "answer_length": 6,
+          "word_lengths": [
+            6
+          ],
+          "rules": "Minute Cryptic \u2014 how to solve:\n- Every clue has TWO parts that both point to the same answer: a plain DEFINITION (always at the very start OR the very end of the clue) and WORDPLAY (the rest), which spells the answer by a hidden mechanism.\n- The number(s) in parentheses give the answer's length, e.g. (7) is a 7-letter word, (3,4) is a 3-letter word then a 4-letter word.\n- Common wordplay devices: anagram (letters jumbled, flagged by an indicator like 'mixed', 'broken', 'shredded', 'wild'); hidden word (answer sits inside consecutive letters of the clue); reversal ('back', 'returning', 'up' in a down clue); homophone ('we hear', 'sounds like'); charade (join shorter pieces in sequence); container ('in', 'around', 'holding'); deletion ('endless', 'heartless'); and abbreviations.\n- Answers are matched ignoring case, spaces and punctuation.\nACTIONS: reply with your answer to GUESS, or reply exactly 'HINT' to reveal the next hint. Hints first explain the clue, then reveal the answer's letters one at a time. Fewer hints is better \u2014 'par' is the expected number of hints for this clue, and you are scored against it.",
+          "common_substitutions": [
+            "love / nil / nothing / zero / duck -> O",
+            "the (in French) -> LE, LA, LES; (German) -> DER, DIE, DAS; (Spanish) -> EL",
+            "and -> N ('rock 'n' roll'); with -> W; without -> SANS",
+            "about -> C, CA, RE; around -> RE; concerning -> RE",
+            "Roman numerals: one -> I (or A/AN); five -> V; ten -> X; fifty -> L; hundred -> C; five hundred -> D; thousand -> M",
+            "left -> L; right -> R; first -> initial letter; finally -> last letter; heart/centre -> middle letter(s)",
+            "north/south/east/west -> N/S/E/W; point -> N, S, E or W",
+            "doctor -> DR, MO, MB; learner / novice -> L; graduate -> BA, MA",
+            "king -> K or R (rex); queen -> Q, ER or R; royal -> ER",
+            "quiet -> P or SH; loud -> F (forte); very loud -> FF",
+            "note (music) -> A B C D E F G, or DO RE MI FA SO LA TI",
+            "sailor -> AB, TAR, RN, OS; soldier(s) -> GI, RE, TA, ANT(s); navy -> RN",
+            "river -> R; lake -> L; road / street / way -> RD, ST, AVE, WAY",
+            "old -> O; new -> N; good -> G; gold -> AU or OR; iron -> FE",
+            "time -> T; hour -> HR; year -> Y; second -> S or MO; moment -> MO",
+            "company -> CO, LTD, INC; society -> S, SOC; party -> DO, LAB, CON"
+          ],
+          "hints_taken": 1,
+          "par": 3,
+          "instructions": "Reply with ONLY your answer to guess, or reply exactly 'HINT' to reveal the next hint.",
+          "revealed_hints": [
+            "[definition] The definition part of the clue is 'glutes'"
+          ],
+          "feedback": "Hint (definition): The definition part of the clue is 'glutes'"
+        },
+        "reasoning": "The hint confirms the definition; this is the answer.",
+        "action": "BOTTOM",
+        "reward": 0.8,
+        "terminated": true,
+        "truncated": false,
+        "info": {
+          "clue_id": "2024-01-10",
+          "puzzle_id": "02d314c8-12c4-4286-be1e-1dc73677612e",
+          "solved": "1",
+          "guesses_used": "1",
+          "hints_used": "1",
+          "hint_order": "[\"definition\"]",
+          "par": "3",
+          "community_avg_par": "3",
+          "hints_to_par": "-2",
+          "under_or_at_par": "1",
+          "par_result": "below",
+          "outcome": "solved",
+          "reward": "0.8000"
+        }
+      }
+    ],
+    "careful-solver-ep11": [
+      {
+        "step": 1,
+        "observation": {
+          "clue": "Purchase trapped soul of Dennis Hopper",
+          "enumeration": "(5)",
+          "answer_length": 5,
+          "word_lengths": [
+            5
+          ],
+          "rules": "Minute Cryptic \u2014 how to solve:\n- Every clue has TWO parts that both point to the same answer: a plain DEFINITION (always at the very start OR the very end of the clue) and WORDPLAY (the rest), which spells the answer by a hidden mechanism.\n- The number(s) in parentheses give the answer's length, e.g. (7) is a 7-letter word, (3,4) is a 3-letter word then a 4-letter word.\n- Common wordplay devices: anagram (letters jumbled, flagged by an indicator like 'mixed', 'broken', 'shredded', 'wild'); hidden word (answer sits inside consecutive letters of the clue); reversal ('back', 'returning', 'up' in a down clue); homophone ('we hear', 'sounds like'); charade (join shorter pieces in sequence); container ('in', 'around', 'holding'); deletion ('endless', 'heartless'); and abbreviations.\n- Answers are matched ignoring case, spaces and punctuation.\nACTIONS: reply with your answer to GUESS, or reply exactly 'HINT' to reveal the next hint. Hints first explain the clue, then reveal the answer's letters one at a time. Fewer hints is better \u2014 'par' is the expected number of hints for this clue, and you are scored against it.",
+          "common_substitutions": [
+            "love / nil / nothing / zero / duck -> O",
+            "the (in French) -> LE, LA, LES; (German) -> DER, DIE, DAS; (Spanish) -> EL",
+            "and -> N ('rock 'n' roll'); with -> W; without -> SANS",
+            "about -> C, CA, RE; around -> RE; concerning -> RE",
+            "Roman numerals: one -> I (or A/AN); five -> V; ten -> X; fifty -> L; hundred -> C; five hundred -> D; thousand -> M",
+            "left -> L; right -> R; first -> initial letter; finally -> last letter; heart/centre -> middle letter(s)",
+            "north/south/east/west -> N/S/E/W; point -> N, S, E or W",
+            "doctor -> DR, MO, MB; learner / novice -> L; graduate -> BA, MA",
+            "king -> K or R (rex); queen -> Q, ER or R; royal -> ER",
+            "quiet -> P or SH; loud -> F (forte); very loud -> FF",
+            "note (music) -> A B C D E F G, or DO RE MI FA SO LA TI",
+            "sailor -> AB, TAR, RN, OS; soldier(s) -> GI, RE, TA, ANT(s); navy -> RN",
+            "river -> R; lake -> L; road / street / way -> RD, ST, AVE, WAY",
+            "old -> O; new -> N; good -> G; gold -> AU or OR; iron -> FE",
+            "time -> T; hour -> HR; year -> Y; second -> S or MO; moment -> MO",
+            "company -> CO, LTD, INC; society -> S, SOC; party -> DO, LAB, CON"
+          ],
+          "hints_taken": 0,
+          "par": 2,
+          "instructions": "Reply with ONLY your answer to guess, or reply exactly 'HINT' to reveal the next hint."
+        },
+        "reasoning": "Not certain yet \u2014 I'll spend one hint to confirm the definition.",
+        "action": "HINT",
+        "reward": 0.0,
+        "terminated": false,
+        "truncated": false,
+        "info": {
+          "clue_id": "2024-01-11",
+          "puzzle_id": "f013f8d3-681c-4ae5-9e06-50ec7c4c6ba0",
+          "solved": "0",
+          "guesses_used": "0",
+          "hints_used": "1",
+          "hint_order": "[\"definition\"]",
+          "par": "2",
+          "community_avg_par": "2",
+          "hints_to_par": "-1",
+          "under_or_at_par": "1",
+          "par_result": "below",
+          "outcome": "hint",
+          "reward": "0.0000"
+        }
+      },
+      {
+        "step": 2,
+        "observation": {
+          "clue": "Purchase trapped soul of Dennis Hopper",
+          "enumeration": "(5)",
+          "answer_length": 5,
+          "word_lengths": [
+            5
+          ],
+          "rules": "Minute Cryptic \u2014 how to solve:\n- Every clue has TWO parts that both point to the same answer: a plain DEFINITION (always at the very start OR the very end of the clue) and WORDPLAY (the rest), which spells the answer by a hidden mechanism.\n- The number(s) in parentheses give the answer's length, e.g. (7) is a 7-letter word, (3,4) is a 3-letter word then a 4-letter word.\n- Common wordplay devices: anagram (letters jumbled, flagged by an indicator like 'mixed', 'broken', 'shredded', 'wild'); hidden word (answer sits inside consecutive letters of the clue); reversal ('back', 'returning', 'up' in a down clue); homophone ('we hear', 'sounds like'); charade (join shorter pieces in sequence); container ('in', 'around', 'holding'); deletion ('endless', 'heartless'); and abbreviations.\n- Answers are matched ignoring case, spaces and punctuation.\nACTIONS: reply with your answer to GUESS, or reply exactly 'HINT' to reveal the next hint. Hints first explain the clue, then reveal the answer's letters one at a time. Fewer hints is better \u2014 'par' is the expected number of hints for this clue, and you are scored against it.",
+          "common_substitutions": [
+            "love / nil / nothing / zero / duck -> O",
+            "the (in French) -> LE, LA, LES; (German) -> DER, DIE, DAS; (Spanish) -> EL",
+            "and -> N ('rock 'n' roll'); with -> W; without -> SANS",
+            "about -> C, CA, RE; around -> RE; concerning -> RE",
+            "Roman numerals: one -> I (or A/AN); five -> V; ten -> X; fifty -> L; hundred -> C; five hundred -> D; thousand -> M",
+            "left -> L; right -> R; first -> initial letter; finally -> last letter; heart/centre -> middle letter(s)",
+            "north/south/east/west -> N/S/E/W; point -> N, S, E or W",
+            "doctor -> DR, MO, MB; learner / novice -> L; graduate -> BA, MA",
+            "king -> K or R (rex); queen -> Q, ER or R; royal -> ER",
+            "quiet -> P or SH; loud -> F (forte); very loud -> FF",
+            "note (music) -> A B C D E F G, or DO RE MI FA SO LA TI",
+            "sailor -> AB, TAR, RN, OS; soldier(s) -> GI, RE, TA, ANT(s); navy -> RN",
+            "river -> R; lake -> L; road / street / way -> RD, ST, AVE, WAY",
+            "old -> O; new -> N; good -> G; gold -> AU or OR; iron -> FE",
+            "time -> T; hour -> HR; year -> Y; second -> S or MO; moment -> MO",
+            "company -> CO, LTD, INC; society -> S, SOC; party -> DO, LAB, CON"
+          ],
+          "hints_taken": 1,
+          "par": 2,
+          "instructions": "Reply with ONLY your answer to guess, or reply exactly 'HINT' to reveal the next hint.",
+          "revealed_hints": [
+            "[definition] The definition part of the clue is 'Hopper'"
+          ],
+          "feedback": "Hint (definition): The definition part of the clue is 'Hopper'"
+        },
+        "reasoning": "The hint confirms the definition; this is the answer.",
+        "action": "BUNNY",
+        "reward": 0.8,
+        "terminated": true,
+        "truncated": false,
+        "info": {
+          "clue_id": "2024-01-11",
+          "puzzle_id": "f013f8d3-681c-4ae5-9e06-50ec7c4c6ba0",
+          "solved": "1",
+          "guesses_used": "1",
+          "hints_used": "1",
+          "hint_order": "[\"definition\"]",
+          "par": "2",
+          "community_avg_par": "2",
+          "hints_to_par": "-1",
+          "under_or_at_par": "1",
+          "par_result": "below",
           "outcome": "solved",
           "reward": "0.8000"
         }

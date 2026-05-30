@@ -55,6 +55,7 @@ for (const f of files) {
     answer: d.answer.toUpperCase().trim(),
     answerLength: d.answer.replace(/[^A-Za-z]/g, "").length,
     wordLengths: d.config ?? null,
+    letterRevealOrder: Array.isArray(d.letterRevealOrder) ? d.letterRevealOrder : null,
     par: d.par ?? null,                                   // official fixed par for the clue
     communityAveragePar: d.parDetails?.averagePar ?? avgParByDate[d.date] ?? null, // rounded avg of all solvers
     numHints: hints.length,
