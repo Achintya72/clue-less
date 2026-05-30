@@ -118,6 +118,29 @@ def _enumeration(length: list[int] | None) -> str:
     return "(" + ",".join(str(n) for n in length) + ")"
 
 
+_GUESS_PREFIX = re.compile(r"^\s*(?:my\s+)?(?:final\s+)?(?:answer|guess|solution)\s*[:\-=]\s*", re.I)
+
+
+def _parse_action(raw: Any) -> tuple[str, str]:
+    """Classify a (possibly chatty) model reply into ('hint', '') or ('guess', text).
+
+    Real models ignore "reply with ONLY ..." and wrap the action in reasoning,
+    so we look at the LAST non-empty line: if its final word is HINT it's a hint
+    request; otherwise it's the guess (with any 'Answer:'/'Guess:' prefix stripped).
+    """
+    s = _strip_wrapping_quotes(str(raw))
+    lines = [ln.strip() for ln in s.splitlines() if ln.strip()]
+    last = lines[-1] if lines else s.strip()
+    # Whole reply or last line is exactly HINT (ignoring surrounding punctuation).
+    if re.sub(r"[^a-z]", "", s.lower()) == "hint":
+        return ("hint", "")
+    tokens = re.findall(r"[A-Za-z]+", last)
+    if tokens and tokens[-1].upper() == "HINT":
+        return ("hint", "")
+    guess = _strip_wrapping_quotes(_GUESS_PREFIX.sub("", last))
+    return ("guess", guess or last)
+
+
 # --------------------------------------------------------------------------- data
 
 def _to_clue(row: dict[str, Any]) -> dict[str, Any]:
@@ -267,11 +290,10 @@ class MinuteCrypticEnv(BaseEnv):
     def step(self, action: Any) -> StepResult:
         if self._clue is None:
             raise RuntimeError("Call reset() before step()")
-        text = _strip_wrapping_quotes(str(action))
-
-        if text.upper() == "HINT" or text.upper().startswith("HINT "):
+        kind, guess = _parse_action(action)
+        if kind == "hint":
             return self._take_hint()
-        return self._take_guess(text)
+        return self._take_guess(guess, full=_strip_wrapping_quotes(str(action)))
 
     # ------------------------------------------------------------------ actions
 
@@ -320,12 +342,14 @@ class MinuteCrypticEnv(BaseEnv):
             info=self._info(solved=True, outcome="fully_revealed", reward=reward),
         )
 
-    def _take_guess(self, text: str) -> StepResult:
+    def _take_guess(self, text: str, full: str | None = None) -> StepResult:
         clue = self._clue
         assert clue is not None
         self._guesses += 1
 
-        if _is_correct(text, clue):
+        # Match the extracted guess; fall back to the full reply so an answer
+        # embedded in reasoning ("the answer is HEINOUS") is still caught.
+        if _is_correct(text, clue) or (full and _is_correct(full, clue)):
             reward = max(MIN_SOLVE_REWARD, 1.0 - HINT_PENALTY * self._hints)
             return StepResult(
                 observation={"result": "correct", "answer": clue["answer"]},
@@ -385,8 +409,9 @@ class MinuteCrypticEnv(BaseEnv):
             "hints_taken": self._hints,
             "par": clue["par"],
             "instructions": (
-                "Reply with ONLY your answer to guess, or reply exactly 'HINT' "
-                "to reveal the next hint."
+                "You may reason first, but put your decision on the LAST line by "
+                "itself: either your answer (the word/phrase only), or the single "
+                "word HINT to reveal the next hint."
             ),
         }
         # Hints persist once taken (point 3 of the loop).

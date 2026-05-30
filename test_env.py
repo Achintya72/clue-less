@@ -195,6 +195,33 @@ def test_quoted_answer_still_solves():
     assert total == 1.0 and r.info["solved"] == "1"
 
 
+def test_chatty_hint_on_last_line_is_a_hint():
+    # Real models prepend reasoning; "...\n\nHINT" must register as a hint.
+    e = MinuteCrypticEnv()
+    e.reset(seed=SEED)
+    r = e.step("The definition is 'Despicable' and this is wordplay.\n\nHINT")
+    assert not r.terminated
+    assert r.info["hints_used"] == "1"
+    assert r.info["guesses_used"] == "0"
+
+
+def test_chatty_guess_with_prefix_solves():
+    total, r = play([f"I'll parse the wordplay and read it off.\n\nGUESS: {ANSWER}"])
+    assert total == 1.0 and r.info["solved"] == "1"
+
+
+def test_answer_embedded_in_reasoning_solves():
+    total, r = play([f"After substituting love->O, the answer is {ANSWER.lower()}."])
+    assert total == 1.0 and r.info["solved"] == "1"
+
+
+def test_parse_action_helper():
+    assert E._parse_action("HINT") == ("hint", "")
+    assert E._parse_action("blah blah\nHINT")[0] == "hint"
+    assert E._parse_action("Answer: HEINOUS") == ("guess", "HEINOUS")
+    assert E._parse_action("reasoning\nGuess: foo")[0] == "guess"
+
+
 def test_deterministic_reset_by_seed():
     a = MinuteCrypticEnv().reset(seed=SEED)
     b = MinuteCrypticEnv().reset(seed=SEED)
