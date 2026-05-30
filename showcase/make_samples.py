@@ -23,8 +23,8 @@ import env as E  # noqa: E402
 from env import MinuteCrypticEnv  # noqa: E402
 
 DATA_DIR = HERE / "data"
-MAX_STEPS = 12  # mirror benchanything.json episode.max_steps
-N_EPISODES = 8  # clues each reference policy plays (keeps sample files small)
+MAX_STEPS = 40       # mirror benchanything.json episode.max_steps
+SAMPLE_CLUES = 12    # the full dataset has 800+ clues; sample a few for the showcase
 
 
 def _first_word(s: str) -> str:
@@ -63,7 +63,7 @@ POLICIES = {
 
 def run_policy(model: str, policy) -> dict:
     replay: dict[str, list] = {}
-    for seed in range(min(N_EPISODES, len(E.CLUES))):
+    for seed in range(min(SAMPLE_CLUES, len(E.CLUES))):
         env = MinuteCrypticEnv()
         obs = env.reset(seed=seed)
         clue = E.CLUES[seed]

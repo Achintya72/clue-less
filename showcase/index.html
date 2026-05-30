@@ -82,14 +82,14 @@
       <thead><tr>
         <th class="rank">#</th><th>Model</th>
         <th>Score</th><th>Solve rate</th>
-        <th class="num">Guesses<span class="vs"> / human</span></th>
-        <th class="num">Hints</th><th class="num">Eps</th>
+        <th class="num">Guesses</th>
+        <th class="num">Hints<span class="vs"> / par</span></th><th class="num">Eps</th>
       </tr></thead>
       <tbody id="lbBody"></tbody>
     </table>
     <div class="empty" id="lbEmpty">No data loaded yet.</div>
     <div class="legend">Score = mean episode reward (0–1). Solve rate = fraction fully solved.
-      “Guesses / human” compares the model’s average attempts to the scraped human average.
+      “Hints / par” compares the model’s average hints to the clue’s par (the human-expected hint count).
       Click a row to inspect episodes.</div>
   </div>
 
@@ -115,18 +115,18 @@ function episodeStats(steps){
                  : steps.filter(s=>String(s.action).replace(/["'`]/g,'').trim().toUpperCase()!=="HINT").length;
   const hints = info.hints_used!=null ? num(info.hints_used)
                : steps.filter(s=>String(s.action).replace(/["'`]/g,'').trim().toUpperCase()==="HINT").length;
-  const human = num(info.human_avg_guesses);
+  const par = num(info.par);
   const obs0 = steps[0] && steps[0].observation || {};
   const clue = obs0.clue || "(clue)";
   const enumr = obs0.enumeration || "";
-  return {total, solved, guesses, hints, human, clue, enumr,
+  return {total, solved, guesses, hints, par, clue, enumr,
           outcome: info.outcome || (solved?"solved":"fail")};
 }
 
 function modelStats(doc){
   const eps = Object.entries(doc.replay || {}).map(([id,steps])=>({id, steps, ...episodeStats(steps)}));
   const mean = (f)=> eps.length ? eps.reduce((a,e)=>a+(f(e)||0),0)/eps.length : 0;
-  const humans = eps.map(e=>e.human).filter(v=>v!=null);
+  const pars = eps.map(e=>e.par).filter(v=>v!=null);
   return {
     model: doc.model || "(model)",
     episodes: eps,
@@ -135,7 +135,7 @@ function modelStats(doc){
     solveRate: mean(e=>e.solved?1:0),
     avgGuesses: mean(e=>e.guesses),
     avgHints: mean(e=>e.hints),
-    humanAvg: humans.length ? humans.reduce((a,b)=>a+b,0)/humans.length : null,
+    avgPar: pars.length ? pars.reduce((a,b)=>a+b,0)/pars.length : null,
   };
 }
 
@@ -159,8 +159,8 @@ function renderLeaderboard(){
         <small class="vs">${fmt(m.score)}</small>
       </td>
       <td><span class="pill ${pillClass(m.solveRate)}">${Math.round(m.solveRate*100)}%</span></td>
-      <td class="num">${fmt(m.avgGuesses,1)} <span class="vs">/ ${m.humanAvg==null?'–':fmt(m.humanAvg,1)}</span></td>
-      <td class="num">${fmt(m.avgHints,1)}</td>
+      <td class="num">${fmt(m.avgGuesses,1)}</td>
+      <td class="num">${fmt(m.avgHints,1)} <span class="vs">/ ${m.avgPar==null?'–':fmt(m.avgPar,1)}</span></td>
       <td class="num">${m.n}</td>
     </tr>`).join('');
   body.querySelectorAll('tr').forEach(tr=>tr.onclick=()=>selectModel(tr.dataset.model));

@@ -2,31 +2,31 @@
   "id": "minutecryptic",
   "adapter": "adapter.py",
   "name": "MinuteCryptic",
-  "description": "Can an LLM solve British-style cryptic crossword clues (definition + wordplay) from minutecryptic.com?",
+  "description": "Can an LLM solve real Minute Cryptic daily clues (definition + wordplay) from minutecryptic.com, and how does its hint usage compare to human par?",
 
   "binding_vow": {
     "version": "1.0.0",
     "tier": "tier1",
-    "description": "One cryptic clue per episode. The agent sees the clue text and the answer's enumeration, and must reply with the answer. Wrong answers may be retried up to a limit; the agent may instead reply 'HINT' to reveal a progressive hint (definition -> device -> first letter) at a scoring penalty. Reward is paid once, on the terminal step.",
+    "description": "One real Minute Cryptic daily clue per episode. Every observation carries the rules of cryptic crosswords and a common-substitutions cheat sheet. The first observation gives only the clue and the answer's length. Each turn the agent either GUESSES the answer or replies 'HINT'. Wrong guesses are non-terminal and are listed back to the agent; the same wrong answer three times ends the episode. 'HINT' walks an escalating, persistent ladder: the official progressive hints first (definition -> wordplay -> ...), then the answer's letters revealed one at a time in the official order, which guarantees the episode terminates. Scoring is golf-style against the clue's par (expected number of hints). Reward is paid once, on the terminal step.",
 
     "observation_space": {
       "type": "json",
-      "description": "{ \"clue\": string, \"enumeration\": string e.g. \"(6)\" or \"(3,4)\", \"attempts_remaining\": int, \"hints_remaining\": int, \"instructions\": string, \"feedback\"?: string }"
+      "description": "{ \"clue\": string, \"enumeration\": string e.g. \"(7)\" or \"(3,4)\", \"answer_length\": int, \"word_lengths\": [int], \"rules\": string, \"common_substitutions\": [string], \"hints_taken\": int, \"par\": int, \"instructions\": string, \"revealed_hints\"?: [string], \"revealed_letters\"?: string (e.g. \"S _ E _ _ _ _\", '/' marks a word break), \"wrong_guesses\"?: [string], \"feedback\"?: string }"
     },
 
     "action_space": {
       "type": "text",
-      "description": "Free text: either the agent's answer, or exactly 'HINT' to reveal the next hint."
+      "description": "Free text: either the agent's answer, or exactly 'HINT' to reveal the next hint (official hints first, then one answer letter at a time)."
     },
 
     "reward": {
       "type": "scalar",
       "range": { "low": 0.0, "high": 1.0 },
-      "description": "Terminal-step reward: 1.0 correct with no hints; max(0.2, 1.0 - 0.2*hints) correct after hints; 0.3*similarity for a close-but-wrong final guess; 0.0 otherwise."
+      "description": "Terminal-step reward: 1.0 correct with no hints; max(0.2, 1.0 - 0.2*hints) correct after hints (the same formula whether the hints were explanatory or letter reveals); 0.3*similarity when the same wrong answer is guessed three times; 0.0 if truncated without answering."
     },
 
     "episode": {
-      "max_steps": 12,
+      "max_steps": 40,
       "deterministic_reset": true,
       "supports_seed": true,
       "parallel_episodes": 1,
@@ -40,10 +40,12 @@
     "primary_metric": "score",
     "higher_is_better": true,
     "metrics": [
-      { "name": "score",       "type": "episode_reward", "aggregation": "mean" },
-      { "name": "solve_rate",  "type": "terminal_field", "field": "solved",        "aggregation": "mean" },
-      { "name": "avg_guesses", "type": "terminal_field", "field": "guesses_used",  "aggregation": "mean" },
-      { "name": "avg_hints",   "type": "terminal_field", "field": "hints_used",    "aggregation": "mean" }
+      { "name": "score",            "type": "episode_reward", "aggregation": "mean" },
+      { "name": "solve_rate",       "type": "terminal_field", "field": "solved",          "aggregation": "mean" },
+      { "name": "avg_hints",        "type": "terminal_field", "field": "hints_used",      "aggregation": "mean" },
+      { "name": "avg_guesses",      "type": "terminal_field", "field": "guesses_used",    "aggregation": "mean" },
+      { "name": "avg_hints_to_par", "type": "terminal_field", "field": "hints_to_par",    "aggregation": "mean" },
+      { "name": "under_par_rate",   "type": "terminal_field", "field": "under_or_at_par", "aggregation": "mean" }
     ]
   }
 }
