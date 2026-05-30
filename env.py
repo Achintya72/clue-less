@@ -159,12 +159,22 @@ def _parse_action(raw: Any) -> tuple[str, str, str]:
             decision = ma.group(1).strip()
             decision_idx = i
 
-    if decision is None:                       # no explicit ACTION: line
-        decision = lines[-1] if lines else s.strip()
-        decision_idx = len(lines) - 1
-    if not reasoning:                          # reasoning = everything before the decision
-        pre = lines[:decision_idx] if decision_idx and decision_idx > 0 else []
-        reasoning = " ".join(pre).strip()
+    if decision is not None:                   # explicit ACTION: line found
+        if not reasoning:
+            reasoning = " ".join(lines[:decision_idx]).strip()
+    else:
+        # No ACTION: line. Take the last line that ISN'T a reasoning line, so a
+        # model that only rambled (e.g. truncated before deciding) doesn't get
+        # its reasoning logged as a (garbage) guess.
+        non_reasoning = [ln for ln in lines if not _REASONING_LINE.match(ln)]
+        if non_reasoning:
+            decision = non_reasoning[-1]
+            if not reasoning:
+                reasoning = " ".join(non_reasoning[:-1]).strip()
+        else:
+            decision = ""                      # only reasoning produced -> no action
+            if not reasoning and lines:
+                reasoning = " ".join(lines).strip()
 
     if _is_hint_token(decision):
         return ("hint", "", reasoning)
@@ -388,8 +398,9 @@ class MinuteCrypticEnv(BaseEnv):
         self._guesses += 1
 
         # Match the extracted guess; fall back to the full reply so an answer
-        # embedded in reasoning ("the answer is HEINOUS") is still caught.
-        if _is_correct(text, clue) or (full and _is_correct(full, clue)):
+        # embedded in reasoning ("the answer is HEINOUS") is still caught — but
+        # only when the model actually committed to a guess (non-empty).
+        if _is_correct(text, clue) or (text.strip() and full and _is_correct(full, clue)):
             reward = max(MIN_SOLVE_REWARD, 1.0 - HINT_PENALTY * self._hints)
             return StepResult(
                 observation={"result": "correct", "answer": clue["answer"]},
@@ -401,7 +412,7 @@ class MinuteCrypticEnv(BaseEnv):
 
         # record the wrong guess
         norm = _normalize(text) or text.strip().upper()
-        disp = text.strip().upper()
+        disp = text.strip().upper() or "(no action)"
         if disp not in self._wrong_guesses:
             self._wrong_guesses.append(disp)
         self._wrong_counts[norm] = self._wrong_counts.get(norm, 0) + 1

@@ -235,6 +235,29 @@ def test_structured_reasoning_and_action_are_separated():
     assert "Despicable" in reasoning
 
 
+def test_rambling_without_action_is_not_a_garbage_guess():
+    # Model truncated mid-reasoning, never emitted ACTION: -> empty guess, not
+    # the whole reasoning blob, and reasoning is still captured.
+    kind, guess, reasoning = E._parse_action(
+        "REASONING: hmm let me think about circuit in grand prix and the letters")
+    assert kind == "guess" and guess == ""
+    assert "circuit" in reasoning
+
+
+def test_rambling_mentioning_answer_does_not_falsely_solve():
+    e = MinuteCrypticEnv()
+    e.reset(seed=SEED)
+    r = e.step(f"REASONING: maybe it is {ANSWER} or something, not sure")
+    assert r.info["solved"] == "0"          # no ACTION committed -> not a solve
+    assert r.info["decision"] == "guess"
+    assert r.info["guess"] == ""
+
+
+def test_reasoning_then_bare_answer_line_solves():
+    total, r = play(["REASONING: it means despicable\n" + ANSWER])
+    assert total == 1.0 and r.info["solved"] == "1"
+
+
 def test_info_records_reasoning_and_decision_per_step():
     e = MinuteCrypticEnv()
     e.reset(seed=SEED)
