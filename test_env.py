@@ -216,10 +216,37 @@ def test_answer_embedded_in_reasoning_solves():
 
 
 def test_parse_action_helper():
-    assert E._parse_action("HINT") == ("hint", "")
+    assert E._parse_action("HINT")[:2] == ("hint", "")
     assert E._parse_action("blah blah\nHINT")[0] == "hint"
-    assert E._parse_action("Answer: HEINOUS") == ("guess", "HEINOUS")
+    assert E._parse_action("Answer: HEINOUS")[:2] == ("guess", "HEINOUS")
     assert E._parse_action("reasoning\nGuess: foo")[0] == "guess"
+
+
+def test_structured_reasoning_and_action_are_separated():
+    # The canonical two-line format: reasoning + action captured distinctly.
+    kind, guess, reasoning = E._parse_action(
+        "REASONING: 'shredded' flags an anagram of CORSET.\nACTION: HINT")
+    assert kind == "hint"
+    assert "anagram" in reasoning
+
+    kind, guess, reasoning = E._parse_action(
+        f"REASONING: definition is Despicable.\nACTION: {ANSWER}")
+    assert kind == "guess" and guess == ANSWER
+    assert "Despicable" in reasoning
+
+
+def test_info_records_reasoning_and_decision_per_step():
+    e = MinuteCrypticEnv()
+    e.reset(seed=SEED)
+    r = e.step("REASONING: I need the definition.\nACTION: HINT")
+    assert r.info["decision"] == "hint"
+    assert r.info["guess"] == ""
+    assert r.info["reasoning"] == "I need the definition."
+    r2 = e.step(f"REASONING: it means despicable.\nACTION: {ANSWER}")
+    assert r2.info["decision"] == "guess"
+    assert r2.info["guess"] == ANSWER
+    assert r2.info["reasoning"] == "it means despicable."
+    assert r2.info["solved"] == "1"
 
 
 def test_deterministic_reset_by_seed():

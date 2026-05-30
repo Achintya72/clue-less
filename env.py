@@ -70,10 +70,13 @@ RULES = (
     "charade (join shorter pieces in sequence); container ('in', 'around', "
     "'holding'); deletion ('endless', 'heartless'); and abbreviations.\n"
     "- Answers are matched ignoring case, spaces and punctuation.\n"
-    "ACTIONS: reply with your answer to GUESS, or reply exactly 'HINT' to "
-    "reveal the next hint. Hints first explain the clue, then reveal the "
-    "answer's letters one at a time. Fewer hints is better — 'par' is the "
-    "expected number of hints for this clue, and you are scored against it."
+    "ACTIONS: each turn you either GUESS the answer or take a HINT. Hints first "
+    "explain the clue, then reveal the answer's letters one at a time. Fewer "
+    "hints is better — 'par' is the expected number of hints for this clue, and "
+    "you are scored against it.\n"
+    "RESPONSE FORMAT: reply in exactly two lines —\n"
+    "REASONING: <one or two sentences on how you are decoding the clue>\n"
+    "ACTION: <your answer in CAPITALS, or the single word HINT>"
 )
 
 # Cheat-sheet of standard cryptic substitutions, included in EVERY observation.
@@ -119,26 +122,54 @@ def _enumeration(length: list[int] | None) -> str:
 
 
 _GUESS_PREFIX = re.compile(r"^\s*(?:my\s+)?(?:final\s+)?(?:answer|guess|solution)\s*[:\-=]\s*", re.I)
+_REASONING_LINE = re.compile(r"^\s*(?:reasoning|thought|because|why)\s*[:\-]\s*(.*)", re.I)
+_ACTION_LINE = re.compile(r"^\s*(?:action|decision|move)\s*[:\-]\s*(.*)", re.I)
 
 
-def _parse_action(raw: Any) -> tuple[str, str]:
-    """Classify a (possibly chatty) model reply into ('hint', '') or ('guess', text).
+def _is_hint_token(text: str) -> bool:
+    """True if the decision text means 'take a hint'."""
+    if re.sub(r"[^a-z]", "", text.lower()) == "hint":
+        return True
+    toks = re.findall(r"[A-Za-z]+", text)
+    return bool(toks) and toks[-1].upper() == "HINT"
 
-    Real models ignore "reply with ONLY ..." and wrap the action in reasoning,
-    so we look at the LAST non-empty line: if its final word is HINT it's a hint
-    request; otherwise it's the guess (with any 'Answer:'/'Guess:' prefix stripped).
+
+def _parse_action(raw: Any) -> tuple[str, str, str]:
+    """Parse a model reply into (kind, guess, reasoning).
+
+    Preferred format is two labelled lines:
+        REASONING: ...
+        ACTION: <answer | HINT>
+    We fall back gracefully for chatty replies: the ACTION is taken from an
+    'ACTION:' line if present, else the last non-empty line; the reasoning is
+    the 'REASONING:' line if present, else everything before the decision.
     """
     s = _strip_wrapping_quotes(str(raw))
     lines = [ln.strip() for ln in s.splitlines() if ln.strip()]
-    last = lines[-1] if lines else s.strip()
-    # Whole reply or last line is exactly HINT (ignoring surrounding punctuation).
-    if re.sub(r"[^a-z]", "", s.lower()) == "hint":
-        return ("hint", "")
-    tokens = re.findall(r"[A-Za-z]+", last)
-    if tokens and tokens[-1].upper() == "HINT":
-        return ("hint", "")
-    guess = _strip_wrapping_quotes(_GUESS_PREFIX.sub("", last))
-    return ("guess", guess or last)
+
+    reasoning = ""
+    decision = None
+    decision_idx = None
+    for i, ln in enumerate(lines):
+        mr = _REASONING_LINE.match(ln)
+        if mr and mr.group(1).strip():
+            reasoning = mr.group(1).strip()
+        ma = _ACTION_LINE.match(ln)
+        if ma:
+            decision = ma.group(1).strip()
+            decision_idx = i
+
+    if decision is None:                       # no explicit ACTION: line
+        decision = lines[-1] if lines else s.strip()
+        decision_idx = len(lines) - 1
+    if not reasoning:                          # reasoning = everything before the decision
+        pre = lines[:decision_idx] if decision_idx and decision_idx > 0 else []
+        reasoning = " ".join(pre).strip()
+
+    if _is_hint_token(decision):
+        return ("hint", "", reasoning)
+    guess = _strip_wrapping_quotes(_GUESS_PREFIX.sub("", decision))
+    return ("guess", guess or decision, reasoning)
 
 
 # --------------------------------------------------------------------------- data
@@ -268,6 +299,9 @@ class MinuteCrypticEnv(BaseEnv):
         self._hint_order: list[str] = []        # ordered hint types taken
         self._wrong_guesses: list[str] = []      # display strings, in order
         self._wrong_counts: dict[str, int] = {}  # normalized -> times guessed
+        self._reasoning = ""                     # model's reasoning for the current step
+        self._decision = ""                      # 'guess' or 'hint' for the current step
+        self._guess_val = ""                     # the guessed text for the current step
         self._rng = random.Random()
 
     # ------------------------------------------------------------------ lifecycle
@@ -285,14 +319,20 @@ class MinuteCrypticEnv(BaseEnv):
         self._hint_order = []
         self._wrong_guesses = []
         self._wrong_counts = {}
+        self._reasoning = ""
+        self._decision = ""
+        self._guess_val = ""
         return self._observe()
 
     def step(self, action: Any) -> StepResult:
         if self._clue is None:
             raise RuntimeError("Call reset() before step()")
-        kind, guess = _parse_action(action)
+        kind, guess, reasoning = _parse_action(action)
+        self._reasoning = reasoning
         if kind == "hint":
+            self._decision, self._guess_val = "hint", ""
             return self._take_hint()
+        self._decision, self._guess_val = "guess", guess
         return self._take_guess(guess, full=_strip_wrapping_quotes(str(action)))
 
     # ------------------------------------------------------------------ actions
@@ -409,9 +449,10 @@ class MinuteCrypticEnv(BaseEnv):
             "hints_taken": self._hints,
             "par": clue["par"],
             "instructions": (
-                "You may reason first, but put your decision on the LAST line by "
-                "itself: either your answer (the word/phrase only), or the single "
-                "word HINT to reveal the next hint."
+                "Reply in exactly two lines:\n"
+                "REASONING: <one or two sentences on how you are decoding the clue>\n"
+                "ACTION: <your answer in CAPITALS, or the single word HINT to reveal "
+                "the next hint>"
             ),
         }
         # Hints persist once taken (point 3 of the loop).
@@ -450,4 +491,8 @@ class MinuteCrypticEnv(BaseEnv):
             "par_result": par_result,
             "outcome": outcome,
             "reward": f"{reward:.4f}",
+            # per-step play data for the replay dashboard
+            "decision": self._decision,
+            "guess": self._guess_val,
+            "reasoning": self._reasoning[:1000],
         }
