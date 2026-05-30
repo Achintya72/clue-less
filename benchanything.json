@@ -1,0 +1,49 @@
+{
+  "id": "minutecryptic",
+  "adapter": "adapter.py",
+  "name": "MinuteCryptic",
+  "description": "Can an LLM solve British-style cryptic crossword clues (definition + wordplay) from minutecryptic.com?",
+
+  "binding_vow": {
+    "version": "1.0.0",
+    "tier": "tier1",
+    "description": "One cryptic clue per episode. The agent sees the clue text and the answer's enumeration, and must reply with the answer. Wrong answers may be retried up to a limit; the agent may instead reply 'HINT' to reveal a progressive hint (definition -> device -> first letter) at a scoring penalty. Reward is paid once, on the terminal step.",
+
+    "observation_space": {
+      "type": "json",
+      "description": "{ \"clue\": string, \"enumeration\": string e.g. \"(6)\" or \"(3,4)\", \"attempts_remaining\": int, \"hints_remaining\": int, \"instructions\": string, \"feedback\"?: string }"
+    },
+
+    "action_space": {
+      "type": "text",
+      "description": "Free text: either the agent's answer, or exactly 'HINT' to reveal the next hint."
+    },
+
+    "reward": {
+      "type": "scalar",
+      "range": { "low": 0.0, "high": 1.0 },
+      "description": "Terminal-step reward: 1.0 correct with no hints; max(0.2, 1.0 - 0.2*hints) correct after hints; 0.3*similarity for a close-but-wrong final guess; 0.0 otherwise."
+    },
+
+    "episode": {
+      "max_steps": 12,
+      "deterministic_reset": true,
+      "supports_seed": true,
+      "parallel_episodes": 1,
+      "observability": "full"
+    },
+
+    "techniques": []
+  },
+
+  "scoring": {
+    "primary_metric": "score",
+    "higher_is_better": true,
+    "metrics": [
+      { "name": "score",       "type": "episode_reward", "aggregation": "mean" },
+      { "name": "solve_rate",  "type": "terminal_field", "field": "solved",        "aggregation": "mean" },
+      { "name": "avg_guesses", "type": "terminal_field", "field": "guesses_used",  "aggregation": "mean" },
+      { "name": "avg_hints",   "type": "terminal_field", "field": "hints_used",    "aggregation": "mean" }
+    ]
+  }
+}
