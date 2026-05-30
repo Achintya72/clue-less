@@ -1,0 +1,18 @@
+[
+  {
+    "file": "perfect-solver.json",
+    "model": "perfect-solver"
+  },
+  {
+    "file": "careful-solver.json",
+    "model": "careful-solver"
+  },
+  {
+    "file": "llama3.2-local.json",
+    "model": "llama3.2-local"
+  },
+  {
+    "file": "hint-spammer.json",
+    "model": "hint-spammer"
+  }
+]
