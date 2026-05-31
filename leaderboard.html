@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>MinuteCryptic Benchmark — Leaderboard</title>
+<style>
+  :root{
+    --bg:#0d1117; --panel:#161b22; --panel2:#1c2430; --line:#283040;
+    --txt:#e6edf3; --muted:#8b96a5; --accent:#58a6ff; --good:#3fb950;
+    --warn:#d29922; --bad:#f85149; --bar:#1f6feb;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--txt);
+    font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  header{padding:20px 24px;border-bottom:1px solid var(--line);
+    display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+  header h1{font-size:18px;margin:0}
+  header .sub{color:var(--muted);font-size:13px}
+  .wrap{display:grid;grid-template-columns:minmax(520px,1.3fr) minmax(360px,1fr);
+    gap:20px;padding:20px 24px;align-items:start}
+  @media(max-width:980px){.wrap{grid-template-columns:1fr}}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+  .card h2{font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);
+    margin:0;padding:12px 16px;border-bottom:1px solid var(--line);background:var(--panel2)}
+  table{width:100%;border-collapse:collapse}
+  th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
+  th{color:var(--muted);font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.04em}
+  tbody tr{cursor:pointer}
+  tbody tr:hover{background:var(--panel2)}
+  tbody tr.sel{background:#1b2740;outline:1px solid var(--accent)}
+  td.num{text-align:right;font-variant-numeric:tabular-nums}
+  .rank{color:var(--muted);width:28px}
+  .model{font-weight:600}
+  .barcell{min-width:130px}
+  .bar{height:8px;border-radius:4px;background:var(--line);overflow:hidden}
+  .bar>span{display:block;height:100%;background:var(--bar)}
+  .bar.green>span{background:var(--good)}
+  .pill{display:inline-block;padding:1px 8px;border-radius:999px;font-size:12px;font-weight:600}
+  .pill.good{background:rgba(63,185,80,.15);color:var(--good)}
+  .pill.warn{background:rgba(210,153,34,.15);color:var(--warn)}
+  .pill.bad{background:rgba(248,81,73,.15);color:var(--bad)}
+  .vs{color:var(--muted)}
+  .empty{padding:28px 16px;color:var(--muted);text-align:center}
+  .drop{margin-left:auto;display:flex;gap:8px;align-items:center}
+  .btn{background:var(--panel2);border:1px solid var(--line);color:var(--txt);
+    padding:6px 12px;border-radius:8px;cursor:pointer;font-size:13px}
+  .btn:hover{border-color:var(--accent)}
+  .eps{padding:8px}
+  .ep{border:1px solid var(--line);border-radius:8px;padding:10px 12px;margin:8px;cursor:pointer;background:var(--panel2)}
+  .ep:hover{border-color:var(--accent)}
+  .ep .clue{font-weight:600}
+  .ep .meta{color:var(--muted);font-size:12px;margin-top:2px}
+  .step{border-left:2px solid var(--line);margin:0 16px 0 22px;padding:8px 0 8px 14px;position:relative}
+  .step:before{content:"";position:absolute;left:-7px;top:12px;width:10px;height:10px;border-radius:50%;
+    background:var(--line);border:2px solid var(--panel)}
+  .step.solved:before{background:var(--good)} .step.fail:before{background:var(--bad)}
+  .step .obs{color:var(--muted);font-size:12px}
+  .step .reason{font-style:italic;color:#c9d4e1;margin:3px 0}
+  .step .act{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+  .step .act b{color:var(--accent)}
+  .rw{float:right;font-variant-numeric:tabular-nums;color:var(--muted)}
+  .back{cursor:pointer;color:var(--accent);font-size:13px}
+  .legend{padding:10px 16px;color:var(--muted);font-size:12px;border-top:1px solid var(--line)}
+  code{background:var(--panel2);padding:1px 5px;border-radius:5px}
+</style>
+</head>
+<body>
+<header>
+  <h1>🧩 MinuteCryptic Benchmark</h1>
+  <span class="sub">How well do LLMs solve cryptic crossword clues? · reads Mesocosm <code>run export</code> JSON</span>
+  <div class="drop">
+    <a class="btn" href="index.html">← Replay dashboard</a>
+    <button class="btn" id="loadBtn">Load export JSON…</button>
+    <input id="file" type="file" accept="application/json" multiple hidden />
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="card">
+    <h2>Leaderboard</h2>
+    <table id="lb">
+      <thead><tr>
+        <th class="rank">#</th><th>Model</th>
+        <th>Score</th><th>Solve rate</th>
+        <th class="num">Guesses</th>
+        <th class="num">Hints<span class="vs"> / par</span></th><th class="num">Eps</th>
+      </tr></thead>
+      <tbody id="lbBody"></tbody>
+    </table>
+    <div class="empty" id="lbEmpty">No data loaded yet.</div>
+    <div class="legend">Score = mean episode reward (0–1). Solve rate = fraction fully solved.
+      “Hints / par” compares the model’s average hints to the clue’s par (the human-expected hint count).
+      Click a row to inspect episodes.</div>
+  </div>
+
+  <div class="card">
+    <h2 id="detailTitle">Episodes</h2>
+    <div id="detail"><div class="empty">Select a model to see its episode replays.</div></div>
+  </div>
+</div>
+
+<script>
+const SOLVE_FALLBACK = 0.5; // used only when info.solved is absent
+
+// ---- aggregation -----------------------------------------------------------
+function num(x){ const n = parseFloat(x); return Number.isFinite(n) ? n : null; }
+
+function episodeStats(steps){
+  const last = steps[steps.length-1] || {};
+  const info = last.info || {};
+  const total = steps.reduce((a,s)=>a + (Number(s.reward)||0), 0);
+  const solved = info.solved!=null ? info.solved==="1" || info.solved===1
+                                   : total >= SOLVE_FALLBACK;
+  const guesses = info.guesses_used!=null ? num(info.guesses_used)
+                 : steps.filter(s=>String(s.action).replace(/["'`]/g,'').trim().toUpperCase()!=="HINT").length;
+  const hints = info.hints_used!=null ? num(info.hints_used)
+               : steps.filter(s=>String(s.action).replace(/["'`]/g,'').trim().toUpperCase()==="HINT").length;
+  const par = num(info.par);
+  const obs0 = steps[0] && steps[0].observation || {};
+  const clue = obs0.clue || "(clue)";
+  const enumr = obs0.enumeration || "";
+  return {total, solved, guesses, hints, par, clue, enumr,
+          outcome: info.outcome || (solved?"solved":"fail")};
+}
+
+function modelStats(doc){
+  const eps = Object.entries(doc.replay || {}).map(([id,steps])=>({id, steps, ...episodeStats(steps)}));
+  const mean = (f)=> eps.length ? eps.reduce((a,e)=>a+(f(e)||0),0)/eps.length : 0;
+  const pars = eps.map(e=>e.par).filter(v=>v!=null);
+  return {
+    model: doc.model || "(model)",
+    episodes: eps,
+    n: eps.length,
+    score: mean(e=>e.total),
+    solveRate: mean(e=>e.solved?1:0),
+    avgGuesses: mean(e=>e.guesses),
+    avgHints: mean(e=>e.hints),
+    avgPar: pars.length ? pars.reduce((a,b)=>a+b,0)/pars.length : null,
+  };
+}
+
+// ---- state + render --------------------------------------------------------
+const MODELS = new Map(); // model -> stats
+let selected = null;
+
+function fmt(x,d=2){ return (x==null||isNaN(x)) ? "–" : Number(x).toFixed(d); }
+function pillClass(r){ return r>=0.66?"good":r>=0.25?"warn":"bad"; }
+
+function renderLeaderboard(){
+  const rows = [...MODELS.values()].sort((a,b)=>b.score-a.score);
+  const body = document.getElementById('lbBody');
+  document.getElementById('lbEmpty').style.display = rows.length?'none':'block';
+  body.innerHTML = rows.map((m,i)=>`
+    <tr data-model="${m.model}" class="${m.model===selected?'sel':''}">
+      <td class="rank">${i+1}</td>
+      <td class="model">${m.model}</td>
+      <td class="barcell">
+        <div class="bar ${m.score>=.66?'green':''}"><span style="width:${Math.round(m.score*100)}%"></span></div>
+        <small class="vs">${fmt(m.score)}</small>
+      </td>
+      <td><span class="pill ${pillClass(m.solveRate)}">${Math.round(m.solveRate*100)}%</span></td>
+      <td class="num">${fmt(m.avgGuesses,1)}</td>
+      <td class="num">${fmt(m.avgHints,1)} <span class="vs">/ ${m.avgPar==null?'–':fmt(m.avgPar,1)}</span></td>
+      <td class="num">${m.n}</td>
+    </tr>`).join('');
+  body.querySelectorAll('tr').forEach(tr=>tr.onclick=()=>selectModel(tr.dataset.model));
+}
+
+function selectModel(model){
+  selected = model;
+  renderLeaderboard();
+  const m = MODELS.get(model);
+  document.getElementById('detailTitle').textContent = model + " — episodes";
+  const d = document.getElementById('detail');
+  d.innerHTML = `<div class="eps">` + m.episodes.map((e,i)=>`
+    <div class="ep" data-i="${i}">
+      <div class="clue">${e.clue} <span class="vs">${e.enumr}</span></div>
+      <div class="meta">
+        <span class="pill ${e.solved?'good':(e.total>0?'warn':'bad')}">${e.outcome}</span>
+        · reward ${fmt(e.total)} · ${e.guesses} guesses · ${e.hints} hints
+      </div>
+    </div>`).join('') + `</div>`;
+  d.querySelectorAll('.ep').forEach(el=>el.onclick=()=>showReplay(model, +el.dataset.i));
+}
+
+function obsLine(o){
+  if(o==null) return "";
+  if(typeof o!=="object") return String(o);
+  if(o.feedback) return o.feedback;
+  if(o.result) return `→ ${o.result}` + (o.answer?` (answer: ${o.answer})`:"");
+  if(o.clue) return `${o.clue} ${o.enumeration||""}`;
+  return JSON.stringify(o);
+}
+
+function showReplay(model, idx){
+  const m = MODELS.get(model);
+  const e = m.episodes[idx];
+  const d = document.getElementById('detail');
+  d.innerHTML =
+    `<div style="padding:12px 16px"><span class="back" id="back">← back to episodes</span>
+       <div class="clue" style="margin-top:8px;font-weight:600">${e.clue} <span class="vs">${e.enumr}</span></div></div>` +
+    e.steps.map(s=>{
+      const r = Number(s.reward)||0;
+      const cls = s.terminated ? (r>=0.5?'solved':(r>0?'':'fail')) : '';
+      return `<div class="step ${cls}">
+        <span class="rw">r=${r.toFixed(2)}${s.terminated?' ·done':''}</span>
+        <div class="obs">${obsLine(s.observation)}</div>
+        ${s.reasoning?`<div class="reason">“${s.reasoning}”</div>`:''}
+        <div class="act">→ <b>${String(s.action)}</b></div>
+      </div>`;
+    }).join('');
+  document.getElementById('back').onclick=()=>selectModel(model);
+}
+
+// ---- loading ---------------------------------------------------------------
+function addDoc(doc){
+  if(!doc || !doc.replay) return;
+  const stats = modelStats(doc);
+  MODELS.set(stats.model, stats);
+}
+
+async function loadFromIndex(){
+  try{
+    const idx = await fetch('data/index.json').then(r=>{if(!r.ok)throw 0;return r.json()});
+    for(const ent of idx){
+      const doc = await fetch('data/'+ent.file).then(r=>r.json());
+      if(!doc.model) doc.model = ent.model || ent.file.replace(/\.json$/,'');
+      addDoc(doc);
+    }
+    renderLeaderboard();
+    if(MODELS.size) selectModel([...MODELS.values()].sort((a,b)=>b.score-a.score)[0].model);
+  }catch(_){
+    document.getElementById('lbEmpty').textContent =
+      'Open over http (e.g. `python3 -m http.server` in showcase/) or use “Load export JSON…”.';
+  }
+}
+
+const fileInput = document.getElementById('file');
+document.getElementById('loadBtn').onclick=()=>fileInput.click();
+fileInput.onchange=async(ev)=>{
+  for(const f of ev.target.files){
+    try{
+      const doc = JSON.parse(await f.text());
+      if(!doc.model) doc.model = f.name.replace(/\.json$/,'');
+      addDoc(doc);
+    }catch(err){ alert('Could not parse '+f.name+': '+err.message); }
+  }
+  renderLeaderboard();
+  if(MODELS.size && !selected) selectModel([...MODELS.values()].sort((a,b)=>b.score-a.score)[0].model);
+};
+
+loadFromIndex();
+</script>
+</body>
+</html>
