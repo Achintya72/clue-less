@@ -31,10 +31,12 @@ adapter.py           # HTTP server wrapping the env (port 8765)
 test_env.py          # pytest suite locking in the loop + reward contract
 mc_data/             # the real dataset + scraper/assembler (see mc_data/README.md)
   minute_cryptic_dataset.jsonl   # 813 clues, one JSON object per line (the env's source)
-showcase/            # leaderboard UI + sample-data generator
-  index.html         # reads Mesocosm `run export` JSON, renders leaderboard + replays
+showcase/            # showcase UIs
+  index.html         # ★ landing: Minute-Cryptic-style replay dashboard + per-model report cards
+  leaderboard.html   # aggregate leaderboard table (reads Mesocosm `run export` JSON)
+  dashboard_data.json# built by build_dashboard_data.py from results/episodes/*
   make_samples.py    # writes export-schema sample data from the real env
-  data/*.json        # generated sample runs (4 reference policies)
+  data/*.json        # per-model run exports (real + reference policies)
 ```
 
 ## Clue dataset (`mc_data/minute_cryptic_dataset.jsonl`)
@@ -67,16 +69,20 @@ python adapter.py                        # terminal 1 — http://localhost:8765/
 mesocosm run local --episodes 5          # terminal 2
 ```
 
-## Leaderboard UI
+## Showcase UI
 
 ```bash
-python showcase/make_samples.py          # generate sample export JSON
-cd showcase && python -m http.server 8088 # open http://localhost:8088/index.html
+cd showcase && python -m http.server 8088
+# open http://localhost:8088/            -> replay dashboard (index.html, the star)
+# open http://localhost:8088/leaderboard.html  -> aggregate leaderboard table
 ```
 
-Point it at real data by exporting platform runs:
-`mesocosm run export RUN_ID -o showcase/data/<model>.json`, then add the file to
-`showcase/data/index.json` (or use the "Load export JSON…" button).
+The two views are cross-linked. The **replay dashboard** reads
+`showcase/dashboard_data.json` (see below). The **leaderboard** reads the
+per-model `run export` files in `showcase/data/` (add real runs with
+`mesocosm run export RUN_ID -o showcase/data/<model>.json` + an entry in
+`showcase/data/index.json`, or the "Load export JSON…" button). Generate sample
+data with `python showcase/make_samples.py`.
 
 ## Submit to the platform
 
@@ -96,12 +102,19 @@ re-running any episode that hits a rate limit.
 
 ```bash
 mesocosm auth login                  # member session (only a member can read results)
-python orchestrate_bench.py          # runs the models in MODELS over all 813 clues
+python harvest_sweep.py              # resilient driver — recommended (see note)
+# or: python orchestrate_bench.py    # full-813 driver
 ```
 
-Output lands in `results/episodes/<model>/<seed>.json`, resumable via
-`results/state2.json`, plus a per-model `results/summary.json`. Edit `MODELS` /
-`RUN_PARALLEL` at the top of the script to change scope.
+Output lands in `results/episodes/<model>/<seed>.json` (resumable — both drivers
+skip/re-queue seeds). Edit `MODELS` / `TARGET` / `BATCH` at the top to change scope.
+
+> **Use `harvest_sweep.py`.** The platform sometimes wedges an episode in
+> `running` forever, so a batch never goes fully terminal — `orchestrate_bench.py`
+> only harvests on a *complete* batch and will hang on that straggler.
+> `harvest_sweep.py` instead saves each completed episode immediately and
+> **times out a stuck run, re-queuing its seeds into a fresh run** (fresh small
+> runs drain fast). Then rebuild the dashboard with `python build_dashboard_data.py`.
 
 **Platform limits worth knowing:**
 - Each run is capped at **20 episodes**; the orchestrator batches around it.
@@ -124,7 +137,7 @@ for each hint type (definition / indicators / fodder / letter).
 ```bash
 python build_dashboard_data.py       # results/episodes/* -> showcase/dashboard_data.json
 cd showcase && python -m http.server 8088
-# open http://localhost:8088/dashboard.html
+# open http://localhost:8088/         (it's the landing page, index.html)
 ```
 
 Re-run `build_dashboard_data.py` after any new runs and refresh — the dashboard
