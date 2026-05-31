@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MinuteCryptic — Model Replay</title>
+<style>
+  :root{
+    --bg:#0f1216; --card:#171c22; --ink:#e8edf2; --mut:#8a97a6; --line:#2a323c;
+    --tile:#222a33; --tileedge:#3a4654; --green:#36c46b; --red:#e7564f;
+    --yellow:#e8c54a; --blue:#5aa6ff; --accent:#7c5cff;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+       font:15px/1.5 ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial}
+  header{padding:14px 20px;border-bottom:1px solid var(--line);display:flex;
+         align-items:center;gap:14px;flex-wrap:wrap}
+  header h1{font-size:16px;margin:0;font-weight:700;letter-spacing:.3px}
+  header .sub{color:var(--mut);font-size:13px}
+  select{background:var(--tile);color:var(--ink);border:1px solid var(--tileedge);
+         border-radius:8px;padding:7px 10px;font-size:14px}
+  .wrap{max-width:1040px;margin:0 auto;padding:22px;display:grid;
+        grid-template-columns:1.4fr 1fr;gap:22px}
+  @media(max-width:880px){.wrap{grid-template-columns:1fr}}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
+  .clue{font-size:22px;font-weight:600;line-height:1.35}
+  .enum{color:var(--mut);font-weight:600}
+  .grid{display:flex;flex-wrap:wrap;gap:14px;margin:26px 0 10px}
+  .word{display:flex;gap:7px}
+  .tile{width:42px;height:50px;border-radius:8px;background:var(--tile);
+        border:2px solid var(--tileedge);display:flex;align-items:center;
+        justify-content:center;font-size:24px;font-weight:700;text-transform:uppercase;
+        transition:all .25s}
+  .tile.filled{background:#2b3a2f;border-color:var(--green);color:#dffbe7}
+  .tile.win{background:var(--green);border-color:var(--green);color:#06210f}
+  .actionline{margin-top:18px;min-height:46px;display:flex;align-items:center;gap:10px}
+  .chip{padding:8px 14px;border-radius:10px;font-weight:700;font-size:17px;
+        letter-spacing:.5px;display:inline-flex;align-items:center;gap:8px}
+  .chip.guess-ok{background:rgba(54,196,107,.15);color:var(--green);border:1px solid var(--green)}
+  .chip.guess-bad{background:rgba(231,86,79,.13);color:var(--red);border:1px solid var(--red)}
+  .chip.hint{background:rgba(232,197,74,.13);color:var(--yellow);border:1px solid var(--yellow)}
+  .shake{animation:shake .4s}
+  @keyframes shake{10%,90%{transform:translateX(-2px)}30%,70%{transform:translateX(4px)}
+                   50%{transform:translateX(-6px)}}
+  .meta{display:flex;gap:18px;color:var(--mut);font-size:13px;margin-top:6px}
+  .meta b{color:var(--ink)}
+  .panel h3{font-size:12px;text-transform:uppercase;letter-spacing:.6px;color:var(--mut);
+            margin:0 0 8px}
+  .think{background:#12171d;border:1px solid var(--line);border-left:3px solid var(--accent);
+         border-radius:8px;padding:12px 14px;font-style:italic;color:#cdd6e0;min-height:54px}
+  .hintlist,.wronglist{list-style:none;margin:10px 0 0;padding:0;display:flex;
+        flex-direction:column;gap:8px}
+  .hintlist li{padding:9px 12px;border-radius:8px;font-size:13.5px;line-height:1.45}
+  .h-definition{background:rgba(90,166,255,.12);border:1px solid rgba(90,166,255,.4)}
+  .h-fodder,.h-indicators,.h-hint{background:rgba(232,197,74,.1);border:1px solid rgba(232,197,74,.35)}
+  .h-letter{background:rgba(124,92,255,.12);border:1px solid rgba(124,92,255,.4)}
+  .htag{font-weight:700;text-transform:uppercase;font-size:10px;letter-spacing:.5px;
+        margin-right:6px;opacity:.8}
+  .wronglist li{display:inline-block;background:rgba(231,86,79,.12);color:#ffb3af;
+        border:1px solid rgba(231,86,79,.4);border-radius:6px;padding:3px 9px;
+        font-weight:600;margin:0 6px 6px 0;text-decoration:line-through}
+  .controls{display:flex;align-items:center;gap:10px;margin-top:18px}
+  button{background:var(--tile);color:var(--ink);border:1px solid var(--tileedge);
+         border-radius:8px;padding:8px 14px;font-size:14px;cursor:pointer}
+  button:hover{border-color:var(--accent)}
+  button.primary{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:700}
+  .stepinfo{color:var(--mut);font-size:13px;margin-left:auto}
+  .banner{margin-top:16px;padding:12px 16px;border-radius:10px;font-weight:700;display:none}
+  .banner.show{display:block}
+  .banner.below{background:rgba(54,196,107,.15);color:var(--green);border:1px solid var(--green)}
+  .banner.at{background:rgba(90,166,255,.13);color:var(--blue);border:1px solid var(--blue)}
+  .banner.above{background:rgba(232,197,74,.12);color:var(--yellow);border:1px solid var(--yellow)}
+  .scorebar{display:flex;gap:10px;align-items:center;margin-top:14px;color:var(--mut);font-size:13px}
+  .pip{width:11px;height:11px;border-radius:50%;background:var(--tileedge)}
+  .pip.on{background:var(--yellow)}
+  .pip.overpar{background:var(--red)}
+  /* per-model overhead summary */
+  .summary{grid-column:1/-1;display:flex;gap:30px;align-items:center;flex-wrap:wrap}
+  .summary .model{font-weight:700;font-size:15px;width:100%;margin-bottom:-6px}
+  .stat{text-align:center;min-width:96px}
+  .statnum{font-size:27px;font-weight:800;line-height:1.1}
+  .statlbl{color:var(--mut);font-size:10.5px;text-transform:uppercase;letter-spacing:.5px;margin-top:3px}
+  .statsub{font-size:11px;font-weight:700;margin-top:1px}
+  .below2{color:var(--green)} .at2{color:var(--blue)} .above2{color:var(--red)}
+  .htfreq{flex:1;min-width:260px}
+  .htfreq h3{margin:0 0 8px}
+  .htbar{display:flex;align-items:center;gap:9px;margin:6px 0;font-size:12px}
+  .htbar .lbl{width:82px;color:var(--mut);text-transform:capitalize}
+  .htbar .track{flex:1;height:15px;background:var(--tile);border-radius:8px;overflow:hidden}
+  .htbar .fill{height:100%;border-radius:8px;transition:width .3s}
+  .htbar .pct{width:70px;text-align:right}
+  .f-definition{background:var(--blue)} .f-fodder,.f-indicators{background:var(--yellow)} .f-letter{background:var(--accent)}
+  .f-other{background:var(--mut)}
+</style>
+</head>
+<body>
+<header>
+  <h1>🟦 MinuteCryptic <span class="sub">— model replay dashboard</span></h1>
+  <label>Model <select id="modelSel"></select></label>
+  <label>Puzzle <select id="clueSel"></select></label>
+  <span class="stepinfo" id="cov"></span>
+</header>
+
+<div class="wrap">
+  <div class="card summary" id="summary">
+    <div class="model" id="sModel">—</div>
+    <div class="stat">
+      <div class="statnum" id="sAvgPar">–</div>
+      <div class="statlbl">avg hints vs par</div>
+      <div class="statsub" id="sAvgParWord"></div>
+    </div>
+    <div class="stat"><div class="statnum" id="sSolve">–</div><div class="statlbl">solve rate</div></div>
+    <div class="stat"><div class="statnum" id="sHints">–</div><div class="statlbl">avg hints</div></div>
+    <div class="stat"><div class="statnum" id="sEp">–</div><div class="statlbl">puzzles</div></div>
+    <div class="htfreq">
+      <h3>How often it takes each hint type</h3>
+      <div id="htBars"></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="clue"><span id="clueText"></span> <span class="enum" id="enumText"></span></div>
+    <div class="meta">
+      <span>par <b id="parV">–</b></span>
+      <span>hints used <b id="hintsV">0</b></span>
+      <span id="defWrap" style="display:none">definition <b id="defV"></b></span>
+    </div>
+    <div class="grid" id="grid"></div>
+    <div class="actionline" id="actionLine"></div>
+    <div class="scorebar" id="pips"></div>
+    <div class="banner" id="banner"></div>
+    <div class="controls">
+      <button id="prevBtn">‹ Prev</button>
+      <button id="playBtn" class="primary">▶ Play</button>
+      <button id="nextBtn">Next ›</button>
+      <span class="stepinfo" id="stepInfo"></span>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="card">
+      <h3>Model reasoning</h3>
+      <div class="think" id="think">—</div>
+    </div>
+    <div class="card" style="margin-top:16px">
+      <h3>Hints revealed</h3>
+      <ul class="hintlist" id="hints"><li style="background:none;border:none;color:var(--mut)">none yet</li></ul>
+    </div>
+    <div class="card" style="margin-top:16px">
+      <h3>Wrong guesses</h3>
+      <ul class="wronglist" id="wrong"><li style="background:none;border:none;color:var(--mut);text-decoration:none">none</li></ul>
+    </div>
+  </div>
+</div>
+
+<script>
+let DATA={episodes:[]}, EP=null, idx=0, timer=null;
+
+const $=id=>document.getElementById(id);
+
+function letterSeq(ep, step){
+  // returns array of {ch, filled, win} per answer letter, plus word breaks via wordLengths
+  const total = ep.wordLengths.reduce((a,b)=>a+b,0) || (ep.answer||'').replace(/[^A-Za-z]/g,'').length;
+  let fill = Array(total).fill(null);
+  const solved = step.outcome==='solved';
+  if(solved){
+    const ans=(ep.answer||'').replace(/[^A-Za-z]/g,'').toUpperCase().split('');
+    fill = ans.slice(0,total);
+    return {fill, win:true, total};
+  }
+  if(step.letters){
+    const toks = step.letters.split(/\s+/).filter(t=>t!=='/');
+    let k=0;
+    for(const t of toks){ if(k>=total) break; fill[k] = (t==='_'?null:t.toUpperCase()); k++; }
+  }
+  return {fill, win:false, total};
+}
+
+function renderGrid(ep, step){
+  const {fill, win} = letterSeq(ep, step);
+  const grid=$('grid'); grid.innerHTML='';
+  let k=0;
+  const wl = ep.wordLengths.length ? ep.wordLengths : [fill.length];
+  for(const wlen of wl){
+    const w=document.createElement('div'); w.className='word';
+    for(let j=0;j<wlen;j++){
+      const t=document.createElement('div'); t.className='tile';
+      const ch=fill[k++];
+      if(ch){ t.textContent=ch; t.classList.add(win?'win':'filled'); }
+      w.appendChild(t);
+    }
+    grid.appendChild(w);
+  }
+}
+
+function renderAction(step){
+  const line=$('actionLine'); line.innerHTML='';
+  const c=document.createElement('div');
+  if(step.decision==='hint'){
+    c.className='chip hint';
+    const revealed = step.feedback && step.feedback.indexOf('Letter revealed')>=0;
+    c.textContent = revealed ? '💡 took a letter hint' : '💡 took a hint';
+  } else {
+    const ok = step.outcome==='solved';
+    c.className='chip '+(ok?'guess-ok':'guess-bad shake');
+    c.textContent = (ok?'✓ ':'✗ ') + (step.guess ? '“'+step.guess+'”' : '(no answer)');
+  }
+  line.appendChild(c);
+}
+
+function renderHints(step){
+  const ul=$('hints'); ul.innerHTML='';
+  if(!step.hints.length){ ul.innerHTML='<li style="background:none;border:none;color:var(--mut)">none yet</li>'; return; }
+  step.hints.forEach(h=>{
+    const m=h.match(/^\[(\w+)\]\s*(.*)$/);
+    const type=m?m[1]:'hint', text=m?m[2]:h;
+    const li=document.createElement('li'); li.className='h-'+type;
+    li.innerHTML='<span class="htag">'+type+'</span>'+text;
+    ul.appendChild(li);
+  });
+}
+
+function renderWrong(step){
+  const ul=$('wrong'); ul.innerHTML='';
+  if(!step.wrong.length){ ul.innerHTML='<li style="background:none;border:none;color:var(--mut);text-decoration:none">none</li>'; return; }
+  step.wrong.forEach(w=>{ const li=document.createElement('li'); li.textContent=w; ul.appendChild(li); });
+}
+
+function renderPips(ep, step){
+  const p=$('pips'); p.innerHTML='<span>hints</span>';
+  const n=Math.max(step.hintsUsed, ep.par);
+  for(let i=0;i<n;i++){
+    const d=document.createElement('span'); d.className='pip';
+    if(i<step.hintsUsed) d.classList.add(i>=ep.par?'overpar':'on');
+    p.appendChild(d);
+  }
+  p.innerHTML+='<span style="margin-left:8px">'+step.hintsUsed+' used · par '+ep.par+'</span>';
+}
+
+function render(){
+  if(!EP) return;
+  const step=EP.steps[idx];
+  $('hintsV').textContent=step.hintsUsed;
+  renderGrid(EP, step);
+  renderAction(step);
+  renderHints(step);
+  renderWrong(step);
+  renderPips(EP, step);
+  $('think').textContent = step.reasoning || '—';
+  $('stepInfo').textContent='step '+(idx+1)+' / '+EP.steps.length+' · '+step.outcome;
+  const b=$('banner'); b.className='banner';
+  if(idx===EP.steps.length-1){
+    const r=EP.parResult||'';
+    b.classList.add('show', r||'at');
+    const verdict = EP.solved ? ('Solved with '+EP.hintsUsed+' hint(s) — '+r.toUpperCase()+' par') :
+                                ('Did not solve ('+EP.hintsUsed+' hints used)');
+    b.textContent = verdict + '  ·  reward '+EP.reward.toFixed(2);
+  }
+}
+
+function loadEpisode(ep){
+  EP=ep; idx=0;
+  $('clueText').textContent=ep.clue;
+  $('enumText').textContent=ep.enumeration;
+  $('parV').textContent=ep.par;
+  if(ep.definition){ $('defWrap').style.display=''; $('defV').textContent=ep.definition; }
+  else $('defWrap').style.display='none';
+  render();
+}
+
+function renderSummary(model){
+  const eps=DATA.episodes.filter(e=>e.model===model);
+  const n=eps.length||1;
+  const toPar=eps.reduce((a,e)=>a+(e.hintsUsed-e.par),0)/n;     // signed: <0 below par, >0 above
+  const solve=eps.reduce((a,e)=>a+(e.solved?1:0),0)/n;
+  const hints=eps.reduce((a,e)=>a+e.hintsUsed,0)/n;
+  const types={};
+  eps.forEach(e=>(e.hintOrder||[]).forEach(t=>types[t]=(types[t]||0)+1));
+  const total=Object.values(types).reduce((a,b)=>a+b,0)||1;
+
+  $('sModel').textContent=model;
+  const cls = toPar<-0.05?'below2':toPar>0.05?'above2':'at2';
+  const word= toPar<-0.05?'▼ below par':toPar>0.05?'▲ above par':'• at par';
+  const ap=$('sAvgPar'); ap.className='statnum '+cls;
+  ap.textContent=(toPar>0?'+':'')+toPar.toFixed(2);
+  const apw=$('sAvgParWord'); apw.className='statsub '+cls; apw.textContent=word;
+  $('sSolve').textContent=Math.round(solve*100)+'%';
+  $('sHints').textContent=hints.toFixed(1);
+  $('sEp').textContent=eps.length;
+
+  const order=['definition','indicators','fodder','letter'];
+  const keys=[...order.filter(k=>types[k]),...Object.keys(types).filter(k=>!order.includes(k))];
+  $('htBars').innerHTML=keys.map(k=>{
+    const pct=Math.round(100*types[k]/total);
+    const cl=order.includes(k)?'f-'+k:'f-other';
+    return '<div class="htbar"><span class="lbl">'+k+'</span>'+
+           '<span class="track"><span class="fill '+cl+'" style="width:'+pct+'%"></span></span>'+
+           '<span class="pct">'+pct+'% ('+types[k]+')</span></div>';
+  }).join('') || '<div style="color:var(--mut);font-size:13px">no hints taken</div>';
+}
+
+function fillClues(model){
+  renderSummary(model);
+  const sel=$('clueSel'); sel.innerHTML='';
+  DATA.episodes.filter(e=>e.model===model).forEach((e,i)=>{
+    const o=document.createElement('option'); o.value=e._i;
+    o.textContent=(e.solved?'✓ ':'· ')+e.clue.slice(0,42)+' '+e.enumeration;
+    sel.appendChild(o);
+  });
+  const first=DATA.episodes.find(e=>e.model===model);
+  if(first) loadEpisode(first);
+}
+
+function stop(){ if(timer){clearInterval(timer);timer=null;$('playBtn').textContent='▶ Play';} }
+function play(){
+  if(timer){stop();return;}
+  $('playBtn').textContent='⏸ Pause';
+  timer=setInterval(()=>{ if(idx<EP.steps.length-1){idx++;render();} else stop(); }, 1900);
+}
+
+$('modelSel').onchange=e=>fillClues(e.target.value);
+$('clueSel').onchange=e=>{ stop(); loadEpisode(DATA.episodes[+e.target.value]); };
+$('prevBtn').onclick=()=>{ stop(); if(idx>0){idx--;render();} };
+$('nextBtn').onclick=()=>{ stop(); if(idx<EP.steps.length-1){idx++;render();} };
+$('playBtn').onclick=play;
+
+fetch('dashboard_data.json').then(r=>r.json()).then(d=>{
+  DATA=d; DATA.episodes.forEach((e,i)=>e._i=i);
+  const models=[...new Set(DATA.episodes.map(e=>e.model))];
+  const ms=$('modelSel');
+  models.forEach(m=>{ const o=document.createElement('option'); o.value=m;
+    const n=DATA.episodes.filter(e=>e.model===m).length; o.textContent=m+' ('+n+')'; ms.appendChild(o); });
+  $('cov').textContent=DATA.episodes.length+' episodes loaded';
+  if(models.length) fillClues(models[0]);
+}).catch(e=>{ document.body.insertAdjacentHTML('beforeend','<p style="padding:20px;color:#e7564f">Could not load dashboard_data.json — serve this folder over http.</p>'); });
+</script>
+</body>
+</html>

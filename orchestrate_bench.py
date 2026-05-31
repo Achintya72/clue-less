@@ -1,16 +1,16 @@
 #!/usr/bin/env python
-"""Orchestrate full 813-clue Minute Cryptic runs across the runnable models.
+"""Clean full-813 sweep for gpt-4o + one Gemini, resilient to rate limits.
 
-The platform caps each run at 20 episodes and the CLI can't pick clues, so we
-POST runs directly with explicit seed_set batches (seed i -> clue i): 41 batches
-per model covering 0..812. Designed around the failure modes we hit:
+The platform's provider keys are shared + rate-limited, so episodes fail under
+load. We therefore track coverage PER SEED (clue), not per run: each run carries
+up to 20 not-yet-successful seeds; when it finishes we harvest the episodes that
+succeeded and re-queue the ones that hit a rate limit, until every clue has a
+clean result (or a seed exhausts its retry budget).
 
-- create POSTs occasionally time out -> long timeout + adopt any orphan run
-  (matched by model + seed_set) instead of creating a duplicate.
-- Gemini rate-limits under load -> low concurrency, retries with a cooldown.
-- get/episodes 403 -> read status/scores via the export endpoint.
-
-Resumable: state lives in results/state.json. Re-run to continue.
+- One run per PROVIDER in flight (gpt-4o and Gemini are different keys -> run
+  in parallel), low in-run concurrency to stay under the rate limit.
+- create/export via direct API (CLI can't pass seed_set; get/episodes 403).
+- Resumable: results/state2.json + per-episode files under results/episodes/.
 """
 from __future__ import annotations
 
@@ -23,226 +23,188 @@ import httpx
 
 ROOT = Path(__file__).parent
 RESULTS = ROOT / "results"
-RESULTS.mkdir(exist_ok=True)
-STATE_FILE = RESULTS / "state.json"
+EPISODES = RESULTS / "episodes"
+STATE = RESULTS / "state2.json"
 SHOWCASE = ROOT / "showcase" / "data"
+for d in (RESULTS, EPISODES, SHOWCASE):
+    d.mkdir(parents=True, exist_ok=True)
 
 BASE = "https://api.swecc.org/bench"
 DOMAIN = "a42c98f2-8d77-432e-aee5-e89993bdd726"
 VOW = "1.0.0"
-# Only the models with working platform keys (see access findings).
-MODELS = [
-    "openai/gpt-4o",
-    "gemini/gemini-3.1-flash-lite",
-    "gemini/gemini-3.1-flash-lite-preview",
-    "gemini/gemini-2.5-flash-lite",
-    "gemini/gemini-flash-lite-latest",
-]
+MODELS = ["openai/gpt-4o", "gemini/gemini-3.1-flash-lite"]
 N_CLUES = 813
 BATCH = 20
-MAX_INFLIGHT = 5            # gentle: keeps concurrent Gemini calls under the rate limit
-RUN_PARALLEL = 4            # episode concurrency within a run
-MAX_TOKENS = 800           # room for REASONING + ACTION without truncating before the action
-RETRIES = 4                 # per-batch retries (rate-limit failures need a few)
-COOLDOWN = 2                # cycles to wait before retrying a failed batch
+RUN_PARALLEL = 3            # in-run episode concurrency (low -> under rate limit)
+MAX_TOKENS = 800
+MAX_ATTEMPTS = 5           # per-seed retry budget before giving up
 CREATE_TIMEOUT = 180.0
 POLL_SECS = 15
 
 DONE = {"completed"}
-DEAD = {"failed", "error", "cancelled"}
+TERMINAL = {"completed", "failed", "error", "cancelled"}
 
 
-def slug(model: str) -> str:
-    return model.replace("/", "-").replace(".", "-")
-
-
-def batches() -> list[list[int]]:
-    return [list(range(i, min(i + BATCH, N_CLUES))) for i in range(0, N_CLUES, BATCH)]
+def slug(m: str) -> str:
+    return m.replace("/", "-").replace(".", "-")
 
 
 def get_token() -> str:
-    out = subprocess.run(["mesocosm", "auth", "token"], capture_output=True, text=True)
-    return out.stdout.strip()
+    return subprocess.run(["mesocosm", "auth", "token"], capture_output=True, text=True).stdout.strip()
 
 
 def load_state() -> dict:
-    if STATE_FILE.exists():
-        return json.loads(STATE_FILE.read_text(encoding="utf-8"))
-    return {m: [{"seeds": b, "run_id": None, "status": "todo", "scores": None,
-                 "n": len(b), "tries": 0, "cooldown": 0} for b in batches()]
+    if STATE.exists():
+        return json.loads(STATE.read_text(encoding="utf-8"))
+    return {m: {"pending": list(range(N_CLUES)), "done": [], "giveup": [],
+                "attempts": {}, "active_run": None, "active_seeds": []}
             for m in MODELS}
 
 
 def save_state(st: dict) -> None:
-    STATE_FILE.write_text(json.dumps(st, indent=2), encoding="utf-8")
+    STATE.write_text(json.dumps(st), encoding="utf-8")
 
 
-def adopted_ids(st: dict) -> set[str]:
-    return {b["run_id"] for m in st for b in st[m] if b["run_id"]}
-
-
-def reconcile_orphan(client, model, seeds, taken) -> str | None:
-    """If a create timed out client-side, the run may exist server-side. Find it
-    by matching model + seed_set among recent runs (not already adopted)."""
-    try:
-        r = client.get("/v1/runs")
-        if r.status_code >= 400:
-            return None
-        for run in r.json():
-            cfg = run.get("config") or {}
-            if (cfg.get("agent_config", {}).get("model") == model
-                    and cfg.get("seed_set") == seeds
-                    and run["id"] not in taken
-                    and run.get("status") not in DEAD):
-                return run["id"]
-    except Exception:
-        return None
-    return None
-
-
-def create_run(client, model, seeds) -> str | None:
-    payload = {
-        "domain_id": DOMAIN, "binding_vow_version": VOW,
-        "agent_config": {"model": model, "temperature": 0.0, "max_tokens": MAX_TOKENS},
-        "num_episodes": len(seeds), "seed_set": seeds, "max_parallel": RUN_PARALLEL,
-    }
+def create_run(client, model, seeds):
+    payload = {"domain_id": DOMAIN, "binding_vow_version": VOW,
+               "agent_config": {"model": model, "temperature": 0.0, "max_tokens": MAX_TOKENS},
+               "num_episodes": len(seeds), "seed_set": seeds, "max_parallel": RUN_PARALLEL}
     try:
         r = client.post("/v1/runs", json=payload, timeout=CREATE_TIMEOUT)
         if r.status_code >= 400:
-            print(f"  create {r.status_code}: {r.text[:100]}", flush=True)
+            print(f"  create {model} {r.status_code}: {r.text[:90]}", flush=True)
             return None
         return r.json()["id"]
     except Exception as e:
-        print(f"  create timeout/err ({model} {seeds[0]}-{seeds[-1]}): {e}", flush=True)
+        print(f"  create err {model}: {e}", flush=True)
         return None
 
 
-def fetch_export(client, run_id) -> dict | None:
+def export(client, rid):
     try:
-        r = client.get(f"/v1/runs/{run_id}/export")
+        r = client.get(f"/v1/runs/{rid}/export")
         return r.json() if r.status_code < 400 else None
     except Exception:
         return None
 
 
-def inflight(st) -> int:
-    return sum(1 for m in st for b in st[m] if b["status"] == "running")
+def harvest(model, doc, ms) -> tuple[int, int]:
+    """Save successful episodes, re-queue failed seeds. Returns (n_ok, n_failed)."""
+    rep = doc.get("replay") or {}
+    ok = fail = 0
+    epdir = EPISODES / slug(model)
+    epdir.mkdir(parents=True, exist_ok=True)
+    for ep in (doc.get("episodes") or []):
+        seed = ep.get("seed")
+        if seed is None or seed not in ms["active_seeds"]:
+            continue
+        if ep.get("status") == "completed":
+            steps = rep.get(ep["id"]) or ep.get("steps") or []
+            (epdir / f"{seed}.json").write_text(
+                json.dumps({"seed": seed, "model": model, "steps": steps}), encoding="utf-8")
+            if seed in ms["pending"]:
+                ms["pending"].remove(seed)
+            if seed not in ms["done"]:
+                ms["done"].append(seed)
+            ok += 1
+        else:  # rate-limited / errored episode -> retry later, up to the budget
+            a = ms["attempts"].get(str(seed), 0) + 1
+            ms["attempts"][str(seed)] = a
+            if a >= MAX_ATTEMPTS:
+                if seed in ms["pending"]:
+                    ms["pending"].remove(seed)
+                if seed not in ms["giveup"]:
+                    ms["giveup"].append(seed)
+            fail += 1
+    return ok, fail
 
 
-def main() -> None:
-    for cycle in range(100000):
+def main():
+    cycle = 0
+    while True:
+        cycle += 1
         token = get_token()
-        with httpx.Client(base_url=BASE, headers={"Authorization": f"Bearer {token}"},
-                          timeout=120.0) as client:
+        with httpx.Client(base_url=BASE, headers={"Authorization": f"Bearer {token}"}, timeout=120.0) as c:
             st = load_state()
-
-            # 1) poll running runs
-            for m in MODELS:
-                for b in st[m]:
-                    if b["status"] == "running" and b["run_id"]:
-                        doc = fetch_export(client, b["run_id"])
-                        if not doc:
-                            continue
+            for model in MODELS:
+                ms = st[model]
+                # poll the active run; harvest when the whole run is terminal
+                if ms["active_run"]:
+                    doc = export(c, ms["active_run"])
+                    if doc:
                         rstatus = (doc.get("run") or {}).get("status")
-                        if rstatus in DONE:
-                            b["status"], b["scores"] = "completed", (doc.get("run") or {}).get("scores") or {}
-                        elif rstatus in DEAD:
-                            b["status"], b["cooldown"] = "dead", COOLDOWN
-
-            # 2) tick cooldowns; requeue dead batches with retry budget left
-            for m in MODELS:
-                for b in st[m]:
-                    if b["status"] == "dead":
-                        if b["tries"] >= RETRIES:
-                            continue
-                        b["cooldown"] = max(0, b.get("cooldown", 0) - 1)
-                        if b["cooldown"] == 0:
-                            b["status"], b["run_id"] = "todo", None
+                        eps = doc.get("episodes") or []
+                        all_term = bool(eps) and all(e.get("status") in TERMINAL for e in eps)
+                        if rstatus in TERMINAL or all_term:
+                            ok, fl = harvest(model, doc, ms)
+                            print(f"  {slug(model)}: run done +{ok} ok / {fl} retry "
+                                  f"(coverage {len(ms['done'])}/{N_CLUES})", flush=True)
+                            ms["active_run"], ms["active_seeds"] = None, []
+                # launch next batch for this model if idle and work remains
+                if not ms["active_run"] and ms["pending"]:
+                    seeds = ms["pending"][:BATCH]
+                    rid = create_run(c, model, seeds)
+                    if rid:
+                        ms["active_run"], ms["active_seeds"] = rid, seeds
             save_state(st)
 
-            # 3) launch up to MAX_INFLIGHT
-            slots = MAX_INFLIGHT - inflight(st)
-            taken = adopted_ids(st)
-            for m in MODELS:
-                for b in st[m]:
-                    if slots <= 0:
-                        break
-                    if b["status"] == "todo":
-                        rid = create_run(client, m, b["seeds"]) \
-                            or reconcile_orphan(client, m, b["seeds"], taken)
-                        if rid:
-                            b["run_id"], b["status"] = rid, "running"
-                            b["tries"] += 1
-                            taken.add(rid)
-                            slots -= 1
-                if slots <= 0:
-                    break
-            save_state(st)
-
-            tot = sum(len(st[m]) for m in MODELS)
-            done = sum(1 for m in st for b in st[m] if b["status"] == "completed")
-            dead = sum(1 for m in st for b in st[m] if b["status"] == "dead" and b["tries"] >= RETRIES)
-            print(f"[cycle {cycle}] completed {done}/{tot}  running={inflight(st)} "
-                  f"todo={sum(1 for m in st for b in st[m] if b['status']=='todo')} "
-                  f"giveup={dead}", flush=True)
-            if done + dead >= tot:
+            tot_done = sum(len(st[m]["done"]) for m in MODELS)
+            tot_pend = sum(len(st[m]["pending"]) for m in MODELS)
+            tot_give = sum(len(st[m]["giveup"]) for m in MODELS)
+            print(f"[cycle {cycle}] done={tot_done}/{2*N_CLUES} pending={tot_pend} giveup={tot_give} "
+                  + " | ".join(f"{slug(m)} {len(st[m]['done'])}/{N_CLUES}" for m in MODELS), flush=True)
+            if all(not st[m]["pending"] for m in MODELS):
                 break
         time.sleep(POLL_SECS)
-
     aggregate()
 
 
-def aggregate() -> None:
+def aggregate():
     st = load_state()
-    SHOWCASE.mkdir(parents=True, exist_ok=True)
     summary, index = [], []
-    token = get_token()
-    with httpx.Client(base_url=BASE, headers={"Authorization": f"Bearer {token}"},
-                      timeout=180.0) as client:
-        for m in MODELS:
-            metrics = ["score", "solve_rate", "avg_hints", "avg_guesses",
-                       "under_par_rate", "avg_hints_to_par"]
-            acc = {k: 0.0 for k in metrics}
-            merged: dict = {}             # keyed by seed -> dedupes
-            n_total = 0
-            for b in st[m]:
-                if b["status"] != "completed":
-                    continue
-                doc = fetch_export(client, b["run_id"])
-                if not doc:
-                    continue
-                rep = doc.get("replay") or {}
-                for ep in (doc.get("episodes") or []):
-                    steps = rep.get(ep["id"]) or []
-                    merged[f"{slug(m)}-seed{ep.get('seed')}"] = steps
-                sc = b["scores"] or {}
-                n = b["n"]
-                n_total += n
-                for k in metrics:
-                    if sc.get(k) is not None:
-                        acc[k] += sc[k] * n
-            covered = len(merged)
-            means = {k: (acc[k] / n_total if n_total else None) for k in metrics}
-            summary.append({"model": m, "clues_scored": covered, **means})
-            fn = f"{slug(m)}.json"
-            (SHOWCASE / fn).write_text(json.dumps({
-                "schema_version": "1", "domain_id": DOMAIN, "binding_vow_version": VOW,
-                "model": m, "visibility": "gallery_public", "replay": merged,
-            }, indent=2) + "\n", encoding="utf-8")
-            index.append({"file": fn, "model": m})
-        for fn, mm in [("perfect-solver.json", "perfect-solver"),
-                       ("hint-spammer.json", "hint-spammer")]:
-            if (SHOWCASE / fn).exists():
-                index.append({"file": fn, "model": mm})
-        (SHOWCASE / "index.json").write_text(json.dumps(index, indent=2) + "\n", encoding="utf-8")
-
+    for model in MODELS:
+        epdir = EPISODES / slug(model)
+        files = sorted(epdir.glob("*.json"), key=lambda p: int(p.stem)) if epdir.exists() else []
+        merged = {}
+        agg = {"solved": 0, "hints": 0, "guesses": 0, "reward": 0.0,
+               "to_par": 0, "under": 0, "n": 0}
+        for f in files:
+            d = json.loads(f.read_text(encoding="utf-8"))
+            steps = d["steps"]
+            if not steps:
+                continue
+            info = steps[-1].get("info") or {}
+            merged[f"{slug(model)}-seed{d['seed']}"] = steps
+            agg["n"] += 1
+            agg["solved"] += int(info.get("solved", 0) or 0)
+            agg["hints"] += float(info.get("hints_used", 0) or 0)
+            agg["guesses"] += float(info.get("guesses_used", 0) or 0)
+            agg["reward"] += float(info.get("reward", 0) or 0)
+            agg["to_par"] += float(info.get("hints_to_par", 0) or 0)
+            agg["under"] += int(info.get("under_or_at_par", 0) or 0)
+        n = agg["n"] or 1
+        summary.append({
+            "model": model, "clues_scored": agg["n"],
+            "score": agg["reward"] / n, "solve_rate": agg["solved"] / n,
+            "avg_hints": agg["hints"] / n, "avg_guesses": agg["guesses"] / n,
+            "avg_hints_to_par": agg["to_par"] / n, "under_par_rate": agg["under"] / n,
+        })
+        fn = f"{slug(model)}.json"
+        (SHOWCASE / fn).write_text(json.dumps({
+            "schema_version": "1", "domain_id": DOMAIN, "binding_vow_version": VOW,
+            "model": model, "visibility": "gallery_public", "replay": merged}, indent=2) + "\n",
+            encoding="utf-8")
+        index.append({"file": fn, "model": model})
+    for fn, mm in [("perfect-solver.json", "perfect-solver"), ("hint-spammer.json", "hint-spammer")]:
+        if (SHOWCASE / fn).exists():
+            index.append({"file": fn, "model": mm})
+    (SHOWCASE / "index.json").write_text(json.dumps(index, indent=2) + "\n", encoding="utf-8")
     (RESULTS / "summary.json").write_text(json.dumps(summary, indent=2), encoding="utf-8")
-    print("\n=== FINAL (mean over scored clues) ===")
-    print(f"{'model':38} {'clues':>6} {'score':>7} {'solve':>7} {'hints':>7} {'under_par':>9} {'to_par':>7}")
+    print("\n=== FINAL ===")
+    print(f"{'model':34} {'clues':>6} {'score':>7} {'solve':>7} {'hints':>7} {'under_par':>9} {'to_par':>7}")
     for s in summary:
-        f = lambda x: "-" if x is None else f"{x:.3f}"
-        print(f"{s['model']:38} {s['clues_scored']:>6} {f(s['score']):>7} {f(s['solve_rate']):>7} "
-              f"{f(s['avg_hints']):>7} {f(s['under_par_rate']):>9} {f(s['avg_hints_to_par']):>7}")
+        print(f"{s['model']:34} {s['clues_scored']:>6} {s['score']:>7.3f} {s['solve_rate']:>7.3f} "
+              f"{s['avg_hints']:>7.2f} {s['under_par_rate']:>9.3f} {s['avg_hints_to_par']:>7.2f}")
 
 
 if __name__ == "__main__":

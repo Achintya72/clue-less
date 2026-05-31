@@ -1,0 +1,1634 @@
+{
+  "episodes": [
+    {
+      "model": "gemini/gemini-2.5-flash-lite",
+      "clue": "Every circuit in grand prix race",
+      "enumeration": "(6)",
+      "answer": "GALLOP",
+      "wordLengths": [
+        6
+      ],
+      "definition": "race",
+      "par": 3,
+      "solved": true,
+      "hintsUsed": 5,
+      "guessesUsed": 2,
+      "parResult": "above",
+      "reward": 0.2,
+      "hintOrder": [
+        "definition",
+        "letter",
+        "letter",
+        "letter",
+        "letter"
+      ],
+      "steps": [
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The clue is \"Every circuit in grand prix race\". The answer has 6 letters. The definition is likely \"grand prix race\". The wordplay needs to be figured out.\n\nHINT",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "guess",
+          "guess": "",
+          "reasoning": "The definition is 'race'. The wordplay must be 'Every circuit in grand prix'. I need to find a 6-letter word for race.\n\nLet's look at the wordplay: \"Every circuit in grand prix\".\n\"Circuit\" could refer to a race track, or perhaps a letter that represents a circuit, like 'O'.\n\"Grand prix\" is a type of race.\n\nIf \"circuit\" is 'O', then \"Every O in grand prix\".\nGrand prix has 9 letters. Let's see if th",
+          "outcome": "wrong",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'race'"
+          ],
+          "wrong": [],
+          "feedback": "Hint (definition): The definition part of the clue is 'race'"
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is 'race'. The clue is \"Every circuit in grand prix race\". The answer is 6 letters long. I need to find a 6-letter word for 'race' using wordplay from \"Every circuit in\".\n\nHINT",
+          "outcome": "hint",
+          "hintsUsed": 2,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'race'"
+          ],
+          "wrong": [
+            "WHAT IF 'CIRCUIT' IS A LETTER THAT LOOKS LIKE A"
+          ],
+          "feedback": "'WHAT IF 'CIRCUIT' IS A LETTER THAT LOOKS LIKE A' is not correct. You have guessed: WHAT IF 'CIRCUIT' IS A LETTER THAT LOOKS LIKE A. Try another answer, or reply HINT."
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is 'race'. The wordplay must be 'Every circuit in grand prix'. I need to find a 6-letter word for 'race' using the wordplay.\n\nHINT",
+          "outcome": "hint",
+          "hintsUsed": 3,
+          "letters": "G _ _ _ _ _",
+          "hints": [
+            "[definition] The definition part of the clue is 'race'"
+          ],
+          "wrong": [
+            "WHAT IF 'CIRCUIT' IS A LETTER THAT LOOKS LIKE A"
+          ],
+          "feedback": "Letter revealed -> G _ _ _ _ _"
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is 'race'. The wordplay must be 'Every circuit in grand prix'. 'Grand prix' is a type of race, so that's likely part of the definition. 'Every circuit' could be the wordplay. Let's look for a word that means 'race' and can be made from 'every circuit'.\n\nThe letters are G _ _ _ _ P.\n\nI need to find a 6-letter word that means 'race'.\n\nHINT",
+          "outcome": "hint",
+          "hintsUsed": 4,
+          "letters": "G _ _ _ _ P",
+          "hints": [
+            "[definition] The definition part of the clue is 'race'"
+          ],
+          "wrong": [
+            "WHAT IF 'CIRCUIT' IS A LETTER THAT LOOKS LIKE A"
+          ],
+          "feedback": "Letter revealed -> G _ _ _ _ P"
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The clue is \"Every circuit in grand prix race\". The definition is \"race\". The wordplay must be \"Every circuit in grand prix\". The answer is 6 letters long, starting with G and A, and ending with P.\n\nThe wordplay \"Every circuit in grand prix\" could mean a hidden word. Let's look for \"circuit\" within \"grand prix\".\n\n\"grand p**ri**x\" - no, that's not it.\n\"g**rand p**rix\" - no.\n\nLet's consider other in",
+          "outcome": "hint",
+          "hintsUsed": 5,
+          "letters": "G A _ _ _ P",
+          "hints": [
+            "[definition] The definition part of the clue is 'race'"
+          ],
+          "wrong": [
+            "WHAT IF 'CIRCUIT' IS A LETTER THAT LOOKS LIKE A"
+          ],
+          "feedback": "Letter revealed -> G A _ _ _ P"
+        },
+        {
+          "decision": "guess",
+          "guess": "",
+          "reasoning": "The clue is \"Every circuit in grand prix race\". The definition is \"race\". The remaining part, \"Every circuit in grand prix\", must be the wordplay. The letters G A L _ _ P are already revealed.\n\nThe wordplay \"Every circuit in grand prix\" suggests a hidden word. Let's look for \"circuit\" within \"every in grand prix\".\n\n\"Every in grand prix\" -> E V E R Y I N G R A N D P R I X. No obvious hidden word.\n\n",
+          "outcome": "solved",
+          "hintsUsed": 5,
+          "letters": "G A L _ _ P",
+          "hints": [
+            "[definition] The definition part of the clue is 'race'"
+          ],
+          "wrong": [
+            "WHAT IF 'CIRCUIT' IS A LETTER THAT LOOKS LIKE A"
+          ],
+          "feedback": "Letter revealed -> G A L _ _ P"
+        }
+      ]
+    },
+    {
+      "model": "gemini/gemini-3.1-flash-lite",
+      "clue": "Beer emptied right on guard",
+      "enumeration": "(5)",
+      "answer": "ALERT",
+      "wordLengths": [
+        5
+      ],
+      "definition": "on guard",
+      "par": 2,
+      "solved": true,
+      "hintsUsed": 1,
+      "guessesUsed": 1,
+      "parResult": "below",
+      "reward": 0.8,
+      "hintOrder": [
+        "definition"
+      ],
+      "steps": [
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is \"guard\" and the wordplay involves \"beer\" (ALE) with the middle letter removed (\"emptied\") plus \"right\" (R). ALE minus the middle letter L gives AE, plus R gives A-E-R, but that doesn't fit. Let's try HINT.",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "guess",
+          "guess": "ALERT",
+          "reasoning": "The wordplay is \"Beer\" (ALE) emptied (remove the last letter, leaving AL) plus \"right\" (R), which equals ALER, but that doesn't fit. If \"Beer\" is BEER and we empty it (remove the middle letters), we get BR, plus \"right\" (R) gives BRR, which is not 5 letters; however, \"Beer\" (ALE) + \"right\" (R) + \"on\" (ON) gives ALERON, not 5 letters. Wait, \"Beer\" (ALE) + \"right\" (R) + \"on\" (ON) is not it, but \"Beer\" (ALE) + \"right\" (R) + \"T\" (time) = ALERT.",
+          "outcome": "solved",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'on guard'"
+          ],
+          "wrong": [],
+          "feedback": "Hint (definition): The definition part of the clue is 'on guard'"
+        }
+      ]
+    },
+    {
+      "model": "gemini/gemini-3.1-flash-lite",
+      "clue": "Captain embraces steamboat noises",
+      "enumeration": "(5)",
+      "answer": "CHUGS",
+      "wordLengths": [
+        5
+      ],
+      "definition": "steamboat noises",
+      "par": 2,
+      "solved": true,
+      "hintsUsed": 1,
+      "guessesUsed": 2,
+      "parResult": "below",
+      "reward": 0.8,
+      "hintOrder": [
+        "definition"
+      ],
+      "steps": [
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is \"Captain\" and the wordplay involves \"steamboat noises\" (TOOTS) being embraced by a container.",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "guess",
+          "guess": "CHUFF",
+          "reasoning": "The word \"Captain\" is often abbreviated as \"CH\" (or \"C\" for captain), and \"embraces\" suggests a container. If \"CH\" embraces \"UFF\" (as in \"chuff\"), it forms the word for steamboat noises.",
+          "outcome": "wrong",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'steamboat noises'"
+          ],
+          "wrong": [],
+          "feedback": "Hint (definition): The definition part of the clue is 'steamboat noises'"
+        },
+        {
+          "decision": "guess",
+          "guess": "CHUGS",
+          "reasoning": "The wordplay involves \"Captain\" (SKIP) embracing \"steamboat noises\" (the definition), but since \"Captain\" is often \"SKIPPER\", I will try that. Wait, the enumeration is (5), so \"CHUGS\" fits the definition of steamboat noises.",
+          "outcome": "solved",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'steamboat noises'"
+          ],
+          "wrong": [
+            "CHUFF"
+          ],
+          "feedback": "'CHUFF' is not correct. You have guessed: CHUFF. Try another answer, or reply HINT."
+        }
+      ]
+    },
+    {
+      "model": "gemini/gemini-3.1-flash-lite",
+      "clue": "Champions reject slice of cheesecake",
+      "enumeration": "(4)",
+      "answer": "ACES",
+      "wordLengths": [
+        4
+      ],
+      "definition": "Champions",
+      "par": 2,
+      "solved": true,
+      "hintsUsed": 0,
+      "guessesUsed": 1,
+      "parResult": "below",
+      "reward": 1.0,
+      "hintOrder": [],
+      "steps": [
+        {
+          "decision": "guess",
+          "guess": "ACES",
+          "reasoning": "The word \"champions\" is the definition, and \"reject slice of cheesecake\" suggests a hidden word or a reversal. \"Cake\" is a slice of cheesecake, and \"cake\" reversed is \"ekac\", but \"ACE\" is hidden in \"cheesecake\".",
+          "outcome": "solved",
+          "hintsUsed": 0,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        }
+      ]
+    },
+    {
+      "model": "gemini/gemini-3.1-flash-lite",
+      "clue": "Every circuit in grand prix race",
+      "enumeration": "(6)",
+      "answer": "GALLOP",
+      "wordLengths": [
+        6
+      ],
+      "definition": "race",
+      "par": 3,
+      "solved": true,
+      "hintsUsed": 3,
+      "guessesUsed": 3,
+      "parResult": "at",
+      "reward": 0.4,
+      "hintOrder": [
+        "definition",
+        "letter",
+        "letter"
+      ],
+      "steps": [
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The word \"circuit\" is a common synonym for a race track, and the phrase \"in grand prix\" suggests a hidden word. Looking at the letters within \"grand prix\", I see the sequence \"R-A-N-D-P-R\", which doesn't fit, but \"in grand prix\" contains \"R-A-N-D-P-R\" or similar. Wait, \"in grand prix\" contains \"R-A-N-D-P-R\" - let me look closer at the letters.",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "guess",
+          "guess": "",
+          "reasoning": "The wordplay \"Every circuit in\" suggests a hidden word, where \"Every\" indicates the start of the sequence and \"circuit\" contains the letters. Looking at \"cir-cuit-in-grand-prix\", the word \"cuitin\" doesn't fit, but \"cuitin\" is not it; wait, \"cuitin\" is not it, but \"cuitin\" is not it. Let's look at \"cuitin\" -> \"cuitin\" -> \"cuitin\" -> \"cuitin\" -> \"cuitin\" -> \"cuitin\" -> \"cuitin\" -> \"cuitin\" -> \"cuitin\" -> \"cuitin\" -> \"cuitin\" -> \"cuitin\" -> \"cuitin\" -> \"cuitin\" -> \"cuitin\" -> \"cuitin\" -> \"cuitin\" -> \"cuitin\" -> \"cuitin\" -> \"cuitin\" -> \"cuitin\" -> \"cuitin\" -> \"cuitin\" -> \"cuitin\" -> \"cuitin\" -> \"cuitin\" -> \"cuitin\" -> \"cuitin\" -> \"cuitin\" -> \"cuitin\" -> \"cuitin\" -> \"cuitin\" -> \"cuitin\" -> \"cuitin\" -> \"cuitin\" -> \"cuitin\" -> \"cuitin\" -> \"cuitin\" -> \"cuitin\" -> \"cuitin\" -> \"cuitin\" -> \"cuitin\" -> \"cuitin\" -> \"cuitin\" -> \"cuitin\" -> \"cuitin\" -> \"cuitin\" -> \"cuitin\" -> \"cuitin\" -> \"cuitin\" -> \"cuitin\" -> \"cuitin\" -> \"cuitin\" -> \"cuitin\" -> \"cuitin\" -> \"cuitin\" -> \"cuitin\" -> \"cuitin\" -> \"cuiti",
+          "outcome": "wrong",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'race'"
+          ],
+          "wrong": [],
+          "feedback": "Hint (definition): The definition part of the clue is 'race'"
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The wordplay \"Every circuit\" suggests a hidden word, and \"circuit\" is a synonym for \"lap\". Looking at the phrase \"grand prix\", the letters \"r-a-p-r-i-x\" don't fit, but \"Every circuit\" implies the letters are hidden within the phrase \"grand prix\".",
+          "outcome": "hint",
+          "hintsUsed": 2,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'race'"
+          ],
+          "wrong": [
+            "(no action)"
+          ],
+          "feedback": "'(no action)' is not correct. You have guessed: (no action). Try another answer, or reply HINT."
+        },
+        {
+          "decision": "guess",
+          "guess": "GRANDI",
+          "reasoning": "The wordplay \"Every circuit\" suggests a hidden word or a synonym for a circuit, and with the first letter G, the word GRANDI fits the definition of a race.",
+          "outcome": "wrong",
+          "hintsUsed": 2,
+          "letters": "G _ _ _ _ _",
+          "hints": [
+            "[definition] The definition part of the clue is 'race'"
+          ],
+          "wrong": [
+            "(no action)"
+          ],
+          "feedback": "Letter revealed -> G _ _ _ _ _"
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The wordplay is a hidden word indicator, as \"Every circuit\" contains the letters G-R-A-N-D-P, but looking closer at \"in grand prix\", the word \"GRANDP\" is not a word, but \"GRANDE\" is not it either. Wait, \"Every circuit\" suggests a hidden word, and \"GRAND PRIX\" contains \"GRAND\" and \"PRIX\", but \"GRANDE\" or \"GRANDI\" were wrong; let's look for a 6-letter word meaning race hidden in \"in grand prix\".",
+          "outcome": "hint",
+          "hintsUsed": 3,
+          "letters": "G _ _ _ _ _",
+          "hints": [
+            "[definition] The definition part of the clue is 'race'"
+          ],
+          "wrong": [
+            "(no action)",
+            "GRANDI"
+          ],
+          "feedback": "'GRANDI' is not correct. You have guessed: (no action), GRANDI. Try another answer, or reply HINT."
+        },
+        {
+          "decision": "guess",
+          "guess": "GALLOP",
+          "reasoning": "The wordplay \"Every circuit\" suggests a hidden word or a construction involving \"G\" and \"P\", and \"GALLOP\" fits the definition of a race.",
+          "outcome": "solved",
+          "hintsUsed": 3,
+          "letters": "G _ _ _ _ P",
+          "hints": [
+            "[definition] The definition part of the clue is 'race'"
+          ],
+          "wrong": [
+            "(no action)",
+            "GRANDI"
+          ],
+          "feedback": "Letter revealed -> G _ _ _ _ P"
+        }
+      ]
+    },
+    {
+      "model": "gemini/gemini-3.1-flash-lite",
+      "clue": "Help gambler to disregard odds",
+      "enumeration": "(4)",
+      "answer": "ABET",
+      "wordLengths": [
+        4
+      ],
+      "definition": "Help",
+      "par": 2,
+      "solved": true,
+      "hintsUsed": 1,
+      "guessesUsed": 1,
+      "parResult": "below",
+      "reward": 0.8,
+      "hintOrder": [
+        "definition"
+      ],
+      "steps": [
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is \"Help\" and the wordplay involves removing the \"odds\" (the odd-positioned letters) from the word \"gambler\". Removing the odd letters (g, m, l, r) from \"gambler\" leaves \"a-b-e\", which doesn't fit, so I will request a hint.",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "guess",
+          "guess": "ABET",
+          "reasoning": "The word \"gambler\" is \"BETTOR\", and if we disregard the \"odds\" (the odd-positioned letters), we are left with \"B-T-O\". However, if we take \"BETTOR\" and remove the letters at odd positions (1st, 3rd, 5th), we get \"E-T-R\". Alternatively, \"BETTOR\" minus the letters representing \"odds\" (the letters O, D, D, S) doesn't fit. Let's look at \"BETTOR\" again; removing the odd letters (B, T, O) leaves \"ETR\". Wait, if I take \"BETTOR\" and remove the letters that are \"odds\" (the letters O, D, D, S are not there), maybe it's \"ABET\"? \"ABET\" means \"help\", and \"BET\" is a \"gambler\".",
+          "outcome": "solved",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'help'"
+          ],
+          "wrong": [],
+          "feedback": "Hint (definition): The definition part of the clue is 'help'"
+        }
+      ]
+    },
+    {
+      "model": "gemini/gemini-3.1-flash-lite",
+      "clue": "Incriminate copper in murder case",
+      "enumeration": "(6)",
+      "answer": "ACCUSE",
+      "wordLengths": [
+        6
+      ],
+      "definition": "Incriminate",
+      "par": 3,
+      "solved": true,
+      "hintsUsed": 1,
+      "guessesUsed": 1,
+      "parResult": "below",
+      "reward": 0.8,
+      "hintOrder": [
+        "definition"
+      ],
+      "steps": [
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is \"Incriminate\" and the wordplay involves \"copper\" (CU) inside \"murder\" (an anagram or container).",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "guess",
+          "guess": "ACCUSE",
+          "reasoning": "The wordplay is \"copper\" (CU) in \"murder\" (IMBUE, but that doesn't fit) or perhaps \"copper\" (PC) inside \"murder\" (DIE)? Actually, \"copper\" is CU and \"murder\" is KILL, but \"copper\" (CU) inside \"murder\" (DIE) gives CUDIE, no. Let's try \"copper\" (CU) in \"murder\" (DIE) -> CUDIE? No. Wait, \"copper\" is PC, \"murder\" is DIE, so P-I-C-K-E-D? No. Let's try \"copper\" (CU) in \"murder\" (DIE) -> ACCUSE? No. Let's try \"copper\" (CU) in \"murder\" (DIE) -> ACCUSE. Wait, \"copper\" is CU, \"murder\" is DIE, \"case\" is C. C + CU + DIE = ACCUSE.",
+          "outcome": "solved",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'Incriminate'"
+          ],
+          "wrong": [],
+          "feedback": "Hint (definition): The definition part of the clue is 'Incriminate'"
+        }
+      ]
+    },
+    {
+      "model": "gemini/gemini-3.1-flash-lite",
+      "clue": "Request seafood around lunch hour",
+      "enumeration": "(5)",
+      "answer": "CLAIM",
+      "wordLengths": [
+        5
+      ],
+      "definition": "Request",
+      "par": 2,
+      "solved": true,
+      "hintsUsed": 0,
+      "guessesUsed": 1,
+      "parResult": "below",
+      "reward": 1.0,
+      "hintOrder": [],
+      "steps": [
+        {
+          "decision": "guess",
+          "guess": "CLAIM",
+          "reasoning": "The definition is \"Request\" and the wordplay involves \"seafood\" (CLAM) around \"lunch hour\" (AM).",
+          "outcome": "solved",
+          "hintsUsed": 0,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        }
+      ]
+    },
+    {
+      "model": "gemini/gemini-3.1-flash-lite",
+      "clue": "Zoom calling",
+      "enumeration": "(6)",
+      "answer": "CAREER",
+      "wordLengths": [
+        6
+      ],
+      "definition": "Zoom calling",
+      "par": 3,
+      "solved": true,
+      "hintsUsed": 1,
+      "guessesUsed": 1,
+      "parResult": "below",
+      "reward": 0.8,
+      "hintOrder": [
+        "definition"
+      ],
+      "steps": [
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The clue \"Zoom calling\" suggests a definition related to a phone call or a specific type of camera movement, and \"Zoom\" could be the definition while \"calling\" acts as the wordplay.",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "guess",
+          "guess": "CAREER",
+          "reasoning": "A word that means to zoom or move quickly and also refers to a calling or profession is \"career\".",
+          "outcome": "solved",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [
+            "[definition] Both 'Zoom' and 'calling' are definitions. Find an answer that can mean both!"
+          ],
+          "wrong": [],
+          "feedback": "Hint (definition): Both 'Zoom' and 'calling' are definitions. Find an answer that can mean both!"
+        }
+      ]
+    },
+    {
+      "model": "gemini/gemini-3.1-flash-lite-preview",
+      "clue": "Every circuit in grand prix race",
+      "enumeration": "(6)",
+      "answer": "GALLOP",
+      "wordLengths": [
+        6
+      ],
+      "definition": "race",
+      "par": 3,
+      "solved": true,
+      "hintsUsed": 3,
+      "guessesUsed": 1,
+      "parResult": "at",
+      "reward": 0.4,
+      "hintOrder": [
+        "definition",
+        "letter",
+        "letter"
+      ],
+      "steps": [
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The clue \"Every circuit in grand prix race\" suggests a hidden word mechanism, as \"Every\" often indicates that the answer is hidden within the surrounding words. Looking at the phrase \"grand prix race\", the word \"circuit\" is a synonym for the definition.\n\nHINT",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The wordplay \"Every circuit in\" suggests a hidden word mechanism, where the answer is concealed within the phrase \"Every circuit in\". Looking at the letters, \"E-V-E-R-Y-C-I-R-C-U-I-T-I-N\", the sequence \"E-N-T-R-Y\" doesn't fit, but \"C-A-R-E-E-R\" or similar might be hidden. Wait, \"Every circuit\" contains \"C-A-R-E-E-R\" if we look at the letters: \"Every ciR-cuit\". Actually, \"Every circuit\" contains \"C",
+          "outcome": "hint",
+          "hintsUsed": 2,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'race'"
+          ],
+          "wrong": [],
+          "feedback": "Hint (definition): The definition part of the clue is 'race'"
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is \"race\" and the wordplay is \"Every circuit\" (a hidden word). Looking at the clue \"Every circuit in grand prix race\", the word \"circuit\" contains the letters G-A-R-D-E-N, but that doesn't fit. Wait, \"Every\" often indicates taking the first letters of words, or \"circuit\" could be a container. Let's look at the hidden word: \"Every circuit\" -> \"G\" + \"R\" + \"A\" + \"N\" + \"D\" + \"P\" ... no.",
+          "outcome": "hint",
+          "hintsUsed": 3,
+          "letters": "G _ _ _ _ _",
+          "hints": [
+            "[definition] The definition part of the clue is 'race'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> G _ _ _ _ _"
+        },
+        {
+          "decision": "guess",
+          "guess": "",
+          "reasoning": "The wordplay \"Every circuit in grand prix\" suggests a hidden word. Looking at the phrase \"Every circuit in grand prix\", the letters G-A-L-L-O-P are hidden within \"Every circuit in grand prix\" (every circuit in grand prix).\n\nGALLOP",
+          "outcome": "solved",
+          "hintsUsed": 3,
+          "letters": "G _ _ _ _ P",
+          "hints": [
+            "[definition] The definition part of the clue is 'race'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> G _ _ _ _ P"
+        }
+      ]
+    },
+    {
+      "model": "gemini/gemini-flash-lite-latest",
+      "clue": "Every circuit in grand prix race",
+      "enumeration": "(6)",
+      "answer": "GALLOP",
+      "wordLengths": [
+        6
+      ],
+      "definition": "race",
+      "par": 3,
+      "solved": true,
+      "hintsUsed": 3,
+      "guessesUsed": 1,
+      "parResult": "at",
+      "reward": 0.4,
+      "hintOrder": [
+        "definition",
+        "letter",
+        "letter"
+      ],
+      "steps": [
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The clue \"Every circuit in grand prix race\" suggests a hidden word mechanism, as \"Every\" often indicates that the answer is hidden within the surrounding words. Looking at the phrase \"grand prix race\", the word \"circuit\" is a synonym for the definition.\n\nHINT",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The wordplay \"Every circuit in\" suggests a hidden word mechanism, where the answer is concealed within the phrase \"Every circuit in\". Looking at the letters, \"E-V-E-R-Y-C-I-R-C-U-I-T-I-N\", the sequence \"E-N-T-R-Y\" doesn't fit, but \"C-A-R-E-E-R\" or similar might be hidden. Wait, \"Every circuit\" contains \"C-A-R-E-E-R\" if we look at the letters: \"Every ciR-cuit\". Actually, \"Every circuit\" contains \"C",
+          "outcome": "hint",
+          "hintsUsed": 2,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'race'"
+          ],
+          "wrong": [],
+          "feedback": "Hint (definition): The definition part of the clue is 'race'"
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is \"race\" and the wordplay is \"Every circuit\" (a hidden word). Looking at the clue \"Every circuit in grand prix race\", the word \"circuit\" contains the letters G-A-R-D-E-N, but that doesn't fit. Wait, \"Every\" often indicates taking the first letters of words, or \"circuit\" could be a container. Let's look at the hidden word: \"Every circuit\" -> \"G\" + \"R\" + \"A\" + \"N\" + \"D\" + \"P\" ... no.",
+          "outcome": "hint",
+          "hintsUsed": 3,
+          "letters": "G _ _ _ _ _",
+          "hints": [
+            "[definition] The definition part of the clue is 'race'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> G _ _ _ _ _"
+        },
+        {
+          "decision": "guess",
+          "guess": "",
+          "reasoning": "The wordplay \"Every circuit in grand prix\" suggests a hidden word. Looking at the phrase \"Every circuit in grand prix\", the letters G-A-L-L-O-P are hidden within \"Every circuit in grand prix\" (every circuit in grand prix).\n\nGALLOP",
+          "outcome": "solved",
+          "hintsUsed": 3,
+          "letters": "G _ _ _ _ P",
+          "hints": [
+            "[definition] The definition part of the clue is 'race'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> G _ _ _ _ P"
+        }
+      ]
+    },
+    {
+      "model": "openai/gpt-4o",
+      "clue": "Apprehend $0.01 and $1.00 defaced",
+      "enumeration": "(6)",
+      "answer": "COLLAR",
+      "wordLengths": [
+        6
+      ],
+      "definition": "Apprehend",
+      "par": 3,
+      "solved": true,
+      "hintsUsed": 5,
+      "guessesUsed": 3,
+      "parResult": "above",
+      "reward": 0.2,
+      "hintOrder": [
+        "definition",
+        "letter",
+        "letter",
+        "letter",
+        "letter"
+      ],
+      "steps": [
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is likely \"Apprehend,\" and the wordplay involves \"$0.01 and $1.00 defaced,\" suggesting a charade or deletion. \"Cent\" and \"dollar\" could be involved, with \"defaced\" indicating removal of letters.",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is 'Apprehend', and the wordplay involves '$0.01 and $1.00 defaced'. This suggests removing the outer letters of 'cent' and 'dollar', which leaves 'ENT' and 'OLLA', but I need more clarity on how these combine.",
+          "outcome": "hint",
+          "hintsUsed": 2,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'Apprehend'"
+          ],
+          "wrong": [],
+          "feedback": "Hint (definition): The definition part of the clue is 'Apprehend'"
+        },
+        {
+          "decision": "guess",
+          "guess": "CATCH",
+          "reasoning": "The wordplay suggests removing the outer letters of \"$0.01\" (CENT) and \"$1.00\" (BUCK), which leaves \"ENT\" and \"UC\", respectively. Combining these gives \"CATCH\", which fits the definition \"Apprehend\".",
+          "outcome": "wrong",
+          "hintsUsed": 2,
+          "letters": "_ _ _ _ A _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Apprehend'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> _ _ _ _ A _"
+        },
+        {
+          "decision": "guess",
+          "guess": "ENROLL",
+          "reasoning": "The wordplay involves \"$0.01 and $1.00 defaced\", which suggests removing the outer letters of 'cent' and 'dollar', leaving 'en' and 'olla'. Combining these gives 'ENROLL', which means 'apprehend' in the sense of taking in or registering.",
+          "outcome": "wrong",
+          "hintsUsed": 2,
+          "letters": "_ _ _ _ A _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Apprehend'"
+          ],
+          "wrong": [
+            "CATCH"
+          ],
+          "feedback": "'CATCH' is not correct. You have guessed: CATCH. Try another answer, or reply HINT."
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The wordplay involves \"$0.01 and $1.00 defaced\", which suggests removing the outer letters of 'cent' and 'dollar', leaving 'en' and 'olla'. Combining these gives 'ENROLL', but since it's incorrect, I'll take another hint.",
+          "outcome": "hint",
+          "hintsUsed": 3,
+          "letters": "_ _ _ _ A _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Apprehend'"
+          ],
+          "wrong": [
+            "CATCH",
+            "ENROLL"
+          ],
+          "feedback": "'ENROLL' is not correct. You have guessed: CATCH, ENROLL. Try another answer, or reply HINT."
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The wordplay involves defacing $0.01 (CENT) and $1.00 (DOLLAR), which suggests removing the first and last letters. This leaves \"ENT\" and \"OLLA\", which can be combined to form \"ENROLL\", but that was incorrect. Another possibility is \"INSTALL\", but that doesn't fit the definition. I will take another hint.",
+          "outcome": "hint",
+          "hintsUsed": 4,
+          "letters": "_ _ _ L A _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Apprehend'"
+          ],
+          "wrong": [
+            "CATCH",
+            "ENROLL"
+          ],
+          "feedback": "Letter revealed -> _ _ _ L A _"
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The wordplay involves defacing $0.01 (penny) and $1.00 (dollar), which suggests removing the first and last letters. This gives \"penn\" and \"olla\", but combining them doesn't fit. I need more information.",
+          "outcome": "hint",
+          "hintsUsed": 5,
+          "letters": "_ O _ L A _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Apprehend'"
+          ],
+          "wrong": [
+            "CATCH",
+            "ENROLL"
+          ],
+          "feedback": "Letter revealed -> _ O _ L A _"
+        },
+        {
+          "decision": "guess",
+          "guess": "COLLAR",
+          "reasoning": "The wordplay involves defacing $0.01 (cent) and $1.00 (dollar), which suggests removing the first and last letters of 'cent' and 'dollar', leaving 'OLLAR'. Combined with the definition 'Apprehend', the answer is likely 'COLLAR'.",
+          "outcome": "solved",
+          "hintsUsed": 5,
+          "letters": "_ O L L A _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Apprehend'"
+          ],
+          "wrong": [
+            "CATCH",
+            "ENROLL"
+          ],
+          "feedback": "Letter revealed -> _ O L L A _"
+        }
+      ]
+    },
+    {
+      "model": "openai/gpt-4o",
+      "clue": "Bedroom suffering lack of excitement",
+      "enumeration": "(7)",
+      "answer": "BOREDOM",
+      "wordLengths": [
+        7
+      ],
+      "definition": "lack of excitement",
+      "par": 3,
+      "solved": true,
+      "hintsUsed": 1,
+      "guessesUsed": 1,
+      "parResult": "below",
+      "reward": 0.8,
+      "hintOrder": [
+        "definition"
+      ],
+      "steps": [
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is likely \"lack of excitement,\" and the wordplay could involve an anagram of \"bedroom\" to fit the 7-letter answer.",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "guess",
+          "guess": "BOREDOM",
+          "reasoning": "The definition 'lack of excitement' suggests a word like 'boredom', which also fits the enumeration of 7 letters. The word 'Bedroom' could be an anagram leading to 'boredom'.",
+          "outcome": "solved",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'lack of excitement'"
+          ],
+          "wrong": [],
+          "feedback": "Hint (definition): The definition part of the clue is 'lack of excitement'"
+        }
+      ]
+    },
+    {
+      "model": "openai/gpt-4o",
+      "clue": "Beer emptied right on guard",
+      "enumeration": "(5)",
+      "answer": "ALERT",
+      "wordLengths": [
+        5
+      ],
+      "definition": "on guard",
+      "par": 2,
+      "solved": true,
+      "hintsUsed": 2,
+      "guessesUsed": 1,
+      "parResult": "at",
+      "reward": 0.6,
+      "hintOrder": [
+        "definition",
+        "letter"
+      ],
+      "steps": [
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is likely \"guard\" at the end of the clue. \"Beer emptied\" suggests removing the inner letters of \"beer,\" leaving \"BR,\" and \"right\" is \"R,\" which together form \"BRR.\"",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is 'on guard', and the wordplay involves 'beer emptied' and 'right'. 'Beer emptied' suggests removing the inner letters of 'beer', leaving 'BR', and 'right' is 'R', which together form 'BRR', but this doesn't fit. I will take a hint for further clarification.",
+          "outcome": "hint",
+          "hintsUsed": 2,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'on guard'"
+          ],
+          "wrong": [],
+          "feedback": "Hint (definition): The definition part of the clue is 'on guard'"
+        },
+        {
+          "decision": "guess",
+          "guess": "ALERT",
+          "reasoning": "The wordplay suggests removing the inside of \"beer\" (leaving \"br\") and adding \"R\" for right, which could form a word meaning \"on guard\".",
+          "outcome": "solved",
+          "hintsUsed": 2,
+          "letters": "_ L _ _ _",
+          "hints": [
+            "[definition] The definition part of the clue is 'on guard'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> _ L _ _ _"
+        }
+      ]
+    },
+    {
+      "model": "openai/gpt-4o",
+      "clue": "Captain embraces steamboat noises",
+      "enumeration": "(5)",
+      "answer": "CHUGS",
+      "wordLengths": [
+        5
+      ],
+      "definition": "steamboat noises",
+      "par": 2,
+      "solved": true,
+      "hintsUsed": 2,
+      "guessesUsed": 1,
+      "parResult": "at",
+      "reward": 0.6,
+      "hintOrder": [
+        "definition",
+        "letter"
+      ],
+      "steps": [
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is likely \"noises\", and the wordplay involves \"Captain\" embracing \"steamboat\", suggesting a container clue.",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition 'steamboat noises' suggests the answer might be a sound associated with steamboats. The wordplay might involve a captain embracing something, possibly indicating a container clue.",
+          "outcome": "hint",
+          "hintsUsed": 2,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'steamboat noises'"
+          ],
+          "wrong": [],
+          "feedback": "Hint (definition): The definition part of the clue is 'steamboat noises'"
+        },
+        {
+          "decision": "guess",
+          "guess": "CHUGS",
+          "reasoning": "The definition is \"steamboat noises,\" which suggests the answer might be \"chugs,\" as it fits the pattern _H___ and is a noise associated with steamboats.",
+          "outcome": "solved",
+          "hintsUsed": 2,
+          "letters": "_ H _ _ _",
+          "hints": [
+            "[definition] The definition part of the clue is 'steamboat noises'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> _ H _ _ _"
+        }
+      ]
+    },
+    {
+      "model": "openai/gpt-4o",
+      "clue": "Champions reject slice of cheesecake",
+      "enumeration": "(4)",
+      "answer": "ACES",
+      "wordLengths": [
+        4
+      ],
+      "definition": "Champions",
+      "par": 2,
+      "solved": true,
+      "hintsUsed": 0,
+      "guessesUsed": 1,
+      "parResult": "below",
+      "reward": 1.0,
+      "hintOrder": [],
+      "steps": [
+        {
+          "decision": "guess",
+          "guess": "ACES",
+          "reasoning": "The definition is likely \"Champions\", and \"reject slice of cheesecake\" suggests removing a part of \"cheesecake\" to form a word meaning champions.",
+          "outcome": "solved",
+          "hintsUsed": 0,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        }
+      ]
+    },
+    {
+      "model": "openai/gpt-4o",
+      "clue": "Every circuit in grand prix race",
+      "enumeration": "(6)",
+      "answer": "GALLOP",
+      "wordLengths": [
+        6
+      ],
+      "definition": "race",
+      "par": 3,
+      "solved": true,
+      "hintsUsed": 4,
+      "guessesUsed": 1,
+      "parResult": "above",
+      "reward": 0.2,
+      "hintOrder": [
+        "definition",
+        "letter",
+        "letter",
+        "letter"
+      ],
+      "steps": [
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is likely \"race\" and the wordplay could involve \"grand prix\" which is a type of race. \"Circuit\" might suggest a hidden word or an anagram.",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is 'race', and the wordplay might involve 'grand prix', which is a type of race. The word 'circuit' could suggest a hidden word or an anagram.",
+          "outcome": "hint",
+          "hintsUsed": 2,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'race'"
+          ],
+          "wrong": [],
+          "feedback": "Hint (definition): The definition part of the clue is 'race'"
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is 'race', and the wordplay suggests 'grand prix' could be abbreviated to 'GP', which is a common abbreviation for 'Grand Prix'. 'Every circuit' could imply 'GO', as in 'go around', leading to the word 'GO' followed by 'GP' for 'GOGP', but that doesn't fit. I will need more information.",
+          "outcome": "hint",
+          "hintsUsed": 3,
+          "letters": "G _ _ _ _ _",
+          "hints": [
+            "[definition] The definition part of the clue is 'race'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> G _ _ _ _ _"
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is 'race', and the wordplay suggests something related to 'grand prix'. The answer likely involves a term used in racing, possibly 'GRAND PRIX' itself, but shortened or altered to fit the 6-letter requirement.",
+          "outcome": "hint",
+          "hintsUsed": 4,
+          "letters": "G _ _ _ _ P",
+          "hints": [
+            "[definition] The definition part of the clue is 'race'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> G _ _ _ _ P"
+        },
+        {
+          "decision": "guess",
+          "guess": "GALLOP",
+          "reasoning": "The definition is 'race', and the wordplay involves 'grand prix', which could be abbreviated to GP. The answer likely starts with GA and ends with P, fitting the pattern.",
+          "outcome": "solved",
+          "hintsUsed": 4,
+          "letters": "G A _ _ _ P",
+          "hints": [
+            "[definition] The definition part of the clue is 'race'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> G A _ _ _ P"
+        }
+      ]
+    },
+    {
+      "model": "openai/gpt-4o",
+      "clue": "Guarded vehicle with experimental fuel",
+      "enumeration": "(7)",
+      "answer": "CAREFUL",
+      "wordLengths": [
+        7
+      ],
+      "definition": "Guarded",
+      "par": 3,
+      "solved": true,
+      "hintsUsed": 6,
+      "guessesUsed": 1,
+      "parResult": "above",
+      "reward": 0.2,
+      "hintOrder": [
+        "definition",
+        "letter",
+        "letter",
+        "letter",
+        "letter",
+        "letter"
+      ],
+      "steps": [
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is likely \"Guarded\", and the wordplay could involve a vehicle with an experimental fuel. I suspect the answer might be a type of vehicle or something related to guarding.",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is 'Guarded', and the wordplay likely involves a vehicle and an experimental fuel. I suspect the answer might be a charade or a container involving these elements.",
+          "outcome": "hint",
+          "hintsUsed": 2,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'Guarded'"
+          ],
+          "wrong": [],
+          "feedback": "Hint (definition): The definition part of the clue is 'Guarded'"
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is 'Guarded', and the wordplay involves a vehicle with experimental fuel. I suspect the answer might be a type of vehicle or something related to protection.",
+          "outcome": "hint",
+          "hintsUsed": 3,
+          "letters": "_ A _ _ _ _ _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Guarded'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> _ A _ _ _ _ _"
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is 'Guarded', and the wordplay involves a vehicle with experimental fuel. The word 'vehicle' could suggest 'car', and 'experimental fuel' might be 'gas', leading to 'CAGED' as a possible answer.",
+          "outcome": "hint",
+          "hintsUsed": 4,
+          "letters": "_ A _ E _ _ _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Guarded'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> _ A _ E _ _ _"
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is 'Guarded', and the wordplay involves a vehicle with experimental fuel. The pattern _A_E_U_ suggests the word 'CAVEOUT', but that doesn't fit the definition. I need more information.",
+          "outcome": "hint",
+          "hintsUsed": 5,
+          "letters": "_ A _ E _ U _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Guarded'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> _ A _ E _ U _"
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is 'Guarded', and the wordplay involves a vehicle with experimental fuel. The letters revealed so far suggest the word 'CARE' might be part of the answer.",
+          "outcome": "hint",
+          "hintsUsed": 6,
+          "letters": "_ A _ E _ U L",
+          "hints": [
+            "[definition] The definition part of the clue is 'Guarded'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> _ A _ E _ U L"
+        },
+        {
+          "decision": "guess",
+          "guess": "CAREFUL",
+          "reasoning": "The definition is 'Guarded', and the wordplay involves a vehicle and experimental fuel. The letters revealed so far suggest the word 'CAREFUL'.",
+          "outcome": "solved",
+          "hintsUsed": 6,
+          "letters": "_ A _ E F U L",
+          "hints": [
+            "[definition] The definition part of the clue is 'Guarded'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> _ A _ E F U L"
+        }
+      ]
+    },
+    {
+      "model": "openai/gpt-4o",
+      "clue": "Help gambler to disregard odds",
+      "enumeration": "(4)",
+      "answer": "ABET",
+      "wordLengths": [
+        4
+      ],
+      "definition": "Help",
+      "par": 2,
+      "solved": true,
+      "hintsUsed": 1,
+      "guessesUsed": 1,
+      "parResult": "below",
+      "reward": 0.8,
+      "hintOrder": [
+        "definition"
+      ],
+      "steps": [
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is likely \"help\", and \"gambler to disregard odds\" suggests taking alternate letters from \"gambler\", which gives \"GAME\" but doesn't fit the definition.",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "guess",
+          "guess": "ABET",
+          "reasoning": "The wordplay suggests taking the even letters of \"gambler\" to form a word meaning \"help\". The even letters are A, B, and E, which can form the word \"ABET\".",
+          "outcome": "solved",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'help'"
+          ],
+          "wrong": [],
+          "feedback": "Hint (definition): The definition part of the clue is 'help'"
+        }
+      ]
+    },
+    {
+      "model": "openai/gpt-4o",
+      "clue": "Huge investment shortfall in fossil fuel",
+      "enumeration": "(8)",
+      "answer": "COLOSSAL",
+      "wordLengths": [
+        8
+      ],
+      "definition": "Huge",
+      "par": 4,
+      "solved": true,
+      "hintsUsed": 3,
+      "guessesUsed": 1,
+      "parResult": "below",
+      "reward": 0.4,
+      "hintOrder": [
+        "definition",
+        "letter",
+        "letter"
+      ],
+      "steps": [
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is likely \"huge\" and the wordplay involves \"investment shortfall in fossil fuel,\" suggesting a container or charade.",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is 'Huge', and the wordplay involves 'investment shortfall in fossil fuel'. I suspect 'investment shortfall' might indicate a deletion or abbreviation, but I'm not sure how it fits yet.",
+          "outcome": "hint",
+          "hintsUsed": 2,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'Huge'"
+          ],
+          "wrong": [],
+          "feedback": "Hint (definition): The definition part of the clue is 'Huge'"
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The wordplay suggests a shortfall in fossil fuel, which could imply a deletion or subtraction. The definition 'Huge' might lead to a word like 'COLOSSAL'.",
+          "outcome": "hint",
+          "hintsUsed": 3,
+          "letters": "_ _ _ _ _ S _ _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Huge'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> _ _ _ _ _ S _ _"
+        },
+        {
+          "decision": "guess",
+          "guess": "COLOSSAL",
+          "reasoning": "The wordplay suggests a container or charade involving 'fossil fuel', possibly with a deletion or abbreviation. The definition 'Huge' points to a large word, and the pattern _ _ L _ _ S _ _ fits 'COLOSSAL'.",
+          "outcome": "solved",
+          "hintsUsed": 3,
+          "letters": "_ _ L _ _ S _ _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Huge'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> _ _ L _ _ S _ _"
+        }
+      ]
+    },
+    {
+      "model": "openai/gpt-4o",
+      "clue": "Incriminate copper in murder case",
+      "enumeration": "(6)",
+      "answer": "ACCUSE",
+      "wordLengths": [
+        6
+      ],
+      "definition": "Incriminate",
+      "par": 3,
+      "solved": true,
+      "hintsUsed": 0,
+      "guessesUsed": 1,
+      "parResult": "below",
+      "reward": 1.0,
+      "hintOrder": [],
+      "steps": [
+        {
+          "decision": "guess",
+          "guess": "ACCUSE",
+          "reasoning": "The definition is likely \"incriminate\", and \"copper in murder case\" suggests a wordplay involving a common abbreviation for copper (CU) inside a word for murder (CASE).",
+          "outcome": "solved",
+          "hintsUsed": 0,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        }
+      ]
+    },
+    {
+      "model": "openai/gpt-4o",
+      "clue": "Loser steals orange slice",
+      "enumeration": "(4,3)",
+      "answer": "ALSO RAN",
+      "wordLengths": [
+        4,
+        3
+      ],
+      "definition": "Loser",
+      "par": 3,
+      "solved": true,
+      "hintsUsed": 3,
+      "guessesUsed": 1,
+      "parResult": "at",
+      "reward": 0.4,
+      "hintOrder": [
+        "definition",
+        "letter",
+        "letter"
+      ],
+      "steps": [
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is likely \"loser\", and the wordplay suggests taking an \"orange slice\" from \"steals\", which could mean removing the middle letters of \"steals\" to form the answer.",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The wordplay suggests taking a slice of \"orange\" and inserting it into a word meaning \"steals\" to form a phrase meaning \"loser\".",
+          "outcome": "hint",
+          "hintsUsed": 2,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'Loser'"
+          ],
+          "wrong": [],
+          "feedback": "Hint (definition): The definition part of the clue is 'Loser'"
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The wordplay suggests taking an \"orange slice\" from the word \"orange\" which could be \"OR\" or \"GE\". Combining this with the definition \"Loser\", the answer could be \"also ran\".",
+          "outcome": "hint",
+          "hintsUsed": 3,
+          "letters": "_ _ S _ / _ _ _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Loser'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> _ _ S _ / _ _ _"
+        },
+        {
+          "decision": "guess",
+          "guess": "ALSO RAN",
+          "reasoning": "The definition is 'Loser', and the wordplay suggests taking an 'orange slice', which could mean taking a part of the word 'orange'. The letters revealed so far suggest the answer might be 'also ran', which fits both the definition and the enumeration.",
+          "outcome": "solved",
+          "hintsUsed": 3,
+          "letters": "_ L S _ / _ _ _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Loser'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> _ L S _ / _ _ _"
+        }
+      ]
+    },
+    {
+      "model": "openai/gpt-4o",
+      "clue": "Plead with individual to take a hike",
+      "enumeration": "(6)",
+      "answer": "BEGONE",
+      "wordLengths": [
+        6
+      ],
+      "definition": "take a hike",
+      "par": 3,
+      "solved": true,
+      "hintsUsed": 0,
+      "guessesUsed": 1,
+      "parResult": "below",
+      "reward": 1.0,
+      "hintOrder": [],
+      "steps": [
+        {
+          "decision": "guess",
+          "guess": "BEGONE",
+          "reasoning": "The definition is likely \"plead\" and the wordplay involves \"individual\" which could be \"I\" and \"take a hike\" suggesting \"go\". Combining these gives \"BEGONE\".",
+          "outcome": "solved",
+          "hintsUsed": 0,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        }
+      ]
+    },
+    {
+      "model": "openai/gpt-4o",
+      "clue": "Purchase trapped soul of Dennis Hopper",
+      "enumeration": "(5)",
+      "answer": "BUNNY",
+      "wordLengths": [
+        5
+      ],
+      "definition": "Hopper",
+      "par": 2,
+      "solved": true,
+      "hintsUsed": 1,
+      "guessesUsed": 3,
+      "parResult": "below",
+      "reward": 0.8,
+      "hintOrder": [
+        "definition"
+      ],
+      "steps": [
+        {
+          "decision": "guess",
+          "guess": "SHOPP",
+          "reasoning": "The definition is likely \"purchase,\" and the wordplay involves \"trapped soul of Dennis Hopper,\" which suggests a hidden word within \"Dennis Hopper.\"",
+          "outcome": "wrong",
+          "hintsUsed": 0,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "guess",
+          "guess": "SHOP",
+          "reasoning": "The definition is likely \"purchase,\" and the wordplay involves \"trapped soul of Dennis Hopper,\" which suggests a hidden word or container. The word \"SHOP\" is hidden in \"Dennis Hopper,\" fitting the definition of purchase.",
+          "outcome": "wrong",
+          "hintsUsed": 0,
+          "letters": "",
+          "hints": [],
+          "wrong": [
+            "SHOPP"
+          ],
+          "feedback": "'SHOPP' is not correct. You have guessed: SHOPP. Try another answer, or reply HINT."
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is likely \"purchase,\" and the wordplay involves \"trapped soul of Dennis Hopper,\" which suggests a hidden word or container.",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [
+            "SHOPP",
+            "SHOP"
+          ],
+          "feedback": "'SHOP' is not correct. You have guessed: SHOPP, SHOP. Try another answer, or reply HINT."
+        },
+        {
+          "decision": "guess",
+          "guess": "BUNNY",
+          "reasoning": "The wordplay suggests \"Purchase trapped soul of Dennis Hopper\", which could mean a word for purchase containing a letter from \"Dennis\". The word \"BUY\" could be a purchase, and \"BUNNY\" is a type of hopper.",
+          "outcome": "solved",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'Hopper'"
+          ],
+          "wrong": [
+            "SHOPP",
+            "SHOP"
+          ],
+          "feedback": "Hint (definition): The definition part of the clue is 'Hopper'"
+        }
+      ]
+    },
+    {
+      "model": "openai/gpt-4o",
+      "clue": "Request seafood around lunch hour",
+      "enumeration": "(5)",
+      "answer": "CLAIM",
+      "wordLengths": [
+        5
+      ],
+      "definition": "Request",
+      "par": 2,
+      "solved": true,
+      "hintsUsed": 1,
+      "guessesUsed": 1,
+      "parResult": "below",
+      "reward": 0.8,
+      "hintOrder": [
+        "definition"
+      ],
+      "steps": [
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is likely \"request\" and the wordplay involves \"seafood\" around \"lunch hour\" which could be \"L\" for lunch and \"HR\" for hour.",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "guess",
+          "guess": "CLAIM",
+          "reasoning": "The definition is 'Request', and the wordplay involves 'seafood' around 'lunch hour'. 'Seafood' could be 'clam', and 'lunch hour' is 'L', so 'clam' around 'L' gives 'CLAIM', which means 'Request'.",
+          "outcome": "solved",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'Request'"
+          ],
+          "wrong": [],
+          "feedback": "Hint (definition): The definition part of the clue is 'Request'"
+        }
+      ]
+    },
+    {
+      "model": "openai/gpt-4o",
+      "clue": "Wow , a child's puzzle !",
+      "enumeration": "(5)",
+      "answer": "AMAZE",
+      "wordLengths": [
+        5
+      ],
+      "definition": "Wow",
+      "par": 2,
+      "solved": true,
+      "hintsUsed": 0,
+      "guessesUsed": 2,
+      "parResult": "below",
+      "reward": 1.0,
+      "hintOrder": [],
+      "steps": [
+        {
+          "decision": "guess",
+          "guess": "MAZES",
+          "reasoning": "The clue likely uses a double definition, where \"Wow\" and \"a child's puzzle\" both point to the same answer. A common word that fits both definitions is \"MAZES\".",
+          "outcome": "wrong",
+          "hintsUsed": 0,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "guess",
+          "guess": "AMAZE",
+          "reasoning": "The clue likely has \"Wow\" as the definition, and \"a child's puzzle\" could be the wordplay. A common 5-letter word for \"Wow\" is \"AMAZE\".",
+          "outcome": "solved",
+          "hintsUsed": 0,
+          "letters": "",
+          "hints": [],
+          "wrong": [
+            "MAZES"
+          ],
+          "feedback": "'MAZES' is not correct. You have guessed: MAZES. Try another answer, or reply HINT."
+        }
+      ]
+    }
+  ]
+}

@@ -85,3 +85,47 @@ mesocosm auth login
 mesocosm env submit --name "clue-less" --github-url https://github.com/Achintya72/clue-less
 mesocosm run create --domain DOMAIN_ID --vow-version 1.0.0 --model gemini/gemini-3.1-flash-lite --episodes 5
 ```
+
+## Benchmark real models across the dataset
+
+`mesocosm run create` runs cloud models on SWECC's infrastructure (it uses your
+session — you don't supply your own API keys). The CLI only runs the first ≤20
+clues, so to cover the whole dataset `orchestrate_bench.py` drives the API
+directly with explicit seed batches and tracks coverage **per clue**, automatically
+re-running any episode that hits a rate limit.
+
+```bash
+mesocosm auth login                  # member session (only a member can read results)
+python orchestrate_bench.py          # runs the models in MODELS over all 813 clues
+```
+
+Output lands in `results/episodes/<model>/<seed>.json`, resumable via
+`results/state2.json`, plus a per-model `results/summary.json`. Edit `MODELS` /
+`RUN_PARALLEL` at the top of the script to change scope.
+
+**Platform limits worth knowing:**
+- Each run is capped at **20 episodes**; the orchestrator batches around it.
+- Provider keys are **shared and rate-limited** — keep `RUN_PARALLEL` low; failed
+  episodes are retried up to `MAX_ATTEMPTS`.
+- Only models with a configured key run: OpenAI `gpt-4o` and the Gemini
+  `flash-lite` family (Anthropic / DeepSeek / xAI have no platform key).
+- **Member sessions expire (~25 min) with no refresh**, and only a member can read
+  results (a guest can create runs but gets 403 on export). If a long sweep
+  stalls, re-run `mesocosm auth login` and the orchestrator resumes.
+
+## Model replay dashboard
+
+A Minute-Cryptic-style replay of real model plays — the clue, an answer grid that
+fills in as the model takes hints, its guesses (green hit / red miss), the
+reasoning behind each step, and a per-model **report card**: average hints vs par
+(below = negative, at = 0, above = positive), solve rate, and how often it reaches
+for each hint type (definition / indicators / fodder / letter).
+
+```bash
+python build_dashboard_data.py       # results/episodes/* -> showcase/dashboard_data.json
+cd showcase && python -m http.server 8088
+# open http://localhost:8088/dashboard.html
+```
+
+Re-run `build_dashboard_data.py` after any new runs and refresh — the dashboard
+picks up the new episodes and recomputes the per-model report cards automatically.
