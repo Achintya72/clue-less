@@ -1,0 +1,511 @@
+{
+  "schema_version": "1",
+  "domain_id": "a42c98f2-8d77-432e-aee5-e89993bdd726",
+  "binding_vow_version": "1.0.0",
+  "model": "gemini/gemini-3.1-flash-lite",
+  "visibility": "gallery_public",
+  "replay": {
+    "d19f5a87-1808-4d8d-9cbf-d66897782bd7": [
+      {
+        "step": 1,
+        "timestamp": "2026-05-30T05:11:05.354768",
+        "board_before": {
+          "clue": "Every circuit in grand prix race",
+          "enumeration": "(6)",
+          "answer_length": 6,
+          "word_lengths": [
+            6
+          ],
+          "rules": "Minute Cryptic \u2014 how to solve:\n- Every clue has TWO parts that both point to the same answer: a plain DEFINITION (always at the very start OR the very end of the clue) and WORDPLAY (the rest), which spells the answer by a hidden mechanism.\n- The number(s) in parentheses give the answer's length, e.g. (7) is a 7-letter word, (3,4) is a 3-letter word then a 4-letter word.\n- Common wordplay devices: anagram (letters jumbled, flagged by an indicator like 'mixed', 'broken', 'shredded', 'wild'); hidden word (answer sits inside consecutive letters of the clue); reversal ('back', 'returning', 'up' in a down clue); homophone ('we hear', 'sounds like'); charade (join shorter pieces in sequence); container ('in', 'around', 'holding'); deletion ('endless', 'heartless'); and abbreviations.\n- Answers are matched ignoring case, spaces and punctuation.\nACTIONS: reply with your answer to GUESS, or reply exactly 'HINT' to reveal the next hint. Hints first explain the clue, then reveal the answer's letters one at a time. Fewer hints is better \u2014 'par' is the expected number of hints for this clue, and you are scored against it.",
+          "common_substitutions": [
+            "love / nil / nothing / zero / duck -> O",
+            "the (in French) -> LE, LA, LES; (German) -> DER, DIE, DAS; (Spanish) -> EL",
+            "and -> N ('rock 'n' roll'); with -> W; without -> SANS",
+            "about -> C, CA, RE; around -> RE; concerning -> RE",
+            "Roman numerals: one -> I (or A/AN); five -> V; ten -> X; fifty -> L; hundred -> C; five hundred -> D; thousand -> M",
+            "left -> L; right -> R; first -> initial letter; finally -> last letter; heart/centre -> middle letter(s)",
+            "north/south/east/west -> N/S/E/W; point -> N, S, E or W",
+            "doctor -> DR, MO, MB; learner / novice -> L; graduate -> BA, MA",
+            "king -> K or R (rex); queen -> Q, ER or R; royal -> ER",
+            "quiet -> P or SH; loud -> F (forte); very loud -> FF",
+            "note (music) -> A B C D E F G, or DO RE MI FA SO LA TI",
+            "sailor -> AB, TAR, RN, OS; soldier(s) -> GI, RE, TA, ANT(s); navy -> RN",
+            "river -> R; lake -> L; road / street / way -> RD, ST, AVE, WAY",
+            "old -> O; new -> N; good -> G; gold -> AU or OR; iron -> FE",
+            "time -> T; hour -> HR; year -> Y; second -> S or MO; moment -> MO",
+            "company -> CO, LTD, INC; society -> S, SOC; party -> DO, LAB, CON"
+          ],
+          "hints_taken": 0,
+          "par": 3,
+          "instructions": "You may reason first, but put your decision on the LAST line by itself: either your answer (the word/phrase only), or the single word HINT to reveal the next hint."
+        },
+        "observation": {
+          "clue": "Every circuit in grand prix race",
+          "enumeration": "(6)",
+          "answer_length": 6,
+          "word_lengths": [
+            6
+          ],
+          "rules": "Minute Cryptic \u2014 how to solve:\n- Every clue has TWO parts that both point to the same answer: a plain DEFINITION (always at the very start OR the very end of the clue) and WORDPLAY (the rest), which spells the answer by a hidden mechanism.\n- The number(s) in parentheses give the answer's length, e.g. (7) is a 7-letter word, (3,4) is a 3-letter word then a 4-letter word.\n- Common wordplay devices: anagram (letters jumbled, flagged by an indicator like 'mixed', 'broken', 'shredded', 'wild'); hidden word (answer sits inside consecutive letters of the clue); reversal ('back', 'returning', 'up' in a down clue); homophone ('we hear', 'sounds like'); charade (join shorter pieces in sequence); container ('in', 'around', 'holding'); deletion ('endless', 'heartless'); and abbreviations.\n- Answers are matched ignoring case, spaces and punctuation.\nACTIONS: reply with your answer to GUESS, or reply exactly 'HINT' to reveal the next hint. Hints first explain the clue, then reveal the answer's letters one at a time. Fewer hints is better \u2014 'par' is the expected number of hints for this clue, and you are scored against it.",
+          "common_substitutions": [
+            "love / nil / nothing / zero / duck -> O",
+            "the (in French) -> LE, LA, LES; (German) -> DER, DIE, DAS; (Spanish) -> EL",
+            "and -> N ('rock 'n' roll'); with -> W; without -> SANS",
+            "about -> C, CA, RE; around -> RE; concerning -> RE",
+            "Roman numerals: one -> I (or A/AN); five -> V; ten -> X; fifty -> L; hundred -> C; five hundred -> D; thousand -> M",
+            "left -> L; right -> R; first -> initial letter; finally -> last letter; heart/centre -> middle letter(s)",
+            "north/south/east/west -> N/S/E/W; point -> N, S, E or W",
+            "doctor -> DR, MO, MB; learner / novice -> L; graduate -> BA, MA",
+            "king -> K or R (rex); queen -> Q, ER or R; royal -> ER",
+            "quiet -> P or SH; loud -> F (forte); very loud -> FF",
+            "note (music) -> A B C D E F G, or DO RE MI FA SO LA TI",
+            "sailor -> AB, TAR, RN, OS; soldier(s) -> GI, RE, TA, ANT(s); navy -> RN",
+            "river -> R; lake -> L; road / street / way -> RD, ST, AVE, WAY",
+            "old -> O; new -> N; good -> G; gold -> AU or OR; iron -> FE",
+            "time -> T; hour -> HR; year -> Y; second -> S or MO; moment -> MO",
+            "company -> CO, LTD, INC; society -> S, SOC; party -> DO, LAB, CON"
+          ],
+          "hints_taken": 0,
+          "par": 3,
+          "instructions": "You may reason first, but put your decision on the LAST line by itself: either your answer (the word/phrase only), or the single word HINT to reveal the next hint."
+        },
+        "reasoning": "The clue \"Every circuit in grand prix race\" suggests a hidden word mechanism, as \"Every\" often indicates that the answer is hidden within the surrounding words. Looking at the phrase \"grand prix race\", the word \"circuit\" is a synonym for the definition.\n\nHINT",
+        "model": "gemini/gemini-3.1-flash-lite",
+        "action": "The clue \"Every circuit in grand prix race\" suggests a hidden word mechanism, as \"Every\" often indicates that the answer is hidden within the surrounding words. Looking at the phrase \"grand prix race\", the word \"circuit\" is a synonym for the definition.\n\nHINT",
+        "reward": 0.0,
+        "terminated": false,
+        "truncated": false,
+        "info": {
+          "clue_id": "2023-09-07",
+          "puzzle_id": "d3cca44d-a147-4729-b715-184422eb8a8c",
+          "solved": "0",
+          "guesses_used": "0",
+          "hints_used": "1",
+          "hint_order": "[\"definition\"]",
+          "par": "3",
+          "community_avg_par": "3",
+          "hints_to_par": "-2",
+          "under_or_at_par": "1",
+          "par_result": "below",
+          "outcome": "hint",
+          "reward": "0.0000"
+        },
+        "env_system_prompt": "Hint: The definition part of the clue is 'race'",
+        "board_after": {
+          "clue": "Every circuit in grand prix race",
+          "enumeration": "(6)",
+          "answer_length": 6,
+          "word_lengths": [
+            6
+          ],
+          "rules": "Minute Cryptic \u2014 how to solve:\n- Every clue has TWO parts that both point to the same answer: a plain DEFINITION (always at the very start OR the very end of the clue) and WORDPLAY (the rest), which spells the answer by a hidden mechanism.\n- The number(s) in parentheses give the answer's length, e.g. (7) is a 7-letter word, (3,4) is a 3-letter word then a 4-letter word.\n- Common wordplay devices: anagram (letters jumbled, flagged by an indicator like 'mixed', 'broken', 'shredded', 'wild'); hidden word (answer sits inside consecutive letters of the clue); reversal ('back', 'returning', 'up' in a down clue); homophone ('we hear', 'sounds like'); charade (join shorter pieces in sequence); container ('in', 'around', 'holding'); deletion ('endless', 'heartless'); and abbreviations.\n- Answers are matched ignoring case, spaces and punctuation.\nACTIONS: reply with your answer to GUESS, or reply exactly 'HINT' to reveal the next hint. Hints first explain the clue, then reveal the answer's letters one at a time. Fewer hints is better \u2014 'par' is the expected number of hints for this clue, and you are scored against it.",
+          "common_substitutions": [
+            "love / nil / nothing / zero / duck -> O",
+            "the (in French) -> LE, LA, LES; (German) -> DER, DIE, DAS; (Spanish) -> EL",
+            "and -> N ('rock 'n' roll'); with -> W; without -> SANS",
+            "about -> C, CA, RE; around -> RE; concerning -> RE",
+            "Roman numerals: one -> I (or A/AN); five -> V; ten -> X; fifty -> L; hundred -> C; five hundred -> D; thousand -> M",
+            "left -> L; right -> R; first -> initial letter; finally -> last letter; heart/centre -> middle letter(s)",
+            "north/south/east/west -> N/S/E/W; point -> N, S, E or W",
+            "doctor -> DR, MO, MB; learner / novice -> L; graduate -> BA, MA",
+            "king -> K or R (rex); queen -> Q, ER or R; royal -> ER",
+            "quiet -> P or SH; loud -> F (forte); very loud -> FF",
+            "note (music) -> A B C D E F G, or DO RE MI FA SO LA TI",
+            "sailor -> AB, TAR, RN, OS; soldier(s) -> GI, RE, TA, ANT(s); navy -> RN",
+            "river -> R; lake -> L; road / street / way -> RD, ST, AVE, WAY",
+            "old -> O; new -> N; good -> G; gold -> AU or OR; iron -> FE",
+            "time -> T; hour -> HR; year -> Y; second -> S or MO; moment -> MO",
+            "company -> CO, LTD, INC; society -> S, SOC; party -> DO, LAB, CON"
+          ],
+          "hints_taken": 1,
+          "par": 3,
+          "instructions": "You may reason first, but put your decision on the LAST line by itself: either your answer (the word/phrase only), or the single word HINT to reveal the next hint.",
+          "revealed_hints": [
+            "[definition] The definition part of the clue is 'race'"
+          ],
+          "feedback": "Hint (definition): The definition part of the clue is 'race'"
+        }
+      },
+      {
+        "step": 2,
+        "timestamp": "2026-05-30T05:11:06.378852",
+        "board_before": {
+          "clue": "Every circuit in grand prix race",
+          "enumeration": "(6)",
+          "answer_length": 6,
+          "word_lengths": [
+            6
+          ],
+          "rules": "Minute Cryptic \u2014 how to solve:\n- Every clue has TWO parts that both point to the same answer: a plain DEFINITION (always at the very start OR the very end of the clue) and WORDPLAY (the rest), which spells the answer by a hidden mechanism.\n- The number(s) in parentheses give the answer's length, e.g. (7) is a 7-letter word, (3,4) is a 3-letter word then a 4-letter word.\n- Common wordplay devices: anagram (letters jumbled, flagged by an indicator like 'mixed', 'broken', 'shredded', 'wild'); hidden word (answer sits inside consecutive letters of the clue); reversal ('back', 'returning', 'up' in a down clue); homophone ('we hear', 'sounds like'); charade (join shorter pieces in sequence); container ('in', 'around', 'holding'); deletion ('endless', 'heartless'); and abbreviations.\n- Answers are matched ignoring case, spaces and punctuation.\nACTIONS: reply with your answer to GUESS, or reply exactly 'HINT' to reveal the next hint. Hints first explain the clue, then reveal the answer's letters one at a time. Fewer hints is better \u2014 'par' is the expected number of hints for this clue, and you are scored against it.",
+          "common_substitutions": [
+            "love / nil / nothing / zero / duck -> O",
+            "the (in French) -> LE, LA, LES; (German) -> DER, DIE, DAS; (Spanish) -> EL",
+            "and -> N ('rock 'n' roll'); with -> W; without -> SANS",
+            "about -> C, CA, RE; around -> RE; concerning -> RE",
+            "Roman numerals: one -> I (or A/AN); five -> V; ten -> X; fifty -> L; hundred -> C; five hundred -> D; thousand -> M",
+            "left -> L; right -> R; first -> initial letter; finally -> last letter; heart/centre -> middle letter(s)",
+            "north/south/east/west -> N/S/E/W; point -> N, S, E or W",
+            "doctor -> DR, MO, MB; learner / novice -> L; graduate -> BA, MA",
+            "king -> K or R (rex); queen -> Q, ER or R; royal -> ER",
+            "quiet -> P or SH; loud -> F (forte); very loud -> FF",
+            "note (music) -> A B C D E F G, or DO RE MI FA SO LA TI",
+            "sailor -> AB, TAR, RN, OS; soldier(s) -> GI, RE, TA, ANT(s); navy -> RN",
+            "river -> R; lake -> L; road / street / way -> RD, ST, AVE, WAY",
+            "old -> O; new -> N; good -> G; gold -> AU or OR; iron -> FE",
+            "time -> T; hour -> HR; year -> Y; second -> S or MO; moment -> MO",
+            "company -> CO, LTD, INC; society -> S, SOC; party -> DO, LAB, CON"
+          ],
+          "hints_taken": 1,
+          "par": 3,
+          "instructions": "You may reason first, but put your decision on the LAST line by itself: either your answer (the word/phrase only), or the single word HINT to reveal the next hint.",
+          "revealed_hints": [
+            "[definition] The definition part of the clue is 'race'"
+          ],
+          "feedback": "Hint (definition): The definition part of the clue is 'race'"
+        },
+        "observation": {
+          "clue": "Every circuit in grand prix race",
+          "enumeration": "(6)",
+          "answer_length": 6,
+          "word_lengths": [
+            6
+          ],
+          "rules": "Minute Cryptic \u2014 how to solve:\n- Every clue has TWO parts that both point to the same answer: a plain DEFINITION (always at the very start OR the very end of the clue) and WORDPLAY (the rest), which spells the answer by a hidden mechanism.\n- The number(s) in parentheses give the answer's length, e.g. (7) is a 7-letter word, (3,4) is a 3-letter word then a 4-letter word.\n- Common wordplay devices: anagram (letters jumbled, flagged by an indicator like 'mixed', 'broken', 'shredded', 'wild'); hidden word (answer sits inside consecutive letters of the clue); reversal ('back', 'returning', 'up' in a down clue); homophone ('we hear', 'sounds like'); charade (join shorter pieces in sequence); container ('in', 'around', 'holding'); deletion ('endless', 'heartless'); and abbreviations.\n- Answers are matched ignoring case, spaces and punctuation.\nACTIONS: reply with your answer to GUESS, or reply exactly 'HINT' to reveal the next hint. Hints first explain the clue, then reveal the answer's letters one at a time. Fewer hints is better \u2014 'par' is the expected number of hints for this clue, and you are scored against it.",
+          "common_substitutions": [
+            "love / nil / nothing / zero / duck -> O",
+            "the (in French) -> LE, LA, LES; (German) -> DER, DIE, DAS; (Spanish) -> EL",
+            "and -> N ('rock 'n' roll'); with -> W; without -> SANS",
+            "about -> C, CA, RE; around -> RE; concerning -> RE",
+            "Roman numerals: one -> I (or A/AN); five -> V; ten -> X; fifty -> L; hundred -> C; five hundred -> D; thousand -> M",
+            "left -> L; right -> R; first -> initial letter; finally -> last letter; heart/centre -> middle letter(s)",
+            "north/south/east/west -> N/S/E/W; point -> N, S, E or W",
+            "doctor -> DR, MO, MB; learner / novice -> L; graduate -> BA, MA",
+            "king -> K or R (rex); queen -> Q, ER or R; royal -> ER",
+            "quiet -> P or SH; loud -> F (forte); very loud -> FF",
+            "note (music) -> A B C D E F G, or DO RE MI FA SO LA TI",
+            "sailor -> AB, TAR, RN, OS; soldier(s) -> GI, RE, TA, ANT(s); navy -> RN",
+            "river -> R; lake -> L; road / street / way -> RD, ST, AVE, WAY",
+            "old -> O; new -> N; good -> G; gold -> AU or OR; iron -> FE",
+            "time -> T; hour -> HR; year -> Y; second -> S or MO; moment -> MO",
+            "company -> CO, LTD, INC; society -> S, SOC; party -> DO, LAB, CON"
+          ],
+          "hints_taken": 1,
+          "par": 3,
+          "instructions": "You may reason first, but put your decision on the LAST line by itself: either your answer (the word/phrase only), or the single word HINT to reveal the next hint.",
+          "revealed_hints": [
+            "[definition] The definition part of the clue is 'race'"
+          ],
+          "feedback": "Hint (definition): The definition part of the clue is 'race'"
+        },
+        "reasoning": "The wordplay \"Every circuit in\" suggests a hidden word mechanism, where the answer is concealed within the phrase \"Every circuit in\". Looking at the letters, \"E-V-E-R-Y-C-I-R-C-U-I-T-I-N\", the sequence \"E-N-T-R-Y\" doesn't fit, but \"C-A-R-E-E-R\" or similar might be hidden. Wait, \"Every circuit\" contains \"C-A-R-E-E-R\" if we look at the letters: \"Every ciR-cuit\". Actually, \"Every circuit\" contains \"C-A-R-E-E-R\" is not quite right. Let's look at \"Every circuit\" again: \"E-V-E-R-Y-C-I-R-C-U-I-T\". The word \"CAREER\" is a synonym for \"race\" (as in to move fast).\n\nHINT",
+        "model": "gemini/gemini-3.1-flash-lite",
+        "action": "The wordplay \"Every circuit in\" suggests a hidden word mechanism, where the answer is concealed within the phrase \"Every circuit in\". Looking at the letters, \"E-V-E-R-Y-C-I-R-C-U-I-T-I-N\", the sequence \"E-N-T-R-Y\" doesn't fit, but \"C-A-R-E-E-R\" or similar might be hidden. Wait, \"Every circuit\" contains \"C-A-R-E-E-R\" if we look at the letters: \"Every ciR-cuit\". Actually, \"Every circuit\" contains \"C-A-R-E-E-R\" is not quite right. Let's look at \"Every circuit\" again: \"E-V-E-R-Y-C-I-R-C-U-I-T\". The word \"CAREER\" is a synonym for \"race\" (as in to move fast).\n\nHINT",
+        "reward": 0.0,
+        "terminated": false,
+        "truncated": false,
+        "info": {
+          "clue_id": "2023-09-07",
+          "puzzle_id": "d3cca44d-a147-4729-b715-184422eb8a8c",
+          "solved": "0",
+          "guesses_used": "0",
+          "hints_used": "2",
+          "hint_order": "[\"definition\", \"letter\"]",
+          "par": "3",
+          "community_avg_par": "3",
+          "hints_to_par": "-1",
+          "under_or_at_par": "1",
+          "par_result": "below",
+          "outcome": "hint",
+          "reward": "0.0000"
+        },
+        "env_system_prompt": "Letters so far: G _ _ _ _ _",
+        "board_after": {
+          "clue": "Every circuit in grand prix race",
+          "enumeration": "(6)",
+          "answer_length": 6,
+          "word_lengths": [
+            6
+          ],
+          "rules": "Minute Cryptic \u2014 how to solve:\n- Every clue has TWO parts that both point to the same answer: a plain DEFINITION (always at the very start OR the very end of the clue) and WORDPLAY (the rest), which spells the answer by a hidden mechanism.\n- The number(s) in parentheses give the answer's length, e.g. (7) is a 7-letter word, (3,4) is a 3-letter word then a 4-letter word.\n- Common wordplay devices: anagram (letters jumbled, flagged by an indicator like 'mixed', 'broken', 'shredded', 'wild'); hidden word (answer sits inside consecutive letters of the clue); reversal ('back', 'returning', 'up' in a down clue); homophone ('we hear', 'sounds like'); charade (join shorter pieces in sequence); container ('in', 'around', 'holding'); deletion ('endless', 'heartless'); and abbreviations.\n- Answers are matched ignoring case, spaces and punctuation.\nACTIONS: reply with your answer to GUESS, or reply exactly 'HINT' to reveal the next hint. Hints first explain the clue, then reveal the answer's letters one at a time. Fewer hints is better \u2014 'par' is the expected number of hints for this clue, and you are scored against it.",
+          "common_substitutions": [
+            "love / nil / nothing / zero / duck -> O",
+            "the (in French) -> LE, LA, LES; (German) -> DER, DIE, DAS; (Spanish) -> EL",
+            "and -> N ('rock 'n' roll'); with -> W; without -> SANS",
+            "about -> C, CA, RE; around -> RE; concerning -> RE",
+            "Roman numerals: one -> I (or A/AN); five -> V; ten -> X; fifty -> L; hundred -> C; five hundred -> D; thousand -> M",
+            "left -> L; right -> R; first -> initial letter; finally -> last letter; heart/centre -> middle letter(s)",
+            "north/south/east/west -> N/S/E/W; point -> N, S, E or W",
+            "doctor -> DR, MO, MB; learner / novice -> L; graduate -> BA, MA",
+            "king -> K or R (rex); queen -> Q, ER or R; royal -> ER",
+            "quiet -> P or SH; loud -> F (forte); very loud -> FF",
+            "note (music) -> A B C D E F G, or DO RE MI FA SO LA TI",
+            "sailor -> AB, TAR, RN, OS; soldier(s) -> GI, RE, TA, ANT(s); navy -> RN",
+            "river -> R; lake -> L; road / street / way -> RD, ST, AVE, WAY",
+            "old -> O; new -> N; good -> G; gold -> AU or OR; iron -> FE",
+            "time -> T; hour -> HR; year -> Y; second -> S or MO; moment -> MO",
+            "company -> CO, LTD, INC; society -> S, SOC; party -> DO, LAB, CON"
+          ],
+          "hints_taken": 2,
+          "par": 3,
+          "instructions": "You may reason first, but put your decision on the LAST line by itself: either your answer (the word/phrase only), or the single word HINT to reveal the next hint.",
+          "revealed_hints": [
+            "[definition] The definition part of the clue is 'race'"
+          ],
+          "revealed_letters": "G _ _ _ _ _",
+          "feedback": "Letter revealed -> G _ _ _ _ _"
+        }
+      },
+      {
+        "step": 3,
+        "timestamp": "2026-05-30T05:11:15.341765",
+        "board_before": {
+          "clue": "Every circuit in grand prix race",
+          "enumeration": "(6)",
+          "answer_length": 6,
+          "word_lengths": [
+            6
+          ],
+          "rules": "Minute Cryptic \u2014 how to solve:\n- Every clue has TWO parts that both point to the same answer: a plain DEFINITION (always at the very start OR the very end of the clue) and WORDPLAY (the rest), which spells the answer by a hidden mechanism.\n- The number(s) in parentheses give the answer's length, e.g. (7) is a 7-letter word, (3,4) is a 3-letter word then a 4-letter word.\n- Common wordplay devices: anagram (letters jumbled, flagged by an indicator like 'mixed', 'broken', 'shredded', 'wild'); hidden word (answer sits inside consecutive letters of the clue); reversal ('back', 'returning', 'up' in a down clue); homophone ('we hear', 'sounds like'); charade (join shorter pieces in sequence); container ('in', 'around', 'holding'); deletion ('endless', 'heartless'); and abbreviations.\n- Answers are matched ignoring case, spaces and punctuation.\nACTIONS: reply with your answer to GUESS, or reply exactly 'HINT' to reveal the next hint. Hints first explain the clue, then reveal the answer's letters one at a time. Fewer hints is better \u2014 'par' is the expected number of hints for this clue, and you are scored against it.",
+          "common_substitutions": [
+            "love / nil / nothing / zero / duck -> O",
+            "the (in French) -> LE, LA, LES; (German) -> DER, DIE, DAS; (Spanish) -> EL",
+            "and -> N ('rock 'n' roll'); with -> W; without -> SANS",
+            "about -> C, CA, RE; around -> RE; concerning -> RE",
+            "Roman numerals: one -> I (or A/AN); five -> V; ten -> X; fifty -> L; hundred -> C; five hundred -> D; thousand -> M",
+            "left -> L; right -> R; first -> initial letter; finally -> last letter; heart/centre -> middle letter(s)",
+            "north/south/east/west -> N/S/E/W; point -> N, S, E or W",
+            "doctor -> DR, MO, MB; learner / novice -> L; graduate -> BA, MA",
+            "king -> K or R (rex); queen -> Q, ER or R; royal -> ER",
+            "quiet -> P or SH; loud -> F (forte); very loud -> FF",
+            "note (music) -> A B C D E F G, or DO RE MI FA SO LA TI",
+            "sailor -> AB, TAR, RN, OS; soldier(s) -> GI, RE, TA, ANT(s); navy -> RN",
+            "river -> R; lake -> L; road / street / way -> RD, ST, AVE, WAY",
+            "old -> O; new -> N; good -> G; gold -> AU or OR; iron -> FE",
+            "time -> T; hour -> HR; year -> Y; second -> S or MO; moment -> MO",
+            "company -> CO, LTD, INC; society -> S, SOC; party -> DO, LAB, CON"
+          ],
+          "hints_taken": 2,
+          "par": 3,
+          "instructions": "You may reason first, but put your decision on the LAST line by itself: either your answer (the word/phrase only), or the single word HINT to reveal the next hint.",
+          "revealed_hints": [
+            "[definition] The definition part of the clue is 'race'"
+          ],
+          "revealed_letters": "G _ _ _ _ _",
+          "feedback": "Letter revealed -> G _ _ _ _ _"
+        },
+        "observation": {
+          "clue": "Every circuit in grand prix race",
+          "enumeration": "(6)",
+          "answer_length": 6,
+          "word_lengths": [
+            6
+          ],
+          "rules": "Minute Cryptic \u2014 how to solve:\n- Every clue has TWO parts that both point to the same answer: a plain DEFINITION (always at the very start OR the very end of the clue) and WORDPLAY (the rest), which spells the answer by a hidden mechanism.\n- The number(s) in parentheses give the answer's length, e.g. (7) is a 7-letter word, (3,4) is a 3-letter word then a 4-letter word.\n- Common wordplay devices: anagram (letters jumbled, flagged by an indicator like 'mixed', 'broken', 'shredded', 'wild'); hidden word (answer sits inside consecutive letters of the clue); reversal ('back', 'returning', 'up' in a down clue); homophone ('we hear', 'sounds like'); charade (join shorter pieces in sequence); container ('in', 'around', 'holding'); deletion ('endless', 'heartless'); and abbreviations.\n- Answers are matched ignoring case, spaces and punctuation.\nACTIONS: reply with your answer to GUESS, or reply exactly 'HINT' to reveal the next hint. Hints first explain the clue, then reveal the answer's letters one at a time. Fewer hints is better \u2014 'par' is the expected number of hints for this clue, and you are scored against it.",
+          "common_substitutions": [
+            "love / nil / nothing / zero / duck -> O",
+            "the (in French) -> LE, LA, LES; (German) -> DER, DIE, DAS; (Spanish) -> EL",
+            "and -> N ('rock 'n' roll'); with -> W; without -> SANS",
+            "about -> C, CA, RE; around -> RE; concerning -> RE",
+            "Roman numerals: one -> I (or A/AN); five -> V; ten -> X; fifty -> L; hundred -> C; five hundred -> D; thousand -> M",
+            "left -> L; right -> R; first -> initial letter; finally -> last letter; heart/centre -> middle letter(s)",
+            "north/south/east/west -> N/S/E/W; point -> N, S, E or W",
+            "doctor -> DR, MO, MB; learner / novice -> L; graduate -> BA, MA",
+            "king -> K or R (rex); queen -> Q, ER or R; royal -> ER",
+            "quiet -> P or SH; loud -> F (forte); very loud -> FF",
+            "note (music) -> A B C D E F G, or DO RE MI FA SO LA TI",
+            "sailor -> AB, TAR, RN, OS; soldier(s) -> GI, RE, TA, ANT(s); navy -> RN",
+            "river -> R; lake -> L; road / street / way -> RD, ST, AVE, WAY",
+            "old -> O; new -> N; good -> G; gold -> AU or OR; iron -> FE",
+            "time -> T; hour -> HR; year -> Y; second -> S or MO; moment -> MO",
+            "company -> CO, LTD, INC; society -> S, SOC; party -> DO, LAB, CON"
+          ],
+          "hints_taken": 2,
+          "par": 3,
+          "instructions": "You may reason first, but put your decision on the LAST line by itself: either your answer (the word/phrase only), or the single word HINT to reveal the next hint.",
+          "revealed_hints": [
+            "[definition] The definition part of the clue is 'race'"
+          ],
+          "revealed_letters": "G _ _ _ _ _",
+          "feedback": "Letter revealed -> G _ _ _ _ _"
+        },
+        "reasoning": "The definition is \"race\" and the wordplay is \"Every circuit\" (a hidden word). Looking at the clue \"Every circuit in grand prix race\", the word \"circuit\" contains the letters G-A-R-D-E-N, but that doesn't fit. Wait, \"Every\" often indicates taking the first letters of words, or \"circuit\" could be a container. Let's look at the hidden word: \"Every circuit\" -> \"G\" + \"R\" + \"A\" + \"N\" + \"D\" + \"P\" ... no. Let's try the next hint.\n\nHINT",
+        "model": "gemini/gemini-3.1-flash-lite",
+        "action": "The definition is \"race\" and the wordplay is \"Every circuit\" (a hidden word). Looking at the clue \"Every circuit in grand prix race\", the word \"circuit\" contains the letters G-A-R-D-E-N, but that doesn't fit. Wait, \"Every\" often indicates taking the first letters of words, or \"circuit\" could be a container. Let's look at the hidden word: \"Every circuit\" -> \"G\" + \"R\" + \"A\" + \"N\" + \"D\" + \"P\" ... no. Let's try the next hint.\n\nHINT",
+        "reward": 0.0,
+        "terminated": false,
+        "truncated": false,
+        "info": {
+          "clue_id": "2023-09-07",
+          "puzzle_id": "d3cca44d-a147-4729-b715-184422eb8a8c",
+          "solved": "0",
+          "guesses_used": "0",
+          "hints_used": "3",
+          "hint_order": "[\"definition\", \"letter\", \"letter\"]",
+          "par": "3",
+          "community_avg_par": "3",
+          "hints_to_par": "0",
+          "under_or_at_par": "1",
+          "par_result": "at",
+          "outcome": "hint",
+          "reward": "0.0000"
+        },
+        "env_system_prompt": "Letters so far: G _ _ _ _ P",
+        "board_after": {
+          "clue": "Every circuit in grand prix race",
+          "enumeration": "(6)",
+          "answer_length": 6,
+          "word_lengths": [
+            6
+          ],
+          "rules": "Minute Cryptic \u2014 how to solve:\n- Every clue has TWO parts that both point to the same answer: a plain DEFINITION (always at the very start OR the very end of the clue) and WORDPLAY (the rest), which spells the answer by a hidden mechanism.\n- The number(s) in parentheses give the answer's length, e.g. (7) is a 7-letter word, (3,4) is a 3-letter word then a 4-letter word.\n- Common wordplay devices: anagram (letters jumbled, flagged by an indicator like 'mixed', 'broken', 'shredded', 'wild'); hidden word (answer sits inside consecutive letters of the clue); reversal ('back', 'returning', 'up' in a down clue); homophone ('we hear', 'sounds like'); charade (join shorter pieces in sequence); container ('in', 'around', 'holding'); deletion ('endless', 'heartless'); and abbreviations.\n- Answers are matched ignoring case, spaces and punctuation.\nACTIONS: reply with your answer to GUESS, or reply exactly 'HINT' to reveal the next hint. Hints first explain the clue, then reveal the answer's letters one at a time. Fewer hints is better \u2014 'par' is the expected number of hints for this clue, and you are scored against it.",
+          "common_substitutions": [
+            "love / nil / nothing / zero / duck -> O",
+            "the (in French) -> LE, LA, LES; (German) -> DER, DIE, DAS; (Spanish) -> EL",
+            "and -> N ('rock 'n' roll'); with -> W; without -> SANS",
+            "about -> C, CA, RE; around -> RE; concerning -> RE",
+            "Roman numerals: one -> I (or A/AN); five -> V; ten -> X; fifty -> L; hundred -> C; five hundred -> D; thousand -> M",
+            "left -> L; right -> R; first -> initial letter; finally -> last letter; heart/centre -> middle letter(s)",
+            "north/south/east/west -> N/S/E/W; point -> N, S, E or W",
+            "doctor -> DR, MO, MB; learner / novice -> L; graduate -> BA, MA",
+            "king -> K or R (rex); queen -> Q, ER or R; royal -> ER",
+            "quiet -> P or SH; loud -> F (forte); very loud -> FF",
+            "note (music) -> A B C D E F G, or DO RE MI FA SO LA TI",
+            "sailor -> AB, TAR, RN, OS; soldier(s) -> GI, RE, TA, ANT(s); navy -> RN",
+            "river -> R; lake -> L; road / street / way -> RD, ST, AVE, WAY",
+            "old -> O; new -> N; good -> G; gold -> AU or OR; iron -> FE",
+            "time -> T; hour -> HR; year -> Y; second -> S or MO; moment -> MO",
+            "company -> CO, LTD, INC; society -> S, SOC; party -> DO, LAB, CON"
+          ],
+          "hints_taken": 3,
+          "par": 3,
+          "instructions": "You may reason first, but put your decision on the LAST line by itself: either your answer (the word/phrase only), or the single word HINT to reveal the next hint.",
+          "revealed_hints": [
+            "[definition] The definition part of the clue is 'race'"
+          ],
+          "revealed_letters": "G _ _ _ _ P",
+          "feedback": "Letter revealed -> G _ _ _ _ P"
+        }
+      },
+      {
+        "step": 4,
+        "timestamp": "2026-05-30T05:11:23.265361",
+        "board_before": {
+          "clue": "Every circuit in grand prix race",
+          "enumeration": "(6)",
+          "answer_length": 6,
+          "word_lengths": [
+            6
+          ],
+          "rules": "Minute Cryptic \u2014 how to solve:\n- Every clue has TWO parts that both point to the same answer: a plain DEFINITION (always at the very start OR the very end of the clue) and WORDPLAY (the rest), which spells the answer by a hidden mechanism.\n- The number(s) in parentheses give the answer's length, e.g. (7) is a 7-letter word, (3,4) is a 3-letter word then a 4-letter word.\n- Common wordplay devices: anagram (letters jumbled, flagged by an indicator like 'mixed', 'broken', 'shredded', 'wild'); hidden word (answer sits inside consecutive letters of the clue); reversal ('back', 'returning', 'up' in a down clue); homophone ('we hear', 'sounds like'); charade (join shorter pieces in sequence); container ('in', 'around', 'holding'); deletion ('endless', 'heartless'); and abbreviations.\n- Answers are matched ignoring case, spaces and punctuation.\nACTIONS: reply with your answer to GUESS, or reply exactly 'HINT' to reveal the next hint. Hints first explain the clue, then reveal the answer's letters one at a time. Fewer hints is better \u2014 'par' is the expected number of hints for this clue, and you are scored against it.",
+          "common_substitutions": [
+            "love / nil / nothing / zero / duck -> O",
+            "the (in French) -> LE, LA, LES; (German) -> DER, DIE, DAS; (Spanish) -> EL",
+            "and -> N ('rock 'n' roll'); with -> W; without -> SANS",
+            "about -> C, CA, RE; around -> RE; concerning -> RE",
+            "Roman numerals: one -> I (or A/AN); five -> V; ten -> X; fifty -> L; hundred -> C; five hundred -> D; thousand -> M",
+            "left -> L; right -> R; first -> initial letter; finally -> last letter; heart/centre -> middle letter(s)",
+            "north/south/east/west -> N/S/E/W; point -> N, S, E or W",
+            "doctor -> DR, MO, MB; learner / novice -> L; graduate -> BA, MA",
+            "king -> K or R (rex); queen -> Q, ER or R; royal -> ER",
+            "quiet -> P or SH; loud -> F (forte); very loud -> FF",
+            "note (music) -> A B C D E F G, or DO RE MI FA SO LA TI",
+            "sailor -> AB, TAR, RN, OS; soldier(s) -> GI, RE, TA, ANT(s); navy -> RN",
+            "river -> R; lake -> L; road / street / way -> RD, ST, AVE, WAY",
+            "old -> O; new -> N; good -> G; gold -> AU or OR; iron -> FE",
+            "time -> T; hour -> HR; year -> Y; second -> S or MO; moment -> MO",
+            "company -> CO, LTD, INC; society -> S, SOC; party -> DO, LAB, CON"
+          ],
+          "hints_taken": 3,
+          "par": 3,
+          "instructions": "You may reason first, but put your decision on the LAST line by itself: either your answer (the word/phrase only), or the single word HINT to reveal the next hint.",
+          "revealed_hints": [
+            "[definition] The definition part of the clue is 'race'"
+          ],
+          "revealed_letters": "G _ _ _ _ P",
+          "feedback": "Letter revealed -> G _ _ _ _ P"
+        },
+        "observation": {
+          "clue": "Every circuit in grand prix race",
+          "enumeration": "(6)",
+          "answer_length": 6,
+          "word_lengths": [
+            6
+          ],
+          "rules": "Minute Cryptic \u2014 how to solve:\n- Every clue has TWO parts that both point to the same answer: a plain DEFINITION (always at the very start OR the very end of the clue) and WORDPLAY (the rest), which spells the answer by a hidden mechanism.\n- The number(s) in parentheses give the answer's length, e.g. (7) is a 7-letter word, (3,4) is a 3-letter word then a 4-letter word.\n- Common wordplay devices: anagram (letters jumbled, flagged by an indicator like 'mixed', 'broken', 'shredded', 'wild'); hidden word (answer sits inside consecutive letters of the clue); reversal ('back', 'returning', 'up' in a down clue); homophone ('we hear', 'sounds like'); charade (join shorter pieces in sequence); container ('in', 'around', 'holding'); deletion ('endless', 'heartless'); and abbreviations.\n- Answers are matched ignoring case, spaces and punctuation.\nACTIONS: reply with your answer to GUESS, or reply exactly 'HINT' to reveal the next hint. Hints first explain the clue, then reveal the answer's letters one at a time. Fewer hints is better \u2014 'par' is the expected number of hints for this clue, and you are scored against it.",
+          "common_substitutions": [
+            "love / nil / nothing / zero / duck -> O",
+            "the (in French) -> LE, LA, LES; (German) -> DER, DIE, DAS; (Spanish) -> EL",
+            "and -> N ('rock 'n' roll'); with -> W; without -> SANS",
+            "about -> C, CA, RE; around -> RE; concerning -> RE",
+            "Roman numerals: one -> I (or A/AN); five -> V; ten -> X; fifty -> L; hundred -> C; five hundred -> D; thousand -> M",
+            "left -> L; right -> R; first -> initial letter; finally -> last letter; heart/centre -> middle letter(s)",
+            "north/south/east/west -> N/S/E/W; point -> N, S, E or W",
+            "doctor -> DR, MO, MB; learner / novice -> L; graduate -> BA, MA",
+            "king -> K or R (rex); queen -> Q, ER or R; royal -> ER",
+            "quiet -> P or SH; loud -> F (forte); very loud -> FF",
+            "note (music) -> A B C D E F G, or DO RE MI FA SO LA TI",
+            "sailor -> AB, TAR, RN, OS; soldier(s) -> GI, RE, TA, ANT(s); navy -> RN",
+            "river -> R; lake -> L; road / street / way -> RD, ST, AVE, WAY",
+            "old -> O; new -> N; good -> G; gold -> AU or OR; iron -> FE",
+            "time -> T; hour -> HR; year -> Y; second -> S or MO; moment -> MO",
+            "company -> CO, LTD, INC; society -> S, SOC; party -> DO, LAB, CON"
+          ],
+          "hints_taken": 3,
+          "par": 3,
+          "instructions": "You may reason first, but put your decision on the LAST line by itself: either your answer (the word/phrase only), or the single word HINT to reveal the next hint.",
+          "revealed_hints": [
+            "[definition] The definition part of the clue is 'race'"
+          ],
+          "revealed_letters": "G _ _ _ _ P",
+          "feedback": "Letter revealed -> G _ _ _ _ P"
+        },
+        "reasoning": "The wordplay \"Every circuit in grand prix\" suggests a hidden word. Looking at the phrase \"Every circuit in grand prix\", the letters G-A-L-L-O-P are hidden within \"Every circuit in grand prix\" (every circuit in grand prix).\n\nGALLOP",
+        "model": "gemini/gemini-3.1-flash-lite",
+        "action": "The wordplay \"Every circuit in grand prix\" suggests a hidden word. Looking at the phrase \"Every circuit in grand prix\", the letters G-A-L-L-O-P are hidden within \"Every circuit in grand prix\" (every circuit in grand prix).\n\nGALLOP",
+        "reward": 0.3999999999999999,
+        "terminated": true,
+        "truncated": false,
+        "info": {
+          "clue_id": "2023-09-07",
+          "puzzle_id": "d3cca44d-a147-4729-b715-184422eb8a8c",
+          "solved": "1",
+          "guesses_used": "1",
+          "hints_used": "3",
+          "hint_order": "[\"definition\", \"letter\", \"letter\"]",
+          "par": "3",
+          "community_avg_par": "3",
+          "hints_to_par": "0",
+          "under_or_at_par": "1",
+          "par_result": "at",
+          "outcome": "solved",
+          "reward": "0.4000"
+        },
+        "board_after": {
+          "result": "correct",
+          "answer": "GALLOP"
+        },
+        "episode_end": {
+          "total_reward": 0.3999999999999999,
+          "steps": 4,
+          "status": "completed",
+          "terminal_info": {
+            "clue_id": "2023-09-07",
+            "puzzle_id": "d3cca44d-a147-4729-b715-184422eb8a8c",
+            "solved": "1",
+            "guesses_used": "1",
+            "hints_used": "3",
+            "hint_order": "[\"definition\", \"letter\", \"letter\"]",
+            "par": "3",
+            "community_avg_par": "3",
+            "hints_to_par": "0",
+            "under_or_at_par": "1",
+            "par_result": "at",
+            "outcome": "solved",
+            "reward": "0.4000",
+            "total_tokens": 4733
+          }
+        }
+      }
+    ]
+  }
+}
