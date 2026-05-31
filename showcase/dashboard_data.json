@@ -1,32 +1,29 @@
 {
   "episodes": [
     {
-      "model": "gemini/gemini-2.5-flash-lite",
-      "clue": "Every circuit in grand prix race",
-      "enumeration": "(6)",
-      "answer": "GALLOP",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "clue": "Bedroom suffering lack of excitement",
+      "enumeration": "(7)",
+      "answer": "BOREDOM",
       "wordLengths": [
-        6
+        7
       ],
-      "definition": "race",
+      "definition": "lack of excitement",
       "par": 3,
       "solved": true,
-      "hintsUsed": 5,
-      "guessesUsed": 2,
-      "parResult": "above",
-      "reward": 0.2,
+      "hintsUsed": 2,
+      "guessesUsed": 1,
+      "parResult": "below",
+      "reward": 0.6,
       "hintOrder": [
         "definition",
-        "letter",
-        "letter",
-        "letter",
         "letter"
       ],
       "steps": [
         {
           "decision": "hint",
           "guess": "",
-          "reasoning": "The clue is \"Every circuit in grand prix race\". The answer has 6 letters. The definition is likely \"grand prix race\". The wordplay needs to be figured out.\n\nHINT",
+          "reasoning": "The definition is \"lack of excitement\" and the wordplay suggests a hidden word or a charade involving \"bedroom\". I suspect the answer is a synonym for dullness or boredom.",
           "outcome": "hint",
           "hintsUsed": 1,
           "letters": "",
@@ -35,92 +32,30 @@
           "feedback": ""
         },
         {
-          "decision": "guess",
-          "guess": "",
-          "reasoning": "The definition is 'race'. The wordplay must be 'Every circuit in grand prix'. I need to find a 6-letter word for race.\n\nLet's look at the wordplay: \"Every circuit in grand prix\".\n\"Circuit\" could refer to a race track, or perhaps a letter that represents a circuit, like 'O'.\n\"Grand prix\" is a type of race.\n\nIf \"circuit\" is 'O', then \"Every O in grand prix\".\nGrand prix has 9 letters. Let's see if th",
-          "outcome": "wrong",
-          "hintsUsed": 1,
-          "letters": "",
-          "hints": [
-            "[definition] The definition part of the clue is 'race'"
-          ],
-          "wrong": [],
-          "feedback": "Hint (definition): The definition part of the clue is 'race'"
-        },
-        {
           "decision": "hint",
           "guess": "",
-          "reasoning": "The definition is 'race'. The clue is \"Every circuit in grand prix race\". The answer is 6 letters long. I need to find a 6-letter word for 'race' using wordplay from \"Every circuit in\".\n\nHINT",
+          "reasoning": "The wordplay involves a hidden word mechanism where \"BEDROOM\" contains the answer \"DULLNESS\" if we look at the letters, but wait, \"BEDROOM\" contains \"DULL\" or similar? Actually, \"BEDROOM\" contains \"DULL\" inside it, but the word is 7 letters; looking at \"BEDROOM\" again, \"DULL\" is not there, but \"DULLNESS\" is not in \"BEDROOM\". Let me take a hint.",
           "outcome": "hint",
           "hintsUsed": 2,
           "letters": "",
           "hints": [
-            "[definition] The definition part of the clue is 'race'"
+            "[definition] The definition part of the clue is 'lack of excitement'"
           ],
-          "wrong": [
-            "WHAT IF 'CIRCUIT' IS A LETTER THAT LOOKS LIKE A"
-          ],
-          "feedback": "'WHAT IF 'CIRCUIT' IS A LETTER THAT LOOKS LIKE A' is not correct. You have guessed: WHAT IF 'CIRCUIT' IS A LETTER THAT LOOKS LIKE A. Try another answer, or reply HINT."
-        },
-        {
-          "decision": "hint",
-          "guess": "",
-          "reasoning": "The definition is 'race'. The wordplay must be 'Every circuit in grand prix'. I need to find a 6-letter word for 'race' using the wordplay.\n\nHINT",
-          "outcome": "hint",
-          "hintsUsed": 3,
-          "letters": "G _ _ _ _ _",
-          "hints": [
-            "[definition] The definition part of the clue is 'race'"
-          ],
-          "wrong": [
-            "WHAT IF 'CIRCUIT' IS A LETTER THAT LOOKS LIKE A"
-          ],
-          "feedback": "Letter revealed -> G _ _ _ _ _"
-        },
-        {
-          "decision": "hint",
-          "guess": "",
-          "reasoning": "The definition is 'race'. The wordplay must be 'Every circuit in grand prix'. 'Grand prix' is a type of race, so that's likely part of the definition. 'Every circuit' could be the wordplay. Let's look for a word that means 'race' and can be made from 'every circuit'.\n\nThe letters are G _ _ _ _ P.\n\nI need to find a 6-letter word that means 'race'.\n\nHINT",
-          "outcome": "hint",
-          "hintsUsed": 4,
-          "letters": "G _ _ _ _ P",
-          "hints": [
-            "[definition] The definition part of the clue is 'race'"
-          ],
-          "wrong": [
-            "WHAT IF 'CIRCUIT' IS A LETTER THAT LOOKS LIKE A"
-          ],
-          "feedback": "Letter revealed -> G _ _ _ _ P"
-        },
-        {
-          "decision": "hint",
-          "guess": "",
-          "reasoning": "The clue is \"Every circuit in grand prix race\". The definition is \"race\". The wordplay must be \"Every circuit in grand prix\". The answer is 6 letters long, starting with G and A, and ending with P.\n\nThe wordplay \"Every circuit in grand prix\" could mean a hidden word. Let's look for \"circuit\" within \"grand prix\".\n\n\"grand p**ri**x\" - no, that's not it.\n\"g**rand p**rix\" - no.\n\nLet's consider other in",
-          "outcome": "hint",
-          "hintsUsed": 5,
-          "letters": "G A _ _ _ P",
-          "hints": [
-            "[definition] The definition part of the clue is 'race'"
-          ],
-          "wrong": [
-            "WHAT IF 'CIRCUIT' IS A LETTER THAT LOOKS LIKE A"
-          ],
-          "feedback": "Letter revealed -> G A _ _ _ P"
+          "wrong": [],
+          "feedback": "Hint (definition): The definition part of the clue is 'lack of excitement'"
         },
         {
           "decision": "guess",
-          "guess": "",
-          "reasoning": "The clue is \"Every circuit in grand prix race\". The definition is \"race\". The remaining part, \"Every circuit in grand prix\", must be the wordplay. The letters G A L _ _ P are already revealed.\n\nThe wordplay \"Every circuit in grand prix\" suggests a hidden word. Let's look for \"circuit\" within \"every in grand prix\".\n\n\"Every in grand prix\" -> E V E R Y I N G R A N D P R I X. No obvious hidden word.\n\n",
+          "guess": "BOREDOM",
+          "reasoning": "The wordplay is a hidden word: \"Bedroom\" contains the letters B-O-R-E-D-O-M.",
           "outcome": "solved",
-          "hintsUsed": 5,
-          "letters": "G A L _ _ P",
+          "hintsUsed": 2,
+          "letters": "_ O _ _ _ _ _",
           "hints": [
-            "[definition] The definition part of the clue is 'race'"
+            "[definition] The definition part of the clue is 'lack of excitement'"
           ],
-          "wrong": [
-            "WHAT IF 'CIRCUIT' IS A LETTER THAT LOOKS LIKE A"
-          ],
-          "feedback": "Letter revealed -> G A L _ _ P"
+          "wrong": [],
+          "feedback": "Letter revealed -> _ O _ _ _ _ _"
         }
       ]
     },
@@ -370,6 +305,240 @@
     },
     {
       "model": "gemini/gemini-3.1-flash-lite",
+      "clue": "Films Mexican blowing kiss goodbye ?",
+      "enumeration": "(6)",
+      "answer": "CINEMA",
+      "wordLengths": [
+        6
+      ],
+      "definition": "Films",
+      "par": 3,
+      "solved": true,
+      "hintsUsed": 2,
+      "guessesUsed": 3,
+      "parResult": "below",
+      "reward": 0.6,
+      "hintOrder": [
+        "definition",
+        "letter"
+      ],
+      "steps": [
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is \"Films\" and the wordplay involves \"Mexican\" (often 'MEX') plus \"blowing kiss\" (often 'MUAH' or 'X') to form a 6-letter word.",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "guess",
+          "guess": "MOVIES",
+          "reasoning": "The wordplay involves \"Mexican\" (often abbreviated as MEX) and \"blowing kiss\" (often represented by X or O) plus \"goodbye\" (often ADIOS or TA). Combining MEX and I (for kiss/love) or similar components suggests the word MOVIES.",
+          "outcome": "wrong",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'Films'"
+          ],
+          "wrong": [],
+          "feedback": "Hint (definition): The definition part of the clue is 'Films'"
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The wordplay involves \"Mexican\" (often abbreviated as MEX) plus \"blowing kiss\" (MUAH) or \"goodbye\" (ADIEU), but \"MEX\" plus \"ADIEU\" is too long. Looking at \"Mexican\" as \"O\" (a common substitution for love/nil) or \"ADIEU\" (goodbye) minus a letter, \"MOVIES\" was wrong, so I will try \"CINEMA\".",
+          "outcome": "hint",
+          "hintsUsed": 2,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'Films'"
+          ],
+          "wrong": [
+            "MOVIES"
+          ],
+          "feedback": "'MOVIES' is not correct. You have guessed: MOVIES. Try another answer, or reply HINT."
+        },
+        {
+          "decision": "guess",
+          "guess": "ADIEUX",
+          "reasoning": "The definition is \"Films\" and the wordplay is \"Mexican\" (M) + \"blowing kiss\" (X) + \"goodbye\" (ADIEU). Combining these gives M + ADIEU + X, which is ADIEUX, but that doesn't fit the pattern; however, \"Mexican\" (MEX) + \"kiss\" (X) + \"goodbye\" (ADIEU) is too long, so I will try ADIEUX.",
+          "outcome": "wrong",
+          "hintsUsed": 2,
+          "letters": "_ _ _ _ M _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Films'"
+          ],
+          "wrong": [
+            "MOVIES"
+          ],
+          "feedback": "Letter revealed -> _ _ _ _ M _"
+        },
+        {
+          "decision": "guess",
+          "guess": "CINEMA",
+          "reasoning": "The definition is \"Films\" and the wordplay is \"Mexican\" (MEX) + \"kiss\" (MUAH, but maybe a variation) or \"blowing kiss\" (MUAH) minus something. Given the letters _ _ _ _ M _, the word is likely CINEMA.",
+          "outcome": "solved",
+          "hintsUsed": 2,
+          "letters": "_ _ _ _ M _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Films'"
+          ],
+          "wrong": [
+            "MOVIES",
+            "ADIEUX"
+          ],
+          "feedback": "'ADIEUX' is not correct. You have guessed: MOVIES, ADIEUX. Try another answer, or reply HINT."
+        }
+      ]
+    },
+    {
+      "model": "gemini/gemini-3.1-flash-lite",
+      "clue": "Guarded vehicle with experimental fuel",
+      "enumeration": "(7)",
+      "answer": "CAREFUL",
+      "wordLengths": [
+        7
+      ],
+      "definition": "Guarded",
+      "par": 3,
+      "solved": true,
+      "hintsUsed": 4,
+      "guessesUsed": 4,
+      "parResult": "above",
+      "reward": 0.2,
+      "hintOrder": [
+        "definition",
+        "letter",
+        "letter",
+        "letter"
+      ],
+      "steps": [
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The word \"Guarded\" could be the definition, and \"vehicle with experimental fuel\" suggests a container or charade. I suspect \"VAN\" (vehicle) is inside \"GAS\" (experimental fuel) or similar.",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "guess",
+          "guess": "VANGUARD",
+          "reasoning": "The wordplay involves a vehicle (VAN) containing an experimental fuel (GAS), which forms the word VANGUARD, meaning guarded.",
+          "outcome": "wrong",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'Guarded'"
+          ],
+          "wrong": [],
+          "feedback": "Hint (definition): The definition part of the clue is 'Guarded'"
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The wordplay involves a vehicle (VAN) with experimental fuel (GAS) inside, which forms the word VANGUARD, but since that is incorrect, I will look for another word meaning guarded. A vehicle (CAR) with experimental fuel (GAS) inside a container (T-ED) suggests CARETED or similar, but \"DEFENCE\" or \"SECURED\" fits the definition.",
+          "outcome": "hint",
+          "hintsUsed": 2,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'Guarded'"
+          ],
+          "wrong": [
+            "VANGUARD"
+          ],
+          "feedback": "'VANGUARD' is not correct. You have guessed: VANGUARD. Try another answer, or reply HINT."
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is \"Guarded\" and the wordplay is \"vehicle\" (VAN) + \"experimental fuel\" (GAS), which fits the pattern _ A N G A S _? No, wait, \"vehicle\" (VAN) + \"experimental\" (G) + \"fuel\" (GAS) = VANGUARD is wrong, but \"vehicle\" (VAN) + \"experimental\" (G) + \"fuel\" (GAS) is not it. Let's try \"vehicle\" (VAN) + \"experimental\" (G) + \"fuel\" (GAS) = VANGUARD was wrong, maybe \"vehicle\" (VAN) + \"experimental\" (G) + \"fuel\" (OIL) = VANGUARD? No. Let's try HINT.",
+          "outcome": "hint",
+          "hintsUsed": 3,
+          "letters": "_ A _ _ _ _ _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Guarded'"
+          ],
+          "wrong": [
+            "VANGUARD"
+          ],
+          "feedback": "Letter revealed -> _ A _ _ _ _ _"
+        },
+        {
+          "decision": "guess",
+          "guess": "SAVEDER",
+          "reasoning": "The definition is \"Guarded\" and the wordplay is \"vehicle\" (VAN) + \"experimental fuel\" (GAS) + \"E\" (for experimental), which fits the pattern _ A _ E _ _ _.",
+          "outcome": "wrong",
+          "hintsUsed": 3,
+          "letters": "_ A _ E _ _ _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Guarded'"
+          ],
+          "wrong": [
+            "VANGUARD"
+          ],
+          "feedback": "Letter revealed -> _ A _ E _ _ _"
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is \"Guarded\" and the wordplay is \"vehicle\" (VAN) + \"experimental fuel\" (GAS, but maybe E-GAS or similar). Given the pattern _ A _ E _ _ _, the word is likely CARETED or similar, but \"CARETED\" doesn't fit \"Guarded\". Let's try CARETED or similar. Wait, \"VAN\" + \"GAS\" + \"E\" = VANGASE? No. Let's try HINT.",
+          "outcome": "hint",
+          "hintsUsed": 4,
+          "letters": "_ A _ E _ _ _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Guarded'"
+          ],
+          "wrong": [
+            "VANGUARD",
+            "SAVEDER"
+          ],
+          "feedback": "'SAVEDER' is not correct. You have guessed: VANGUARD, SAVEDER. Try another answer, or reply HINT."
+        },
+        {
+          "decision": "guess",
+          "guess": "",
+          "reasoning": "The letters _ A _ E _ U _ fit the word \"SAFEGUR\" which is likely a misspelling of \"SAFEGUA\" or \"SAFEGUR\", but looking at the letters, \"SAFEGUR\" is not a word. Wait, \"SAFEGUR\" is not right, but \"SAFEGUA\" is not either; let me try \"SAFEGUR\" -> \"SAFEGUR\" is not a word, but \"SAFEGUR\" is not it. Let me try \"SAFEGUR\" -> \"SAFEGUR\" is not it. Let me try \"SAFEGUR\" -> \"SAFEGUR\" is not it. Let me try \"SAFEGUR\" -> \"SAFEGUR\" is not it. Let me try \"SAFEGUR\" -> \"SAFEGUR\" is not it. Let me try \"SAFEGUR\" -> \"SAFEGUR\" is not it. Let me try \"SAFEGUR\" -> \"SAFEGUR\" is not it. Let me try \"SAFEGUR\" -> \"SAFEGUR\" is not it. Let me try \"SAFEGUR\" -> \"SAFEGUR\" is not it. Let me try \"SAFEGUR\" -> \"SAFEGUR\" is not it. Let me try \"SAFEGUR\" -> \"SAFEGUR\" is not it. Let me try \"SAFEGUR\" -> \"SAFEGUR\" is not it. Let me try \"SAFEGUR\" -> \"SAFEGUR\" is not it. Let me try \"SAFEGUR\" -> \"SAFEGUR\" is not it. Let me try \"SAFEGUR\" -> \"SAFEGUR\" is not it. Let me try \"SAFEGUR\" -> \"SAFEGUR\" is not it. Let me try \"SAFEGUR\" -> \"SAFEGUR\"",
+          "outcome": "wrong",
+          "hintsUsed": 4,
+          "letters": "_ A _ E _ U _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Guarded'"
+          ],
+          "wrong": [
+            "VANGUARD",
+            "SAVEDER"
+          ],
+          "feedback": "Letter revealed -> _ A _ E _ U _"
+        },
+        {
+          "decision": "guess",
+          "guess": "CAREFUL",
+          "reasoning": "The letters _ A _ E _ U _ fit the word CAREFUL, which means guarded.",
+          "outcome": "solved",
+          "hintsUsed": 4,
+          "letters": "_ A _ E _ U _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Guarded'"
+          ],
+          "wrong": [
+            "VANGUARD",
+            "SAVEDER",
+            "(no action)"
+          ],
+          "feedback": "'(no action)' is not correct. You have guessed: VANGUARD, SAVEDER, (no action). Try another answer, or reply HINT."
+        }
+      ]
+    },
+    {
+      "model": "gemini/gemini-3.1-flash-lite",
       "clue": "Help gambler to disregard odds",
       "enumeration": "(4)",
       "answer": "ABET",
@@ -415,6 +584,66 @@
     },
     {
       "model": "gemini/gemini-3.1-flash-lite",
+      "clue": "Huge investment shortfall in fossil fuel",
+      "enumeration": "(8)",
+      "answer": "COLOSSAL",
+      "wordLengths": [
+        8
+      ],
+      "definition": "Huge",
+      "par": 4,
+      "solved": true,
+      "hintsUsed": 1,
+      "guessesUsed": 2,
+      "parResult": "below",
+      "reward": 0.8,
+      "hintOrder": [
+        "definition"
+      ],
+      "steps": [
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is \"Huge\" and the wordplay involves \"investment shortfall\" (a deficit) inside \"fossil fuel\" (oil).",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "guess",
+          "guess": "MASSIVE",
+          "reasoning": "The wordplay is \"investment shortfall\" (a deficit) inside \"fossil fuel\" (oil), which combines to form a word meaning huge.",
+          "outcome": "wrong",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'Huge'"
+          ],
+          "wrong": [],
+          "feedback": "Hint (definition): The definition part of the clue is 'Huge'"
+        },
+        {
+          "decision": "guess",
+          "guess": "COLOSSAL",
+          "reasoning": "The wordplay involves \"investment\" (an anagram indicator) applied to \"shortfall\" (which is 9 letters, so maybe a deletion) or perhaps \"in\" + \"fossil\" + \"fuel\". Given the definition is \"Huge\", I will try a synonym that fits the 8-letter constraint.",
+          "outcome": "solved",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'Huge'"
+          ],
+          "wrong": [
+            "MASSIVE"
+          ],
+          "feedback": "'MASSIVE' is not correct. You have guessed: MASSIVE. Try another answer, or reply HINT."
+        }
+      ]
+    },
+    {
+      "model": "gemini/gemini-3.1-flash-lite",
       "clue": "Incriminate copper in murder case",
       "enumeration": "(6)",
       "answer": "ACCUSE",
@@ -455,6 +684,305 @@
           ],
           "wrong": [],
           "feedback": "Hint (definition): The definition part of the clue is 'Incriminate'"
+        }
+      ]
+    },
+    {
+      "model": "gemini/gemini-3.1-flash-lite",
+      "clue": "Loser steals orange slice",
+      "enumeration": "(4,3)",
+      "answer": "ALSO RAN",
+      "wordLengths": [
+        4,
+        3
+      ],
+      "definition": "Loser",
+      "par": 3,
+      "solved": true,
+      "hintsUsed": 3,
+      "guessesUsed": 1,
+      "parResult": "at",
+      "reward": 0.4,
+      "hintOrder": [
+        "definition",
+        "letter",
+        "letter"
+      ],
+      "steps": [
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is likely \"Loser\" or \"orange slice\", and \"steals\" suggests a container mechanism where a word for \"orange\" is placed inside a word for \"slice\".",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The wordplay involves \"steals\" (a container indicator) where \"orange\" (OR) contains \"slice\" (a synonym for a piece or part). \"OR\" containing \"BIT\" gives \"ORBIT\", but the enumeration is (4,3), so I need a 7-letter phrase meaning \"loser\".",
+          "outcome": "hint",
+          "hintsUsed": 2,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'Loser'"
+          ],
+          "wrong": [],
+          "feedback": "Hint (definition): The definition part of the clue is 'Loser'"
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is \"Loser\" and the wordplay is \"steals orange slice\", where \"steals\" acts as a container for \"OR\" (orange) inside \"slice\" (a word for a slice is a \"cut\"). Putting \"OR\" inside \"CUT\" gives \"COURT\" (not fitting) or perhaps \"D O S E R\" (no). Wait, \"LOSER\" is the definition, and \"OR\" inside \"SLICE\" (e.g., \"DICE\") gives \"D O R I C E\"? No, let's look at the letters: _ _ S _ / _ _ _ and the wordplay \"steals\" (container) \"orange\" (OR) \"slice\" (CUT).",
+          "outcome": "hint",
+          "hintsUsed": 3,
+          "letters": "_ _ S _ / _ _ _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Loser'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> _ _ S _ / _ _ _"
+        },
+        {
+          "decision": "guess",
+          "guess": "ALSO RAN",
+          "reasoning": "The definition is \"Loser\" and the wordplay is \"steals orange slice\", where \"steals\" acts as a container for \"OR\" (orange) inside \"SLICE\". Placing \"OR\" inside \"SLICE\" gives \"SLICER\", but the enumeration is (4,3), suggesting \"ELSE\" or similar. Given the letters _ L S _ / _ _ _, I will try \"ALSO RAN\".",
+          "outcome": "solved",
+          "hintsUsed": 3,
+          "letters": "_ L S _ / _ _ _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Loser'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> _ L S _ / _ _ _"
+        }
+      ]
+    },
+    {
+      "model": "gemini/gemini-3.1-flash-lite",
+      "clue": "Plead with individual to take a hike",
+      "enumeration": "(6)",
+      "answer": "BEGONE",
+      "wordLengths": [
+        6
+      ],
+      "definition": "take a hike",
+      "par": 3,
+      "solved": false,
+      "hintsUsed": 0,
+      "guessesUsed": 3,
+      "parResult": "below",
+      "reward": 0.15,
+      "hintOrder": [],
+      "steps": [
+        {
+          "decision": "guess",
+          "guess": "BEGGAR",
+          "reasoning": "The definition is \"take a hike\" (meaning to leave or go away), and \"plead\" (BEG) with \"individual\" (I) suggests a charade.",
+          "outcome": "wrong",
+          "hintsUsed": 0,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "guess",
+          "guess": "BEGGAR",
+          "reasoning": "The definition is \"take a hike\" (meaning to leave or go away), and \"Plead\" (BEG) with \"individual\" (I) suggests a charade.",
+          "outcome": "wrong",
+          "hintsUsed": 0,
+          "letters": "",
+          "hints": [],
+          "wrong": [
+            "BEGGAR"
+          ],
+          "feedback": "'BEGGAR' is not correct. You have guessed: BEGGAR. Try another answer, or reply HINT."
+        },
+        {
+          "decision": "guess",
+          "guess": "BEGGAR",
+          "reasoning": "The definition is \"take a hike\" (meaning to leave or go away), and the wordplay is \"Plead\" (BEG) with \"individual\" (I) inside.",
+          "outcome": "repeated_wrong",
+          "hintsUsed": 0,
+          "letters": "",
+          "hints": [],
+          "wrong": [
+            "BEGGAR"
+          ],
+          "feedback": "'BEGGAR' is not correct. You have guessed: BEGGAR. Try another answer, or reply HINT."
+        }
+      ]
+    },
+    {
+      "model": "gemini/gemini-3.1-flash-lite",
+      "clue": "Price of toast and most of egg rolls",
+      "enumeration": "(6)",
+      "answer": "CHARGE",
+      "wordLengths": [
+        6
+      ],
+      "definition": "Price",
+      "par": 3,
+      "solved": true,
+      "hintsUsed": 2,
+      "guessesUsed": 3,
+      "parResult": "below",
+      "reward": 0.6,
+      "hintOrder": [
+        "definition",
+        "letter"
+      ],
+      "steps": [
+        {
+          "decision": "guess",
+          "guess": "EGGROL",
+          "reasoning": "The definition is \"Price of toast\", and \"most of egg rolls\" suggests taking \"eggroll\" and removing the last letter to form the word.",
+          "outcome": "wrong",
+          "hintsUsed": 0,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is \"Price of toast\", and the wordplay involves \"most of egg\" (EG) plus \"rolls\" (an anagram indicator or container). Since \"EGGROL\" was wrong, I will request a hint to clarify the wordplay.",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [
+            "EGGROL"
+          ],
+          "feedback": "'EGGROL' is not correct. You have guessed: EGGROL. Try another answer, or reply HINT."
+        },
+        {
+          "decision": "guess",
+          "guess": "TARIFF",
+          "reasoning": "The wordplay involves \"toast\" (T) plus \"most of egg rolls\" (EGGROLL minus the last letter L), which combines to form T + EGGROL = TEGGROL. Wait, that doesn't fit; let's try \"T\" + \"EGGRO\" (most of egg roll) = TEGGRO. Actually, \"T\" + \"AMOUNT\" (price) is not it. Let's try \"T\" + \"ARIFF\" (price).",
+          "outcome": "wrong",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'price'"
+          ],
+          "wrong": [
+            "EGGROL"
+          ],
+          "feedback": "Hint (definition): The definition part of the clue is 'price'"
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The wordplay involves \"toast\" (T) plus \"most of egg rolls\" (EGGROL minus the last letter L), which combines to form T-EGGRO. Wait, that doesn't fit; let's look at \"toast\" (T) + \"most of egg rolls\" (EGGROLL minus L = EGGROL). T + EGGROL = TEGGROL? No. Let's try \"toast\" (T) + \"most of egg rolls\" (EGGROLL minus L = EGGROL). Actually, \"toast\" could be T, and \"most of egg rolls\" could be EGGRO. T + EGGRO = TEGGRO. Still not 6 letters. Let's try T + EGGROL = TEGGROL. Wait, \"most of egg rolls\" is EGGROLL minus L = EGGROL. T + EGGROL = TEGGROL. Let's try HINT.",
+          "outcome": "hint",
+          "hintsUsed": 2,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'price'"
+          ],
+          "wrong": [
+            "EGGROL",
+            "TARIFF"
+          ],
+          "feedback": "'TARIFF' is not correct. You have guessed: EGGROL, TARIFF. Try another answer, or reply HINT."
+        },
+        {
+          "decision": "guess",
+          "guess": "CHARGE",
+          "reasoning": "The wordplay involves \"toast\" (CHAR) and \"most of egg rolls\" (ROLLS minus the last letter, or similar), but given the letters _ _ A _ _ _, I suspect the word is CHARGE.",
+          "outcome": "solved",
+          "hintsUsed": 2,
+          "letters": "_ _ A _ _ _",
+          "hints": [
+            "[definition] The definition part of the clue is 'price'"
+          ],
+          "wrong": [
+            "EGGROL",
+            "TARIFF"
+          ],
+          "feedback": "Letter revealed -> _ _ A _ _ _"
+        }
+      ]
+    },
+    {
+      "model": "gemini/gemini-3.1-flash-lite",
+      "clue": "Purchase trapped soul of Dennis Hopper",
+      "enumeration": "(5)",
+      "answer": "BUNNY",
+      "wordLengths": [
+        5
+      ],
+      "definition": "Hopper",
+      "par": 2,
+      "solved": true,
+      "hintsUsed": 2,
+      "guessesUsed": 2,
+      "parResult": "at",
+      "reward": 0.6,
+      "hintOrder": [
+        "definition",
+        "letter"
+      ],
+      "steps": [
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The word \"Dennis\" is a common name, and \"Hopper\" is a type of insect or animal; looking for a hidden word, I see \"soul of\" might indicate the middle letters of \"Dennis\". However, \"Purchase\" is likely the definition, and \"trapped\" suggests a hidden word within \"soul of Dennis Hopper\".",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "guess",
+          "guess": "CHASE",
+          "reasoning": "The word \"CHASE\" is hidden within the phrase \"purCHASE trapped soul\". This fits the definition of a \"Hopper\" (a grasshopper or similar insect).",
+          "outcome": "wrong",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'Hopper'"
+          ],
+          "wrong": [],
+          "feedback": "Hint (definition): The definition part of the clue is 'Hopper'"
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The word \"Purchase\" is \"BUY\", and \"soul\" is \"ID\". Putting them together gives \"BUYID\", but looking for a hidden word, \"soul of Dennis\" contains \"IDEN\", which doesn't fit; however, \"Purchase\" (BUY) + \"soul\" (ID) is not it, so I will look for a hidden word. \"Purchase trapped soul of Dennis\" contains \"ASEID\", which is not a hopper. Let's take a hint.",
+          "outcome": "hint",
+          "hintsUsed": 2,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'Hopper'"
+          ],
+          "wrong": [
+            "CHASE"
+          ],
+          "feedback": "'CHASE' is not correct. You have guessed: CHASE. Try another answer, or reply HINT."
+        },
+        {
+          "decision": "guess",
+          "guess": "BUNNY",
+          "reasoning": "The definition is \"Hopper\" (a type of insect or animal), and the wordplay \"Purchase trapped soul\" suggests the word \"BUY\" inside \"SOUL\" (S-BUY-OUL), but the letters fit \"BUNNY\".",
+          "outcome": "solved",
+          "hintsUsed": 2,
+          "letters": "_ U _ _ _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Hopper'"
+          ],
+          "wrong": [
+            "CHASE"
+          ],
+          "feedback": "Letter revealed -> _ U _ _ _"
         }
       ]
     },
@@ -534,30 +1062,29 @@
       ]
     },
     {
-      "model": "gemini/gemini-3.1-flash-lite-preview",
-      "clue": "Every circuit in grand prix race",
-      "enumeration": "(6)",
-      "answer": "GALLOP",
+      "model": "openai/gpt-4o",
+      "clue": "Accepted weak coffee, repulsed",
+      "enumeration": "(5)",
+      "answer": "FACED",
       "wordLengths": [
-        6
+        5
       ],
-      "definition": "race",
-      "par": 3,
+      "definition": "Accepted",
+      "par": 2,
       "solved": true,
-      "hintsUsed": 3,
+      "hintsUsed": 2,
       "guessesUsed": 1,
       "parResult": "at",
-      "reward": 0.4,
+      "reward": 0.6,
       "hintOrder": [
         "definition",
-        "letter",
         "letter"
       ],
       "steps": [
         {
           "decision": "hint",
           "guess": "",
-          "reasoning": "The clue \"Every circuit in grand prix race\" suggests a hidden word mechanism, as \"Every\" often indicates that the answer is hidden within the surrounding words. Looking at the phrase \"grand prix race\", the word \"circuit\" is a synonym for the definition.\n\nHINT",
+          "reasoning": "The definition is likely \"repulsed\", and the wordplay involves \"accepted weak coffee\". \"Accepted\" could indicate a container, and \"weak coffee\" might be \"LATTE\" reversed.",
           "outcome": "hint",
           "hintsUsed": 1,
           "letters": "",
@@ -568,114 +1095,28 @@
         {
           "decision": "hint",
           "guess": "",
-          "reasoning": "The wordplay \"Every circuit in\" suggests a hidden word mechanism, where the answer is concealed within the phrase \"Every circuit in\". Looking at the letters, \"E-V-E-R-Y-C-I-R-C-U-I-T-I-N\", the sequence \"E-N-T-R-Y\" doesn't fit, but \"C-A-R-E-E-R\" or similar might be hidden. Wait, \"Every circuit\" contains \"C-A-R-E-E-R\" if we look at the letters: \"Every ciR-cuit\". Actually, \"Every circuit\" contains \"C",
+          "reasoning": "The definition is 'Accepted', and the wordplay involves 'weak coffee, repulsed'. 'Repulsed' suggests a reversal, so reversing 'weak coffee' could lead to the answer.",
           "outcome": "hint",
           "hintsUsed": 2,
           "letters": "",
           "hints": [
-            "[definition] The definition part of the clue is 'race'"
+            "[definition] The definition part of the clue is 'Accepted'"
           ],
           "wrong": [],
-          "feedback": "Hint (definition): The definition part of the clue is 'race'"
-        },
-        {
-          "decision": "hint",
-          "guess": "",
-          "reasoning": "The definition is \"race\" and the wordplay is \"Every circuit\" (a hidden word). Looking at the clue \"Every circuit in grand prix race\", the word \"circuit\" contains the letters G-A-R-D-E-N, but that doesn't fit. Wait, \"Every\" often indicates taking the first letters of words, or \"circuit\" could be a container. Let's look at the hidden word: \"Every circuit\" -> \"G\" + \"R\" + \"A\" + \"N\" + \"D\" + \"P\" ... no.",
-          "outcome": "hint",
-          "hintsUsed": 3,
-          "letters": "G _ _ _ _ _",
-          "hints": [
-            "[definition] The definition part of the clue is 'race'"
-          ],
-          "wrong": [],
-          "feedback": "Letter revealed -> G _ _ _ _ _"
+          "feedback": "Hint (definition): The definition part of the clue is 'Accepted'"
         },
         {
           "decision": "guess",
-          "guess": "",
-          "reasoning": "The wordplay \"Every circuit in grand prix\" suggests a hidden word. Looking at the phrase \"Every circuit in grand prix\", the letters G-A-L-L-O-P are hidden within \"Every circuit in grand prix\" (every circuit in grand prix).\n\nGALLOP",
+          "guess": "FACED",
+          "reasoning": "The definition is \"Accepted\" and the wordplay involves \"weak coffee, repulsed\". \"Repulsed\" suggests a reversal, and \"weak coffee\" could be \"DECAF\", which reversed gives \"FACED\", meaning \"accepted\".",
           "outcome": "solved",
-          "hintsUsed": 3,
-          "letters": "G _ _ _ _ P",
-          "hints": [
-            "[definition] The definition part of the clue is 'race'"
-          ],
-          "wrong": [],
-          "feedback": "Letter revealed -> G _ _ _ _ P"
-        }
-      ]
-    },
-    {
-      "model": "gemini/gemini-flash-lite-latest",
-      "clue": "Every circuit in grand prix race",
-      "enumeration": "(6)",
-      "answer": "GALLOP",
-      "wordLengths": [
-        6
-      ],
-      "definition": "race",
-      "par": 3,
-      "solved": true,
-      "hintsUsed": 3,
-      "guessesUsed": 1,
-      "parResult": "at",
-      "reward": 0.4,
-      "hintOrder": [
-        "definition",
-        "letter",
-        "letter"
-      ],
-      "steps": [
-        {
-          "decision": "hint",
-          "guess": "",
-          "reasoning": "The clue \"Every circuit in grand prix race\" suggests a hidden word mechanism, as \"Every\" often indicates that the answer is hidden within the surrounding words. Looking at the phrase \"grand prix race\", the word \"circuit\" is a synonym for the definition.\n\nHINT",
-          "outcome": "hint",
-          "hintsUsed": 1,
-          "letters": "",
-          "hints": [],
-          "wrong": [],
-          "feedback": ""
-        },
-        {
-          "decision": "hint",
-          "guess": "",
-          "reasoning": "The wordplay \"Every circuit in\" suggests a hidden word mechanism, where the answer is concealed within the phrase \"Every circuit in\". Looking at the letters, \"E-V-E-R-Y-C-I-R-C-U-I-T-I-N\", the sequence \"E-N-T-R-Y\" doesn't fit, but \"C-A-R-E-E-R\" or similar might be hidden. Wait, \"Every circuit\" contains \"C-A-R-E-E-R\" if we look at the letters: \"Every ciR-cuit\". Actually, \"Every circuit\" contains \"C",
-          "outcome": "hint",
           "hintsUsed": 2,
-          "letters": "",
+          "letters": "_ _ C _ _",
           "hints": [
-            "[definition] The definition part of the clue is 'race'"
+            "[definition] The definition part of the clue is 'Accepted'"
           ],
           "wrong": [],
-          "feedback": "Hint (definition): The definition part of the clue is 'race'"
-        },
-        {
-          "decision": "hint",
-          "guess": "",
-          "reasoning": "The definition is \"race\" and the wordplay is \"Every circuit\" (a hidden word). Looking at the clue \"Every circuit in grand prix race\", the word \"circuit\" contains the letters G-A-R-D-E-N, but that doesn't fit. Wait, \"Every\" often indicates taking the first letters of words, or \"circuit\" could be a container. Let's look at the hidden word: \"Every circuit\" -> \"G\" + \"R\" + \"A\" + \"N\" + \"D\" + \"P\" ... no.",
-          "outcome": "hint",
-          "hintsUsed": 3,
-          "letters": "G _ _ _ _ _",
-          "hints": [
-            "[definition] The definition part of the clue is 'race'"
-          ],
-          "wrong": [],
-          "feedback": "Letter revealed -> G _ _ _ _ _"
-        },
-        {
-          "decision": "guess",
-          "guess": "",
-          "reasoning": "The wordplay \"Every circuit in grand prix\" suggests a hidden word. Looking at the phrase \"Every circuit in grand prix\", the letters G-A-L-L-O-P are hidden within \"Every circuit in grand prix\" (every circuit in grand prix).\n\nGALLOP",
-          "outcome": "solved",
-          "hintsUsed": 3,
-          "letters": "G _ _ _ _ P",
-          "hints": [
-            "[definition] The definition part of the clue is 'race'"
-          ],
-          "wrong": [],
-          "feedback": "Letter revealed -> G _ _ _ _ P"
+          "feedback": "Letter revealed -> _ _ C _ _"
         }
       ]
     },
@@ -690,24 +1131,23 @@
       "definition": "Apprehend",
       "par": 3,
       "solved": true,
-      "hintsUsed": 5,
-      "guessesUsed": 3,
+      "hintsUsed": 4,
+      "guessesUsed": 4,
       "parResult": "above",
       "reward": 0.2,
       "hintOrder": [
         "definition",
         "letter",
         "letter",
-        "letter",
         "letter"
       ],
       "steps": [
         {
-          "decision": "hint",
-          "guess": "",
-          "reasoning": "The definition is likely \"Apprehend,\" and the wordplay involves \"$0.01 and $1.00 defaced,\" suggesting a charade or deletion. \"Cent\" and \"dollar\" could be involved, with \"defaced\" indicating removal of letters.",
-          "outcome": "hint",
-          "hintsUsed": 1,
+          "decision": "guess",
+          "guess": "ARREST",
+          "reasoning": "The definition is likely \"apprehend,\" and the wordplay involves \"$0.01\" (cent) and \"$1.00\" (dollar) being \"defaced,\" suggesting removing the first and last letters.",
+          "outcome": "wrong",
+          "hintsUsed": 0,
           "letters": "",
           "hints": [],
           "wrong": [],
@@ -716,33 +1156,51 @@
         {
           "decision": "hint",
           "guess": "",
-          "reasoning": "The definition is 'Apprehend', and the wordplay involves '$0.01 and $1.00 defaced'. This suggests removing the outer letters of 'cent' and 'dollar', which leaves 'ENT' and 'OLLA', but I need more clarity on how these combine.",
+          "reasoning": "The definition is likely \"apprehend,\" and the wordplay involves \"$0.01 and $1.00 defaced,\" suggesting a charade or deletion. \"Cent\" and \"dollar\" could be involved, with \"defaced\" indicating removal of letters.",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [
+            "ARREST"
+          ],
+          "feedback": "'ARREST' is not correct. You have guessed: ARREST. Try another answer, or reply HINT."
+        },
+        {
+          "decision": "guess",
+          "guess": "ENROLL",
+          "reasoning": "The wordplay involves \"$0.01 and $1.00 defaced\", which suggests removing the outer letters of \"cent\" and \"dollar\", leaving \"EN\" and \"OL\". Combining these gives \"ENROLL\", which means to apprehend or capture in a list.",
+          "outcome": "wrong",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'Apprehend'"
+          ],
+          "wrong": [
+            "ARREST"
+          ],
+          "feedback": "Hint (definition): The definition part of the clue is 'Apprehend'"
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The wordplay involves \"$0.01 and $1.00 defaced\", which suggests removing the outer letters of 'CENT' and 'DOLLAR', leaving 'ENT' and 'OLLA'. Combining these gives 'ENTOLL', which doesn't fit, so I will request a hint.",
           "outcome": "hint",
           "hintsUsed": 2,
           "letters": "",
           "hints": [
             "[definition] The definition part of the clue is 'Apprehend'"
           ],
-          "wrong": [],
-          "feedback": "Hint (definition): The definition part of the clue is 'Apprehend'"
-        },
-        {
-          "decision": "guess",
-          "guess": "CATCH",
-          "reasoning": "The wordplay suggests removing the outer letters of \"$0.01\" (CENT) and \"$1.00\" (BUCK), which leaves \"ENT\" and \"UC\", respectively. Combining these gives \"CATCH\", which fits the definition \"Apprehend\".",
-          "outcome": "wrong",
-          "hintsUsed": 2,
-          "letters": "_ _ _ _ A _",
-          "hints": [
-            "[definition] The definition part of the clue is 'Apprehend'"
+          "wrong": [
+            "ARREST",
+            "ENROLL"
           ],
-          "wrong": [],
-          "feedback": "Letter revealed -> _ _ _ _ A _"
+          "feedback": "'ENROLL' is not correct. You have guessed: ARREST, ENROLL. Try another answer, or reply HINT."
         },
         {
           "decision": "guess",
-          "guess": "ENROLL",
-          "reasoning": "The wordplay involves \"$0.01 and $1.00 defaced\", which suggests removing the outer letters of 'cent' and 'dollar', leaving 'en' and 'olla'. Combining these gives 'ENROLL', which means 'apprehend' in the sense of taking in or registering.",
+          "guess": "ENTRAP",
+          "reasoning": "The wordplay involves defacing $0.01 (CENT) and $1.00 (DOLLAR), which suggests removing the first and last letters. This leaves ENT and OLLA, which can be combined to form the word ENTRAP, meaning 'apprehend'.",
           "outcome": "wrong",
           "hintsUsed": 2,
           "letters": "_ _ _ _ A _",
@@ -750,14 +1208,15 @@
             "[definition] The definition part of the clue is 'Apprehend'"
           ],
           "wrong": [
-            "CATCH"
+            "ARREST",
+            "ENROLL"
           ],
-          "feedback": "'CATCH' is not correct. You have guessed: CATCH. Try another answer, or reply HINT."
+          "feedback": "Letter revealed -> _ _ _ _ A _"
         },
         {
           "decision": "hint",
           "guess": "",
-          "reasoning": "The wordplay involves \"$0.01 and $1.00 defaced\", which suggests removing the outer letters of 'cent' and 'dollar', leaving 'en' and 'olla'. Combining these gives 'ENROLL', but since it's incorrect, I'll take another hint.",
+          "reasoning": "The wordplay involves \"$0.01 and $1.00 defaced\", which suggests removing the outer letters of \"cent\" and \"dollar\", leaving \"EN\" and \"OLL\". However, this doesn't fit the pattern, so I will need more information.",
           "outcome": "hint",
           "hintsUsed": 3,
           "letters": "_ _ _ _ A _",
@@ -765,15 +1224,16 @@
             "[definition] The definition part of the clue is 'Apprehend'"
           ],
           "wrong": [
-            "CATCH",
-            "ENROLL"
+            "ARREST",
+            "ENROLL",
+            "ENTRAP"
           ],
-          "feedback": "'ENROLL' is not correct. You have guessed: CATCH, ENROLL. Try another answer, or reply HINT."
+          "feedback": "'ENTRAP' is not correct. You have guessed: ARREST, ENROLL, ENTRAP. Try another answer, or reply HINT."
         },
         {
           "decision": "hint",
           "guess": "",
-          "reasoning": "The wordplay involves defacing $0.01 (CENT) and $1.00 (DOLLAR), which suggests removing the first and last letters. This leaves \"ENT\" and \"OLLA\", which can be combined to form \"ENROLL\", but that was incorrect. Another possibility is \"INSTALL\", but that doesn't fit the definition. I will take another hint.",
+          "reasoning": "The wordplay involves defacing $0.01 (CENT) and $1.00 (DOLLAR), which suggests removing the first and last letters to form a word meaning 'apprehend'.",
           "outcome": "hint",
           "hintsUsed": 4,
           "letters": "_ _ _ L A _",
@@ -781,42 +1241,28 @@
             "[definition] The definition part of the clue is 'Apprehend'"
           ],
           "wrong": [
-            "CATCH",
-            "ENROLL"
+            "ARREST",
+            "ENROLL",
+            "ENTRAP"
           ],
           "feedback": "Letter revealed -> _ _ _ L A _"
         },
         {
-          "decision": "hint",
-          "guess": "",
-          "reasoning": "The wordplay involves defacing $0.01 (penny) and $1.00 (dollar), which suggests removing the first and last letters. This gives \"penn\" and \"olla\", but combining them doesn't fit. I need more information.",
-          "outcome": "hint",
-          "hintsUsed": 5,
+          "decision": "guess",
+          "guess": "COLLAR",
+          "reasoning": "The wordplay involves defacing $0.01 (cent) and $1.00 (dollar), which suggests removing the first and last letters of 'CENT' and 'DOLLAR', leaving 'O' and 'OLLA'. Combining these gives 'COLLAR', which means 'apprehend'.",
+          "outcome": "solved",
+          "hintsUsed": 4,
           "letters": "_ O _ L A _",
           "hints": [
             "[definition] The definition part of the clue is 'Apprehend'"
           ],
           "wrong": [
-            "CATCH",
-            "ENROLL"
+            "ARREST",
+            "ENROLL",
+            "ENTRAP"
           ],
           "feedback": "Letter revealed -> _ O _ L A _"
-        },
-        {
-          "decision": "guess",
-          "guess": "COLLAR",
-          "reasoning": "The wordplay involves defacing $0.01 (cent) and $1.00 (dollar), which suggests removing the first and last letters of 'cent' and 'dollar', leaving 'OLLAR'. Combined with the definition 'Apprehend', the answer is likely 'COLLAR'.",
-          "outcome": "solved",
-          "hintsUsed": 5,
-          "letters": "_ O L L A _",
-          "hints": [
-            "[definition] The definition part of the clue is 'Apprehend'"
-          ],
-          "wrong": [
-            "CATCH",
-            "ENROLL"
-          ],
-          "feedback": "Letter revealed -> _ O L L A _"
         }
       ]
     },
@@ -842,7 +1288,7 @@
         {
           "decision": "hint",
           "guess": "",
-          "reasoning": "The definition is likely \"lack of excitement,\" and the wordplay could involve an anagram of \"bedroom\" to fit the 7-letter answer.",
+          "reasoning": "The definition is likely \"lack of excitement,\" and the wordplay could involve a synonym for \"bedroom\" that fits the definition.",
           "outcome": "hint",
           "hintsUsed": 1,
           "letters": "",
@@ -853,7 +1299,7 @@
         {
           "decision": "guess",
           "guess": "BOREDOM",
-          "reasoning": "The definition 'lack of excitement' suggests a word like 'boredom', which also fits the enumeration of 7 letters. The word 'Bedroom' could be an anagram leading to 'boredom'.",
+          "reasoning": "The definition 'lack of excitement' suggests a word like 'boredom'. The word 'bedroom' can be an anagram of 'boredom', which fits the enumeration (7).",
           "outcome": "solved",
           "hintsUsed": 1,
           "letters": "",
@@ -888,7 +1334,7 @@
         {
           "decision": "hint",
           "guess": "",
-          "reasoning": "The definition is likely \"guard\" at the end of the clue. \"Beer emptied\" suggests removing the inner letters of \"beer,\" leaving \"BR,\" and \"right\" is \"R,\" which together form \"BRR.\"",
+          "reasoning": "The definition is likely \"guard\" at the end of the clue. \"Beer emptied\" suggests removing the inner letters of \"beer,\" leaving \"BR,\" and adding \"R\" for \"right\" gives \"BRR,\" which doesn't fit. I need more information.",
           "outcome": "hint",
           "hintsUsed": 1,
           "letters": "",
@@ -899,7 +1345,7 @@
         {
           "decision": "hint",
           "guess": "",
-          "reasoning": "The definition is 'on guard', and the wordplay involves 'beer emptied' and 'right'. 'Beer emptied' suggests removing the inner letters of 'beer', leaving 'BR', and 'right' is 'R', which together form 'BRR', but this doesn't fit. I will take a hint for further clarification.",
+          "reasoning": "The definition is 'on guard', and the wordplay involves 'beer emptied' and 'right'. 'Beer emptied' suggests removing the inner letters of 'beer', leaving 'BR', and 'right' is 'R', which together form 'BRR', but this doesn't fit. I need more information.",
           "outcome": "hint",
           "hintsUsed": 2,
           "letters": "",
@@ -926,6 +1372,51 @@
     },
     {
       "model": "openai/gpt-4o",
+      "clue": "Cancel Andrew's heart surgery",
+      "enumeration": "(4)",
+      "answer": "DROP",
+      "wordLengths": [
+        4
+      ],
+      "definition": "Cancel",
+      "par": 2,
+      "solved": true,
+      "hintsUsed": 1,
+      "guessesUsed": 1,
+      "parResult": "below",
+      "reward": 0.8,
+      "hintOrder": [
+        "definition"
+      ],
+      "steps": [
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is likely \"Cancel\", and \"Andrew's heart\" suggests taking the middle letters of \"Andrew\", which are \"ND\". \"Surgery\" could imply an anagram, but with only two letters, it seems more likely that \"ND\" is the answer.",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "guess",
+          "guess": "DROP",
+          "reasoning": "The wordplay likely involves taking the 'heart' or middle letter of 'Andrew' and combining it with a word related to 'surgery'. The middle letter of 'Andrew' is 'D', and 'OP' is a common abbreviation for 'operation', which is a type of surgery.",
+          "outcome": "solved",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'Cancel'"
+          ],
+          "wrong": [],
+          "feedback": "Hint (definition): The definition part of the clue is 'Cancel'"
+        }
+      ]
+    },
+    {
+      "model": "openai/gpt-4o",
       "clue": "Captain embraces steamboat noises",
       "enumeration": "(5)",
       "answer": "CHUGS",
@@ -935,19 +1426,20 @@
       "definition": "steamboat noises",
       "par": 2,
       "solved": true,
-      "hintsUsed": 2,
+      "hintsUsed": 3,
       "guessesUsed": 1,
-      "parResult": "at",
-      "reward": 0.6,
+      "parResult": "above",
+      "reward": 0.4,
       "hintOrder": [
         "definition",
+        "letter",
         "letter"
       ],
       "steps": [
         {
           "decision": "hint",
           "guess": "",
-          "reasoning": "The definition is likely \"noises\", and the wordplay involves \"Captain\" embracing \"steamboat\", suggesting a container clue.",
+          "reasoning": "The definition is likely \"noises\" and the wordplay involves \"Captain\" embracing \"steamboat\", suggesting a container clue.",
           "outcome": "hint",
           "hintsUsed": 1,
           "letters": "",
@@ -958,7 +1450,7 @@
         {
           "decision": "hint",
           "guess": "",
-          "reasoning": "The definition 'steamboat noises' suggests the answer might be a sound associated with steamboats. The wordplay might involve a captain embracing something, possibly indicating a container clue.",
+          "reasoning": "The definition 'steamboat noises' suggests the answer might be a sound associated with steamboats. The wordplay might involve a captain embracing or containing something related to these noises.",
           "outcome": "hint",
           "hintsUsed": 2,
           "letters": "",
@@ -969,17 +1461,30 @@
           "feedback": "Hint (definition): The definition part of the clue is 'steamboat noises'"
         },
         {
-          "decision": "guess",
-          "guess": "CHUGS",
-          "reasoning": "The definition is \"steamboat noises,\" which suggests the answer might be \"chugs,\" as it fits the pattern _H___ and is a noise associated with steamboats.",
-          "outcome": "solved",
-          "hintsUsed": 2,
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is \"steamboat noises,\" which suggests the answer is a type of sound. The wordplay involves \"Captain embraces,\" possibly indicating a container clue where a word for \"Captain\" surrounds another word or letters.",
+          "outcome": "hint",
+          "hintsUsed": 3,
           "letters": "_ H _ _ _",
           "hints": [
             "[definition] The definition part of the clue is 'steamboat noises'"
           ],
           "wrong": [],
           "feedback": "Letter revealed -> _ H _ _ _"
+        },
+        {
+          "decision": "guess",
+          "guess": "CHUGS",
+          "reasoning": "The definition is \"steamboat noises,\" and the wordplay involves a captain embracing something. The word \"CHUGS\" fits the pattern and is a noise associated with steamboats.",
+          "outcome": "solved",
+          "hintsUsed": 3,
+          "letters": "_ H _ G _",
+          "hints": [
+            "[definition] The definition part of the clue is 'steamboat noises'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> _ H _ G _"
         }
       ]
     },
@@ -1003,7 +1508,7 @@
         {
           "decision": "guess",
           "guess": "ACES",
-          "reasoning": "The definition is likely \"Champions\", and \"reject slice of cheesecake\" suggests removing a part of \"cheesecake\" to form a word meaning champions.",
+          "reasoning": "The definition is likely \"champions\", and \"reject slice of cheesecake\" suggests removing a part of the word \"cheesecake\" to form a word meaning champions.",
           "outcome": "solved",
           "hintsUsed": 0,
           "letters": "",
@@ -1015,13 +1520,43 @@
     },
     {
       "model": "openai/gpt-4o",
-      "clue": "Every circuit in grand prix race",
-      "enumeration": "(6)",
-      "answer": "GALLOP",
+      "clue": "Deer performs",
+      "enumeration": "(4)",
+      "answer": "DOES",
       "wordLengths": [
-        6
+        4
       ],
-      "definition": "race",
+      "definition": "Deer performs",
+      "par": 2,
+      "solved": true,
+      "hintsUsed": 0,
+      "guessesUsed": 1,
+      "parResult": "below",
+      "reward": 1.0,
+      "hintOrder": [],
+      "steps": [
+        {
+          "decision": "guess",
+          "guess": "DOES",
+          "reasoning": "The clue \"Deer performs\" suggests a double definition where both \"deer\" and \"performs\" could point to the same word. The word \"DOES\" fits both definitions: \"does\" are female deer, and \"does\" is the third person singular form of \"do\", meaning performs.",
+          "outcome": "solved",
+          "hintsUsed": 0,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        }
+      ]
+    },
+    {
+      "model": "openai/gpt-4o",
+      "clue": "Dessert cup reduced by celebrity Democrat",
+      "enumeration": "(7)",
+      "answer": "CUSTARD",
+      "wordLengths": [
+        7
+      ],
+      "definition": "Dessert",
       "par": 3,
       "solved": true,
       "hintsUsed": 4,
@@ -1038,7 +1573,447 @@
         {
           "decision": "hint",
           "guess": "",
-          "reasoning": "The definition is likely \"race\" and the wordplay could involve \"grand prix\" which is a type of race. \"Circuit\" might suggest a hidden word or an anagram.",
+          "reasoning": "The definition is likely \"Dessert\", and the wordplay involves \"cup reduced\" and \"celebrity Democrat\". \"Cup reduced\" could mean removing a letter from \"cupcake\", and \"celebrity Democrat\" might refer to a famous Democrat like \"Obama\".",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The wordplay involves reducing 'cup' and combining it with a celebrity and a Democrat. I need more information to decode this part of the clue.",
+          "outcome": "hint",
+          "hintsUsed": 2,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'Dessert'"
+          ],
+          "wrong": [],
+          "feedback": "Hint (definition): The definition part of the clue is 'Dessert'"
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The wordplay suggests taking a 'cup' and reducing it, possibly by removing a letter, and then adding a 'celebrity' and a 'Democrat'. The definition is 'Dessert', and the answer is likely a 7-letter dessert starting with 'U'.",
+          "outcome": "hint",
+          "hintsUsed": 3,
+          "letters": "_ U _ _ _ _ _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Dessert'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> _ U _ _ _ _ _"
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The wordplay suggests reducing a word for 'cup' and combining it with a word for 'celebrity Democrat'. 'Cup' could be 'mug', and reducing it gives 'mu'. A famous Democrat is 'Clinton', but we need a 7-letter word.",
+          "outcome": "hint",
+          "hintsUsed": 4,
+          "letters": "_ U _ T _ _ _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Dessert'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> _ U _ T _ _ _"
+        },
+        {
+          "decision": "guess",
+          "guess": "CUSTARD",
+          "reasoning": "The wordplay suggests removing a part of a word related to 'celebrity Democrat' from a dessert-related word. The pattern _U_T_R_ fits 'CUSTARD', which is a dessert.",
+          "outcome": "solved",
+          "hintsUsed": 4,
+          "letters": "_ U _ T _ R _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Dessert'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> _ U _ T _ R _"
+        }
+      ]
+    },
+    {
+      "model": "openai/gpt-4o",
+      "clue": "Deteriorating love affair involved artificial intelligence",
+      "enumeration": "(7)",
+      "answer": "FAILING",
+      "wordLengths": [
+        7
+      ],
+      "definition": "Deteriorating",
+      "par": 3,
+      "solved": true,
+      "hintsUsed": 6,
+      "guessesUsed": 2,
+      "parResult": "above",
+      "reward": 0.2,
+      "hintOrder": [
+        "definition",
+        "letter",
+        "letter",
+        "letter",
+        "letter",
+        "letter"
+      ],
+      "steps": [
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is likely \"deteriorating,\" and the wordplay involves \"love affair\" and \"artificial intelligence.\" \"Love\" can be \"O,\" and \"artificial intelligence\" can be \"AI,\" suggesting an anagram of \"O\" and \"affair.\"",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is 'Deteriorating', and the wordplay involves 'love affair' and 'artificial intelligence'. 'Love' can be 'O', and 'artificial intelligence' can be 'AI', suggesting an anagram of 'O' and 'affair'.",
+          "outcome": "hint",
+          "hintsUsed": 2,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'Deteriorating'"
+          ],
+          "wrong": [],
+          "feedback": "Hint (definition): The definition part of the clue is 'Deteriorating'"
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The wordplay involves 'love affair' and 'artificial intelligence'. 'Love' can be 'O', and 'artificial intelligence' is often abbreviated as 'AI'. The word 'involved' suggests an anagram of 'O' and 'AI' with the remaining letters.",
+          "outcome": "hint",
+          "hintsUsed": 3,
+          "letters": "_ _ _ _ _ N _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Deteriorating'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> _ _ _ _ _ N _"
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is \"Deteriorating\" and the wordplay involves \"love affair\" and \"artificial intelligence\". \"Love\" can be \"O\" and \"artificial intelligence\" can be \"AI\", which suggests the word \"WANING\" fits the pattern _A_ _ _N_.",
+          "outcome": "hint",
+          "hintsUsed": 4,
+          "letters": "_ A _ _ _ N _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Deteriorating'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> _ A _ _ _ N _"
+        },
+        {
+          "decision": "guess",
+          "guess": "WANING",
+          "reasoning": "The wordplay involves \"love affair\" which could be \"O\" for love and \"AI\" for artificial intelligence, suggesting a container or charade. The definition is \"Deteriorating\", which fits with the word \"Waning\".",
+          "outcome": "wrong",
+          "hintsUsed": 4,
+          "letters": "_ A _ _ I N _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Deteriorating'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> _ A _ _ I N _"
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The wordplay involves 'love affair' which could be 'O' for love and 'AI' for artificial intelligence, suggesting an anagram of 'O' and 'AI' within the word. The definition is 'Deteriorating', which could lead to 'FAIL' as part of the answer.",
+          "outcome": "hint",
+          "hintsUsed": 5,
+          "letters": "_ A _ _ I N _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Deteriorating'"
+          ],
+          "wrong": [
+            "WANING"
+          ],
+          "feedback": "'WANING' is not correct. You have guessed: WANING. Try another answer, or reply HINT."
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The wordplay involves \"love affair\" which could be \"O\" for love and \"AI\" for artificial intelligence, suggesting an anagram of \"O AI\" within the word. The definition is \"Deteriorating\", and the pattern _A_LIN_ fits \"FAILIN'\".",
+          "outcome": "hint",
+          "hintsUsed": 6,
+          "letters": "_ A _ L I N _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Deteriorating'"
+          ],
+          "wrong": [
+            "WANING"
+          ],
+          "feedback": "Letter revealed -> _ A _ L I N _"
+        },
+        {
+          "decision": "guess",
+          "guess": "FAILING",
+          "reasoning": "The wordplay involves \"love\" which can be substituted with \"O\", and \"artificial intelligence\" which can be abbreviated as \"AI\". Combining these with the definition \"Deteriorating\", the answer is likely \"FAIL\" with \"O\" and \"AI\" inside.",
+          "outcome": "solved",
+          "hintsUsed": 6,
+          "letters": "F A _ L I N _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Deteriorating'"
+          ],
+          "wrong": [
+            "WANING"
+          ],
+          "feedback": "Letter revealed -> F A _ L I N _"
+        }
+      ]
+    },
+    {
+      "model": "openai/gpt-4o",
+      "clue": "Distinguished gentleman strangled creep",
+      "enumeration": "(4)",
+      "answer": "EDGE",
+      "wordLengths": [
+        4
+      ],
+      "definition": "creep",
+      "par": 2,
+      "solved": true,
+      "hintsUsed": 3,
+      "guessesUsed": 1,
+      "parResult": "above",
+      "reward": 0.4,
+      "hintOrder": [
+        "definition",
+        "letter",
+        "letter"
+      ],
+      "steps": [
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is likely \"Distinguished gentleman,\" and the wordplay involves \"strangled creep,\" which suggests an anagram of \"creep\" minus one letter to fit the 4-letter answer.",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is 'creep', and the wordplay might involve a distinguished gentleman being 'strangled' or altered to form a 4-letter word meaning 'creep'.",
+          "outcome": "hint",
+          "hintsUsed": 2,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'creep'"
+          ],
+          "wrong": [],
+          "feedback": "Hint (definition): The definition part of the clue is 'creep'"
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is 'creep', and the wordplay suggests a distinguished gentleman, possibly 'sir', is strangled or surrounded by something to form a word meaning 'creep'.",
+          "outcome": "hint",
+          "hintsUsed": 3,
+          "letters": "_ D _ _",
+          "hints": [
+            "[definition] The definition part of the clue is 'creep'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> _ D _ _"
+        },
+        {
+          "decision": "guess",
+          "guess": "EDGE",
+          "reasoning": "The definition is 'creep', and the wordplay suggests a distinguished gentleman, which could be 'SIR', but with 'strangled', it might imply removing something. The letters revealed so far are _ D _ E, which fits 'EDGE', a synonym for 'creep' as in 'to edge forward'.",
+          "outcome": "solved",
+          "hintsUsed": 3,
+          "letters": "_ D _ E",
+          "hints": [
+            "[definition] The definition part of the clue is 'creep'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> _ D _ E"
+        }
+      ]
+    },
+    {
+      "model": "openai/gpt-4o",
+      "clue": "Doubled testosterone to enter period of growth for glutes",
+      "enumeration": "(6)",
+      "answer": "BOTTOM",
+      "wordLengths": [
+        6
+      ],
+      "definition": "glutes",
+      "par": 3,
+      "solved": true,
+      "hintsUsed": 4,
+      "guessesUsed": 4,
+      "parResult": "above",
+      "reward": 0.2,
+      "hintOrder": [
+        "definition",
+        "letter",
+        "letter",
+        "letter"
+      ],
+      "steps": [
+        {
+          "decision": "guess",
+          "guess": "TUSHES",
+          "reasoning": "The definition is likely \"glutes\", and the wordplay involves \"doubled testosterone\" entering a \"period of growth\". \"Doubled testosterone\" could suggest \"TT\", and a period of growth could be \"SPURT\", leading to \"T(T)SPURT\".",
+          "outcome": "wrong",
+          "hintsUsed": 0,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is likely \"glutes\", and the wordplay involves \"doubled testosterone\" entering a \"period of growth\". \"Doubled testosterone\" could suggest \"TT\", and \"period of growth\" might be \"SPURT\", leading to \"T\" entering \"SPURT\" to form \"STURT\".",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [
+            "TUSHES"
+          ],
+          "feedback": "'TUSHES' is not correct. You have guessed: TUSHES. Try another answer, or reply HINT."
+        },
+        {
+          "decision": "guess",
+          "guess": "BUTTOS",
+          "reasoning": "The wordplay involves \"doubled testosterone\" which could suggest using the letter 'T' twice, and \"to enter period of growth\" could mean inserting 'TT' into a word meaning growth.",
+          "outcome": "wrong",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'glutes'"
+          ],
+          "wrong": [
+            "TUSHES"
+          ],
+          "feedback": "Hint (definition): The definition part of the clue is 'glutes'"
+        },
+        {
+          "decision": "guess",
+          "guess": "BUTTS",
+          "reasoning": "The definition is 'glutes', and the wordplay involves 'doubled testosterone' entering a 'period of growth'. 'Doubled testosterone' could suggest 'TT', and 'period of growth' might be 'BUD', leading to 'BUTT'.",
+          "outcome": "wrong",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'glutes'"
+          ],
+          "wrong": [
+            "TUSHES",
+            "BUTTOS"
+          ],
+          "feedback": "'BUTTOS' is not correct. You have guessed: TUSHES, BUTTOS. Try another answer, or reply HINT."
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The wordplay involves \"doubled testosterone\" which could suggest repeating a letter or letters from \"testosterone\" and \"enter period of growth\" might indicate inserting these into a word for growth.",
+          "outcome": "hint",
+          "hintsUsed": 2,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'glutes'"
+          ],
+          "wrong": [
+            "TUSHES",
+            "BUTTOS",
+            "BUTTS"
+          ],
+          "feedback": "'BUTTS' is not correct. You have guessed: TUSHES, BUTTOS, BUTTS. Try another answer, or reply HINT."
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The wordplay suggests \"doubled testosterone\" could mean doubling the letter 'T', and \"to enter period of growth\" could mean inserting it into a word for growth. The definition is \"glutes\", which could be \"bottom\".",
+          "outcome": "hint",
+          "hintsUsed": 3,
+          "letters": "_ O _ _ _ _",
+          "hints": [
+            "[definition] The definition part of the clue is 'glutes'"
+          ],
+          "wrong": [
+            "TUSHES",
+            "BUTTOS",
+            "BUTTS"
+          ],
+          "feedback": "Letter revealed -> _ O _ _ _ _"
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The wordplay suggests doubling 'T' (testosterone) and inserting it into a word for a period of growth. The definition is 'glutes', which could be 'BOTTOM'.",
+          "outcome": "hint",
+          "hintsUsed": 4,
+          "letters": "_ O _ T _ _",
+          "hints": [
+            "[definition] The definition part of the clue is 'glutes'"
+          ],
+          "wrong": [
+            "TUSHES",
+            "BUTTOS",
+            "BUTTS"
+          ],
+          "feedback": "Letter revealed -> _ O _ T _ _"
+        },
+        {
+          "decision": "guess",
+          "guess": "BOTTOM",
+          "reasoning": "The definition is 'glutes', and the wordplay involves 'doubled testosterone' entering a 'period of growth'. The letters revealed so far suggest the answer could be 'BOTTOM', which fits the definition of glutes.",
+          "outcome": "solved",
+          "hintsUsed": 4,
+          "letters": "_ O _ T _ M",
+          "hints": [
+            "[definition] The definition part of the clue is 'glutes'"
+          ],
+          "wrong": [
+            "TUSHES",
+            "BUTTOS",
+            "BUTTS"
+          ],
+          "feedback": "Letter revealed -> _ O _ T _ M"
+        }
+      ]
+    },
+    {
+      "model": "openai/gpt-4o",
+      "clue": "Every circuit in grand prix race",
+      "enumeration": "(6)",
+      "answer": "GALLOP",
+      "wordLengths": [
+        6
+      ],
+      "definition": "race",
+      "par": 3,
+      "solved": true,
+      "hintsUsed": 3,
+      "guessesUsed": 1,
+      "parResult": "at",
+      "reward": 0.4,
+      "hintOrder": [
+        "definition",
+        "letter",
+        "letter"
+      ],
+      "steps": [
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is likely \"race\" and the wordplay could involve \"grand prix\" or \"circuit\". \"Grand prix\" is often abbreviated as GP, which could be part of the wordplay.",
           "outcome": "hint",
           "hintsUsed": 1,
           "letters": "",
@@ -1062,7 +2037,7 @@
         {
           "decision": "hint",
           "guess": "",
-          "reasoning": "The definition is 'race', and the wordplay suggests 'grand prix' could be abbreviated to 'GP', which is a common abbreviation for 'Grand Prix'. 'Every circuit' could imply 'GO', as in 'go around', leading to the word 'GO' followed by 'GP' for 'GOGP', but that doesn't fit. I will need more information.",
+          "reasoning": "The definition is 'race', and the wordplay might involve 'grand prix', which is often abbreviated as GP. 'Every circuit' could suggest a word that means 'all' or 'complete', leading to the word 'GRAND' as a possible answer.",
           "outcome": "hint",
           "hintsUsed": 3,
           "letters": "G _ _ _ _ _",
@@ -1073,30 +2048,609 @@
           "feedback": "Letter revealed -> G _ _ _ _ _"
         },
         {
-          "decision": "hint",
-          "guess": "",
-          "reasoning": "The definition is 'race', and the wordplay suggests something related to 'grand prix'. The answer likely involves a term used in racing, possibly 'GRAND PRIX' itself, but shortened or altered to fit the 6-letter requirement.",
-          "outcome": "hint",
-          "hintsUsed": 4,
+          "decision": "guess",
+          "guess": "GALLOP",
+          "reasoning": "The definition is 'race', and the wordplay involves 'grand prix', which is often abbreviated as GP. The answer is likely a synonym for 'race' that fits the pattern G _ _ _ _ P.",
+          "outcome": "solved",
+          "hintsUsed": 3,
           "letters": "G _ _ _ _ P",
           "hints": [
             "[definition] The definition part of the clue is 'race'"
           ],
           "wrong": [],
           "feedback": "Letter revealed -> G _ _ _ _ P"
+        }
+      ]
+    },
+    {
+      "model": "openai/gpt-4o",
+      "clue": "Fans shunned neutral opener from Taylor Swift",
+      "enumeration": "(4)",
+      "answer": "FAST",
+      "wordLengths": [
+        4
+      ],
+      "definition": "Swift",
+      "par": 2,
+      "solved": true,
+      "hintsUsed": 2,
+      "guessesUsed": 1,
+      "parResult": "at",
+      "reward": 0.6,
+      "hintOrder": [
+        "definition",
+        "letter"
+      ],
+      "steps": [
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is likely \"fans\" and the wordplay involves removing the \"neutral opener\" (N) from \"Taylor Swift\" to get \"TAYLOR SWIFT\" without the N, which doesn't directly help. I need more information.",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is 'Swift', and the wordplay involves removing the 'neutral opener' from 'Taylor', which suggests removing the first letter 'T' to get 'AYLOR'. However, this doesn't fit the 4-letter requirement, so I will need more information.",
+          "outcome": "hint",
+          "hintsUsed": 2,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'Swift'"
+          ],
+          "wrong": [],
+          "feedback": "Hint (definition): The definition part of the clue is 'Swift'"
         },
         {
           "decision": "guess",
-          "guess": "GALLOP",
-          "reasoning": "The definition is 'race', and the wordplay involves 'grand prix', which could be abbreviated to GP. The answer likely starts with GA and ends with P, fitting the pattern.",
+          "guess": "FAST",
+          "reasoning": "The wordplay suggests removing the 'neutral opener' from 'Taylor', which leaves 'aylor'. The definition 'Swift' points to the answer 'FAST'.",
           "outcome": "solved",
-          "hintsUsed": 4,
-          "letters": "G A _ _ _ P",
+          "hintsUsed": 2,
+          "letters": "_ A _ _",
           "hints": [
-            "[definition] The definition part of the clue is 'race'"
+            "[definition] The definition part of the clue is 'Swift'"
           ],
           "wrong": [],
-          "feedback": "Letter revealed -> G A _ _ _ P"
+          "feedback": "Letter revealed -> _ A _ _"
+        }
+      ]
+    },
+    {
+      "model": "openai/gpt-4o",
+      "clue": "Films Mexican blowing kiss goodbye ?",
+      "enumeration": "(6)",
+      "answer": "CINEMA",
+      "wordLengths": [
+        6
+      ],
+      "definition": "Films",
+      "par": 3,
+      "solved": true,
+      "hintsUsed": 4,
+      "guessesUsed": 2,
+      "parResult": "above",
+      "reward": 0.2,
+      "hintOrder": [
+        "definition",
+        "letter",
+        "letter",
+        "letter"
+      ],
+      "steps": [
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is likely \"Films\" and the wordplay involves \"Mexican blowing kiss goodbye,\" which suggests removing a letter from a word related to \"Mexican\" or \"kiss.\"",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is 'Films', and the wordplay might involve a Mexican word or phrase related to 'kiss goodbye'. I need more information to decode the wordplay.",
+          "outcome": "hint",
+          "hintsUsed": 2,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'Films'"
+          ],
+          "wrong": [],
+          "feedback": "Hint (definition): The definition part of the clue is 'Films'"
+        },
+        {
+          "decision": "guess",
+          "guess": "MOVIES",
+          "reasoning": "The definition is 'Films', and the wordplay suggests removing 'kiss' from 'Mexican'. The word 'Mexican' without 'kiss' (X) gives 'MOVIES', which fits the definition and enumeration.",
+          "outcome": "wrong",
+          "hintsUsed": 2,
+          "letters": "_ _ _ _ M _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Films'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> _ _ _ _ M _"
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is 'Films', and the wordplay might involve removing a letter from a word related to 'Mexican' or 'kiss'. I need more information to solve this.",
+          "outcome": "hint",
+          "hintsUsed": 3,
+          "letters": "_ _ _ _ M _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Films'"
+          ],
+          "wrong": [
+            "MOVIES"
+          ],
+          "feedback": "'MOVIES' is not correct. You have guessed: MOVIES. Try another answer, or reply HINT."
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The wordplay suggests removing a letter from a word related to \"Mexican\" and \"kiss goodbye\". \"Adios\" is a Mexican farewell, and removing \"O\" (kiss) gives \"ADIOS\" which doesn't fit. I need more information.",
+          "outcome": "hint",
+          "hintsUsed": 4,
+          "letters": "_ _ N _ M _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Films'"
+          ],
+          "wrong": [
+            "MOVIES"
+          ],
+          "feedback": "Letter revealed -> _ _ N _ M _"
+        },
+        {
+          "decision": "guess",
+          "guess": "CINEMA",
+          "reasoning": "The definition is 'Films', and the wordplay involves 'Mexican blowing kiss goodbye', which suggests removing a letter from a word related to 'Mexican'. The revealed letters 'C _ N _ M _' fit the word 'CINEMA'.",
+          "outcome": "solved",
+          "hintsUsed": 4,
+          "letters": "C _ N _ M _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Films'"
+          ],
+          "wrong": [
+            "MOVIES"
+          ],
+          "feedback": "Letter revealed -> C _ N _ M _"
+        }
+      ]
+    },
+    {
+      "model": "openai/gpt-4o",
+      "clue": "Final recourse by captain in plane!?",
+      "enumeration": "(5)",
+      "answer": "EJECT",
+      "wordLengths": [
+        5
+      ],
+      "definition": "Final recourse by captain in plane!?",
+      "par": 2,
+      "solved": true,
+      "hintsUsed": 1,
+      "guessesUsed": 4,
+      "parResult": "below",
+      "reward": 0.8,
+      "hintOrder": [
+        "definition"
+      ],
+      "steps": [
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is likely \"final recourse,\" and the wordplay involves \"captain in plane,\" which suggests a word related to aviation or a pilot's last option.",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "guess",
+          "guess": "CRASH",
+          "reasoning": "The clue is an &lit, meaning the entire clue serves as both the definition and the wordplay. \"Final recourse by captain in plane\" suggests a term related to aviation, possibly \"CRASH\" as a last resort action by a pilot.",
+          "outcome": "wrong",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [
+            "[definition] This clue is an &lit! The whole clue can be read as the definition"
+          ],
+          "wrong": [],
+          "feedback": "Hint (definition): This clue is an &lit! The whole clue can be read as the definition"
+        },
+        {
+          "decision": "guess",
+          "guess": "DITCH",
+          "reasoning": "The clue is an &lit, meaning the entire clue serves as both the definition and the wordplay. \"Final recourse by captain in plane\" suggests a last resort action by a pilot, which could be \"DITCH\" as in ditching the plane in an emergency.",
+          "outcome": "wrong",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [
+            "[definition] This clue is an &lit! The whole clue can be read as the definition"
+          ],
+          "wrong": [
+            "CRASH"
+          ],
+          "feedback": "'CRASH' is not correct. You have guessed: CRASH. Try another answer, or reply HINT."
+        },
+        {
+          "decision": "guess",
+          "guess": "BAIL",
+          "reasoning": "The clue suggests a final action by a captain in a plane, which could be \"BAIL\" as in \"bail out\" of a plane. The wordplay might involve a synonym for \"final recourse\" or \"by captain in plane\".",
+          "outcome": "wrong",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [
+            "[definition] This clue is an &lit! The whole clue can be read as the definition"
+          ],
+          "wrong": [
+            "CRASH",
+            "DITCH"
+          ],
+          "feedback": "'DITCH' is not correct. You have guessed: CRASH, DITCH. Try another answer, or reply HINT."
+        },
+        {
+          "decision": "guess",
+          "guess": "EJECT",
+          "reasoning": "The clue suggests a final action by a captain in a plane, which could be \"EJECT\" as a last resort.",
+          "outcome": "solved",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [
+            "[definition] This clue is an &lit! The whole clue can be read as the definition"
+          ],
+          "wrong": [
+            "CRASH",
+            "DITCH",
+            "BAIL"
+          ],
+          "feedback": "'BAIL' is not correct. You have guessed: CRASH, DITCH, BAIL. Try another answer, or reply HINT."
+        }
+      ]
+    },
+    {
+      "model": "openai/gpt-4o",
+      "clue": "Followed members of staff at Home Depot",
+      "enumeration": "(8)",
+      "answer": "FATHOMED",
+      "wordLengths": [
+        8
+      ],
+      "definition": "Followed",
+      "par": 4,
+      "solved": true,
+      "hintsUsed": 9,
+      "guessesUsed": 5,
+      "parResult": "above",
+      "reward": 0.2,
+      "hintOrder": [
+        "definition",
+        "letter",
+        "letter",
+        "letter",
+        "letter",
+        "letter",
+        "letter",
+        "letter",
+        "letter"
+      ],
+      "steps": [
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is likely \"followed\", and the wordplay could involve \"members of staff\" being \"staff\" and \"at Home Depot\" suggesting a charade or hidden word.",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is 'Followed', and the wordplay likely involves 'members of staff at Home Depot'. I suspect 'staff' could be 'team', but I need more information to decode the wordplay.",
+          "outcome": "hint",
+          "hintsUsed": 2,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'Followed'"
+          ],
+          "wrong": [],
+          "feedback": "Hint (definition): The definition part of the clue is 'Followed'"
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is 'Followed', and the wordplay involves 'members of staff at Home Depot'. 'Staff' could refer to 'team', and 'Home Depot' might suggest a place or a specific term related to the store.",
+          "outcome": "hint",
+          "hintsUsed": 3,
+          "letters": "_ A _ _ _ _ _ _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Followed'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> _ A _ _ _ _ _ _"
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is 'Followed', and the wordplay involves 'members of staff at Home Depot'. The word 'staff' could refer to 'team', and 'Home Depot' might suggest a place or a specific term related to it.",
+          "outcome": "hint",
+          "hintsUsed": 4,
+          "letters": "_ A _ H _ _ _ _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Followed'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> _ A _ H _ _ _ _"
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is \"Followed\" and the wordplay involves \"members of staff at Home Depot\". The letters revealed so far suggest the word \"SHADOWED\".",
+          "outcome": "hint",
+          "hintsUsed": 5,
+          "letters": "_ A _ H _ M _ _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Followed'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> _ A _ H _ M _ _"
+        },
+        {
+          "decision": "guess",
+          "guess": "SHADOWED",
+          "reasoning": "The definition is \"Followed\" and the wordplay involves \"members of staff at Home Depot\". The revealed letters suggest the word \"SHADOWED\".",
+          "outcome": "wrong",
+          "hintsUsed": 5,
+          "letters": "_ A _ H _ M _ D",
+          "hints": [
+            "[definition] The definition part of the clue is 'Followed'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> _ A _ H _ M _ D"
+        },
+        {
+          "decision": "guess",
+          "guess": "WATCHMAN",
+          "reasoning": "The definition is \"Followed\" and the wordplay involves \"members of staff at Home Depot\". The letters revealed so far suggest the answer could be \"WATCHMAN\", which fits both the definition and the enumeration.",
+          "outcome": "wrong",
+          "hintsUsed": 5,
+          "letters": "_ A _ H _ M _ D",
+          "hints": [
+            "[definition] The definition part of the clue is 'Followed'"
+          ],
+          "wrong": [
+            "SHADOWED"
+          ],
+          "feedback": "'SHADOWED' is not correct. You have guessed: SHADOWED. Try another answer, or reply HINT."
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is \"Followed\" and the wordplay involves \"members of staff at Home Depot\". The pattern _A_H_M_D suggests the word \"TAKHIMED\" which doesn't fit, so I'll take another hint.",
+          "outcome": "hint",
+          "hintsUsed": 6,
+          "letters": "_ A _ H _ M _ D",
+          "hints": [
+            "[definition] The definition part of the clue is 'Followed'"
+          ],
+          "wrong": [
+            "SHADOWED",
+            "WATCHMAN"
+          ],
+          "feedback": "'WATCHMAN' is not correct. You have guessed: SHADOWED, WATCHMAN. Try another answer, or reply HINT."
+        },
+        {
+          "decision": "guess",
+          "guess": "PARAPHED",
+          "reasoning": "The definition is 'Followed', and the wordplay involves 'members of staff at Home Depot'. The revealed letters suggest the word 'PARAPHED', which means followed in the sense of endorsing or signing off on something.",
+          "outcome": "wrong",
+          "hintsUsed": 6,
+          "letters": "_ A _ H _ M E D",
+          "hints": [
+            "[definition] The definition part of the clue is 'Followed'"
+          ],
+          "wrong": [
+            "SHADOWED",
+            "WATCHMAN"
+          ],
+          "feedback": "Letter revealed -> _ A _ H _ M E D"
+        },
+        {
+          "decision": "guess",
+          "guess": "MARCHED",
+          "reasoning": "The definition is \"Followed\" and the wordplay involves \"members of staff at Home Depot\". The letters revealed so far suggest the word \"MARCHED\".",
+          "outcome": "wrong",
+          "hintsUsed": 6,
+          "letters": "_ A _ H _ M E D",
+          "hints": [
+            "[definition] The definition part of the clue is 'Followed'"
+          ],
+          "wrong": [
+            "SHADOWED",
+            "WATCHMAN",
+            "PARAPHED"
+          ],
+          "feedback": "'PARAPHED' is not correct. You have guessed: SHADOWED, WATCHMAN, PARAPHED. Try another answer, or reply HINT."
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is \"Followed\" and the wordplay involves \"members of staff at Home Depot\". The letters revealed so far suggest the answer could be \"CASHIERS\", but it doesn't fit the pattern. I will need more hints to solve this.",
+          "outcome": "hint",
+          "hintsUsed": 7,
+          "letters": "_ A _ H _ M E D",
+          "hints": [
+            "[definition] The definition part of the clue is 'Followed'"
+          ],
+          "wrong": [
+            "SHADOWED",
+            "WATCHMAN",
+            "PARAPHED",
+            "MARCHED"
+          ],
+          "feedback": "'MARCHED' is not correct. You have guessed: SHADOWED, WATCHMAN, PARAPHED, MARCHED. Try another answer, or reply HINT."
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is 'Followed', and the wordplay involves 'members of staff at Home Depot'. The letters revealed so far are _ A _ H O M E D, which suggests the answer could be 'TAILED' with 'HOME' in the middle.",
+          "outcome": "hint",
+          "hintsUsed": 8,
+          "letters": "_ A _ H O M E D",
+          "hints": [
+            "[definition] The definition part of the clue is 'Followed'"
+          ],
+          "wrong": [
+            "SHADOWED",
+            "WATCHMAN",
+            "PARAPHED",
+            "MARCHED"
+          ],
+          "feedback": "Letter revealed -> _ A _ H O M E D"
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is \"Followed\" and the wordplay involves \"members of staff at Home Depot\". The letters revealed so far suggest the word \"PATHOMED\", but that doesn't fit the definition. I will take another hint.",
+          "outcome": "hint",
+          "hintsUsed": 9,
+          "letters": "_ A T H O M E D",
+          "hints": [
+            "[definition] The definition part of the clue is 'Followed'"
+          ],
+          "wrong": [
+            "SHADOWED",
+            "WATCHMAN",
+            "PARAPHED",
+            "MARCHED"
+          ],
+          "feedback": "Letter revealed -> _ A T H O M E D"
+        },
+        {
+          "decision": "guess",
+          "guess": "FATHOMED",
+          "reasoning": "The definition is \"Followed\" and the wordplay involves \"members of staff at Home Depot\". The revealed letters spell \"FATHOMED\", which means understood or comprehended, aligning with \"followed\" in a metaphorical sense.",
+          "outcome": "solved",
+          "hintsUsed": 9,
+          "letters": "F A T H O M E D",
+          "hints": [
+            "[definition] The definition part of the clue is 'Followed'"
+          ],
+          "wrong": [
+            "SHADOWED",
+            "WATCHMAN",
+            "PARAPHED",
+            "MARCHED"
+          ],
+          "feedback": "Letter revealed -> F A T H O M E D"
+        }
+      ]
+    },
+    {
+      "model": "openai/gpt-4o",
+      "clue": "Green car went out west for competition",
+      "enumeration": "(5)",
+      "answer": "EVENT",
+      "wordLengths": [
+        5
+      ],
+      "definition": "competition",
+      "par": 2,
+      "solved": true,
+      "hintsUsed": 2,
+      "guessesUsed": 3,
+      "parResult": "at",
+      "reward": 0.6,
+      "hintOrder": [
+        "definition",
+        "letter"
+      ],
+      "steps": [
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is likely \"competition\" at the end of the clue. \"Green car went out west\" suggests a reversal or anagram of \"green car\" to form a 5-letter word meaning competition.",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "guess",
+          "guess": "RACE",
+          "reasoning": "The wordplay suggests an anagram of \"car\" and \"went\" with \"out west\" indicating a reversal or rearrangement. The definition is \"competition\", which could be \"RACE\".",
+          "outcome": "wrong",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'competition'"
+          ],
+          "wrong": [],
+          "feedback": "Hint (definition): The definition part of the clue is 'competition'"
+        },
+        {
+          "decision": "guess",
+          "guess": "RACER",
+          "reasoning": "The wordplay suggests a reversal of \"car\" and \"went\" to form a word meaning \"competition\". \"Out west\" indicates a reversal, so \"car\" becomes \"rac\" and \"went\" becomes \"ew\", forming \"RACER\".",
+          "outcome": "wrong",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'competition'"
+          ],
+          "wrong": [
+            "RACE"
+          ],
+          "feedback": "'RACE' is not correct. You have guessed: RACE. Try another answer, or reply HINT."
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is 'competition', and the wordplay involves 'Green car went out west'. 'Green' could be 'eco', and 'car went out west' suggests a reversal or an anagram. I will need more information to solve this.",
+          "outcome": "hint",
+          "hintsUsed": 2,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'competition'"
+          ],
+          "wrong": [
+            "RACE",
+            "RACER"
+          ],
+          "feedback": "'RACER' is not correct. You have guessed: RACE, RACER. Try another answer, or reply HINT."
+        },
+        {
+          "decision": "guess",
+          "guess": "EVENT",
+          "reasoning": "The wordplay suggests an anagram of \"car\" and \"went\" with \"out west\" indicating a reversal. The definition is \"competition\" and the letters revealed so far are _ V _ _ _.",
+          "outcome": "solved",
+          "hintsUsed": 2,
+          "letters": "_ V _ _ _",
+          "hints": [
+            "[definition] The definition part of the clue is 'competition'"
+          ],
+          "wrong": [
+            "RACE",
+            "RACER"
+          ],
+          "feedback": "Letter revealed -> _ V _ _ _"
         }
       ]
     },
@@ -1111,13 +2665,12 @@
       "definition": "Guarded",
       "par": 3,
       "solved": true,
-      "hintsUsed": 6,
+      "hintsUsed": 5,
       "guessesUsed": 1,
       "parResult": "above",
       "reward": 0.2,
       "hintOrder": [
         "definition",
-        "letter",
         "letter",
         "letter",
         "letter",
@@ -1138,7 +2691,7 @@
         {
           "decision": "hint",
           "guess": "",
-          "reasoning": "The definition is 'Guarded', and the wordplay likely involves a vehicle and an experimental fuel. I suspect the answer might be a charade or a container involving these elements.",
+          "reasoning": "The definition is 'Guarded', and the wordplay likely involves a vehicle and an experimental fuel. I suspect the answer might be a charade or container involving these elements.",
           "outcome": "hint",
           "hintsUsed": 2,
           "letters": "",
@@ -1151,7 +2704,7 @@
         {
           "decision": "hint",
           "guess": "",
-          "reasoning": "The definition is 'Guarded', and the wordplay involves a vehicle with experimental fuel. I suspect the answer might be a type of vehicle or something related to protection.",
+          "reasoning": "The definition is 'Guarded', and the wordplay involves a vehicle with experimental fuel. The word 'experimental' suggests an anagram or a novel type of fuel.",
           "outcome": "hint",
           "hintsUsed": 3,
           "letters": "_ A _ _ _ _ _",
@@ -1164,7 +2717,7 @@
         {
           "decision": "hint",
           "guess": "",
-          "reasoning": "The definition is 'Guarded', and the wordplay involves a vehicle with experimental fuel. The word 'vehicle' could suggest 'car', and 'experimental fuel' might be 'gas', leading to 'CAGED' as a possible answer.",
+          "reasoning": "The definition is 'Guarded', and the wordplay involves a vehicle with experimental fuel. The word 'experimental' might suggest an anagram or a novel type of fuel, but I need more information to solve it.",
           "outcome": "hint",
           "hintsUsed": 4,
           "letters": "_ A _ E _ _ _",
@@ -1177,7 +2730,7 @@
         {
           "decision": "hint",
           "guess": "",
-          "reasoning": "The definition is 'Guarded', and the wordplay involves a vehicle with experimental fuel. The pattern _A_E_U_ suggests the word 'CAVEOUT', but that doesn't fit the definition. I need more information.",
+          "reasoning": "The definition is 'Guarded', and the wordplay involves a vehicle with experimental fuel. The pattern _A_E_U_ suggests the word 'CAVEFUL', but it doesn't fit the definition. I need more information.",
           "outcome": "hint",
           "hintsUsed": 5,
           "letters": "_ A _ E _ U _",
@@ -1188,30 +2741,77 @@
           "feedback": "Letter revealed -> _ A _ E _ U _"
         },
         {
-          "decision": "hint",
-          "guess": "",
-          "reasoning": "The definition is 'Guarded', and the wordplay involves a vehicle with experimental fuel. The letters revealed so far suggest the word 'CARE' might be part of the answer.",
-          "outcome": "hint",
-          "hintsUsed": 6,
+          "decision": "guess",
+          "guess": "CAREFUL",
+          "reasoning": "The definition is 'Guarded', and the wordplay involves a vehicle with experimental fuel. The letters revealed so far suggest the word 'CAREFUL'.",
+          "outcome": "solved",
+          "hintsUsed": 5,
           "letters": "_ A _ E _ U L",
           "hints": [
             "[definition] The definition part of the clue is 'Guarded'"
           ],
           "wrong": [],
           "feedback": "Letter revealed -> _ A _ E _ U L"
+        }
+      ]
+    },
+    {
+      "model": "openai/gpt-4o",
+      "clue": "Heavenly visitor tucked clue writer into bed",
+      "enumeration": "(5)",
+      "answer": "COMET",
+      "wordLengths": [
+        5
+      ],
+      "definition": "Heavenly visitor",
+      "par": 2,
+      "solved": true,
+      "hintsUsed": 1,
+      "guessesUsed": 2,
+      "parResult": "below",
+      "reward": 0.8,
+      "hintOrder": [
+        "definition"
+      ],
+      "steps": [
+        {
+          "decision": "guess",
+          "guess": "ANGEL",
+          "reasoning": "The definition is likely \"Heavenly visitor,\" and the wordplay suggests \"clue writer\" (I) is \"tucked\" into \"bed,\" forming the word \"ANGEL.\"",
+          "outcome": "wrong",
+          "hintsUsed": 0,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is likely \"Heavenly visitor\", and the wordplay suggests something being \"tucked\" into \"bed\". The word \"bed\" could be a container for the answer.",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [
+            "ANGEL"
+          ],
+          "feedback": "'ANGEL' is not correct. You have guessed: ANGEL. Try another answer, or reply HINT."
         },
         {
           "decision": "guess",
-          "guess": "CAREFUL",
-          "reasoning": "The definition is 'Guarded', and the wordplay involves a vehicle and experimental fuel. The letters revealed so far suggest the word 'CAREFUL'.",
+          "guess": "COMET",
+          "reasoning": "The wordplay suggests that the answer is hidden within the phrase \"clue writer into bed\". A common heavenly visitor is a \"comet\", which fits the enumeration and could be hidden in the phrase.",
           "outcome": "solved",
-          "hintsUsed": 6,
-          "letters": "_ A _ E F U L",
+          "hintsUsed": 1,
+          "letters": "",
           "hints": [
-            "[definition] The definition part of the clue is 'Guarded'"
+            "[definition] The definition part of the clue is 'Heavenly visitor'"
           ],
-          "wrong": [],
-          "feedback": "Letter revealed -> _ A _ E F U L"
+          "wrong": [
+            "ANGEL"
+          ],
+          "feedback": "Hint (definition): The definition part of the clue is 'Heavenly visitor'"
         }
       ]
     },
@@ -1227,7 +2827,7 @@
       "par": 2,
       "solved": true,
       "hintsUsed": 1,
-      "guessesUsed": 1,
+      "guessesUsed": 3,
       "parResult": "below",
       "reward": 0.8,
       "hintOrder": [
@@ -1235,28 +2835,59 @@
       ],
       "steps": [
         {
-          "decision": "hint",
-          "guess": "",
-          "reasoning": "The definition is likely \"help\", and \"gambler to disregard odds\" suggests taking alternate letters from \"gambler\", which gives \"GAME\" but doesn't fit the definition.",
-          "outcome": "hint",
-          "hintsUsed": 1,
+          "decision": "guess",
+          "guess": "AID",
+          "reasoning": "The definition is likely \"help\", and the wordplay suggests disregarding the odds in \"gambler\", which leaves the even letters \"AID\".",
+          "outcome": "wrong",
+          "hintsUsed": 0,
           "letters": "",
           "hints": [],
           "wrong": [],
           "feedback": ""
         },
         {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is likely \"help\", and the wordplay suggests disregarding the odds in \"gambler\", which could mean taking every second letter.",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [
+            "AID"
+          ],
+          "feedback": "'AID' is not correct. You have guessed: AID. Try another answer, or reply HINT."
+        },
+        {
+          "decision": "guess",
+          "guess": "BEAR",
+          "reasoning": "The wordplay suggests taking the even letters of \"gambler\" to form a word meaning \"help\". The even letters are \"a\", \"b\", \"e\", \"r\", which form the word \"bear\".",
+          "outcome": "wrong",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'help'"
+          ],
+          "wrong": [
+            "AID"
+          ],
+          "feedback": "Hint (definition): The definition part of the clue is 'help'"
+        },
+        {
           "decision": "guess",
           "guess": "ABET",
-          "reasoning": "The wordplay suggests taking the even letters of \"gambler\" to form a word meaning \"help\". The even letters are A, B, and E, which can form the word \"ABET\".",
+          "reasoning": "The wordplay suggests disregarding the odds in 'gambler', which means taking the even letters, resulting in 'abet', which means help.",
           "outcome": "solved",
           "hintsUsed": 1,
           "letters": "",
           "hints": [
             "[definition] The definition part of the clue is 'help'"
           ],
-          "wrong": [],
-          "feedback": "Hint (definition): The definition part of the clue is 'help'"
+          "wrong": [
+            "AID",
+            "BEAR"
+          ],
+          "feedback": "'BEAR' is not correct. You have guessed: AID, BEAR. Try another answer, or reply HINT."
         }
       ]
     },
@@ -1271,13 +2902,12 @@
       "definition": "Huge",
       "par": 4,
       "solved": true,
-      "hintsUsed": 3,
+      "hintsUsed": 2,
       "guessesUsed": 1,
       "parResult": "below",
-      "reward": 0.4,
+      "reward": 0.6,
       "hintOrder": [
         "definition",
-        "letter",
         "letter"
       ],
       "steps": [
@@ -1306,30 +2936,104 @@
           "feedback": "Hint (definition): The definition part of the clue is 'Huge'"
         },
         {
-          "decision": "hint",
-          "guess": "",
-          "reasoning": "The wordplay suggests a shortfall in fossil fuel, which could imply a deletion or subtraction. The definition 'Huge' might lead to a word like 'COLOSSAL'.",
-          "outcome": "hint",
-          "hintsUsed": 3,
+          "decision": "guess",
+          "guess": "COLOSSAL",
+          "reasoning": "The wordplay suggests a shortfall or gap in a fossil fuel, which could be 'coal' or 'gas'. The definition 'Huge' and the pattern _ _ _ _ _ S _ _ might fit 'COLOSSAL'.",
+          "outcome": "solved",
+          "hintsUsed": 2,
           "letters": "_ _ _ _ _ S _ _",
           "hints": [
             "[definition] The definition part of the clue is 'Huge'"
           ],
           "wrong": [],
           "feedback": "Letter revealed -> _ _ _ _ _ S _ _"
+        }
+      ]
+    },
+    {
+      "model": "openai/gpt-4o",
+      "clue": "Identify regressive authoritarian region",
+      "enumeration": "(8)",
+      "answer": "DISTRICT",
+      "wordLengths": [
+        8
+      ],
+      "definition": "region",
+      "par": 4,
+      "solved": true,
+      "hintsUsed": 4,
+      "guessesUsed": 1,
+      "parResult": "at",
+      "reward": 0.2,
+      "hintOrder": [
+        "definition",
+        "letter",
+        "letter",
+        "letter"
+      ],
+      "steps": [
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition part of the clue is likely \"Identify\" or \"region\", and the wordplay involves \"regressive authoritarian\". \"Regressive\" suggests a reversal, so reversing \"authoritarian\" might lead to the answer.",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is 'region', and the wordplay involves 'Identify regressive authoritarian'. 'Regressive' suggests a reversal, so 'identify' reversed could be part of the answer.",
+          "outcome": "hint",
+          "hintsUsed": 2,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'region'"
+          ],
+          "wrong": [],
+          "feedback": "Hint (definition): The definition part of the clue is 'region'"
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The wordplay suggests a reversal of a word meaning 'identify' followed by a word for 'authoritarian'. The definition is 'region'.",
+          "outcome": "hint",
+          "hintsUsed": 3,
+          "letters": "_ I _ _ _ _ _ _",
+          "hints": [
+            "[definition] The definition part of the clue is 'region'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> _ I _ _ _ _ _ _"
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The wordplay suggests a reversal of a word meaning 'identify' followed by a word for 'authoritarian'. The definition is 'region', and the letters revealed so far are _I_T____.",
+          "outcome": "hint",
+          "hintsUsed": 4,
+          "letters": "_ I _ T _ _ _ _",
+          "hints": [
+            "[definition] The definition part of the clue is 'region'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> _ I _ T _ _ _ _"
         },
         {
           "decision": "guess",
-          "guess": "COLOSSAL",
-          "reasoning": "The wordplay suggests a container or charade involving 'fossil fuel', possibly with a deletion or abbreviation. The definition 'Huge' points to a large word, and the pattern _ _ L _ _ S _ _ fits 'COLOSSAL'.",
+          "guess": "DISTRICT",
+          "reasoning": "The wordplay suggests a reversal of a word meaning 'identify' to fit the pattern _I_T_I_ _. The word 'region' as the definition points to 'district'.",
           "outcome": "solved",
-          "hintsUsed": 3,
-          "letters": "_ _ L _ _ S _ _",
+          "hintsUsed": 4,
+          "letters": "_ I _ T _ I _ _",
           "hints": [
-            "[definition] The definition part of the clue is 'Huge'"
+            "[definition] The definition part of the clue is 'region'"
           ],
           "wrong": [],
-          "feedback": "Letter revealed -> _ _ L _ _ S _ _"
+          "feedback": "Letter revealed -> _ I _ T _ I _ _"
         }
       ]
     },
@@ -1342,37 +3046,6 @@
         6
       ],
       "definition": "Incriminate",
-      "par": 3,
-      "solved": true,
-      "hintsUsed": 0,
-      "guessesUsed": 1,
-      "parResult": "below",
-      "reward": 1.0,
-      "hintOrder": [],
-      "steps": [
-        {
-          "decision": "guess",
-          "guess": "ACCUSE",
-          "reasoning": "The definition is likely \"incriminate\", and \"copper in murder case\" suggests a wordplay involving a common abbreviation for copper (CU) inside a word for murder (CASE).",
-          "outcome": "solved",
-          "hintsUsed": 0,
-          "letters": "",
-          "hints": [],
-          "wrong": [],
-          "feedback": ""
-        }
-      ]
-    },
-    {
-      "model": "openai/gpt-4o",
-      "clue": "Loser steals orange slice",
-      "enumeration": "(4,3)",
-      "answer": "ALSO RAN",
-      "wordLengths": [
-        4,
-        3
-      ],
-      "definition": "Loser",
       "par": 3,
       "solved": true,
       "hintsUsed": 3,
@@ -1388,7 +3061,7 @@
         {
           "decision": "hint",
           "guess": "",
-          "reasoning": "The definition is likely \"loser\", and the wordplay suggests taking an \"orange slice\" from \"steals\", which could mean removing the middle letters of \"steals\" to form the answer.",
+          "reasoning": "The definition is likely \"incriminate\", and \"copper in murder case\" suggests a wordplay involving a common abbreviation for copper (CU) inside another word.",
           "outcome": "hint",
           "hintsUsed": 1,
           "letters": "",
@@ -1399,7 +3072,140 @@
         {
           "decision": "hint",
           "guess": "",
-          "reasoning": "The wordplay suggests taking a slice of \"orange\" and inserting it into a word meaning \"steals\" to form a phrase meaning \"loser\".",
+          "reasoning": "The wordplay involves 'copper' which is often abbreviated as 'CU' and 'murder case' could suggest a container or charade. I will take a hint to better understand the wordplay.",
+          "outcome": "hint",
+          "hintsUsed": 2,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'Incriminate'"
+          ],
+          "wrong": [],
+          "feedback": "Hint (definition): The definition part of the clue is 'Incriminate'"
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The wordplay likely involves 'copper' as a common abbreviation for 'CU' (the chemical symbol for copper) and 'murder case' suggesting a container or charade. The definition is 'Incriminate'.",
+          "outcome": "hint",
+          "hintsUsed": 3,
+          "letters": "_ _ _ U _ _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Incriminate'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> _ _ _ U _ _"
+        },
+        {
+          "decision": "guess",
+          "guess": "ACCUSE",
+          "reasoning": "The wordplay involves 'copper' which can be abbreviated as 'CU', and 'in' suggests a container. The word 'murder' could be a case for 'case', leading to the word 'ACCUS' which fits with the definition 'Incriminate'.",
+          "outcome": "solved",
+          "hintsUsed": 3,
+          "letters": "A _ _ U _ _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Incriminate'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> A _ _ U _ _"
+        }
+      ]
+    },
+    {
+      "model": "openai/gpt-4o",
+      "clue": "Listening to see why enclosed stack of paper is whitish",
+      "enumeration": "(6)",
+      "answer": "CREAMY",
+      "wordLengths": [
+        6
+      ],
+      "definition": "whitish",
+      "par": 3,
+      "solved": true,
+      "hintsUsed": 1,
+      "guessesUsed": 2,
+      "parResult": "below",
+      "reward": 0.8,
+      "hintOrder": [
+        "definition"
+      ],
+      "steps": [
+        {
+          "decision": "guess",
+          "guess": "CREAM",
+          "reasoning": "The clue suggests a homophone with \"Listening to see why\" sounding like \"CY\" which is enclosed in \"ream\" (a stack of paper) to form \"CREAM\", which is whitish.",
+          "outcome": "wrong",
+          "hintsUsed": 0,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The clue suggests a homophone with \"Listening to see why\" sounding like \"CY\" and \"enclosed stack of paper\" could refer to \"ream\" which is whitish.",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [
+            "CREAM"
+          ],
+          "feedback": "'CREAM' is not correct. You have guessed: CREAM. Try another answer, or reply HINT."
+        },
+        {
+          "decision": "guess",
+          "guess": "CREAMY",
+          "reasoning": "The wordplay suggests a homophone for \"see why\" which sounds like \"CY\" and is enclosed in a \"stack of paper\" which could be \"ream\". This leads to the word \"CREAMY\" which means whitish.",
+          "outcome": "solved",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'whitish'"
+          ],
+          "wrong": [
+            "CREAM"
+          ],
+          "feedback": "Hint (definition): The definition part of the clue is 'whitish'"
+        }
+      ]
+    },
+    {
+      "model": "openai/gpt-4o",
+      "clue": "Loser steals orange slice",
+      "enumeration": "(4,3)",
+      "answer": "ALSO RAN",
+      "wordLengths": [
+        4,
+        3
+      ],
+      "definition": "Loser",
+      "par": 3,
+      "solved": true,
+      "hintsUsed": 2,
+      "guessesUsed": 1,
+      "parResult": "below",
+      "reward": 0.6,
+      "hintOrder": [
+        "definition",
+        "letter"
+      ],
+      "steps": [
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is likely \"loser\", and the wordplay suggests taking an \"orange slice\" which could mean a part of the word \"orange\".",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The wordplay suggests taking a slice of 'orange', which could mean taking the middle letters 'rang'. Combining this with 'steals', which could be 'nicks', gives 'RANK NICK' which doesn't fit. I need more information.",
           "outcome": "hint",
           "hintsUsed": 2,
           "letters": "",
@@ -1410,30 +3216,76 @@
           "feedback": "Hint (definition): The definition part of the clue is 'Loser'"
         },
         {
-          "decision": "hint",
-          "guess": "",
-          "reasoning": "The wordplay suggests taking an \"orange slice\" from the word \"orange\" which could be \"OR\" or \"GE\". Combining this with the definition \"Loser\", the answer could be \"also ran\".",
-          "outcome": "hint",
-          "hintsUsed": 3,
+          "decision": "guess",
+          "guess": "ALSO RAN",
+          "reasoning": "The wordplay suggests taking a slice of \"orange\", which could be the letter \"O\". A common term for a loser is \"also ran\", fitting the pattern _ _ S _ / _ _ _.",
+          "outcome": "solved",
+          "hintsUsed": 2,
           "letters": "_ _ S _ / _ _ _",
           "hints": [
             "[definition] The definition part of the clue is 'Loser'"
           ],
           "wrong": [],
           "feedback": "Letter revealed -> _ _ S _ / _ _ _"
+        }
+      ]
+    },
+    {
+      "model": "openai/gpt-4o",
+      "clue": "Obvious affair captured maiden's heart",
+      "enumeration": "(7)",
+      "answer": "EVIDENT",
+      "wordLengths": [
+        7
+      ],
+      "definition": "Obvious",
+      "par": 3,
+      "solved": true,
+      "hintsUsed": 2,
+      "guessesUsed": 1,
+      "parResult": "below",
+      "reward": 0.6,
+      "hintOrder": [
+        "definition",
+        "letter"
+      ],
+      "steps": [
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is likely \"obvious\", and \"maiden's heart\" suggests taking the middle letter of \"maiden\", which is 'I'. \"Affair captured\" could mean putting 'I' inside a word for \"affair\".",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is 'Obvious', and the wordplay involves 'affair captured maiden's heart'. 'Maiden's heart' could refer to the middle letter of 'maiden', which is 'I', and 'affair' could be 'FLING', so the answer might be 'FLI' + 'I' + 'NG' = 'FLIING', but that doesn't fit. I need more information.",
+          "outcome": "hint",
+          "hintsUsed": 2,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'Obvious'"
+          ],
+          "wrong": [],
+          "feedback": "Hint (definition): The definition part of the clue is 'Obvious'"
         },
         {
           "decision": "guess",
-          "guess": "ALSO RAN",
-          "reasoning": "The definition is 'Loser', and the wordplay suggests taking an 'orange slice', which could mean taking a part of the word 'orange'. The letters revealed so far suggest the answer might be 'also ran', which fits both the definition and the enumeration.",
+          "guess": "EVIDENT",
+          "reasoning": "The definition is 'Obvious', and the wordplay involves 'affair captured maiden's heart'. The heart of 'maiden' is 'I', and 'affair' could be 'event', which when 'captured' by 'I' gives 'EVIDENT'.",
           "outcome": "solved",
-          "hintsUsed": 3,
-          "letters": "_ L S _ / _ _ _",
+          "hintsUsed": 2,
+          "letters": "_ V _ _ _ _ _",
           "hints": [
-            "[definition] The definition part of the clue is 'Loser'"
+            "[definition] The definition part of the clue is 'Obvious'"
           ],
           "wrong": [],
-          "feedback": "Letter revealed -> _ L S _ / _ _ _"
+          "feedback": "Letter revealed -> _ V _ _ _ _ _"
         }
       ]
     },
@@ -1457,13 +3309,100 @@
         {
           "decision": "guess",
           "guess": "BEGONE",
-          "reasoning": "The definition is likely \"plead\" and the wordplay involves \"individual\" which could be \"I\" and \"take a hike\" suggesting \"go\". Combining these gives \"BEGONE\".",
+          "reasoning": "The definition is likely \"plead\" and the wordplay suggests \"individual\" (I) + \"take a hike\" (BEGONE).",
           "outcome": "solved",
           "hintsUsed": 0,
           "letters": "",
           "hints": [],
           "wrong": [],
           "feedback": ""
+        }
+      ]
+    },
+    {
+      "model": "openai/gpt-4o",
+      "clue": "Price of toast and most of egg rolls",
+      "enumeration": "(6)",
+      "answer": "CHARGE",
+      "wordLengths": [
+        6
+      ],
+      "definition": "Price",
+      "par": 3,
+      "solved": true,
+      "hintsUsed": 4,
+      "guessesUsed": 1,
+      "parResult": "above",
+      "reward": 0.2,
+      "hintOrder": [
+        "definition",
+        "letter",
+        "letter",
+        "letter"
+      ],
+      "steps": [
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is likely \"Price of toast\", and the wordplay involves \"most of egg rolls\", suggesting a deletion or anagram. \"Most of egg\" could be \"EGG\" without the last letter, and \"rolls\" might indicate an anagram.",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is 'price', and the wordplay suggests a charade or deletion involving 'toast' and 'most of egg rolls'. I will need more information to solve this.",
+          "outcome": "hint",
+          "hintsUsed": 2,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'price'"
+          ],
+          "wrong": [],
+          "feedback": "Hint (definition): The definition part of the clue is 'price'"
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is 'price', and the wordplay involves 'toast' and 'most of egg rolls'. 'Most of egg' could be 'eg' and 'rolls' suggests an anagram, possibly of 'eg' and 'toast'.",
+          "outcome": "hint",
+          "hintsUsed": 3,
+          "letters": "_ _ A _ _ _",
+          "hints": [
+            "[definition] The definition part of the clue is 'price'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> _ _ A _ _ _"
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The wordplay suggests \"most of egg\" could mean removing the last letter from \"egg\" to get \"eg\", and \"rolls\" could indicate a reversal, leading to \"ge\". Combining this with \"toast\" could form a word meaning \"price\".",
+          "outcome": "hint",
+          "hintsUsed": 4,
+          "letters": "_ _ A _ _ E",
+          "hints": [
+            "[definition] The definition part of the clue is 'price'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> _ _ A _ _ E"
+        },
+        {
+          "decision": "guess",
+          "guess": "CHARGE",
+          "reasoning": "The definition is 'price', and the wordplay involves 'toast' and 'most of egg rolls'. The answer could be 'CHARGE', which fits the pattern and means price.",
+          "outcome": "solved",
+          "hintsUsed": 4,
+          "letters": "_ H A _ _ E",
+          "hints": [
+            "[definition] The definition part of the clue is 'price'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> _ H A _ _ E"
         }
       ]
     },
@@ -1489,7 +3428,7 @@
         {
           "decision": "guess",
           "guess": "SHOPP",
-          "reasoning": "The definition is likely \"purchase,\" and the wordplay involves \"trapped soul of Dennis Hopper,\" which suggests a hidden word within \"Dennis Hopper.\"",
+          "reasoning": "The definition is likely \"purchase,\" and the wordplay involves \"trapped soul of Dennis Hopper,\" suggesting a hidden word within \"Dennis Hopper.\"",
           "outcome": "wrong",
           "hintsUsed": 0,
           "letters": "",
@@ -1527,7 +3466,7 @@
         {
           "decision": "guess",
           "guess": "BUNNY",
-          "reasoning": "The wordplay suggests \"Purchase trapped soul of Dennis Hopper\", which could mean a word for purchase containing a letter from \"Dennis\". The word \"BUY\" could be a purchase, and \"BUNNY\" is a type of hopper.",
+          "reasoning": "The wordplay suggests \"Purchase trapped soul of Dennis Hopper\", which could mean a word for purchase containing a letter from \"Dennis\". The word \"BUY\" contains the letter \"U\", which is the middle letter of \"Dennis\".",
           "outcome": "solved",
           "hintsUsed": 1,
           "letters": "",
@@ -1539,6 +3478,131 @@
             "SHOP"
           ],
           "feedback": "Hint (definition): The definition part of the clue is 'Hopper'"
+        }
+      ]
+    },
+    {
+      "model": "openai/gpt-4o",
+      "clue": "Request in court squash rallies ?",
+      "enumeration": "(3,4)",
+      "answer": "ALL RISE",
+      "wordLengths": [
+        3,
+        4
+      ],
+      "definition": "Request in court",
+      "par": 3,
+      "solved": true,
+      "hintsUsed": 5,
+      "guessesUsed": 2,
+      "parResult": "above",
+      "reward": 0.2,
+      "hintOrder": [
+        "definition",
+        "letter",
+        "letter",
+        "letter",
+        "letter"
+      ],
+      "steps": [
+        {
+          "decision": "guess",
+          "guess": "LET OFF",
+          "reasoning": "The definition is likely \"request in court,\" which could be \"LET\" in tennis, and \"squash rallies\" could be a charade or container for \"LET\" and \"OFF\" (as in \"rallies\" being \"OFF\" or stopped).",
+          "outcome": "wrong",
+          "hintsUsed": 0,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition part of the clue is likely \"request in court,\" which suggests a legal term. The wordplay might involve \"squash rallies\" as a charade or anagram.",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [
+            "LET OFF"
+          ],
+          "feedback": "'LET OFF' is not correct. You have guessed: LET OFF. Try another answer, or reply HINT."
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition 'Request in court' suggests a legal term. The wordplay might involve 'squash rallies' which could hint at a charade or anagram.",
+          "outcome": "hint",
+          "hintsUsed": 2,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'Request in court'"
+          ],
+          "wrong": [
+            "LET OFF"
+          ],
+          "feedback": "Hint (definition): The definition part of the clue is 'Request in court'"
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is \"Request in court\", which suggests a legal term. The wordplay might involve \"squash rallies\" as a charade or anagram.",
+          "outcome": "hint",
+          "hintsUsed": 3,
+          "letters": "_ _ _ / _ I _ _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Request in court'"
+          ],
+          "wrong": [
+            "LET OFF"
+          ],
+          "feedback": "Letter revealed -> _ _ _ / _ I _ _"
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is \"Request in court\", which suggests \"LET\" as in \"let in tennis\". The wordplay might involve \"squash rallies\" indicating a charade or anagram, but I need more information.",
+          "outcome": "hint",
+          "hintsUsed": 4,
+          "letters": "_ _ L / _ I _ _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Request in court'"
+          ],
+          "wrong": [
+            "LET OFF"
+          ],
+          "feedback": "Letter revealed -> _ _ L / _ I _ _"
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is \"Request in court,\" which suggests \"ASK\" or \"PLEA.\" The wordplay might involve \"squash rallies\" indicating a charade or anagram.",
+          "outcome": "hint",
+          "hintsUsed": 5,
+          "letters": "A _ L / _ I _ _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Request in court'"
+          ],
+          "wrong": [
+            "LET OFF"
+          ],
+          "feedback": "Letter revealed -> A _ L / _ I _ _"
+        },
+        {
+          "decision": "guess",
+          "guess": "ALL RISE",
+          "reasoning": "The definition is \"Request in court,\" and the wordplay might involve \"squash rallies\" suggesting a charade or anagram. The pattern A_L / _IS_ fits \"ALL RISE,\" which is a request in court.",
+          "outcome": "solved",
+          "hintsUsed": 5,
+          "letters": "A _ L / _ I S _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Request in court'"
+          ],
+          "wrong": [
+            "LET OFF"
+          ],
+          "feedback": "Letter revealed -> A _ L / _ I S _"
         }
       ]
     },
@@ -1589,6 +3653,395 @@
     },
     {
       "model": "openai/gpt-4o",
+      "clue": "Secretly made a confession to clergyman",
+      "enumeration": "(6)",
+      "answer": "DEACON",
+      "wordLengths": [
+        6
+      ],
+      "definition": "clergyman",
+      "par": 3,
+      "solved": true,
+      "hintsUsed": 3,
+      "guessesUsed": 1,
+      "parResult": "at",
+      "reward": 0.4,
+      "hintOrder": [
+        "definition",
+        "letter",
+        "letter"
+      ],
+      "steps": [
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is likely \"secretly made a confession,\" and the wordplay could involve a common term for a clergyman. The answer might be a word that fits both parts.",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is 'clergyman', and the wordplay might involve a phrase meaning 'secretly made a confession'. I suspect the answer could be a word for a clergyman that fits this context.",
+          "outcome": "hint",
+          "hintsUsed": 2,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'clergyman'"
+          ],
+          "wrong": [],
+          "feedback": "Hint (definition): The definition part of the clue is 'clergyman'"
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is 'clergyman', and the wordplay suggests a hidden or secretive action, possibly indicating a word like 'secret' or 'confess'. The pattern _E____ fits 'VICAR', but it doesn't match the letter pattern. I need more information.",
+          "outcome": "hint",
+          "hintsUsed": 3,
+          "letters": "_ E _ _ _ _",
+          "hints": [
+            "[definition] The definition part of the clue is 'clergyman'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> _ E _ _ _ _"
+        },
+        {
+          "decision": "guess",
+          "guess": "DEACON",
+          "reasoning": "The definition is 'clergyman', and the wordplay suggests a hidden or secretive action, possibly 'confession'. The answer could be a type of clergyman related to confessions.",
+          "outcome": "solved",
+          "hintsUsed": 3,
+          "letters": "_ E _ _ _ N",
+          "hints": [
+            "[definition] The definition part of the clue is 'clergyman'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> _ E _ _ _ N"
+        }
+      ]
+    },
+    {
+      "model": "openai/gpt-4o",
+      "clue": "Sketched lover's butt in the morning",
+      "enumeration": "(5)",
+      "answer": "DRAWN",
+      "wordLengths": [
+        5
+      ],
+      "definition": "Sketched",
+      "par": 2,
+      "solved": true,
+      "hintsUsed": 0,
+      "guessesUsed": 1,
+      "parResult": "below",
+      "reward": 1.0,
+      "hintOrder": [],
+      "steps": [
+        {
+          "decision": "guess",
+          "guess": "DRAWN",
+          "reasoning": "The definition is likely \"sketched,\" and \"lover's butt in the morning\" could be wordplay. \"Lover's butt\" might refer to the last letter of \"lover,\" which is \"R,\" and \"in the morning\" could be \"AM,\" forming the word \"DRAWN.\"",
+          "outcome": "solved",
+          "hintsUsed": 0,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        }
+      ]
+    },
+    {
+      "model": "openai/gpt-4o",
+      "clue": "Translated legal document about fish",
+      "enumeration": "(7)",
+      "answer": "DECODED",
+      "wordLengths": [
+        7
+      ],
+      "definition": "Translated",
+      "par": 3,
+      "solved": true,
+      "hintsUsed": 5,
+      "guessesUsed": 1,
+      "parResult": "above",
+      "reward": 0.2,
+      "hintOrder": [
+        "definition",
+        "letter",
+        "letter",
+        "letter",
+        "letter"
+      ],
+      "steps": [
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is likely \"Translated\" or \"fish\", and \"about\" suggests a container or reversal. \"Legal document\" could be \"deed\", and \"about fish\" might involve a reversal or anagram.",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is 'Translated', and the wordplay involves a 'legal document' and 'fish'. 'Legal document' could be 'deed', and 'about' suggests a container or reversal. 'Fish' might be 'cod', so 'deed' around 'cod' could form a word meaning 'translated'.",
+          "outcome": "hint",
+          "hintsUsed": 2,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'Translated'"
+          ],
+          "wrong": [],
+          "feedback": "Hint (definition): The definition part of the clue is 'Translated'"
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is 'Translated', and the wordplay involves a 'legal document' and 'fish'. The word 'legal document' could refer to 'deed', and 'about' suggests a container or reversal, possibly involving a fish like 'eel'.",
+          "outcome": "hint",
+          "hintsUsed": 3,
+          "letters": "_ E _ _ _ _ _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Translated'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> _ E _ _ _ _ _"
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The wordplay involves a legal document 'about' fish, suggesting a container or charade. 'About' often indicates 'RE', and 'fish' could be 'COD', forming 'RECOD' which doesn't fit, so I need more information.",
+          "outcome": "hint",
+          "hintsUsed": 4,
+          "letters": "_ E _ O _ _ _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Translated'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> _ E _ O _ _ _"
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is 'Translated', and the wordplay involves a 'legal document' about 'fish'. The word 'legal document' could refer to 'decree', and 'about' can be 'RE', so 'decree' around 'RE' could form the word 'DECREED', but it doesn't fit the pattern. I need more information.",
+          "outcome": "hint",
+          "hintsUsed": 5,
+          "letters": "_ E _ O _ E _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Translated'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> _ E _ O _ E _"
+        },
+        {
+          "decision": "guess",
+          "guess": "DECODED",
+          "reasoning": "The wordplay involves a legal document ('deed') around a fish ('cod'), forming the word 'decoded', which fits the definition 'translated'.",
+          "outcome": "solved",
+          "hintsUsed": 5,
+          "letters": "_ E _ O _ E D",
+          "hints": [
+            "[definition] The definition part of the clue is 'Translated'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> _ E _ O _ E D"
+        }
+      ]
+    },
+    {
+      "model": "openai/gpt-4o",
+      "clue": "US agency holds faceless author to certain standards",
+      "enumeration": "(8)",
+      "answer": "CRITERIA",
+      "wordLengths": [
+        8
+      ],
+      "definition": "certain standards",
+      "par": 4,
+      "solved": true,
+      "hintsUsed": 0,
+      "guessesUsed": 1,
+      "parResult": "below",
+      "reward": 1.0,
+      "hintOrder": [],
+      "steps": [
+        {
+          "decision": "guess",
+          "guess": "CRITERIA",
+          "reasoning": "The definition is likely \"to certain standards\", and the wordplay involves \"US agency\" holding \"faceless author\". The US agency could be \"CIA\", and \"faceless author\" could be \"writer\" without the first letter, giving \"riter\", which fits inside \"CIA\" to form \"CRITERIA\".",
+          "outcome": "solved",
+          "hintsUsed": 0,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        }
+      ]
+    },
+    {
+      "model": "openai/gpt-4o",
+      "clue": "Unit of Literature / Unit of History",
+      "enumeration": "(3)",
+      "answer": "ERA",
+      "wordLengths": [
+        3
+      ],
+      "definition": "Unit of History",
+      "par": 1,
+      "solved": true,
+      "hintsUsed": 0,
+      "guessesUsed": 1,
+      "parResult": "below",
+      "reward": 1.0,
+      "hintOrder": [],
+      "steps": [
+        {
+          "decision": "guess",
+          "guess": "ERA",
+          "reasoning": "The clue suggests a unit that is common to both literature and history, which could be a \"ERA\" as it fits both contexts and the enumeration.",
+          "outcome": "solved",
+          "hintsUsed": 0,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        }
+      ]
+    },
+    {
+      "model": "openai/gpt-4o",
+      "clue": "Want diamond and heart combination",
+      "enumeration": "(6)",
+      "answer": "DEARTH",
+      "wordLengths": [
+        6
+      ],
+      "definition": "Want",
+      "par": 3,
+      "solved": true,
+      "hintsUsed": 4,
+      "guessesUsed": 3,
+      "parResult": "above",
+      "reward": 0.2,
+      "hintOrder": [
+        "definition",
+        "letter",
+        "letter",
+        "letter"
+      ],
+      "steps": [
+        {
+          "decision": "guess",
+          "guess": "DEMAND",
+          "reasoning": "The definition is likely \"want,\" and the wordplay involves \"diamond\" (D) and \"heart\" (middle letter) of \"combination\" (B), forming the word \"DEMAND.\"",
+          "outcome": "wrong",
+          "hintsUsed": 0,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition part of the clue is likely \"want,\" and the wordplay involves \"diamond\" and \"heart,\" which could refer to the letters D and H. Combining these might lead to a word meaning \"want.\"",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [
+            "DEMAND"
+          ],
+          "feedback": "'DEMAND' is not correct. You have guessed: DEMAND. Try another answer, or reply HINT."
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is 'Want', and the wordplay involves 'diamond' and 'heart'. 'Diamond' could be 'D', and 'heart' could refer to the middle letter of a word. I need more information to solve this.",
+          "outcome": "hint",
+          "hintsUsed": 2,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'Want'"
+          ],
+          "wrong": [
+            "DEMAND"
+          ],
+          "feedback": "Hint (definition): The definition part of the clue is 'Want'"
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is 'Want', and the wordplay involves 'diamond' and 'heart'. 'Diamond' could be 'D', and 'heart' could refer to the middle letter of a word. I need more information to solve this.",
+          "outcome": "hint",
+          "hintsUsed": 3,
+          "letters": "_ _ A _ _ _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Want'"
+          ],
+          "wrong": [
+            "DEMAND"
+          ],
+          "feedback": "Letter revealed -> _ _ A _ _ _"
+        },
+        {
+          "decision": "guess",
+          "guess": "DESIRE",
+          "reasoning": "The definition is \"Want\" and the wordplay involves \"diamond\" (D) and \"heart\" (middle letter). The answer could be \"DESIRE\".",
+          "outcome": "wrong",
+          "hintsUsed": 3,
+          "letters": "D _ A _ _ _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Want'"
+          ],
+          "wrong": [
+            "DEMAND"
+          ],
+          "feedback": "Letter revealed -> D _ A _ _ _"
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is \"Want\" and the wordplay involves \"diamond\" and \"heart\". \"Diamond\" can be abbreviated as \"D\" and \"heart\" can refer to the middle letter of a word, but I need more information to solve this.",
+          "outcome": "hint",
+          "hintsUsed": 4,
+          "letters": "D _ A _ _ _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Want'"
+          ],
+          "wrong": [
+            "DEMAND",
+            "DESIRE"
+          ],
+          "feedback": "'DESIRE' is not correct. You have guessed: DEMAND, DESIRE. Try another answer, or reply HINT."
+        },
+        {
+          "decision": "guess",
+          "guess": "DEARTH",
+          "reasoning": "The definition is \"Want\" and the wordplay involves \"diamond\" (D) and \"heart\" (middle letter). The answer could be \"DEARTH\", which means a lack or want of something.",
+          "outcome": "solved",
+          "hintsUsed": 4,
+          "letters": "D _ A R _ _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Want'"
+          ],
+          "wrong": [
+            "DEMAND",
+            "DESIRE"
+          ],
+          "feedback": "Letter revealed -> D _ A R _ _"
+        }
+      ]
+    },
+    {
+      "model": "openai/gpt-4o",
       "clue": "Wow , a child's puzzle !",
       "enumeration": "(5)",
       "answer": "AMAZE",
@@ -1598,16 +4051,96 @@
       "definition": "Wow",
       "par": 2,
       "solved": true,
-      "hintsUsed": 0,
+      "hintsUsed": 2,
       "guessesUsed": 2,
-      "parResult": "below",
-      "reward": 1.0,
-      "hintOrder": [],
+      "parResult": "at",
+      "reward": 0.6,
+      "hintOrder": [
+        "definition",
+        "letter"
+      ],
       "steps": [
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The clue likely has \"Wow\" as the definition, and \"a child's puzzle\" could be the wordplay. A common 5-letter word for a child's puzzle is \"MAZES\", which also fits the definition of \"Wow\" as an expression of amazement.",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
         {
           "decision": "guess",
           "guess": "MAZES",
-          "reasoning": "The clue likely uses a double definition, where \"Wow\" and \"a child's puzzle\" both point to the same answer. A common word that fits both definitions is \"MAZES\".",
+          "reasoning": "The definition is 'Wow', and the wordplay might involve a common child's puzzle. A common 5-letter child's puzzle is 'MAZES', which can also be an expression of amazement or 'Wow'.",
+          "outcome": "wrong",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'Wow'"
+          ],
+          "wrong": [],
+          "feedback": "Hint (definition): The definition part of the clue is 'Wow'"
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is 'Wow', and the wordplay might involve a child's puzzle. I need more information to decode the wordplay part.",
+          "outcome": "hint",
+          "hintsUsed": 2,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'Wow'"
+          ],
+          "wrong": [
+            "MAZES"
+          ],
+          "feedback": "'MAZES' is not correct. You have guessed: MAZES. Try another answer, or reply HINT."
+        },
+        {
+          "decision": "guess",
+          "guess": "AMAZE",
+          "reasoning": "The definition is \"Wow\" and the wordplay suggests a child's puzzle. The answer could be a word that means both \"Wow\" and relates to a child's puzzle.",
+          "outcome": "solved",
+          "hintsUsed": 2,
+          "letters": "A _ _ _ _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Wow'"
+          ],
+          "wrong": [
+            "MAZES"
+          ],
+          "feedback": "Letter revealed -> A _ _ _ _"
+        }
+      ]
+    },
+    {
+      "model": "openai/gpt-4o",
+      "clue": "Zoom calling",
+      "enumeration": "(6)",
+      "answer": "CAREER",
+      "wordLengths": [
+        6
+      ],
+      "definition": "Zoom calling",
+      "par": 3,
+      "solved": true,
+      "hintsUsed": 3,
+      "guessesUsed": 11,
+      "parResult": "at",
+      "reward": 0.4,
+      "hintOrder": [
+        "definition",
+        "letter",
+        "letter"
+      ],
+      "steps": [
+        {
+          "decision": "guess",
+          "guess": "SPEEDY",
+          "reasoning": "The clue \"Zoom calling\" suggests a definition related to speed or movement, and \"calling\" could imply a homophone or a synonym for a call. The word \"Zoom\" itself can mean \"SPEEDY\".",
           "outcome": "wrong",
           "hintsUsed": 0,
           "letters": "",
@@ -1616,17 +4149,259 @@
           "feedback": ""
         },
         {
-          "decision": "guess",
-          "guess": "AMAZE",
-          "reasoning": "The clue likely has \"Wow\" as the definition, and \"a child's puzzle\" could be the wordplay. A common 5-letter word for \"Wow\" is \"AMAZE\".",
-          "outcome": "solved",
-          "hintsUsed": 0,
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The clue \"Zoom calling\" could imply a word related to speed or a type of call. I will take a hint to better understand the wordplay or definition.",
+          "outcome": "hint",
+          "hintsUsed": 1,
           "letters": "",
           "hints": [],
           "wrong": [
-            "MAZES"
+            "SPEEDY"
           ],
-          "feedback": "'MAZES' is not correct. You have guessed: MAZES. Try another answer, or reply HINT."
+          "feedback": "'SPEEDY' is not correct. You have guessed: SPEEDY. Try another answer, or reply HINT."
+        },
+        {
+          "decision": "guess",
+          "guess": "RAPID",
+          "reasoning": "The word \"RAPID\" can mean both \"zoom\" in the sense of moving quickly and \"calling\" in the sense of a quick communication or call.",
+          "outcome": "wrong",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [
+            "[definition] Both 'Zoom' and 'calling' are definitions. Find an answer that can mean both!"
+          ],
+          "wrong": [
+            "SPEEDY"
+          ],
+          "feedback": "Hint (definition): Both 'Zoom' and 'calling' are definitions. Find an answer that can mean both!"
+        },
+        {
+          "decision": "guess",
+          "guess": "RACING",
+          "reasoning": "The word \"Zoom\" and \"calling\" can both be synonymous with \"RACING,\" which fits the 6-letter requirement.",
+          "outcome": "wrong",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [
+            "[definition] Both 'Zoom' and 'calling' are definitions. Find an answer that can mean both!"
+          ],
+          "wrong": [
+            "SPEEDY",
+            "RAPID"
+          ],
+          "feedback": "'RAPID' is not correct. You have guessed: SPEEDY, RAPID. Try another answer, or reply HINT."
+        },
+        {
+          "decision": "guess",
+          "guess": "RUSHES",
+          "reasoning": "The word \"Zoom\" can mean \"RUSH\" as in moving quickly, and \"calling\" can also mean \"RUSH\" as in a strong urge or vocation.",
+          "outcome": "wrong",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [
+            "[definition] Both 'Zoom' and 'calling' are definitions. Find an answer that can mean both!"
+          ],
+          "wrong": [
+            "SPEEDY",
+            "RAPID",
+            "RACING"
+          ],
+          "feedback": "'RACING' is not correct. You have guessed: SPEEDY, RAPID, RACING. Try another answer, or reply HINT."
+        },
+        {
+          "decision": "guess",
+          "guess": "SKYPE",
+          "reasoning": "The word \"Zoom\" can mean to \"call\" or \"video call,\" which is also known as \"SKYPE.\"",
+          "outcome": "wrong",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [
+            "[definition] Both 'Zoom' and 'calling' are definitions. Find an answer that can mean both!"
+          ],
+          "wrong": [
+            "SPEEDY",
+            "RAPID",
+            "RACING",
+            "RUSHES"
+          ],
+          "feedback": "'RUSHES' is not correct. You have guessed: SPEEDY, RAPID, RACING, RUSHES. Try another answer, or reply HINT."
+        },
+        {
+          "decision": "guess",
+          "guess": "PHONED",
+          "reasoning": "The word \"Zoom\" and \"calling\" can both be associated with the word \"PHONED\", as in making a call or zooming in on a call.",
+          "outcome": "wrong",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [
+            "[definition] Both 'Zoom' and 'calling' are definitions. Find an answer that can mean both!"
+          ],
+          "wrong": [
+            "SPEEDY",
+            "RAPID",
+            "RACING",
+            "RUSHES",
+            "SKYPE"
+          ],
+          "feedback": "'SKYPE' is not correct. You have guessed: SPEEDY, RAPID, RACING, RUSHES, SKYPE. Try another answer, or reply HINT."
+        },
+        {
+          "decision": "guess",
+          "guess": "RINGING",
+          "reasoning": "The word \"Zoom\" can mean to \"call\" in the context of a video call, and \"calling\" can also mean \"RINGING\" as in a phone ringing.",
+          "outcome": "wrong",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [
+            "[definition] Both 'Zoom' and 'calling' are definitions. Find an answer that can mean both!"
+          ],
+          "wrong": [
+            "SPEEDY",
+            "RAPID",
+            "RACING",
+            "RUSHES",
+            "SKYPE",
+            "PHONED"
+          ],
+          "feedback": "'PHONED' is not correct. You have guessed: SPEEDY, RAPID, RACING, RUSHES, SKYPE, PHONED. Try another answer, or reply HINT."
+        },
+        {
+          "decision": "guess",
+          "guess": "DIALS",
+          "reasoning": "The word \"ZOOM\" can mean to \"call\" someone, especially in the context of video calls, and \"calling\" can also refer to \"RINGING\" as in a phone call. However, since \"RINGING\" was incorrect, another word that fits both definitions is \"DIALS\".",
+          "outcome": "wrong",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [
+            "[definition] Both 'Zoom' and 'calling' are definitions. Find an answer that can mean both!"
+          ],
+          "wrong": [
+            "SPEEDY",
+            "RAPID",
+            "RACING",
+            "RUSHES",
+            "SKYPE",
+            "PHONED",
+            "RINGING"
+          ],
+          "feedback": "'RINGING' is not correct. You have guessed: SPEEDY, RAPID, RACING, RUSHES, SKYPE, PHONED, RINGING. Try another answer, or reply HINT."
+        },
+        {
+          "decision": "guess",
+          "guess": "SKYPED",
+          "reasoning": "The word \"Zoom\" can mean to \"call\" or \"video call,\" and \"calling\" can also refer to \"video call.\" The word \"SKYPED\" fits both definitions and is six letters long.",
+          "outcome": "wrong",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [
+            "[definition] Both 'Zoom' and 'calling' are definitions. Find an answer that can mean both!"
+          ],
+          "wrong": [
+            "SPEEDY",
+            "RAPID",
+            "RACING",
+            "RUSHES",
+            "SKYPE",
+            "PHONED",
+            "RINGING",
+            "DIALS"
+          ],
+          "feedback": "'DIALS' is not correct. You have guessed: SPEEDY, RAPID, RACING, RUSHES, SKYPE, PHONED, RINGING, DIALS. Try another answer, or reply HINT."
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The word \"Zoom\" can mean to \"call\" or \"video call,\" and \"calling\" can also mean \"video call.\" The word \"SKYPED\" was incorrect, so another word that fits both definitions is \"PHONED.\"",
+          "outcome": "hint",
+          "hintsUsed": 2,
+          "letters": "",
+          "hints": [
+            "[definition] Both 'Zoom' and 'calling' are definitions. Find an answer that can mean both!"
+          ],
+          "wrong": [
+            "SPEEDY",
+            "RAPID",
+            "RACING",
+            "RUSHES",
+            "SKYPE",
+            "PHONED",
+            "RINGING",
+            "DIALS",
+            "SKYPED"
+          ],
+          "feedback": "'SKYPED' is not correct. You have guessed: SPEEDY, RAPID, RACING, RUSHES, SKYPE, PHONED, RINGING, DIALS, SKYPED. Try another answer, or reply HINT."
+        },
+        {
+          "decision": "guess",
+          "guess": "CALLER",
+          "reasoning": "The word \"Zoom\" and \"calling\" both suggest the answer could be a term related to communication or speed. Given the revealed letters, \"CALLER\" fits both definitions and the pattern.",
+          "outcome": "wrong",
+          "hintsUsed": 2,
+          "letters": "_ A _ _ _ _",
+          "hints": [
+            "[definition] Both 'Zoom' and 'calling' are definitions. Find an answer that can mean both!"
+          ],
+          "wrong": [
+            "SPEEDY",
+            "RAPID",
+            "RACING",
+            "RUSHES",
+            "SKYPE",
+            "PHONED",
+            "RINGING",
+            "DIALS",
+            "SKYPED"
+          ],
+          "feedback": "Letter revealed -> _ A _ _ _ _"
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The word \"Zoom\" can mean \"RACING\" or \"SPEEDY\", but those have been guessed. \"CALLING\" suggests \"PHONED\" or \"RINGING\", but those are also incorrect. I will take another hint to narrow it down further.",
+          "outcome": "hint",
+          "hintsUsed": 3,
+          "letters": "_ A _ _ _ _",
+          "hints": [
+            "[definition] Both 'Zoom' and 'calling' are definitions. Find an answer that can mean both!"
+          ],
+          "wrong": [
+            "SPEEDY",
+            "RAPID",
+            "RACING",
+            "RUSHES",
+            "SKYPE",
+            "PHONED",
+            "RINGING",
+            "DIALS",
+            "SKYPED",
+            "CALLER"
+          ],
+          "feedback": "'CALLER' is not correct. You have guessed: SPEEDY, RAPID, RACING, RUSHES, SKYPE, PHONED, RINGING, DIALS, SKYPED, CALLER. Try another answer, or reply HINT."
+        },
+        {
+          "decision": "guess",
+          "guess": "CAREER",
+          "reasoning": "The word \"Zoom\" can mean to move quickly, and \"calling\" can refer to a vocation or profession. The word \"CAREER\" fits both definitions and matches the letter pattern _A_E_ _.",
+          "outcome": "solved",
+          "hintsUsed": 3,
+          "letters": "_ A _ E _ _",
+          "hints": [
+            "[definition] Both 'Zoom' and 'calling' are definitions. Find an answer that can mean both!"
+          ],
+          "wrong": [
+            "SPEEDY",
+            "RAPID",
+            "RACING",
+            "RUSHES",
+            "SKYPE",
+            "PHONED",
+            "RINGING",
+            "DIALS",
+            "SKYPED",
+            "CALLER"
+          ],
+          "feedback": "Letter revealed -> _ A _ E _ _"
         }
       ]
     }
