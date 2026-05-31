@@ -4,8 +4,16 @@
     "model": "openai/gpt-4o"
   },
   {
+    "file": "openai-gpt-4o-cloud5.json",
+    "model": "openai/gpt-4o (cloud ×5)"
+  },
+  {
     "file": "gemini-gemini-3-1-flash-lite.json",
     "model": "gemini/gemini-3.1-flash-lite"
+  },
+  {
+    "file": "gemini-3-1-flash-lite-cloud5.json",
+    "model": "gemini/gemini-3.1-flash-lite (cloud ×5)"
   },
   {
     "file": "gemini-gemini-2-5-flash-lite.json",
