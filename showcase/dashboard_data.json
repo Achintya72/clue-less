@@ -1,6 +1,1138 @@
 {
   "episodes": [
     {
+      "model": "anthropic/claude-sonnet-4-6",
+      "clue": "Apprehend $0.01 and $1.00 defaced",
+      "enumeration": "(6)",
+      "answer": "COLLAR",
+      "wordLengths": [
+        6
+      ],
+      "definition": "Apprehend",
+      "par": 3,
+      "solved": true,
+      "hintsUsed": 0,
+      "guessesUsed": 1,
+      "parResult": "below",
+      "reward": 1.0,
+      "hintOrder": [],
+      "steps": [
+        {
+          "decision": "guess",
+          "guess": "COLLAR",
+          "reasoning": "\"Apprehend\" is the definition (to catch/arrest). Wordplay: $0.01 = CENT, $1.00 = DOLLAR \u2192 \"defaced\" means remove the first letter \u2192 CENT defaced = ENT, DOLLAR defaced = OLLAR? That doesn't work. Try: $0.01 = PENNY, $1.00 = BUCK \u2192 defaced removes first letters \u2192 ENNY + UCK? No. Try: $0.01 = CENT, $1.00 = BUCK \u2192 defaced = remove face (first letter) \u2192 ENT + UCK = ENTUCK? No. Try COLLAR: $0.01 = C (cent), $1.00 = DOLLAR defaced = OLLAR \u2192 C + OLLAR = COLLAR (to collar = to apprehend). Yes!",
+          "outcome": "solved",
+          "hintsUsed": 0,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        }
+      ]
+    },
+    {
+      "model": "anthropic/claude-sonnet-4-6",
+      "clue": "Bedroom suffering lack of excitement",
+      "enumeration": "(7)",
+      "answer": "BOREDOM",
+      "wordLengths": [
+        7
+      ],
+      "definition": "lack of excitement",
+      "par": 3,
+      "solved": true,
+      "hintsUsed": 0,
+      "guessesUsed": 1,
+      "parResult": "below",
+      "reward": 1.0,
+      "hintOrder": [],
+      "steps": [
+        {
+          "decision": "guess",
+          "guess": "BOREDOM",
+          "reasoning": "\"Bedroom\" = BED, \"suffering lack of excitement\" = BOREDOM... wait. BED + ROOM = BEDROOM, but that's the definition. Let me reconsider: \"lack of excitement\" = BOREDOM (7 letters). \"Bedroom\" could be wordplay: BED + ROOM = BEDROOM, and the definition is \"suffering lack of excitement\"? No - BOREDOM is 7 letters and means lack of excitement, but how does \"bedroom\" give BOREDOM? BED + ROM... hmm. Actually BOREDOM: BORE + DOM. Or maybe it's a charade: BED = cot, ROOM = space... Let me think differently. \"Bedroom suffering\" - anagram of BEDROOM = BOREDOM! BEDROOM anagrammed is BOREDOM (B,E,D,R,O,O,M -> B,O,R,E,D,O,M). Yes! \"Suffering\" is the anagram indicator.",
+          "outcome": "solved",
+          "hintsUsed": 0,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        }
+      ]
+    },
+    {
+      "model": "anthropic/claude-sonnet-4-6",
+      "clue": "Beer emptied right on guard",
+      "enumeration": "(5)",
+      "answer": "ALERT",
+      "wordLengths": [
+        5
+      ],
+      "definition": "on guard",
+      "par": 2,
+      "solved": true,
+      "hintsUsed": 1,
+      "guessesUsed": 1,
+      "parResult": "below",
+      "reward": 0.8,
+      "hintOrder": [
+        "definition"
+      ],
+      "steps": [
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "\"Beer emptied\" = BR (outer letters of BeeR), \"right\" = R, \"on guard\" = the definition. BR + R = BRR... hmm. Let me think differently. \"Beer emptied\" = BE (first and last letters? No, \"emptied\" means remove interior = BR). Actually \"beer emptied\" = B_R (outer letters = B and R). \"Right\" = R. So B + R + R? That's only 3. Let me try: \"guard\" is the definition (5 letters). \"Beer emptied\" = BR, \"right\" = R, on = placement indicator. BRER? No. Maybe \"beer emptied\" = just the empty shell = BR, and we need a charade: BRER + ? No. SENTRY? No. Let me try: WARDEN? No. GUARD = 5 letters. \"Beer emptied right\" = B(R)R with R inside? BRR? Or maybe \"beer\" = ALE, \"emptied\" = AE (outer letters), \"right\" = R \u2192 AER? AERIE? No. Or LAGER emptied = LR, + R = LRR. Hmm. Try: on guard = ALERT (5). \"Beer emptied\" = BR, \"right\" = R... ALERT doesn't fit. Maybe SOBER? No. WATCH? \"Beer emptied\" = BR, right = R... BRRR. Let me try GUARD itself - charade: G+UARD? \"Beer emptied\" could be ALE\u2192AE, right=R, on=O \u2192 AERO? N",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "guess",
+          "guess": "ALERT",
+          "reasoning": "\"Beer emptied\" = BR (outer letters of BeeR), \"right\" = R, so BR + R = BRR? Let me think differently. \"Beer emptied\" = B_R (first and last letters = BR), \"right\" = R. \"On guard\" = ALERT, WARY, READY... Actually \"on guard\" = ALERT (5). Let me try: \"Beer\" = ALE, \"emptied\" removes middle = AE? No. \"Beer emptied\" could mean ALE with middle removed = AE, plus R = AER? Or \"beer\" = LAGER, emptied = LR. Hmm. ALERT: ALE (beer) + R (right) + T? No T. WARY (4). READY (5). On guard = ALERT = ALE + R + T... no. Wait: ALE (beer) + R (right) = ALER, need one more. Actually \"emptied\" might mean take outer letters: B_R from BEER = BR, then + R = BRR. Let me try ALERT: A-L-E-R-T. ALE (beer) + R (right) + T (time)? The clue has no time indicator. Or GUARD itself? No. WIRED? TENSE? On guard = CHARY (5)? Or LEERY? ALE + R + T... ALERT seems right: ALE (beer) + R (right) + T... but where's T? Maybe \"emptied\" gives the outer letters of something. \"Beer emptied\" = BR, R = right, on guard = BRR+? I'll go with A",
+          "outcome": "solved",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'on guard'"
+          ],
+          "wrong": [],
+          "feedback": "Hint (definition): The definition part of the clue is 'on guard'"
+        }
+      ]
+    },
+    {
+      "model": "anthropic/claude-sonnet-4-6",
+      "clue": "Captain embraces steamboat noises",
+      "enumeration": "(5)",
+      "answer": "CHUGS",
+      "wordLengths": [
+        5
+      ],
+      "definition": "steamboat noises",
+      "par": 2,
+      "solved": true,
+      "hintsUsed": 3,
+      "guessesUsed": 2,
+      "parResult": "above",
+      "reward": 0.4,
+      "hintOrder": [
+        "definition",
+        "letter",
+        "letter"
+      ],
+      "steps": [
+        {
+          "decision": "guess",
+          "guess": "TOOTS",
+          "reasoning": "\"Captain\" = SKIPPER, but that's 7 letters. \"Captain\" could be CAP. Steamboat noises = TOOTS. \"Captain embraces\" = container: CAP around TOOTS? No. Let me think differently. \"Steamboat noises\" = TOOTS (5 letters) - that's the definition. \"Captain embraces\" = wordplay: Captain = SKIP, embraces = contains... SKIP + something? Or \"Captain\" = CAP, embraces = contains, steamboat = SS (steamship)... TOOTS fits as the answer directly. Wait - \"Captain embraces steamboat noises\" - Captain = SKIPPER contains SS? No. TOOTS = steamboat noises, and CAP+TOOT+S? Captain=CAP, embraces=contains, steamboat=SS... CAPSS? Let me try: HOOTS? No. TOOTS seems right as steamboat noises, and wordplay: Captain = SKIP, but TOOTS... Actually CAP(TOOT)S - Captain=CAPS embracing TOOT (steamboat noise)? CATOOTS? No. TOOTS = 5 letters, definition could be \"Captain\" and wordplay gives TOOTS from \"embraces steamboat noises.\"",
+          "outcome": "wrong",
+          "hintsUsed": 0,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "\"Captain embraces steamboat noises\" \u2014 Captain = SKIPPER, but that's too long. Let me think: \"steamboat noises\" = TOOTS (wrong). Captain could be CAP, and steamboat noises = TOOTS... or \"embraces\" is a container. Captain = SKIP, steamboat noises = HONKS? Or \"Captain\" = CAP, embraces = contains, steamboat noises = HOOTS \u2192 CAP around HOOTS? No. Let me try: SKIPPER embraces... or \"Captain\" = CAP, steamboat = SS, noises = TOOTS. Wait \u2014 \"embraces\" means contains: Captain (CAP) embraces (contains) steamboat noises (TOOTS)? That gives CATOOTS. Hmm. Maybe \"steamboat noises\" = HONKS, and Captain = SKIP... SKEINS? Let me try HOOTS inside something. Captain = SKIP, embraces HOOTS = SKOOTS? Or Captain = CAP contains HONK = CAHONK? No. Maybe TOOT inside SKIP = SKTOOIP? Let me try HINT.",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [
+            "TOOTS"
+          ],
+          "feedback": "'TOOTS' is not correct. You have guessed: TOOTS. Try another answer, or reply HINT."
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "\"Captain embraces steamboat noises\" \u2014 Captain = SKIPPER? No. Captain = CAP or CAPT. \"Embraces\" is a container indicator. Steamboat noises = TOOTS (already wrong). Let me think: HOOTS? HONKS? TOOT is one noise... PUFFS? HUFFS? Captain = CAP, embraces something... CAP + T + S? CAPOTS? Or Captain = SKIP, embraces... SKIPS? Wait - \"steamboat noises\" as definition, 5 letters. CHUFFS? PUFFS? Captain = CAP, embraces = contains... TOOTS was wrong. HOOTS - steamboats hoot. Captain = CAP, embraces OOT? No. Let me try: Captain = SKIPPER, but that's too long. What about TOOTLE? No, 6 letters. HONKS? Captain = CAP, embraces HON? CAHONS? Hmm. Let me take a hint.",
+          "outcome": "hint",
+          "hintsUsed": 2,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'steamboat noises'"
+          ],
+          "wrong": [
+            "TOOTS"
+          ],
+          "feedback": "Hint (definition): The definition part of the clue is 'steamboat noises'"
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "\"Captain embraces\" = SKIPPER contains/embraces something. \"Steamboat noises\" = CHUFFS? But we have _H___. Captain = CAP, embraces = contains. \"Steamboat noises\" could be PUFFS. CAP around... hmm. Let me think: Captain = SKIP, embraces = contains. WHOOPS - we have _H___. \"Steamboat noises\" = CHOOS? No. CHUFFS is 6 letters. What about WHOOS? Captain = CAP, embraces steamboat noises... TOOT is inside CAPTAIN? No. Wait - SKIPPER embraces = SKI(PP)ER... PUFFS? No. _H___ - CHOOS, WHOOPS... WHIRRS? No. Let me try: CAP + T + AIN... hidden word? \"Captain embraces steamboat\" - hidden in \"captain embraces\": PTAINE... CHUFFS no. WHOOSH? 6 letters. PUFFS - P is in captain. Hmm, _H___ = CHOOS, PHEWS... THUMPS? No. CHOOS = steamboat noises? WHOOSH minus one... PHOOTS? CHUFFS=6. What about TOOTS inside something - already wrong. PUFFS: _H___ doesn't fit. WHOOS? W-H-O-O-S = 5 letters, _H___ fits! Captain = SKIPPER, embraces = contains WHOOS? Not obvious. Let me just HINT.",
+          "outcome": "hint",
+          "hintsUsed": 3,
+          "letters": "_ H _ _ _",
+          "hints": [
+            "[definition] The definition part of the clue is 'steamboat noises'"
+          ],
+          "wrong": [
+            "TOOTS"
+          ],
+          "feedback": "Letter revealed -> _ H _ _ _"
+        },
+        {
+          "decision": "guess",
+          "guess": "CHUGS",
+          "reasoning": "\"Captain embraces steamboat noises\" - Captain = SKIPPER, but that's too long. Captain = CAP or SKIP. Steamboat noises = CHUGS. \"Captain embraces\" = container: CAP around something? Letters are _H_G_ - CHUGS fits C_H_U_G_S... wait, revealed is _H_G_ (5 letters). CHUGS = C-H-U-G-S, that's _H_G_ with positions 1=C, 2=H, 3=U, 4=G, 5=S. That matches _H_G_! And CHUGS are steamboat noises. But how does \"Captain embraces\" work? CAP contains HUG = CAHUGP? No. Maybe \"Captain\" = SKIP, embraces = contains HUG... SKIPHUG? No. Perhaps the wordplay: Captain = CAP, embraces (contains) HUG = C(HUG)S? Wait, CHUGS = C + HUG + S, where S comes from... or CAP contains HUG \u2192 CAHUGP? Hmm. Actually CHUGS: the definition is \"steamboat noises\" and wordplay might be CAP around HUG = CAHUGP... Let me just guess CHUGS since it fits the letters and definition.",
+          "outcome": "solved",
+          "hintsUsed": 3,
+          "letters": "_ H _ G _",
+          "hints": [
+            "[definition] The definition part of the clue is 'steamboat noises'"
+          ],
+          "wrong": [
+            "TOOTS"
+          ],
+          "feedback": "Letter revealed -> _ H _ G _"
+        }
+      ]
+    },
+    {
+      "model": "anthropic/claude-sonnet-4-6",
+      "clue": "Champions reject slice of cheesecake",
+      "enumeration": "(4)",
+      "answer": "ACES",
+      "wordLengths": [
+        4
+      ],
+      "definition": "Champions",
+      "par": 2,
+      "solved": true,
+      "hintsUsed": 0,
+      "guessesUsed": 1,
+      "parResult": "below",
+      "reward": 1.0,
+      "hintOrder": [],
+      "steps": [
+        {
+          "decision": "guess",
+          "guess": "ACES",
+          "reasoning": "\"Champions\" = ACES; \"reject\" = reversal indicator; \"slice of cheesecake\" = C (first letter). Let me think differently: \"Champions\" could be the definition. \"Reject slice of cheesecake\" \u2014 \"slice of cheesecake\" = C, and \"reject\" means reverse. Or: hidden word in \"reject slice\" = ECSL? No. Try: ACES reversed = SECA. Or \"reject\" = NAE? Let me think: \"slice of cheesecake\" = C, \"reject\" = reversal, \"Champions\" = definition. ACES reversed is SECA. Alternatively, \"reject\" could mean to turn back \u2014 ACES backwards = SECA. Hmm. Or perhaps \"Champions\" = TOPS, and wordplay involves \"reject slice of cheesecake.\" \"Reject\" = SPURN minus something? Let me try: hidden word in \"reject slice of cheesecake\" \u2014 r-E-C-S-l... RECS? No. ACES is hidden in \"cheesecAkES\" reversed? \"cheesecake\" reversed = EKACEESEEHC, no. Actually \"slice of cheesecake\" = EESE? No, just C. \"Champions reject\" = ACES + reversal indicator... ECSA? I'll try ACES.",
+          "outcome": "solved",
+          "hintsUsed": 0,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        }
+      ]
+    },
+    {
+      "model": "anthropic/claude-sonnet-4-6",
+      "clue": "Doubled testosterone to enter period of growth for glutes",
+      "enumeration": "(6)",
+      "answer": "BOTTOM",
+      "wordLengths": [
+        6
+      ],
+      "definition": "glutes",
+      "par": 3,
+      "solved": true,
+      "hintsUsed": 0,
+      "guessesUsed": 1,
+      "parResult": "below",
+      "reward": 1.0,
+      "hintOrder": [],
+      "steps": [
+        {
+          "decision": "guess",
+          "guess": "BOTTOM",
+          "reasoning": "\"Doubled testosterone\" = T+T = TT; \"period of growth\" = BOOM (or maybe SURGE?). Let me think: glutes = BUNS or GLUTES. \"Testosterone\" abbreviated = T, doubled = TT. \"Period of growth\" = BOOM. TT inside BOOM? No. Let me try: \"enter\" = insertion indicator. TT enters BOOM \u2192 B(TT)OOM = BTOOM? No. Try \"period of growth\" = ERA or AGE or BOOM. Actually \"glutes\" = BUTTOCKS. BUTT + OC? Or BUTTS? Wait - \"doubled testosterone\" = TT, enters \"period of growth\" = BOOM \u2192 BTOOM? No. Let me try: period of growth = SURGE, or SPURT. BUTT + OC... Actually BUTTOCK = BUTT + OCK? Hmm. \"Glutes\" as definition, 6 letters = GLUTES itself? No. HAUNCHES? No. Let me try: T doubled = TT, \"period of growth\" = BOOM, TT enters BOOM = B(TT)OOM - no. Or SPURT: S(TT)URT? No. GROWTH PERIOD = TEENS? T+TEENS? GLUTEUS? 7 letters. CHEEKS? 6 letters - C+HEEKS with TT? Hmm. BOTTOM = 6 letters. BOO+TT+OM? No. Actually: TT inside BOOM = BTOOM. What about \"period of growth\" = RUSH? No. SURGE = 5. Let me try BUTTS = 5. GLUTES 6 lett",
+          "outcome": "solved",
+          "hintsUsed": 0,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        }
+      ]
+    },
+    {
+      "model": "anthropic/claude-sonnet-4-6",
+      "clue": "Every circuit in grand prix race",
+      "enumeration": "(6)",
+      "answer": "GALLOP",
+      "wordLengths": [
+        6
+      ],
+      "definition": "race",
+      "par": 3,
+      "solved": true,
+      "hintsUsed": 1,
+      "guessesUsed": 1,
+      "parResult": "below",
+      "reward": 0.8,
+      "hintOrder": [
+        "definition"
+      ],
+      "steps": [
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "\"Every circuit\" = LAP + EACH? Or \"every\" = EACH, \"circuit\" = LAP \u2192 EACHLAP? No. \"Grand prix race\" could be the definition. \"Every circuit\" = EACH LAP... but that's 7 letters. Wait - \"every\" = ALL, \"circuit\" = LAP \u2192 ALLAP? No. Or \"every\" = PER, \"circuit\" = LAP \u2192 PERLAP? No. Think: GRANDI? No. The definition might be \"grand prix race\" = COURSE? No. Or \"every circuit\" could be a charade: ALL + AP? Hmm. Actually \"every\" = EA, \"circuit\" = ROUND \u2192 EAROUND? No. Let me think: LAP + S = LAPS... \"every\" could hide something. GRANDI? Actually: \"grand prix race\" = COURSE (6)? Or SPRINT? Wait - could \"every circuit\" = EACH LAP \u2192 hidden? Or definition is \"every\" and wordplay is \"circuit in grand prix race\" \u2192 LAP inside GRAND PRIX \u2192 GRANDP... no. GRANDI? Actually LAP is inside \"grand prix\" \u2192 GRANDP... the letters G-R-A-N-D-P-R-I-X contain \"LAP\"? No. But \"circuit\" hidden \"in grand prix race\" \u2192 look for a word inside \"grand prix race\": G-R-A-N-D-P-R-I-X-R-A-C-E \u2192 PRICE? RACER? PRICER? XRACE? Actually: ",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "guess",
+          "guess": "GALLOP",
+          "reasoning": "\"Every circuit in grand prix\" - \"Every\" = ALL, \"circuit\" = LAP, \"grand prix\" = GP... or perhaps \"Every\" = ALL, and \"lap\" is a circuit. ALLLAP? Or maybe \"grand prix\" gives us something. Actually, \"Every\" = EACH, \"circuit\" = LAP... EACHLAP? No. Let me think: \"Every circuit\" = LAP + ALL? Or \"grand prix race\" is the definition = SPRINT? Wait, the definition is \"race\" - so the answer is a type of race. \"Every circuit in grand prix\" - hidden word? \"grand prix\" contains... no. Every = ALL, circuit = LAP \u2192 GALLOP? No. Every = PER, circuit = LAP \u2192 PERLA? Sprint is 6 letters. Or SLALOM? Let me think: \"Every\" = ALL, \"circuit\" = O (loop), \"grand prix\" = GP \u2192 ALLGPO? No. Actually GALLOP - GA(LL)OP? \"Every\" could be ALL, and \"circuit\" = LAP reversed = PAL... ALLPAL? Hmm. SPRINT = 6. Or maybe it's a charade: EACH + LAP = no. Wait - \"grand prix\" \u2192 GP, \"every\" \u2192 ALL, \"circuit\" \u2192 LAP \u2192 GALLOP: G(rand) + ALL + OP? No. GALLOP = GA+LL+OP... Let me try: every=ALL, circuit=LAP \u2192 ALLAP? No. GALLOP fits \"race\"",
+          "outcome": "solved",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'race'"
+          ],
+          "wrong": [],
+          "feedback": "Hint (definition): The definition part of the clue is 'race'"
+        }
+      ]
+    },
+    {
+      "model": "anthropic/claude-sonnet-4-6",
+      "clue": "Films Mexican blowing kiss goodbye ?",
+      "enumeration": "(6)",
+      "answer": "CINEMA",
+      "wordLengths": [
+        6
+      ],
+      "definition": "Films",
+      "par": 3,
+      "solved": true,
+      "hintsUsed": 3,
+      "guessesUsed": 1,
+      "parResult": "at",
+      "reward": 0.4,
+      "hintOrder": [
+        "definition",
+        "letter",
+        "letter"
+      ],
+      "steps": [
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "\"Films\" = MOVIES, \"Mexican blowing kiss goodbye\" - a Mexican goodbye kiss is \"ADIOS\", but let me think differently. \"Blowing kiss goodbye\" could be an anagram indicator. \"Mexican\" could give us letters. Actually, \"Films\" could be the definition. \"Mexican blowing kiss goodbye\" - ADIOS + ? No. Let me think: MOVIES (6). Or \"Films\" = REELS. \"Mexican blowing kiss goodbye\" - anagram of \"MEXICO\" minus something? Or \"kiss\" = X, \"goodbye\" = BYE, \"Mexican\" = anagram indicator... Actually TALKIES? No. \"Blowing\" = anagram indicator, \"kiss goodbye\" = XBYE? Hmm. MOVIES: M-O-V-I-E-S. \"Mexican\" = MEX, \"kiss\" = X, \"goodbye\" = CIAO/BYE/ADIOS. Wait - \"blowing kiss goodbye\" could be ADIEU (French). MOVIES anagram of something? Let me try: anagram of \"MEXICO\" = MOXIE + ? No. Actually \"Films\" might be wordplay: REELS. \"Mexican blowing kiss goodbye\" - ADIOS is Spanish goodbye, \"kiss\" = X... FLICKS (6)? \"Blowing kiss\" = SMACK... I'll try HINT.",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "\"Films\" is the definition. \"Mexican blowing kiss goodbye\" - \"Mexican\" could indicate Spanish. \"Blowing kiss goodbye\" - ADIOS is Spanish for goodbye, and a \"kiss\" is an X. So ADIOS + X? No, that's 6 letters: ADIOSX. Wait - \"blowing kiss\" could be an anagram indicator. \"Kiss goodbye\" = ADIEU or ADIOS. Let me think differently: \"Mexican blowing kiss goodbye\" - anagram of something? Or \"kiss\" = X, \"goodbye\" = BYE, \"Mexican\" = MEX... MOVIES? No. Films = TALKIES? No. Let me think: \"blowing\" as anagram indicator, anagram of \"kiss goodbye\" minus something? Or \"Mexican\" = EL, \"kiss\" = X, \"goodbye\" = BYE \u2192 ELXBYE? No. Films = RUSHES? REELS? TAKES? ADIEUX? Wait - \"kiss goodbye\" in French is ADIEU, plural ADIEUX (6 letters) - and \"Mexican blowing\" could be an anagram indicator with letters... Actually ADIEUX = films? No. Let me try: anagram of \"MEXICO\" + something? MOVIES has 6 letters - anagram of \"MEXICO\" + S? No. Actually \"Mexican\" could give MEX, \"blowing\" = anagram indicator, \"kiss\" = X, \"goo",
+          "outcome": "hint",
+          "hintsUsed": 2,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'Films'"
+          ],
+          "wrong": [],
+          "feedback": "Hint (definition): The definition part of the clue is 'Films'"
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "\"Films\" is the definition. \"Mexican blowing kiss goodbye\" - Mexican = ADIOS (goodbye in Spanish), but we need 6 letters with M in position 5. \"Blowing kiss goodbye\" could be an anagram indicator. ADIOS + M? Wait - the revealed letter is _ _ _ _ M _. \"Mexican\" could give us AZTEC or similar. \"Blowing kiss\" = MWAH? Let me think: MOVIES? No. The wordplay: \"Mexican blowing kiss goodbye\" - ADIOS is goodbye in Spanish/Mexican. \"Blowing kiss\" = SMACK? Films = CINEMA? No, 6 letters with M at position 5. CHARMS? No. Let me think: RUSHES (film rushes)? No M. FRAMES? F-R-A-M-E-S - M at position 4, not 5. DAILIES? 7 letters. RUSHES? No. REFILM? No. What about KISMET? No. \"Mexican blowing kiss goodbye\" - could be an anagram of letters. ADIOS + K (kiss) = KAIDOS? No. Or \"blowing\" is anagram indicator for \"Mexican kiss goodbye\" = ADIOS + X (kiss)? ADIOSX anagram = _ _ _ _ M _? Hmm. MOSAIX? No. What about SMACKS? No M at 5. CHARMS? No. THUMBS? No. Let me try: anagram of \"ADIOS\" + something = 6 letters",
+          "outcome": "hint",
+          "hintsUsed": 3,
+          "letters": "_ _ _ _ M _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Films'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> _ _ _ _ M _"
+        },
+        {
+          "decision": "guess",
+          "guess": "CINEMA",
+          "reasoning": "Films = CINEMA. \"Mexican blowing kiss goodbye\" - Mexican = ADIOS? No. Let me think: the pattern is _ _ N _ M _. CINEMA fits: C-I-N-E-M-A. \"Mexican blowing kiss goodbye\" - ADIOS is Mexican goodbye, and a kiss is X... CINEMA could be a charade: CI (?) + NEMA? Or anagram of \"Mexican\" minus some letters? Actually \"blowing\" suggests anagram - anagram of \"MEXICAN\" minus some letters? MEXICAN has 7 letters. But we need 6. Remove one letter... MEXICAN without X = MEICAN, anagram = CINEMA! Yes - \"Mexican blowing\" = anagram of MEXICAN without the kiss (X), giving CINEMA.",
+          "outcome": "solved",
+          "hintsUsed": 3,
+          "letters": "_ _ N _ M _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Films'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> _ _ N _ M _"
+        }
+      ]
+    },
+    {
+      "model": "anthropic/claude-sonnet-4-6",
+      "clue": "Guarded vehicle with experimental fuel",
+      "enumeration": "(7)",
+      "answer": "CAREFUL",
+      "wordLengths": [
+        7
+      ],
+      "definition": "Guarded",
+      "par": 3,
+      "solved": true,
+      "hintsUsed": 0,
+      "guessesUsed": 1,
+      "parResult": "below",
+      "reward": 1.0,
+      "hintOrder": [],
+      "steps": [
+        {
+          "decision": "guess",
+          "guess": "CAREFUL",
+          "reasoning": "\"Guarded vehicle\" suggests TANK (a guarded/armored vehicle), and \"experimental fuel\" could be ETHANOL or similar. But let me think differently: \"guarded\" = ESCORTED? Or perhaps this is a charade: \"guarded vehicle\" = ARMORED CAR? Let me think about TANKARD - a \"tank\" (vehicle) + \"ard\"? Or ETHANOL (7 letters) as experimental fuel with \"guarded vehicle\" as definition? Actually, TANKCAR? No. Let me try: ARMORED (7) = guarded vehicle with experimental fuel... BIOFUEL? Wait - CARPOOL? No. \"Guarded vehicle\" = ESCORT + ED? ESCORTED is 8. How about ARMORED = definition, and \"vehicle with experimental fuel\" = CAR + anagram of FUEL? CAR + FUEL anagram = CARFUEL... FUELCAR... hmm. TANKAGE? Let me try ETHANOL as experimental fuel... Actually \"experimental fuel\" could hint at PROTOTYPE or ETHANOL. TANKCAR is 7 but not a word. What about ARMORED being the answer with \"guarded\" as def and \"vehicle with experimental fuel\" = ARM + OR + ED? No. Let me try: GUARDED = definition, \"vehicle with experimental",
+          "outcome": "solved",
+          "hintsUsed": 0,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        }
+      ]
+    },
+    {
+      "model": "anthropic/claude-sonnet-4-6",
+      "clue": "Help gambler to disregard odds",
+      "enumeration": "(4)",
+      "answer": "ABET",
+      "wordLengths": [
+        4
+      ],
+      "definition": "Help",
+      "par": 2,
+      "solved": true,
+      "hintsUsed": 0,
+      "guessesUsed": 1,
+      "parResult": "below",
+      "reward": 1.0,
+      "hintOrder": [],
+      "steps": [
+        {
+          "decision": "guess",
+          "guess": "ABET",
+          "reasoning": "\"Disregard odds\" means take only the odd-positioned letters (1st, 3rd, 5th...) of \"gambler\" \u2192 G, M, L, R \u2192 GMLR? That doesn't work. Let me try: \"odds\" of \"gambler\" = G, M, L, R. Alternatively, \"disregard odds\" could mean remove odd letters, leaving even letters: A, B, E \u2192 not 4 letters. Wait \u2014 \"Help\" is the definition (AID, ABET, ASSIST). \"Gambler\" with odds disregarded: odd letters of \"gambler\" are G,M,L,R; even letters are A,B,E. Hmm. Let me think differently: \"to disregard odds\" = take even letters of \"gambler\" = A, B, E \u2014 only 3. Or maybe \"odds\" means the odd-indexed letters: G(1), M(3), L(5), R(7) = GMLR. Not helpful. Perhaps the answer is ABET: \"Help\" = ABET, and wordplay: gambler = BETTER, disregard odds (remove odd letters) = E,T,E \u2192 no. Or BET + something. Actually \"gambler\" = DICER, disregard odds = even letters = I, E, R \u2192 no. Let me try: \"Help\" = AIDE, and \"gambler to disregard odds\" = even letters of \"gambler\" = A,B,E + something. ABET seems right for \"help\" \u2014 wordplay: ev",
+          "outcome": "solved",
+          "hintsUsed": 0,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        }
+      ]
+    },
+    {
+      "model": "anthropic/claude-sonnet-4-6",
+      "clue": "Huge investment shortfall in fossil fuel",
+      "enumeration": "(8)",
+      "answer": "COLOSSAL",
+      "wordLengths": [
+        8
+      ],
+      "definition": "Huge",
+      "par": 4,
+      "solved": true,
+      "hintsUsed": 1,
+      "guessesUsed": 1,
+      "parResult": "below",
+      "reward": 0.8,
+      "hintOrder": [
+        "definition"
+      ],
+      "steps": [
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "\"Fossil fuel\" = COAL, and \"huge investment shortfall\" suggests DEFICIT... but let me think: \"huge\" = MASSIVE, \"investment\" could be a container. Actually, \"shortfall\" = DEFICIT (7 letters). Let me try: fossil fuel = OIL, huge = MEGA... Or \"huge investment\" = OVERDRAFT? No. \"Shortfall in fossil fuel\" - hidden word? \"Huge investment shortfall\" - COAL + something? COALMINE? No. Actually: COAL + TAR = COALTAR? No. Let me think: \"deficit\" in fossil fuel... PEAT contains... or OIL contains... \"COLOSSAL\" shortfall? Wait - \"huge\" = MASSIVE, fossil fuel = COAL, investment = surrounding... MASSCOAL? No. Try: shortfall = GAP, huge = BIG... BIGCOALGAP? No. Actually \"shortfall\" could be DEFICIT, and fossil fuel = PEAT... PEATDEFICIT? No. Let me try: OIL + DEFICIT... or maybe it's a charade: OVER (huge investment = OVERDRAFT?) + COAL? OVERCOAL? No. \"Huge\" = MEGA, \"investment\" = surrounding, \"shortfall\" = DEFICIT... MEGADEFICIT? 10 letters. Wait - could be COAL + FIELD? No. SHORTFALL in fossil fuel -",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "guess",
+          "guess": "COLOSSAL",
+          "reasoning": "\"Huge\" is the definition. The wordplay is \"investment shortfall in fossil fuel\" \u2014 fossil fuel = COAL, shortfall = DEFICIT, investment could mean surrounding. DEFICIT inside COAL? Or perhaps \"shortfall\" = DEFICIT and \"investment\" means wrapping. Actually, \"investment shortfall\" = DEFICIT, and \"in fossil fuel\" = in COAL \u2192 CODEFICIT? No. Let me think: fossil fuel = OIL, shortfall = DEFICIT... OILDEFICIT? No. Maybe \"investment\" = surrounding, \"shortfall\" = GAP, \"fossil fuel\" = COAL \u2192 COLOSSAL? Wait - COLOSSAL means huge! \"fossil fuel\" = COAL, \"shortfall\" = LOSS, \"investment\" = surrounding... COAL around LOSS = C+LOSS+AL = COLOSSAL!",
+          "outcome": "solved",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'Huge'"
+          ],
+          "wrong": [],
+          "feedback": "Hint (definition): The definition part of the clue is 'Huge'"
+        }
+      ]
+    },
+    {
+      "model": "anthropic/claude-sonnet-4-6",
+      "clue": "Incriminate copper in murder case",
+      "enumeration": "(6)",
+      "answer": "ACCUSE",
+      "wordLengths": [
+        6
+      ],
+      "definition": "Incriminate",
+      "par": 3,
+      "solved": true,
+      "hintsUsed": 0,
+      "guessesUsed": 1,
+      "parResult": "below",
+      "reward": 1.0,
+      "hintOrder": [],
+      "steps": [
+        {
+          "decision": "guess",
+          "guess": "ACCUSE",
+          "reasoning": "\"Incriminate\" is the definition. \"Copper in murder case\" = CU (copper) inside FRAME (murder case/frame) \u2192 FRAME contains CU \u2192 INFRAME? Let me think again. \"Frame\" means to incriminate, and \"copper\" = CU, \"murder case\" = FRAME. So CU inside FRAME = FRACU ME? No. Actually: FRAME (to incriminate) is the definition, and wordplay is \"copper in murder case\" = CU in CASE? Or: \"murder case\" = FRAME, copper = CU, so CU inside FRAME = F-CU-RAME? That's not right. Let me try: ACCUSE (to incriminate) - \"copper\" = CU, \"murder case\" = ACE? No. INDICT? Or: STITCH UP? 6 letters. FINGER? CHARGE? IMPLICATE is too long. ACCUSE = 6 letters: A-C-C-U-S-E. \"Copper\" = CU, \"murder case\" = ACES? Hmm. Or: \"copper in murder case\" = CU inside ASSE? ACCUSE: AC + CU + SE? Or murder = KILL, case = CASE... KILLCASE? No. FRAME = 5 letters. ENCASE? Let me try ACCUSE: wordplay copper(CU) in murder case(ACSE)? Not clean. Actually FRAME the answer with CU inside: F+R+A+M+E with CU = FRACUME? No. INCULPATE is too long. Answ",
+          "outcome": "solved",
+          "hintsUsed": 0,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        }
+      ]
+    },
+    {
+      "model": "anthropic/claude-sonnet-4-6",
+      "clue": "Loser steals orange slice",
+      "enumeration": "(4,3)",
+      "answer": "ALSO RAN",
+      "wordLengths": [
+        4,
+        3
+      ],
+      "definition": "Loser",
+      "par": 3,
+      "solved": true,
+      "hintsUsed": 0,
+      "guessesUsed": 1,
+      "parResult": "below",
+      "reward": 1.0,
+      "hintOrder": [],
+      "steps": [
+        {
+          "decision": "guess",
+          "guess": "ALSO RAN",
+          "reasoning": "\"Loser\" = ALSO-RAN... let me think differently. \"Loser\" could be \"also-ran\" but that's 7 letters. \"Steals\" = contains/hidden word indicator. \"Orange slice\" = definition (4,3). Wait - \"loser steals orange\" - loser = ALSO RAN? No. Let me try: container clue where \"loser\" contains something. Or charade: LOSER = definition? No, \"orange slice\" is the definition (a segment/wedge). LOSER steals = container: something inside LOSER. But LOSER is 5 letters. Alternatively: \"loser\" = also-ran, \"steals\" = takes, \"orange slice\" = PEEL? No. Let me think: ALSO RAN - \"also\" + \"ran\" - \"ran\" steals from \"orange\" = RAN inside... ALSO + RAN = ALSO RAN (4,3) - \"loser\" = ALSO RAN, and \"steals orange slice\" = wordplay: ALSO contains nothing from orange? Actually ALSO RAN is itself the answer meaning \"loser\" and the wordplay: \"steals orange\" - RAN is inside oRANge!",
+          "outcome": "solved",
+          "hintsUsed": 0,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        }
+      ]
+    },
+    {
+      "model": "anthropic/claude-sonnet-4-6",
+      "clue": "Plead with individual to take a hike",
+      "enumeration": "(6)",
+      "answer": "BEGONE",
+      "wordLengths": [
+        6
+      ],
+      "definition": "take a hike",
+      "par": 3,
+      "solved": true,
+      "hintsUsed": 0,
+      "guessesUsed": 1,
+      "parResult": "below",
+      "reward": 1.0,
+      "hintOrder": [],
+      "steps": [
+        {
+          "decision": "guess",
+          "guess": "BEGONE",
+          "reasoning": "\"Plead with\" = BEG, \"individual\" = ONE, \"to take a hike\" = definition. BEG + ONE = BEGONE (meaning \"go away/take a hike\").",
+          "outcome": "solved",
+          "hintsUsed": 0,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        }
+      ]
+    },
+    {
+      "model": "anthropic/claude-sonnet-4-6",
+      "clue": "Price of toast and most of egg rolls",
+      "enumeration": "(6)",
+      "answer": "CHARGE",
+      "wordLengths": [
+        6
+      ],
+      "definition": "Price",
+      "par": 3,
+      "solved": true,
+      "hintsUsed": 2,
+      "guessesUsed": 1,
+      "parResult": "below",
+      "reward": 0.6,
+      "hintOrder": [
+        "definition",
+        "letter"
+      ],
+      "steps": [
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "\"Price of toast\" = COST (definition), and \"most of egg rolls\" = wordplay: \"most of egg\" = EG (dropping last letter), \"rolls\" = anagram indicator... wait. Let me think differently. \"Price of toast\" could be BUTTER (no). \"Toast\" = BREAD, price = COST. Or \"price\" is the definition. \"Most of egg rolls\" - \"most of egg\" = EG, and \"rolls\" = anagram? Or charade: most of \"egg\" = EG + ROLLS without last letter = ROLL? EGROLL = 6 letters! EGG ROLL minus one G = EGROLL? Actually \"most of egg rolls\" = most of \"egg rolls\" = EGGROL (6 letters)? Hmm. Or: COST + most of egg = COST + EG = no. Let me try: definition = \"Price of toast\" = BUTTER, wordplay = \"most of egg rolls\" = anagram of EGGROL? No. Actually COST + ER? COSTAR? No. TOASTER price... Let me try: \"price\" = RATE, \"toast\" = definition side. \"Most of egg\" = EG, \"rolls\" = ROLLS, EG+ROLLS = too long. BUTTER is 6 letters - \"price of toast\" and \"most of egg rolls\" - most of EGGROLLS = EGGROLL (7). Hmm. EGROLL = 6? That's not a word. Let me try TARI",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "\"Price\" is the definition. Wordplay: \"toast\" = BREAD, \"most of egg rolls\" = most of EGROLL = EGROL... wait. Let me think differently. \"Toast\" could be RAISE (a toast), or BREAD. \"Most of egg rolls\" - egg rolls = ROTI (Indian bread)? Or \"egg\" = O, \"rolls\" = anagram indicator, \"most of\" = deletion. Actually: \"toast\" = BREAD, \"most of egg rolls\" = most of EGGROLLS = EGGROLL (drop last letter) = EGGROL... Hmm. Let me try: COST? No, 6 letters. \"Price of toast\" - BREAD is price? No. CHARGE? \"Toast\" = RAISE, \"most of egg rolls\" = most of RAISES? No. Actually: TARIFF? Let me think: \"toast\" = CHEERS, \"most of egg rolls\" = most of EGROLLS... CHARGE: CH(eers) + ARGE? No. FIGURE? Let me try: \"toast\" = BROWN, \"most of egg rolls\" = BREAD? AMOUNT? Actually: \"egg rolls\" could be an anagram of something. \"most of egg\" = EG (most of EGG), \"rolls\" = anagram indicator, so anagram of EG + TOAST letters? TOASTE anagrammed = GOATEE? No. TARIFF = TAR + IFF? Let me try FIGURE. Or simply: BREAD (toast) + most o",
+          "outcome": "hint",
+          "hintsUsed": 2,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'price'"
+          ],
+          "wrong": [],
+          "feedback": "Hint (definition): The definition part of the clue is 'price'"
+        },
+        {
+          "decision": "guess",
+          "guess": "CHARGE",
+          "reasoning": "\"Price of toast\" = CHARGE (to charge for something), and \"most of egg rolls\" = wordplay. \"Most of egg\" = EG (dropping last letter), \"rolls\" = anagram indicator? Or \"toast\" = RAISE a glass, and \"most of egg rolls\" - egg rolls anagrammed minus a letter. Let me think: CHARGE fits \"price\" and has 6 letters. \"Toast\" could clue CHARGE (as in \"charge your glasses\"). \"Most of egg rolls\" - most of EGG = EG, rolls = anagram? Or hidden: \"most of egg rolls\" - take most of \"egg rolls\" = EGGROL anagrammed = GORREL? No. Actually _ _ A _ _ _ with A in position 3: CHARGE has no A. What about TARIFF? No A in position 3. RANSOM? R-A-N-S-O-M, A in position 2. MARKUP? No. ASKING PRICE? Too long. \"Toast\" = RAISE, \"most of egg rolls\" = most of EGGROLLS = EGGROLL, anagram = ? With A in position 3: CHARGE no, GREASE? G-R-E-A-S-E, A in position 4. \"Most of egg rolls\" = most of EGGROLLS minus last letter = EGGROLL, anagram of EGGROLL = 7 letters. \"Most of egg\" = EGG minus last = EG, rolls (anagram) = GE? CHARGE:",
+          "outcome": "solved",
+          "hintsUsed": 2,
+          "letters": "_ _ A _ _ _",
+          "hints": [
+            "[definition] The definition part of the clue is 'price'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> _ _ A _ _ _"
+        }
+      ]
+    },
+    {
+      "model": "anthropic/claude-sonnet-4-6",
+      "clue": "Purchase trapped soul of Dennis Hopper",
+      "enumeration": "(5)",
+      "answer": "BUNNY",
+      "wordLengths": [
+        5
+      ],
+      "definition": "Hopper",
+      "par": 2,
+      "solved": true,
+      "hintsUsed": 1,
+      "guessesUsed": 1,
+      "parResult": "below",
+      "reward": 0.8,
+      "hintOrder": [
+        "definition"
+      ],
+      "steps": [
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "\"Purchase\" = BUY, \"soul of Dennis Hopper\" = the middle letter of \"Dennis\" = N, so BUY + N = BUYN? That doesn't work. Let me think differently: \"trapped\" suggests a container. \"Soul of Dennis\" = middle letter of Dennis = N. \"Purchase\" = BUY. Container: BUY trapping N = BUYN? No. Or \"soul of Dennis Hopper\" = middle of \"Dennis Hopper\" = the middle letter(s). Dennis Hopper has 12 letters: D-E-N-N-I-S-H-O-P-P-E-R, middle = S/H. Alternatively, \"soul\" = ANIMA, \"Dennis Hopper\" = actor known as \"Easy Rider.\" Wait - \"Purchase\" could be the definition (= BUY), and wordplay is \"trapped soul of Dennis Hopper.\" Soul = ANIMA? Or \"soul\" = inner letter of \"Dennis\" = N, trapped inside something. Actually: DENNIS contains \"ENNIS\" - or maybe the answer is DENIS with a purchase meaning? Let me try: \"Buy\" = definition, wordplay = trapped soul of Dennis Hopper. Soul of Dennis = N (middle). Hopper = LEAPER? Or hopper = one who hops = FROG? BUY trapped in... REBUY? Let me try HINT.",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "guess",
+          "guess": "BUNNY",
+          "reasoning": "\"Hopper\" as a definition for a 5-letter word - Dennis Hopper's soul = DENNIS's middle letters? \"Purchase\" = BUY, \"trapped soul\" = BUY containing SOUL? Or \"soul of Dennis\" = the middle letter of Dennis = N. \"Purchase trapped\" = BUY around N = BUNNY? A bunny is a hopper! BUY containing N = BUNNY... wait, BUY + N = BUYN, not BUNNY. Let me think: \"soul of Dennis\" = N (middle letter), \"Purchase\" = BUY, trapped = BUY contains N \u2192 B-U-N-Y? No. Actually BUNNY: BUN + NY? Or perhaps \"Purchase\" = BUY, soul of Dennis = N, trapped = BUN + NY... BUNNY has 5 letters and is a hopper. BUY trapping N = B-U-N-Y, missing an N. Maybe \"soul of Dennis\" = EN (middle two letters)? BUY trapping EN = B-U-EN-Y = BUENY? No. Perhaps it's a hidden word: \"Purchase trapped soul of Dennis Hopper\" - hidden: CHASE TRAPPED = no. Let me try: FLEA is a hopper. Or TOAD. Actually \"Purchase\" = BUY, \"soul of Dennis\" = N, container gives BUNNY if BUY\u2192BU_Y with N inserted twice... I'll go with BUNNY.",
+          "outcome": "solved",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'Hopper'"
+          ],
+          "wrong": [],
+          "feedback": "Hint (definition): The definition part of the clue is 'Hopper'"
+        }
+      ]
+    },
+    {
+      "model": "anthropic/claude-sonnet-4-6",
+      "clue": "Request in court squash rallies ?",
+      "enumeration": "(3,4)",
+      "answer": "ALL RISE",
+      "wordLengths": [
+        3,
+        4
+      ],
+      "definition": "Request in court",
+      "par": 3,
+      "solved": true,
+      "hintsUsed": 1,
+      "guessesUsed": 2,
+      "parResult": "below",
+      "reward": 0.8,
+      "hintOrder": [
+        "definition"
+      ],
+      "steps": [
+        {
+          "decision": "guess",
+          "guess": "LET PLAY",
+          "reasoning": "\"Request in court\" = LET (tennis term for a serve that must be replayed), and \"squash rallies\" is an anagram indicator for... wait. \"Court squash rallies\" - LET + PLAY? Or \"rallies\" could be the definition (LET PLAY?). Actually \"Request in court\" = LET (a request to replay), and \"squash rallies\" anagram of... LET PLAY doesn't work. \"Rallies\" as anagram indicator for something? The question mark suggests a cryptic definition. In tennis/squash, \"let\" is called when a rally needs replaying - \"LET PLAY\" means allow play to continue. Actually the answer could be LET PLAY (3,4).",
+          "outcome": "wrong",
+          "hintsUsed": 0,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "\"Request in court\" = LET (tennis term, also a request/call in court sports). \"Squash rallies\" = anagram of RALLIES... wait, that's 7 letters but we need 4. \"Rallies\" anagrammed = but we need just 4 letters. Actually \"squash rallies\" could mean anagram of RALLIES giving a 4-letter word... no. Let me think: LET RIPS? No. \"Court\" could be tennis/squash court. A \"let\" is called when a rally needs replaying. \"Squash rallies\" as anagram indicator for some letters... The clue might be: definition = \"Request in court\" and wordplay = \"squash rallies\" = anagram of RALLIES (7 letters) = LET RIPS? No. RALLIES anagrammed = RALLIES -> LET SAIL? No. Wait - anagram of RALLIES = RALLIES (7) = could give LET + 4-letter word... Actually anagram of RALLIES = SALLIER, RALLIES... hmm. Let me try: NET CORD? No. Actually \"let\" in squash/tennis is a \"request to replay\" - LET PLAY was wrong. Maybe it's NET CALL? Or LET CALL? Anagram of RALLIES = SALLIER... not helpful. Let me try HINT.",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [
+            "LET PLAY"
+          ],
+          "feedback": "'LET PLAY' is not correct. You have guessed: LET PLAY. Try another answer, or reply HINT."
+        },
+        {
+          "decision": "guess",
+          "guess": "ALL RISE",
+          "reasoning": "\"Request in court\" = LET SUIT? No. In squash/tennis, a \"let\" is a request to replay a point. \"Squash rallies\" could be an anagram indicator - anagram of \"rallies\" = ? RALLIES has 7 letters: R,A,L,L,I,E,S. Anagram: LET SAIL? No. Wait, the answer is (3,4). \"Let\" + anagram of something. Actually \"squash rallies\" - anagram of RALLIES = RALLIES -> LET AILS? No. Let me think: anagram of RALLIES = SALLIER, RALLIES... Could be \"LET AIRS\" no. Actually \"LET RAIS\"? Hmm. Wait - in tennis/squash a \"let\" is indeed a request. And \"squash rallies\" as anagram of RALLIES (7 letters) = could give \"LET LIAR\"? No. RALLIES anagrammed: R,A,L,L,I,E,S -> \"ILL ARES\"? How about \"LET LAIRS\"? No that's 8. Wait it's 3+4=7. RALLIES = 7 letters. Anagram: \"ALL RISE\"? A,L,L,R,I,S,E - yes! ALL RISE is a court request!",
+          "outcome": "solved",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'Request in court'"
+          ],
+          "wrong": [
+            "LET PLAY"
+          ],
+          "feedback": "Hint (definition): The definition part of the clue is 'Request in court'"
+        }
+      ]
+    },
+    {
+      "model": "anthropic/claude-sonnet-4-6",
+      "clue": "Request seafood around lunch hour",
+      "enumeration": "(5)",
+      "answer": "CLAIM",
+      "wordLengths": [
+        5
+      ],
+      "definition": "Request",
+      "par": 2,
+      "solved": true,
+      "hintsUsed": 1,
+      "guessesUsed": 1,
+      "parResult": "below",
+      "reward": 0.8,
+      "hintOrder": [
+        "definition"
+      ],
+      "steps": [
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "\"Request\" = ASK, \"seafood\" = PRAWN... let me think differently. \"Request\" could be the definition. \"Seafood around lunch hour\" \u2014 seafood = PRAWN, but that's 5 letters already. Or: seafood = CLAM, around lunch hour = noon = N \u2192 CLAM around N? No. Try: \"seafood\" = SCAMPI... Or container: seafood around lunch hour \u2014 PRAWN around 1 (one o'clock)? No. Let me try: REQUEST = PLEA, seafood = EEL... Or: \"lunch hour\" = HR, seafood = CRAB \u2192 CRAB + ? No. Actually: ASK + seafood? PRAWN = 5 letters, definition = \"request\" \u2192 PRAWN? No. Wait \u2014 \"Request\" is the definition, wordplay is \"seafood around lunch hour\": seafood = SOLE, around = container, lunch hour = noon/12/N \u2192 S(N)OLE? No. SOLE around N = SNOLE? No. Try PRAWN: P-R-A-W-N... Or: seafood = CRAY, around N = CRAYN? No. PLEA + SE = PLEASE (6). How about: seafood = SPRAT, around = container, lunch = L? SPRAT around L? No. Actually \"lunch hour\" = 1 (one) = I \u2192 PRAWN around I? No. Let me try: REQUEST = ORDER, and \"seafood around lunch hour\" = wordp",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "guess",
+          "guess": "CLAIM",
+          "reasoning": "\"Request\" = ASK. Seafood = PRAWN, CLAM, etc. \"Around lunch hour\" - lunch hour = noon = 12 = XII, or \"noon\" = N. PRAWN around N? Or seafood = CRAB, around lunch hour (noon/N) = CRANE? Wait - \"seafood around lunch hour\": seafood = CLAM, around N (noon) = ? Or PRAWN around... Let me think: \"ask\" synonyms = BEG, PLEA, PRAY, WISH, WANT. PRAWN contains \"awn\" - PRAWN around N? Actually: seafood = PRAWN, lunch hour = N (noon), PRAWN around N doesn't work cleanly. What about: seafood = CRAY (as in crayfish), around N = CRAYN? No. Or seafood = SCAMPI... 5 letters. REQUEST = PLEAD, APPLY, ASKEW... Actually PRAWN is seafood, and \"around lunch hour\" - lunch = L, hour = HR? Or noon = N. PRAWN around N = PRAWN with N inside = PRAWN... hmm. What about CRAVE? No. APPEAL? 6 letters. ENTREAT? No. SOLICIT? No. Let me try: seafood = CRAB, around noon (N) = CRABN? No. Or seafood = CLAM, around N = CLANM? No. What about PRAWN - remove N and get PRAW? Or PRAWN IS the answer meaning \"request\"? No. Actually - c",
+          "outcome": "solved",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'Request'"
+          ],
+          "wrong": [],
+          "feedback": "Hint (definition): The definition part of the clue is 'Request'"
+        }
+      ]
+    },
+    {
+      "model": "anthropic/claude-sonnet-4-6",
+      "clue": "Wow , a child's puzzle !",
+      "enumeration": "(5)",
+      "answer": "AMAZE",
+      "wordLengths": [
+        5
+      ],
+      "definition": "Wow",
+      "par": 2,
+      "solved": true,
+      "hintsUsed": 0,
+      "guessesUsed": 1,
+      "parResult": "below",
+      "reward": 1.0,
+      "hintOrder": [],
+      "steps": [
+        {
+          "decision": "guess",
+          "guess": "REBUS",
+          "reasoning": "\"Wow\" is an exclamation = definition. \"a child's puzzle\" = REBUS? No. A child's puzzle could be a JIGSAW (6), or REBUS (5). But \"Wow\" as an exclamation... GOSH? No. Wait - \"Wow, a child's puzzle!\" - could be a charade: WOW + A = WOWA? No. Or \"child's puzzle\" = REBUS (5 letters). But \"Wow\" doesn't equal REBUS. Let me think differently: the whole clue could be a definition of REBUS or... \"Wow\" = AMAZE? No. Actually \"a child's puzzle\" could be a JIGSAW but that's 6. Could be REBUS. Or maybe the answer is REBUS where \"Wow\" is the definition (to rebus = to wow?). Alternatively, \"Wow, a child's puzzle!\" - exclamation point suggests the whole thing is an &lit. clue. REBUS is a picture puzzle. Hmm, but \"Wow\" = GOLLY? No. Let me think: WOW reversed = WOW. A child's puzzle = REBUS. Could \"Wow\" = OGLE? No. Actually REBUS fits \"a child's puzzle\" perfectly and is 5 letters.",
+          "outcome": "solved",
+          "hintsUsed": 0,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        }
+      ]
+    },
+    {
+      "model": "anthropic/claude-sonnet-4-6",
+      "clue": "Zoom calling",
+      "enumeration": "(6)",
+      "answer": "CAREER",
+      "wordLengths": [
+        6
+      ],
+      "definition": "Zoom calling",
+      "par": 3,
+      "solved": true,
+      "hintsUsed": 0,
+      "guessesUsed": 1,
+      "parResult": "below",
+      "reward": 1.0,
+      "hintOrder": [],
+      "steps": [
+        {
+          "decision": "guess",
+          "guess": "CAREER",
+          "reasoning": "\"Zoom\" can mean to move fast (definition), and \"calling\" could be a definition too. But \"calling\" = VOCATION, too long. Alternatively, \"Zoom calling\" \u2014 \"calling\" is the definition (a calling = a vocation/career), and \"Zoom\" is wordplay. Or \"Zoom\" is the definition (to speed) and \"calling\" is wordplay. \"Calling\" could indicate a homophone or charade. RACING = zooming, 6 letters. Or FLYING. Wait \u2014 \"calling\" as a definition gives CAREER, M\u00c9TIER, VOCATION... CAREER is 6 letters and means both \"to zoom/speed\" and \"a calling/profession\"!",
+          "outcome": "solved",
+          "hintsUsed": 0,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        }
+      ]
+    },
+    {
+      "model": "gemini/gemini-2.5-flash-lite",
+      "clue": "Every circuit in grand prix race",
+      "enumeration": "(6)",
+      "answer": "GALLOP",
+      "wordLengths": [
+        6
+      ],
+      "definition": "race",
+      "par": 3,
+      "solved": true,
+      "hintsUsed": 5,
+      "guessesUsed": 2,
+      "parResult": "above",
+      "reward": 0.2,
+      "hintOrder": [
+        "definition",
+        "letter",
+        "letter",
+        "letter",
+        "letter"
+      ],
+      "steps": [
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The clue is \"Every circuit in grand prix race\". The answer has 6 letters. The definition is likely \"grand prix race\". The wordplay needs to be figured out.\n\nHINT",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "guess",
+          "guess": "",
+          "reasoning": "The definition is 'race'. The wordplay must be 'Every circuit in grand prix'. I need to find a 6-letter word for race.\n\nLet's look at the wordplay: \"Every circuit in grand prix\".\n\"Circuit\" could refer to a race track, or perhaps a letter that represents a circuit, like 'O'.\n\"Grand prix\" is a type of race.\n\nIf \"circuit\" is 'O', then \"Every O in grand prix\".\nGrand prix has 9 letters. Let's see if th",
+          "outcome": "wrong",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'race'"
+          ],
+          "wrong": [],
+          "feedback": "Hint (definition): The definition part of the clue is 'race'"
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is 'race'. The clue is \"Every circuit in grand prix race\". The answer is 6 letters long. I need to find a 6-letter word for 'race' using wordplay from \"Every circuit in\".\n\nHINT",
+          "outcome": "hint",
+          "hintsUsed": 2,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'race'"
+          ],
+          "wrong": [
+            "WHAT IF 'CIRCUIT' IS A LETTER THAT LOOKS LIKE A"
+          ],
+          "feedback": "'WHAT IF 'CIRCUIT' IS A LETTER THAT LOOKS LIKE A' is not correct. You have guessed: WHAT IF 'CIRCUIT' IS A LETTER THAT LOOKS LIKE A. Try another answer, or reply HINT."
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is 'race'. The wordplay must be 'Every circuit in grand prix'. I need to find a 6-letter word for 'race' using the wordplay.\n\nHINT",
+          "outcome": "hint",
+          "hintsUsed": 3,
+          "letters": "G _ _ _ _ _",
+          "hints": [
+            "[definition] The definition part of the clue is 'race'"
+          ],
+          "wrong": [
+            "WHAT IF 'CIRCUIT' IS A LETTER THAT LOOKS LIKE A"
+          ],
+          "feedback": "Letter revealed -> G _ _ _ _ _"
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is 'race'. The wordplay must be 'Every circuit in grand prix'. 'Grand prix' is a type of race, so that's likely part of the definition. 'Every circuit' could be the wordplay. Let's look for a word that means 'race' and can be made from 'every circuit'.\n\nThe letters are G _ _ _ _ P.\n\nI need to find a 6-letter word that means 'race'.\n\nHINT",
+          "outcome": "hint",
+          "hintsUsed": 4,
+          "letters": "G _ _ _ _ P",
+          "hints": [
+            "[definition] The definition part of the clue is 'race'"
+          ],
+          "wrong": [
+            "WHAT IF 'CIRCUIT' IS A LETTER THAT LOOKS LIKE A"
+          ],
+          "feedback": "Letter revealed -> G _ _ _ _ P"
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The clue is \"Every circuit in grand prix race\". The definition is \"race\". The wordplay must be \"Every circuit in grand prix\". The answer is 6 letters long, starting with G and A, and ending with P.\n\nThe wordplay \"Every circuit in grand prix\" could mean a hidden word. Let's look for \"circuit\" within \"grand prix\".\n\n\"grand p**ri**x\" - no, that's not it.\n\"g**rand p**rix\" - no.\n\nLet's consider other in",
+          "outcome": "hint",
+          "hintsUsed": 5,
+          "letters": "G A _ _ _ P",
+          "hints": [
+            "[definition] The definition part of the clue is 'race'"
+          ],
+          "wrong": [
+            "WHAT IF 'CIRCUIT' IS A LETTER THAT LOOKS LIKE A"
+          ],
+          "feedback": "Letter revealed -> G A _ _ _ P"
+        },
+        {
+          "decision": "guess",
+          "guess": "",
+          "reasoning": "The clue is \"Every circuit in grand prix race\". The definition is \"race\". The remaining part, \"Every circuit in grand prix\", must be the wordplay. The letters G A L _ _ P are already revealed.\n\nThe wordplay \"Every circuit in grand prix\" suggests a hidden word. Let's look for \"circuit\" within \"every in grand prix\".\n\n\"Every in grand prix\" -> E V E R Y I N G R A N D P R I X. No obvious hidden word.\n\n",
+          "outcome": "solved",
+          "hintsUsed": 5,
+          "letters": "G A L _ _ P",
+          "hints": [
+            "[definition] The definition part of the clue is 'race'"
+          ],
+          "wrong": [
+            "WHAT IF 'CIRCUIT' IS A LETTER THAT LOOKS LIKE A"
+          ],
+          "feedback": "Letter revealed -> G A L _ _ P"
+        }
+      ]
+    },
+    {
+      "model": "gemini/gemini-3.1-flash-lite",
+      "clue": "Apprehend $0.01 and $1.00 defaced",
+      "enumeration": "(6)",
+      "answer": "COLLAR",
+      "wordLengths": [
+        6
+      ],
+      "definition": "Apprehend",
+      "par": 3,
+      "solved": true,
+      "hintsUsed": 3,
+      "guessesUsed": 6,
+      "parResult": "at",
+      "reward": 0.4,
+      "hintOrder": [
+        "definition",
+        "letter",
+        "letter"
+      ],
+      "steps": [
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is \"Apprehend\", and the wordplay involves \"$0.01\" (CENT) and \"$1.00\" (a DOLLAR, defaced to DOLLA). Combining these gives \"CENT\" + \"DOLLA\" = \"CENTDOLLA\", but that is too long; perhaps \"defaced\" means removing the first letter of \"DOLLAR\" to get \"OLLAR\", or \"CENT\" + \"OLLAR\".",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "guess",
+          "guess": "CATCH",
+          "reasoning": "The wordplay involves $0.01 (CENT) and $1.00 (DOLLAR), but \"defaced\" suggests removing the first letter of DOLLAR to get OLLAR, which doesn't fit. However, \"CENT\" plus \"O\" (from the start of \"one\" or similar) or a variation like \"C\" (hundred) + \"ENT\" (from \"cent\") suggests the word is CATCH.",
+          "outcome": "wrong",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'Apprehend'"
+          ],
+          "wrong": [],
+          "feedback": "Hint (definition): The definition part of the clue is 'Apprehend'"
+        },
+        {
+          "decision": "guess",
+          "guess": "NOTICE",
+          "reasoning": "The wordplay involves $0.01 (CENT) and $1.00 (DOLLAR) defaced, suggesting a combination or deletion; \"CENT\" plus \"DO\" (defaced dollar) gives \"CENTDO\", but \"NOTICE\" fits \"Apprehend\" and uses \"CENT\" (0.01) and \"I\" (1) inside \"NO\" (defaced \"not\").",
+          "outcome": "wrong",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'Apprehend'"
+          ],
+          "wrong": [
+            "CATCH"
+          ],
+          "feedback": "'CATCH' is not correct. You have guessed: CATCH. Try another answer, or reply HINT."
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The wordplay involves $0.01 (CENT) and $1.00 (DOLLAR) defaced, suggesting a combination or deletion. Combining CENT and a defaced DOLLAR (D) gives CATCH, but since that is wrong, I will look for another word for apprehend using these components.",
+          "outcome": "hint",
+          "hintsUsed": 2,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'Apprehend'"
+          ],
+          "wrong": [
+            "CATCH",
+            "NOTICE"
+          ],
+          "feedback": "'NOTICE' is not correct. You have guessed: CATCH, NOTICE. Try another answer, or reply HINT."
+        },
+        {
+          "decision": "guess",
+          "guess": "CENTRA",
+          "reasoning": "The definition is \"Apprehend\" and the wordplay is \"0.01\" (CENT) + \"$1.00\" (DOLLAR) defaced, meaning removing the last letter of DOLLAR to get DOLLA, but that doesn't fit. Given the letters _ _ _ _ A _, the word is likely SEIZES or similar, but let's try CATCHA or similar; wait, \"CENT\" + \"DOLLAR\" defaced (removing the last letter) is C + ENT + DOLLA? No, let's try SEIZES. Actually, \"C\" (100 cents) + \"ENT\" + \"A\" (from $1.00 defaced)? Let's try CATCHA. Wait, the letters are _ _ _ _ A _. Maybe \"C\" + \"ENT\" + \"RA\" (from DOLLAR)? Let's try CENTRA.",
+          "outcome": "wrong",
+          "hintsUsed": 2,
+          "letters": "_ _ _ _ A _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Apprehend'"
+          ],
+          "wrong": [
+            "CATCH",
+            "NOTICE"
+          ],
+          "feedback": "Letter revealed -> _ _ _ _ A _"
+        },
+        {
+          "decision": "guess",
+          "guess": "ENTRAP",
+          "reasoning": "The definition is \"Apprehend\" and the wordplay is \"$0.01\" (CENT) + \"$1.00\" (a DOLLAR, but defaced means removing the last letter, so DOLLA). Combining CENT + A gives CENTA, but that doesn't fit; perhaps it is C + ENTA or similar. Wait, \"CENT\" + \"A\" (from \"a\" dollar) = \"CENTA\" is not 6 letters, but \"C\" (0.01 symbol) + \"ENTRAP\" (defaced)? No, \"Apprehend\" is \"ENTRAP\".",
+          "outcome": "wrong",
+          "hintsUsed": 2,
+          "letters": "_ _ _ _ A _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Apprehend'"
+          ],
+          "wrong": [
+            "CATCH",
+            "NOTICE",
+            "CENTRA"
+          ],
+          "feedback": "'CENTRA' is not correct. You have guessed: CATCH, NOTICE, CENTRA. Try another answer, or reply HINT."
+        },
+        {
+          "decision": "guess",
+          "guess": "CANCEL",
+          "reasoning": "The definition is \"Apprehend\" and the wordplay involves $0.01 (CENT) and $1.00 (a DOLLAR, defaced to remove the last letter). Combining CENT + A (from the clue) gives the six-letter word.",
+          "outcome": "wrong",
+          "hintsUsed": 2,
+          "letters": "_ _ _ _ A _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Apprehend'"
+          ],
+          "wrong": [
+            "CATCH",
+            "NOTICE",
+            "CENTRA",
+            "ENTRAP"
+          ],
+          "feedback": "'ENTRAP' is not correct. You have guessed: CATCH, NOTICE, CENTRA, ENTRAP. Try another answer, or reply HINT."
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is \"Apprehend\" and the wordplay involves \"0.01\" (CENT) and \"$1.00\" (a DOLLAR, but defaced means removing the last letter, leaving DOLLA). Combining these gives C-ENT-R-A, but since that is wrong, I will take a hint to see the next letter.",
+          "outcome": "hint",
+          "hintsUsed": 3,
+          "letters": "_ _ _ _ A _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Apprehend'"
+          ],
+          "wrong": [
+            "CATCH",
+            "NOTICE",
+            "CENTRA",
+            "ENTRAP",
+            "CANCEL"
+          ],
+          "feedback": "'CANCEL' is not correct. You have guessed: CATCH, NOTICE, CENTRA, ENTRAP, CANCEL. Try another answer, or reply HINT."
+        },
+        {
+          "decision": "guess",
+          "guess": "COLLAR",
+          "reasoning": "The definition is \"Apprehend\" and the wordplay involves $0.01 (CENT) and $1.00 (DOLLAR) defaced, leading to the word COLLAR.",
+          "outcome": "solved",
+          "hintsUsed": 3,
+          "letters": "_ _ _ L A _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Apprehend'"
+          ],
+          "wrong": [
+            "CATCH",
+            "NOTICE",
+            "CENTRA",
+            "ENTRAP",
+            "CANCEL"
+          ],
+          "feedback": "Letter revealed -> _ _ _ L A _"
+        }
+      ]
+    },
+    {
       "model": "gemini/gemini-3.1-flash-lite",
       "clue": "Bedroom suffering lack of excitement",
       "enumeration": "(7)",
@@ -1062,6 +2194,152 @@
       ]
     },
     {
+      "model": "gemini/gemini-3.1-flash-lite-preview",
+      "clue": "Every circuit in grand prix race",
+      "enumeration": "(6)",
+      "answer": "GALLOP",
+      "wordLengths": [
+        6
+      ],
+      "definition": "race",
+      "par": 3,
+      "solved": true,
+      "hintsUsed": 3,
+      "guessesUsed": 1,
+      "parResult": "at",
+      "reward": 0.4,
+      "hintOrder": [
+        "definition",
+        "letter",
+        "letter"
+      ],
+      "steps": [
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The clue \"Every circuit in grand prix race\" suggests a hidden word mechanism, as \"Every\" often indicates that the answer is hidden within the surrounding words. Looking at the phrase \"grand prix race\", the word \"circuit\" is a synonym for the definition.\n\nHINT",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The wordplay \"Every circuit in\" suggests a hidden word mechanism, where the answer is concealed within the phrase \"Every circuit in\". Looking at the letters, \"E-V-E-R-Y-C-I-R-C-U-I-T-I-N\", the sequence \"E-N-T-R-Y\" doesn't fit, but \"C-A-R-E-E-R\" or similar might be hidden. Wait, \"Every circuit\" contains \"C-A-R-E-E-R\" if we look at the letters: \"Every ciR-cuit\". Actually, \"Every circuit\" contains \"C",
+          "outcome": "hint",
+          "hintsUsed": 2,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'race'"
+          ],
+          "wrong": [],
+          "feedback": "Hint (definition): The definition part of the clue is 'race'"
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is \"race\" and the wordplay is \"Every circuit\" (a hidden word). Looking at the clue \"Every circuit in grand prix race\", the word \"circuit\" contains the letters G-A-R-D-E-N, but that doesn't fit. Wait, \"Every\" often indicates taking the first letters of words, or \"circuit\" could be a container. Let's look at the hidden word: \"Every circuit\" -> \"G\" + \"R\" + \"A\" + \"N\" + \"D\" + \"P\" ... no.",
+          "outcome": "hint",
+          "hintsUsed": 3,
+          "letters": "G _ _ _ _ _",
+          "hints": [
+            "[definition] The definition part of the clue is 'race'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> G _ _ _ _ _"
+        },
+        {
+          "decision": "guess",
+          "guess": "",
+          "reasoning": "The wordplay \"Every circuit in grand prix\" suggests a hidden word. Looking at the phrase \"Every circuit in grand prix\", the letters G-A-L-L-O-P are hidden within \"Every circuit in grand prix\" (every circuit in grand prix).\n\nGALLOP",
+          "outcome": "solved",
+          "hintsUsed": 3,
+          "letters": "G _ _ _ _ P",
+          "hints": [
+            "[definition] The definition part of the clue is 'race'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> G _ _ _ _ P"
+        }
+      ]
+    },
+    {
+      "model": "gemini/gemini-flash-lite-latest",
+      "clue": "Every circuit in grand prix race",
+      "enumeration": "(6)",
+      "answer": "GALLOP",
+      "wordLengths": [
+        6
+      ],
+      "definition": "race",
+      "par": 3,
+      "solved": true,
+      "hintsUsed": 3,
+      "guessesUsed": 1,
+      "parResult": "at",
+      "reward": 0.4,
+      "hintOrder": [
+        "definition",
+        "letter",
+        "letter"
+      ],
+      "steps": [
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The clue \"Every circuit in grand prix race\" suggests a hidden word mechanism, as \"Every\" often indicates that the answer is hidden within the surrounding words. Looking at the phrase \"grand prix race\", the word \"circuit\" is a synonym for the definition.\n\nHINT",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [],
+          "feedback": ""
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The wordplay \"Every circuit in\" suggests a hidden word mechanism, where the answer is concealed within the phrase \"Every circuit in\". Looking at the letters, \"E-V-E-R-Y-C-I-R-C-U-I-T-I-N\", the sequence \"E-N-T-R-Y\" doesn't fit, but \"C-A-R-E-E-R\" or similar might be hidden. Wait, \"Every circuit\" contains \"C-A-R-E-E-R\" if we look at the letters: \"Every ciR-cuit\". Actually, \"Every circuit\" contains \"C",
+          "outcome": "hint",
+          "hintsUsed": 2,
+          "letters": "",
+          "hints": [
+            "[definition] The definition part of the clue is 'race'"
+          ],
+          "wrong": [],
+          "feedback": "Hint (definition): The definition part of the clue is 'race'"
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is \"race\" and the wordplay is \"Every circuit\" (a hidden word). Looking at the clue \"Every circuit in grand prix race\", the word \"circuit\" contains the letters G-A-R-D-E-N, but that doesn't fit. Wait, \"Every\" often indicates taking the first letters of words, or \"circuit\" could be a container. Let's look at the hidden word: \"Every circuit\" -> \"G\" + \"R\" + \"A\" + \"N\" + \"D\" + \"P\" ... no.",
+          "outcome": "hint",
+          "hintsUsed": 3,
+          "letters": "G _ _ _ _ _",
+          "hints": [
+            "[definition] The definition part of the clue is 'race'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> G _ _ _ _ _"
+        },
+        {
+          "decision": "guess",
+          "guess": "",
+          "reasoning": "The wordplay \"Every circuit in grand prix\" suggests a hidden word. Looking at the phrase \"Every circuit in grand prix\", the letters G-A-L-L-O-P are hidden within \"Every circuit in grand prix\" (every circuit in grand prix).\n\nGALLOP",
+          "outcome": "solved",
+          "hintsUsed": 3,
+          "letters": "G _ _ _ _ P",
+          "hints": [
+            "[definition] The definition part of the clue is 'race'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> G _ _ _ _ P"
+        }
+      ]
+    },
+    {
       "model": "openai/gpt-4o",
       "clue": "Accepted weak coffee, repulsed",
       "enumeration": "(5)",
@@ -1144,8 +2422,8 @@
       "steps": [
         {
           "decision": "guess",
-          "guess": "ARREST",
-          "reasoning": "The definition is likely \"apprehend,\" and the wordplay involves \"$0.01\" (cent) and \"$1.00\" (dollar) being \"defaced,\" suggesting removing the first and last letters.",
+          "guess": "CATCH",
+          "reasoning": "The definition is likely \"Apprehend,\" and the wordplay involves \"$0.01 and $1.00 defaced,\" suggesting removing the outer letters of \"cent\" and \"dollar.\"",
           "outcome": "wrong",
           "hintsUsed": 0,
           "letters": "",
@@ -1154,37 +2432,36 @@
           "feedback": ""
         },
         {
+          "decision": "guess",
+          "guess": "ARREST",
+          "reasoning": "The definition is likely \"apprehend\". The wordplay involves \"$0.01\" and \"$1.00\" being defaced, which suggests removing the outer letters of \"CENT\" and \"DOLLAR\".",
+          "outcome": "wrong",
+          "hintsUsed": 0,
+          "letters": "",
+          "hints": [],
+          "wrong": [
+            "CATCH"
+          ],
+          "feedback": "'CATCH' is not correct. You have guessed: CATCH. Try another answer, or reply HINT."
+        },
+        {
           "decision": "hint",
           "guess": "",
-          "reasoning": "The definition is likely \"apprehend,\" and the wordplay involves \"$0.01 and $1.00 defaced,\" suggesting a charade or deletion. \"Cent\" and \"dollar\" could be involved, with \"defaced\" indicating removal of letters.",
+          "reasoning": "The clue suggests a deletion or defacement of the words for $0.01 (CENT) and $1.00 (DOLLAR), possibly leading to a word meaning apprehend.",
           "outcome": "hint",
           "hintsUsed": 1,
           "letters": "",
           "hints": [],
           "wrong": [
+            "CATCH",
             "ARREST"
           ],
-          "feedback": "'ARREST' is not correct. You have guessed: ARREST. Try another answer, or reply HINT."
-        },
-        {
-          "decision": "guess",
-          "guess": "ENROLL",
-          "reasoning": "The wordplay involves \"$0.01 and $1.00 defaced\", which suggests removing the outer letters of \"cent\" and \"dollar\", leaving \"EN\" and \"OL\". Combining these gives \"ENROLL\", which means to apprehend or capture in a list.",
-          "outcome": "wrong",
-          "hintsUsed": 1,
-          "letters": "",
-          "hints": [
-            "[definition] The definition part of the clue is 'Apprehend'"
-          ],
-          "wrong": [
-            "ARREST"
-          ],
-          "feedback": "Hint (definition): The definition part of the clue is 'Apprehend'"
+          "feedback": "'ARREST' is not correct. You have guessed: CATCH, ARREST. Try another answer, or reply HINT."
         },
         {
           "decision": "hint",
           "guess": "",
-          "reasoning": "The wordplay involves \"$0.01 and $1.00 defaced\", which suggests removing the outer letters of 'CENT' and 'DOLLAR', leaving 'ENT' and 'OLLA'. Combining these gives 'ENTOLL', which doesn't fit, so I will request a hint.",
+          "reasoning": "The wordplay involves \"$0.01 and $1.00 defaced\", which suggests removing the outer letters of \"cent\" and \"dollar\", leaving \"ENT\" and \"OLLA\". Combining these gives \"ENTOLL\", which doesn't fit, so I will take a hint.",
           "outcome": "hint",
           "hintsUsed": 2,
           "letters": "",
@@ -1192,15 +2469,15 @@
             "[definition] The definition part of the clue is 'Apprehend'"
           ],
           "wrong": [
-            "ARREST",
-            "ENROLL"
+            "CATCH",
+            "ARREST"
           ],
-          "feedback": "'ENROLL' is not correct. You have guessed: ARREST, ENROLL. Try another answer, or reply HINT."
+          "feedback": "Hint (definition): The definition part of the clue is 'Apprehend'"
         },
         {
           "decision": "guess",
-          "guess": "ENTRAP",
-          "reasoning": "The wordplay involves defacing $0.01 (CENT) and $1.00 (DOLLAR), which suggests removing the first and last letters. This leaves ENT and OLLA, which can be combined to form the word ENTRAP, meaning 'apprehend'.",
+          "guess": "ENROLL",
+          "reasoning": "The wordplay involves defacing $0.01 (CENT) and $1.00 (DOLLAR), which suggests removing the first and last letters. This leaves ENT and OLLA, which can be combined to form the word ENROLL.",
           "outcome": "wrong",
           "hintsUsed": 2,
           "letters": "_ _ _ _ A _",
@@ -1208,15 +2485,15 @@
             "[definition] The definition part of the clue is 'Apprehend'"
           ],
           "wrong": [
-            "ARREST",
-            "ENROLL"
+            "CATCH",
+            "ARREST"
           ],
           "feedback": "Letter revealed -> _ _ _ _ A _"
         },
         {
           "decision": "hint",
           "guess": "",
-          "reasoning": "The wordplay involves \"$0.01 and $1.00 defaced\", which suggests removing the outer letters of \"cent\" and \"dollar\", leaving \"EN\" and \"OLL\". However, this doesn't fit the pattern, so I will need more information.",
+          "reasoning": "The wordplay involves \"$0.01 and $1.00 defaced\", which suggests removing the outer letters of \"cent\" and \"dollar\", leaving \"ent\" and \"olla\". Combining these gives \"ENTOLA\", but that doesn't fit. I will take another hint to clarify.",
           "outcome": "hint",
           "hintsUsed": 3,
           "letters": "_ _ _ _ A _",
@@ -1224,16 +2501,16 @@
             "[definition] The definition part of the clue is 'Apprehend'"
           ],
           "wrong": [
+            "CATCH",
             "ARREST",
-            "ENROLL",
-            "ENTRAP"
+            "ENROLL"
           ],
-          "feedback": "'ENTRAP' is not correct. You have guessed: ARREST, ENROLL, ENTRAP. Try another answer, or reply HINT."
+          "feedback": "'ENROLL' is not correct. You have guessed: CATCH, ARREST, ENROLL. Try another answer, or reply HINT."
         },
         {
           "decision": "hint",
           "guess": "",
-          "reasoning": "The wordplay involves defacing $0.01 (CENT) and $1.00 (DOLLAR), which suggests removing the first and last letters to form a word meaning 'apprehend'.",
+          "reasoning": "The wordplay involves defacing $0.01 (CENT) and $1.00 (DOLLAR), which suggests removing the outer letters to form a word meaning 'apprehend'.",
           "outcome": "hint",
           "hintsUsed": 4,
           "letters": "_ _ _ L A _",
@@ -1241,16 +2518,16 @@
             "[definition] The definition part of the clue is 'Apprehend'"
           ],
           "wrong": [
+            "CATCH",
             "ARREST",
-            "ENROLL",
-            "ENTRAP"
+            "ENROLL"
           ],
           "feedback": "Letter revealed -> _ _ _ L A _"
         },
         {
           "decision": "guess",
           "guess": "COLLAR",
-          "reasoning": "The wordplay involves defacing $0.01 (cent) and $1.00 (dollar), which suggests removing the first and last letters of 'CENT' and 'DOLLAR', leaving 'O' and 'OLLA'. Combining these gives 'COLLAR', which means 'apprehend'.",
+          "reasoning": "The wordplay involves defacing $0.01 (cent) and $1.00 (dollar), which suggests removing the first and last letters of 'CENT' and 'DOLLAR', leaving 'O' and 'OLLA', respectively. Combining these gives 'COLLAR', which means to apprehend.",
           "outcome": "solved",
           "hintsUsed": 4,
           "letters": "_ O _ L A _",
@@ -1258,9 +2535,9 @@
             "[definition] The definition part of the clue is 'Apprehend'"
           ],
           "wrong": [
+            "CATCH",
             "ARREST",
-            "ENROLL",
-            "ENTRAP"
+            "ENROLL"
           ],
           "feedback": "Letter revealed -> _ O _ L A _"
         }
@@ -1277,18 +2554,19 @@
       "definition": "lack of excitement",
       "par": 3,
       "solved": true,
-      "hintsUsed": 1,
+      "hintsUsed": 2,
       "guessesUsed": 1,
       "parResult": "below",
-      "reward": 0.8,
+      "reward": 0.6,
       "hintOrder": [
-        "definition"
+        "definition",
+        "letter"
       ],
       "steps": [
         {
           "decision": "hint",
           "guess": "",
-          "reasoning": "The definition is likely \"lack of excitement,\" and the wordplay could involve a synonym for \"bedroom\" that fits the definition.",
+          "reasoning": "The definition is likely \"lack of excitement,\" and the wordplay could involve an anagram of \"bedroom\" to fit the 7-letter answer.",
           "outcome": "hint",
           "hintsUsed": 1,
           "letters": "",
@@ -1297,17 +2575,30 @@
           "feedback": ""
         },
         {
-          "decision": "guess",
-          "guess": "BOREDOM",
-          "reasoning": "The definition 'lack of excitement' suggests a word like 'boredom'. The word 'bedroom' can be an anagram of 'boredom', which fits the enumeration (7).",
-          "outcome": "solved",
-          "hintsUsed": 1,
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is 'lack of excitement', and the wordplay might involve 'bedroom' and 'suffering'. I suspect an anagram or hidden word might be involved, but I'm not sure yet.",
+          "outcome": "hint",
+          "hintsUsed": 2,
           "letters": "",
           "hints": [
             "[definition] The definition part of the clue is 'lack of excitement'"
           ],
           "wrong": [],
           "feedback": "Hint (definition): The definition part of the clue is 'lack of excitement'"
+        },
+        {
+          "decision": "guess",
+          "guess": "BOREDOM",
+          "reasoning": "The definition is \"lack of excitement,\" and the wordplay might involve a synonym for \"bedroom\" or a related concept. The word \"BOREDOM\" fits the pattern and definition.",
+          "outcome": "solved",
+          "hintsUsed": 2,
+          "letters": "_ O _ _ _ _ _",
+          "hints": [
+            "[definition] The definition part of the clue is 'lack of excitement'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> _ O _ _ _ _ _"
         }
       ]
     },
@@ -1322,21 +2613,22 @@
       "definition": "on guard",
       "par": 2,
       "solved": true,
-      "hintsUsed": 2,
-      "guessesUsed": 1,
-      "parResult": "at",
-      "reward": 0.6,
+      "hintsUsed": 3,
+      "guessesUsed": 2,
+      "parResult": "above",
+      "reward": 0.4,
       "hintOrder": [
         "definition",
+        "letter",
         "letter"
       ],
       "steps": [
         {
-          "decision": "hint",
-          "guess": "",
-          "reasoning": "The definition is likely \"guard\" at the end of the clue. \"Beer emptied\" suggests removing the inner letters of \"beer,\" leaving \"BR,\" and adding \"R\" for \"right\" gives \"BRR,\" which doesn't fit. I need more information.",
-          "outcome": "hint",
-          "hintsUsed": 1,
+          "decision": "guess",
+          "guess": "BRAVE",
+          "reasoning": "The definition is likely \"guard\" and the wordplay involves \"beer emptied\" (removing the inner letters of \"beer\") and \"right\" (R), which could lead to the word \"BRAVE\".",
+          "outcome": "wrong",
+          "hintsUsed": 0,
           "letters": "",
           "hints": [],
           "wrong": [],
@@ -1345,28 +2637,60 @@
         {
           "decision": "hint",
           "guess": "",
-          "reasoning": "The definition is 'on guard', and the wordplay involves 'beer emptied' and 'right'. 'Beer emptied' suggests removing the inner letters of 'beer', leaving 'BR', and 'right' is 'R', which together form 'BRR', but this doesn't fit. I need more information.",
+          "reasoning": "The definition is likely \"guard\", and the wordplay involves \"beer emptied\" which suggests removing the inner letters of \"beer\", leaving \"BR\", and adding \"right\" which is \"R\" to form \"BRR\".",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [
+            "BRAVE"
+          ],
+          "feedback": "'BRAVE' is not correct. You have guessed: BRAVE. Try another answer, or reply HINT."
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The wordplay involves \"beer emptied\" which suggests removing the inner letters of \"beer\", leaving \"BR\", and \"right\" is abbreviated as \"R\". Combining these gives \"BRR\", which doesn't fit, so I will take another hint.",
           "outcome": "hint",
           "hintsUsed": 2,
           "letters": "",
           "hints": [
             "[definition] The definition part of the clue is 'on guard'"
           ],
-          "wrong": [],
+          "wrong": [
+            "BRAVE"
+          ],
           "feedback": "Hint (definition): The definition part of the clue is 'on guard'"
         },
         {
-          "decision": "guess",
-          "guess": "ALERT",
-          "reasoning": "The wordplay suggests removing the inside of \"beer\" (leaving \"br\") and adding \"R\" for right, which could form a word meaning \"on guard\".",
-          "outcome": "solved",
-          "hintsUsed": 2,
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The wordplay suggests taking \"beer\" and removing its contents, leaving \"BR\" (the first and last letters), then adding \"R\" for \"right\" to form a word meaning \"on guard\". However, this doesn't fit the pattern, so I'll need another hint.",
+          "outcome": "hint",
+          "hintsUsed": 3,
           "letters": "_ L _ _ _",
           "hints": [
             "[definition] The definition part of the clue is 'on guard'"
           ],
-          "wrong": [],
+          "wrong": [
+            "BRAVE"
+          ],
           "feedback": "Letter revealed -> _ L _ _ _"
+        },
+        {
+          "decision": "guess",
+          "guess": "ALERT",
+          "reasoning": "The wordplay suggests taking 'beer' and 'emptied' to mean removing the inner letters, leaving 'BR', and adding 'right' which is 'R', forming 'ALERT' for 'on guard'.",
+          "outcome": "solved",
+          "hintsUsed": 3,
+          "letters": "_ L _ R _",
+          "hints": [
+            "[definition] The definition part of the clue is 'on guard'"
+          ],
+          "wrong": [
+            "BRAVE"
+          ],
+          "feedback": "Letter revealed -> _ L _ R _"
         }
       ]
     },
@@ -1426,22 +2750,21 @@
       "definition": "steamboat noises",
       "par": 2,
       "solved": true,
-      "hintsUsed": 3,
-      "guessesUsed": 1,
-      "parResult": "above",
-      "reward": 0.4,
+      "hintsUsed": 2,
+      "guessesUsed": 2,
+      "parResult": "at",
+      "reward": 0.6,
       "hintOrder": [
         "definition",
-        "letter",
         "letter"
       ],
       "steps": [
         {
-          "decision": "hint",
-          "guess": "",
-          "reasoning": "The definition is likely \"noises\" and the wordplay involves \"Captain\" embracing \"steamboat\", suggesting a container clue.",
-          "outcome": "hint",
-          "hintsUsed": 1,
+          "decision": "guess",
+          "guess": "SKIPS",
+          "reasoning": "The definition is likely \"noises\" and the wordplay involves \"captain\" embracing \"steamboat\". \"Captain\" could be \"SKIP\" and \"steamboat\" could be \"SS\", leading to \"SKIPS\" which means noises.",
+          "outcome": "wrong",
+          "hintsUsed": 0,
           "letters": "",
           "hints": [],
           "wrong": [],
@@ -1450,41 +2773,45 @@
         {
           "decision": "hint",
           "guess": "",
-          "reasoning": "The definition 'steamboat noises' suggests the answer might be a sound associated with steamboats. The wordplay might involve a captain embracing or containing something related to these noises.",
+          "reasoning": "The definition is likely \"noises\" and the wordplay involves \"Captain\" embracing \"steamboat\". \"Captain\" could be \"SKIP\" and \"steamboat\" could be \"SS\", but this doesn't fit the wordplay correctly.",
+          "outcome": "hint",
+          "hintsUsed": 1,
+          "letters": "",
+          "hints": [],
+          "wrong": [
+            "SKIPS"
+          ],
+          "feedback": "'SKIPS' is not correct. You have guessed: SKIPS. Try another answer, or reply HINT."
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is 'steamboat noises', which suggests the answer is a type of sound associated with steamboats. The wordplay might involve a captain embracing something, possibly indicating a container or charade.",
           "outcome": "hint",
           "hintsUsed": 2,
           "letters": "",
           "hints": [
             "[definition] The definition part of the clue is 'steamboat noises'"
           ],
-          "wrong": [],
-          "feedback": "Hint (definition): The definition part of the clue is 'steamboat noises'"
-        },
-        {
-          "decision": "hint",
-          "guess": "",
-          "reasoning": "The definition is \"steamboat noises,\" which suggests the answer is a type of sound. The wordplay involves \"Captain embraces,\" possibly indicating a container clue where a word for \"Captain\" surrounds another word or letters.",
-          "outcome": "hint",
-          "hintsUsed": 3,
-          "letters": "_ H _ _ _",
-          "hints": [
-            "[definition] The definition part of the clue is 'steamboat noises'"
+          "wrong": [
+            "SKIPS"
           ],
-          "wrong": [],
-          "feedback": "Letter revealed -> _ H _ _ _"
+          "feedback": "Hint (definition): The definition part of the clue is 'steamboat noises'"
         },
         {
           "decision": "guess",
           "guess": "CHUGS",
-          "reasoning": "The definition is \"steamboat noises,\" and the wordplay involves a captain embracing something. The word \"CHUGS\" fits the pattern and is a noise associated with steamboats.",
+          "reasoning": "The definition is \"steamboat noises,\" which could be \"chugs.\" The wordplay suggests a captain (C) embracing or containing \"hugs,\" which fits the pattern _H___.",
           "outcome": "solved",
-          "hintsUsed": 3,
-          "letters": "_ H _ G _",
+          "hintsUsed": 2,
+          "letters": "_ H _ _ _",
           "hints": [
             "[definition] The definition part of the clue is 'steamboat noises'"
           ],
-          "wrong": [],
-          "feedback": "Letter revealed -> _ H _ G _"
+          "wrong": [
+            "SKIPS"
+          ],
+          "feedback": "Letter revealed -> _ H _ _ _"
         }
       ]
     },
@@ -1508,7 +2835,7 @@
         {
           "decision": "guess",
           "guess": "ACES",
-          "reasoning": "The definition is likely \"champions\", and \"reject slice of cheesecake\" suggests removing a part of the word \"cheesecake\" to form a word meaning champions.",
+          "reasoning": "The definition is likely \"Champions\", and \"reject slice of cheesecake\" suggests removing a part of the word \"cheesecake\" to form a word meaning champions.",
           "outcome": "solved",
           "hintsUsed": 0,
           "letters": "",
@@ -2000,12 +3327,13 @@
       "definition": "race",
       "par": 3,
       "solved": true,
-      "hintsUsed": 3,
+      "hintsUsed": 4,
       "guessesUsed": 1,
-      "parResult": "at",
-      "reward": 0.4,
+      "parResult": "above",
+      "reward": 0.2,
       "hintOrder": [
         "definition",
+        "letter",
         "letter",
         "letter"
       ],
@@ -2013,7 +3341,7 @@
         {
           "decision": "hint",
           "guess": "",
-          "reasoning": "The definition is likely \"race\" and the wordplay could involve \"grand prix\" or \"circuit\". \"Grand prix\" is often abbreviated as GP, which could be part of the wordplay.",
+          "reasoning": "The definition is likely \"race\" and the wordplay could involve \"grand prix\" which is a type of race, possibly referring to a specific term used in racing.",
           "outcome": "hint",
           "hintsUsed": 1,
           "letters": "",
@@ -2037,7 +3365,7 @@
         {
           "decision": "hint",
           "guess": "",
-          "reasoning": "The definition is 'race', and the wordplay might involve 'grand prix', which is often abbreviated as GP. 'Every circuit' could suggest a word that means 'all' or 'complete', leading to the word 'GRAND' as a possible answer.",
+          "reasoning": "The definition is 'race', and the wordplay suggests 'grand prix' could be abbreviated to 'GP', which is a common abbreviation for 'Grand Prix'. 'Every circuit' could imply 'GO', as in 'go around', leading to the word 'GO' followed by 'GP' for 'GOGP', but that doesn't fit. I will need more information.",
           "outcome": "hint",
           "hintsUsed": 3,
           "letters": "G _ _ _ _ _",
@@ -2048,17 +3376,30 @@
           "feedback": "Letter revealed -> G _ _ _ _ _"
         },
         {
-          "decision": "guess",
-          "guess": "GALLOP",
-          "reasoning": "The definition is 'race', and the wordplay involves 'grand prix', which is often abbreviated as GP. The answer is likely a synonym for 'race' that fits the pattern G _ _ _ _ P.",
-          "outcome": "solved",
-          "hintsUsed": 3,
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is 'race', and the wordplay suggests something related to 'grand prix'. The answer likely involves a term used in racing, possibly 'GRAND PRIX' itself, but shortened or altered to fit the 6-letter requirement.",
+          "outcome": "hint",
+          "hintsUsed": 4,
           "letters": "G _ _ _ _ P",
           "hints": [
             "[definition] The definition part of the clue is 'race'"
           ],
           "wrong": [],
           "feedback": "Letter revealed -> G _ _ _ _ P"
+        },
+        {
+          "decision": "guess",
+          "guess": "GALLOP",
+          "reasoning": "The definition is 'race', and the wordplay involves 'grand prix', which could be abbreviated to GP. The answer likely starts with 'GA' and ends with 'P', fitting the pattern.",
+          "outcome": "solved",
+          "hintsUsed": 4,
+          "letters": "G A _ _ _ P",
+          "hints": [
+            "[definition] The definition part of the clue is 'race'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> G A _ _ _ P"
         }
       ]
     },
@@ -2691,7 +4032,7 @@
         {
           "decision": "hint",
           "guess": "",
-          "reasoning": "The definition is 'Guarded', and the wordplay likely involves a vehicle and an experimental fuel. I suspect the answer might be a charade or container involving these elements.",
+          "reasoning": "The definition is 'Guarded', and the wordplay likely involves a vehicle and an experimental fuel. I suspect the answer might be a charade or a container involving these elements.",
           "outcome": "hint",
           "hintsUsed": 2,
           "letters": "",
@@ -2717,7 +4058,7 @@
         {
           "decision": "hint",
           "guess": "",
-          "reasoning": "The definition is 'Guarded', and the wordplay involves a vehicle with experimental fuel. The word 'experimental' might suggest an anagram or a novel type of fuel, but I need more information to solve it.",
+          "reasoning": "The definition is 'Guarded', and the wordplay involves a vehicle with experimental fuel. The word 'vehicle' could suggest 'car', and 'experimental fuel' might hint at 'gas', leading to 'CAGED' as a possible answer.",
           "outcome": "hint",
           "hintsUsed": 4,
           "letters": "_ A _ E _ _ _",
@@ -2730,7 +4071,7 @@
         {
           "decision": "hint",
           "guess": "",
-          "reasoning": "The definition is 'Guarded', and the wordplay involves a vehicle with experimental fuel. The pattern _A_E_U_ suggests the word 'CAVEFUL', but it doesn't fit the definition. I need more information.",
+          "reasoning": "The definition is 'Guarded', and the wordplay involves a vehicle with experimental fuel. The pattern _A_E_U_ suggests the word 'CAVEOUT', but it doesn't fit the definition. I need more information.",
           "outcome": "hint",
           "hintsUsed": 5,
           "letters": "_ A _ E _ U _",
@@ -2743,7 +4084,7 @@
         {
           "decision": "guess",
           "guess": "CAREFUL",
-          "reasoning": "The definition is 'Guarded', and the wordplay involves a vehicle with experimental fuel. The letters revealed so far suggest the word 'CAREFUL'.",
+          "reasoning": "The definition is 'Guarded', and the wordplay involves a vehicle with experimental fuel. The letters revealed so far suggest the word 'CARE' might be part of the answer, possibly 'CAREFUL'.",
           "outcome": "solved",
           "hintsUsed": 5,
           "letters": "_ A _ E _ U L",
@@ -2826,18 +4167,20 @@
       "definition": "Help",
       "par": 2,
       "solved": true,
-      "hintsUsed": 1,
+      "hintsUsed": 3,
       "guessesUsed": 3,
-      "parResult": "below",
-      "reward": 0.8,
+      "parResult": "above",
+      "reward": 0.4,
       "hintOrder": [
-        "definition"
+        "definition",
+        "letter",
+        "letter"
       ],
       "steps": [
         {
           "decision": "guess",
           "guess": "AID",
-          "reasoning": "The definition is likely \"help\", and the wordplay suggests disregarding the odds in \"gambler\", which leaves the even letters \"AID\".",
+          "reasoning": "The definition is likely \"help,\" and the wordplay suggests disregarding the odds in \"gambler,\" which leaves the even letters \"AID.\"",
           "outcome": "wrong",
           "hintsUsed": 0,
           "letters": "",
@@ -2848,7 +4191,7 @@
         {
           "decision": "hint",
           "guess": "",
-          "reasoning": "The definition is likely \"help\", and the wordplay suggests disregarding the odds in \"gambler\", which could mean taking every second letter.",
+          "reasoning": "The definition is likely \"help\", and the wordplay suggests taking alternate letters from \"gambler\" to form a 4-letter word.",
           "outcome": "hint",
           "hintsUsed": 1,
           "letters": "",
@@ -2860,8 +4203,8 @@
         },
         {
           "decision": "guess",
-          "guess": "BEAR",
-          "reasoning": "The wordplay suggests taking the even letters of \"gambler\" to form a word meaning \"help\". The even letters are \"a\", \"b\", \"e\", \"r\", which form the word \"bear\".",
+          "guess": "ABLE",
+          "reasoning": "The wordplay suggests taking the even letters of \"gambler\" to form a word meaning \"help\". The even letters are \"A\", \"B\", \"L\", \"E\".",
           "outcome": "wrong",
           "hintsUsed": 1,
           "letters": "",
@@ -2874,20 +4217,52 @@
           "feedback": "Hint (definition): The definition part of the clue is 'help'"
         },
         {
-          "decision": "guess",
-          "guess": "ABET",
-          "reasoning": "The wordplay suggests disregarding the odds in 'gambler', which means taking the even letters, resulting in 'abet', which means help.",
-          "outcome": "solved",
-          "hintsUsed": 1,
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The wordplay suggests disregarding the odds in 'gambler', which means taking the even letters, resulting in 'B-E-T' which doesn't fit. Let's take a hint for more clarity.",
+          "outcome": "hint",
+          "hintsUsed": 2,
           "letters": "",
           "hints": [
             "[definition] The definition part of the clue is 'help'"
           ],
           "wrong": [
             "AID",
-            "BEAR"
+            "ABLE"
           ],
-          "feedback": "'BEAR' is not correct. You have guessed: AID, BEAR. Try another answer, or reply HINT."
+          "feedback": "'ABLE' is not correct. You have guessed: AID, ABLE. Try another answer, or reply HINT."
+        },
+        {
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is 'help', and the wordplay suggests disregarding the odds in 'gambler', which leaves the even letters 'B E', fitting the pattern _B_ _.",
+          "outcome": "hint",
+          "hintsUsed": 3,
+          "letters": "_ B _ _",
+          "hints": [
+            "[definition] The definition part of the clue is 'help'"
+          ],
+          "wrong": [
+            "AID",
+            "ABLE"
+          ],
+          "feedback": "Letter revealed -> _ B _ _"
+        },
+        {
+          "decision": "guess",
+          "guess": "ABET",
+          "reasoning": "The wordplay suggests disregarding the odds in \"gambler,\" which means taking every second letter, resulting in \"B E T,\" but we need a four-letter word. The definition is \"help,\" and the pattern _B_T fits \"ABET,\" which means to help or assist, especially in wrongdoing.",
+          "outcome": "solved",
+          "hintsUsed": 3,
+          "letters": "_ B _ T",
+          "hints": [
+            "[definition] The definition part of the clue is 'help'"
+          ],
+          "wrong": [
+            "AID",
+            "ABLE"
+          ],
+          "feedback": "Letter revealed -> _ B _ T"
         }
       ]
     },
@@ -2902,12 +4277,13 @@
       "definition": "Huge",
       "par": 4,
       "solved": true,
-      "hintsUsed": 2,
+      "hintsUsed": 3,
       "guessesUsed": 1,
       "parResult": "below",
-      "reward": 0.6,
+      "reward": 0.4,
       "hintOrder": [
         "definition",
+        "letter",
         "letter"
       ],
       "steps": [
@@ -2936,17 +4312,30 @@
           "feedback": "Hint (definition): The definition part of the clue is 'Huge'"
         },
         {
-          "decision": "guess",
-          "guess": "COLOSSAL",
-          "reasoning": "The wordplay suggests a shortfall or gap in a fossil fuel, which could be 'coal' or 'gas'. The definition 'Huge' and the pattern _ _ _ _ _ S _ _ might fit 'COLOSSAL'.",
-          "outcome": "solved",
-          "hintsUsed": 2,
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The wordplay suggests a shortfall in \"fossil fuel,\" which could imply removing something from \"fossil fuel\" to get a word meaning \"huge.\" The definition is \"huge,\" and the answer has an 'S' in the sixth position.",
+          "outcome": "hint",
+          "hintsUsed": 3,
           "letters": "_ _ _ _ _ S _ _",
           "hints": [
             "[definition] The definition part of the clue is 'Huge'"
           ],
           "wrong": [],
           "feedback": "Letter revealed -> _ _ _ _ _ S _ _"
+        },
+        {
+          "decision": "guess",
+          "guess": "COLOSSAL",
+          "reasoning": "The wordplay suggests a container or charade involving 'fossil fuel', which could be 'coal', and 'investment shortfall' might imply a missing part or abbreviation. The definition 'Huge' fits COLOSSAL.",
+          "outcome": "solved",
+          "hintsUsed": 3,
+          "letters": "_ _ L _ _ S _ _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Huge'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> _ _ L _ _ S _ _"
         }
       ]
     },
@@ -3048,65 +4437,22 @@
       "definition": "Incriminate",
       "par": 3,
       "solved": true,
-      "hintsUsed": 3,
+      "hintsUsed": 0,
       "guessesUsed": 1,
-      "parResult": "at",
-      "reward": 0.4,
-      "hintOrder": [
-        "definition",
-        "letter",
-        "letter"
-      ],
+      "parResult": "below",
+      "reward": 1.0,
+      "hintOrder": [],
       "steps": [
         {
-          "decision": "hint",
-          "guess": "",
+          "decision": "guess",
+          "guess": "ACCUSE",
           "reasoning": "The definition is likely \"incriminate\", and \"copper in murder case\" suggests a wordplay involving a common abbreviation for copper (CU) inside another word.",
-          "outcome": "hint",
-          "hintsUsed": 1,
+          "outcome": "solved",
+          "hintsUsed": 0,
           "letters": "",
           "hints": [],
           "wrong": [],
           "feedback": ""
-        },
-        {
-          "decision": "hint",
-          "guess": "",
-          "reasoning": "The wordplay involves 'copper' which is often abbreviated as 'CU' and 'murder case' could suggest a container or charade. I will take a hint to better understand the wordplay.",
-          "outcome": "hint",
-          "hintsUsed": 2,
-          "letters": "",
-          "hints": [
-            "[definition] The definition part of the clue is 'Incriminate'"
-          ],
-          "wrong": [],
-          "feedback": "Hint (definition): The definition part of the clue is 'Incriminate'"
-        },
-        {
-          "decision": "hint",
-          "guess": "",
-          "reasoning": "The wordplay likely involves 'copper' as a common abbreviation for 'CU' (the chemical symbol for copper) and 'murder case' suggesting a container or charade. The definition is 'Incriminate'.",
-          "outcome": "hint",
-          "hintsUsed": 3,
-          "letters": "_ _ _ U _ _",
-          "hints": [
-            "[definition] The definition part of the clue is 'Incriminate'"
-          ],
-          "wrong": [],
-          "feedback": "Letter revealed -> _ _ _ U _ _"
-        },
-        {
-          "decision": "guess",
-          "guess": "ACCUSE",
-          "reasoning": "The wordplay involves 'copper' which can be abbreviated as 'CU', and 'in' suggests a container. The word 'murder' could be a case for 'case', leading to the word 'ACCUS' which fits with the definition 'Incriminate'.",
-          "outcome": "solved",
-          "hintsUsed": 3,
-          "letters": "A _ _ U _ _",
-          "hints": [
-            "[definition] The definition part of the clue is 'Incriminate'"
-          ],
-          "wrong": [],
-          "feedback": "Letter revealed -> A _ _ U _ _"
         }
       ]
     },
@@ -3182,19 +4528,20 @@
       "definition": "Loser",
       "par": 3,
       "solved": true,
-      "hintsUsed": 2,
+      "hintsUsed": 3,
       "guessesUsed": 1,
-      "parResult": "below",
-      "reward": 0.6,
+      "parResult": "at",
+      "reward": 0.4,
       "hintOrder": [
         "definition",
+        "letter",
         "letter"
       ],
       "steps": [
         {
           "decision": "hint",
           "guess": "",
-          "reasoning": "The definition is likely \"loser\", and the wordplay suggests taking an \"orange slice\" which could mean a part of the word \"orange\".",
+          "reasoning": "The definition is likely \"loser\", and the wordplay suggests taking an \"orange slice\" from \"steals\", which could mean removing the middle letters of \"steals\" to form the answer.",
           "outcome": "hint",
           "hintsUsed": 1,
           "letters": "",
@@ -3205,7 +4552,7 @@
         {
           "decision": "hint",
           "guess": "",
-          "reasoning": "The wordplay suggests taking a slice of 'orange', which could mean taking the middle letters 'rang'. Combining this with 'steals', which could be 'nicks', gives 'RANK NICK' which doesn't fit. I need more information.",
+          "reasoning": "The wordplay suggests taking a slice of \"orange\" and inserting it into a word meaning \"steals\" to form a phrase meaning \"loser\".",
           "outcome": "hint",
           "hintsUsed": 2,
           "letters": "",
@@ -3216,17 +4563,30 @@
           "feedback": "Hint (definition): The definition part of the clue is 'Loser'"
         },
         {
-          "decision": "guess",
-          "guess": "ALSO RAN",
-          "reasoning": "The wordplay suggests taking a slice of \"orange\", which could be the letter \"O\". A common term for a loser is \"also ran\", fitting the pattern _ _ S _ / _ _ _.",
-          "outcome": "solved",
-          "hintsUsed": 2,
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The wordplay suggests taking an \"orange slice\" from the word \"orange\" which could be \"OR\" or \"GE\". Combining this with the definition \"Loser\", the answer could be \"ALSO RAN\".",
+          "outcome": "hint",
+          "hintsUsed": 3,
           "letters": "_ _ S _ / _ _ _",
           "hints": [
             "[definition] The definition part of the clue is 'Loser'"
           ],
           "wrong": [],
           "feedback": "Letter revealed -> _ _ S _ / _ _ _"
+        },
+        {
+          "decision": "guess",
+          "guess": "ALSO RAN",
+          "reasoning": "The definition is 'Loser', and the wordplay suggests taking an 'orange slice', which could mean taking a part of the word 'orange'. The letters revealed so far suggest the answer might be 'also ran', which fits the pattern and definition.",
+          "outcome": "solved",
+          "hintsUsed": 3,
+          "letters": "_ L S _ / _ _ _",
+          "hints": [
+            "[definition] The definition part of the clue is 'Loser'"
+          ],
+          "wrong": [],
+          "feedback": "Letter revealed -> _ L S _ / _ _ _"
         }
       ]
     },
@@ -3309,7 +4669,7 @@
         {
           "decision": "guess",
           "guess": "BEGONE",
-          "reasoning": "The definition is likely \"plead\" and the wordplay suggests \"individual\" (I) + \"take a hike\" (BEGONE).",
+          "reasoning": "The definition is likely \"plead\" and the wordplay involves \"individual\" which could be \"I\" and \"take a hike\" suggesting \"go\". Combining these gives \"BEGONE\".",
           "outcome": "solved",
           "hintsUsed": 0,
           "letters": "",
@@ -3494,7 +4854,7 @@
       "par": 3,
       "solved": true,
       "hintsUsed": 5,
-      "guessesUsed": 2,
+      "guessesUsed": 1,
       "parResult": "above",
       "reward": 0.2,
       "hintOrder": [
@@ -3506,11 +4866,11 @@
       ],
       "steps": [
         {
-          "decision": "guess",
-          "guess": "LET OFF",
-          "reasoning": "The definition is likely \"request in court,\" which could be \"LET\" in tennis, and \"squash rallies\" could be a charade or container for \"LET\" and \"OFF\" (as in \"rallies\" being \"OFF\" or stopped).",
-          "outcome": "wrong",
-          "hintsUsed": 0,
+          "decision": "hint",
+          "guess": "",
+          "reasoning": "The definition is likely \"request in court,\" which could be \"LET\" in tennis, and \"squash rallies\" could be a charade or container clue involving \"LET\" and another word.",
+          "outcome": "hint",
+          "hintsUsed": 1,
           "letters": "",
           "hints": [],
           "wrong": [],
@@ -3519,89 +4879,66 @@
         {
           "decision": "hint",
           "guess": "",
-          "reasoning": "The definition part of the clue is likely \"request in court,\" which suggests a legal term. The wordplay might involve \"squash rallies\" as a charade or anagram.",
-          "outcome": "hint",
-          "hintsUsed": 1,
-          "letters": "",
-          "hints": [],
-          "wrong": [
-            "LET OFF"
-          ],
-          "feedback": "'LET OFF' is not correct. You have guessed: LET OFF. Try another answer, or reply HINT."
-        },
-        {
-          "decision": "hint",
-          "guess": "",
-          "reasoning": "The definition 'Request in court' suggests a legal term. The wordplay might involve 'squash rallies' which could hint at a charade or anagram.",
+          "reasoning": "The definition 'Request in court' suggests a legal term, possibly 'PLEA'. The wordplay might involve 'squash rallies' indicating a charade or anagram.",
           "outcome": "hint",
           "hintsUsed": 2,
           "letters": "",
           "hints": [
             "[definition] The definition part of the clue is 'Request in court'"
           ],
-          "wrong": [
-            "LET OFF"
-          ],
+          "wrong": [],
           "feedback": "Hint (definition): The definition part of the clue is 'Request in court'"
         },
         {
           "decision": "hint",
           "guess": "",
-          "reasoning": "The definition is \"Request in court\", which suggests a legal term. The wordplay might involve \"squash rallies\" as a charade or anagram.",
+          "reasoning": "The definition is \"Request in court,\" which suggests a legal term. The wordplay might involve \"squash rallies\" indicating a charade or anagram.",
           "outcome": "hint",
           "hintsUsed": 3,
           "letters": "_ _ _ / _ I _ _",
           "hints": [
             "[definition] The definition part of the clue is 'Request in court'"
           ],
-          "wrong": [
-            "LET OFF"
-          ],
+          "wrong": [],
           "feedback": "Letter revealed -> _ _ _ / _ I _ _"
         },
         {
           "decision": "hint",
           "guess": "",
-          "reasoning": "The definition is \"Request in court\", which suggests \"LET\" as in \"let in tennis\". The wordplay might involve \"squash rallies\" indicating a charade or anagram, but I need more information.",
+          "reasoning": "The definition is \"Request in court,\" which suggests the answer might be \"BILL PLEA\" or similar. The wordplay could involve \"squash rallies\" indicating a charade or anagram, but I'm not sure yet.",
           "outcome": "hint",
           "hintsUsed": 4,
           "letters": "_ _ L / _ I _ _",
           "hints": [
             "[definition] The definition part of the clue is 'Request in court'"
           ],
-          "wrong": [
-            "LET OFF"
-          ],
+          "wrong": [],
           "feedback": "Letter revealed -> _ _ L / _ I _ _"
         },
         {
           "decision": "hint",
           "guess": "",
-          "reasoning": "The definition is \"Request in court,\" which suggests \"ASK\" or \"PLEA.\" The wordplay might involve \"squash rallies\" indicating a charade or anagram.",
+          "reasoning": "The definition 'Request in court' suggests the answer might be 'ASK' followed by a four-letter word. The wordplay could involve 'squash rallies' indicating a charade or anagram, but I need more information to confirm the second part.",
           "outcome": "hint",
           "hintsUsed": 5,
           "letters": "A _ L / _ I _ _",
           "hints": [
             "[definition] The definition part of the clue is 'Request in court'"
           ],
-          "wrong": [
-            "LET OFF"
-          ],
+          "wrong": [],
           "feedback": "Letter revealed -> A _ L / _ I _ _"
         },
         {
           "decision": "guess",
           "guess": "ALL RISE",
-          "reasoning": "The definition is \"Request in court,\" and the wordplay might involve \"squash rallies\" suggesting a charade or anagram. The pattern A_L / _IS_ fits \"ALL RISE,\" which is a request in court.",
+          "reasoning": "The definition 'Request in court' suggests the answer might be a legal term. The wordplay could involve 'squash rallies' hinting at a charade or anagram. The pattern A_L / _IS_ fits 'ALL RISE', a common request in court.",
           "outcome": "solved",
           "hintsUsed": 5,
           "letters": "A _ L / _ I S _",
           "hints": [
             "[definition] The definition part of the clue is 'Request in court'"
           ],
-          "wrong": [
-            "LET OFF"
-          ],
+          "wrong": [],
           "feedback": "Letter revealed -> A _ L / _ I S _"
         }
       ]
@@ -4051,21 +5388,18 @@
       "definition": "Wow",
       "par": 2,
       "solved": true,
-      "hintsUsed": 2,
+      "hintsUsed": 0,
       "guessesUsed": 2,
-      "parResult": "at",
-      "reward": 0.6,
-      "hintOrder": [
-        "definition",
-        "letter"
-      ],
+      "parResult": "below",
+      "reward": 1.0,
+      "hintOrder": [],
       "steps": [
         {
-          "decision": "hint",
-          "guess": "",
-          "reasoning": "The clue likely has \"Wow\" as the definition, and \"a child's puzzle\" could be the wordplay. A common 5-letter word for a child's puzzle is \"MAZES\", which also fits the definition of \"Wow\" as an expression of amazement.",
-          "outcome": "hint",
-          "hintsUsed": 1,
+          "decision": "guess",
+          "guess": "MAZES",
+          "reasoning": "The clue likely uses a double definition, where \"Wow\" and \"a child's puzzle\" both point to the same answer. A common word that fits both definitions is \"MAZES\".",
+          "outcome": "wrong",
+          "hintsUsed": 0,
           "letters": "",
           "hints": [],
           "wrong": [],
@@ -4073,46 +5407,16 @@
         },
         {
           "decision": "guess",
-          "guess": "MAZES",
-          "reasoning": "The definition is 'Wow', and the wordplay might involve a common child's puzzle. A common 5-letter child's puzzle is 'MAZES', which can also be an expression of amazement or 'Wow'.",
-          "outcome": "wrong",
-          "hintsUsed": 1,
+          "guess": "AMAZE",
+          "reasoning": "The clue likely has \"Wow\" as the definition, and \"a child's puzzle\" could be the wordplay. A common 5-letter word for \"Wow\" is \"AMAZE\".",
+          "outcome": "solved",
+          "hintsUsed": 0,
           "letters": "",
-          "hints": [
-            "[definition] The definition part of the clue is 'Wow'"
-          ],
-          "wrong": [],
-          "feedback": "Hint (definition): The definition part of the clue is 'Wow'"
-        },
-        {
-          "decision": "hint",
-          "guess": "",
-          "reasoning": "The definition is 'Wow', and the wordplay might involve a child's puzzle. I need more information to decode the wordplay part.",
-          "outcome": "hint",
-          "hintsUsed": 2,
-          "letters": "",
-          "hints": [
-            "[definition] The definition part of the clue is 'Wow'"
-          ],
+          "hints": [],
           "wrong": [
             "MAZES"
           ],
           "feedback": "'MAZES' is not correct. You have guessed: MAZES. Try another answer, or reply HINT."
-        },
-        {
-          "decision": "guess",
-          "guess": "AMAZE",
-          "reasoning": "The definition is \"Wow\" and the wordplay suggests a child's puzzle. The answer could be a word that means both \"Wow\" and relates to a child's puzzle.",
-          "outcome": "solved",
-          "hintsUsed": 2,
-          "letters": "A _ _ _ _",
-          "hints": [
-            "[definition] The definition part of the clue is 'Wow'"
-          ],
-          "wrong": [
-            "MAZES"
-          ],
-          "feedback": "Letter revealed -> A _ _ _ _"
         }
       ]
     },
