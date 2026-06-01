@@ -491,7 +491,7 @@ $('prevBtn').onclick=()=>{ stop(); if(idx>0){idx--;render();} };
 $('nextBtn').onclick=()=>{ stop(); if(idx<EP.steps.length-1){idx++;render();} };
 $('playBtn').onclick=play;
 
-fetch('dashboard_data.json').then(r=>r.json()).then(d=>{
+fetch('dashboard_data.json?v='+Date.now(),{cache:'no-store'}).then(r=>r.json()).then(d=>{
   DATA=d; DATA.episodes.forEach((e,i)=>e._i=i);
   const models=[...new Set(DATA.episodes.map(e=>e.model))];
   $('cov').textContent=DATA.episodes.length+' episodes · '+models.length+' models';
